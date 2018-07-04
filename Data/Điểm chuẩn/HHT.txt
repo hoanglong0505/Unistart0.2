@@ -1,0 +1,175 @@
+HHT
+1
+7140201
+Giáo dục Mầm non
+M00
+15.5
+Xét học bạ 18 điểm
+2
+7140202
+Giáo dục Tiểu học
+C20
+---
+
+3
+7140202
+Giáo dục Tiểu học
+C00; C01; D01
+15.5
+Xét học bạ 18 điểm
+4
+7140205
+Giáo dục Chính trị
+A00; C00; C04; D01
+15.5
+Xét học bạ 18 điểm
+5
+7140209
+Sư phạm Toán học
+A00; C01; C02; D01
+15.5
+Xét học bạ 18 điểm
+6
+7140211
+Sư phạm Vật lý
+A00; A01; C01; D11
+15.5
+Xét học bạ 18 điểm
+7
+7140212
+Sư phạm Hoá học
+A00; B00; C02; D07
+15.5
+Xét học bạ 18 điểm
+8
+7140231
+Sư phạm Tiếng Anh
+A01; D01; D09; D14
+15.5
+Xét học bạ 18 điểm
+9
+7220201
+Ngôn ngữ Anh
+D15
+---
+
+10
+7220201
+Ngôn ngữ Anh
+A01; D01; D14
+15.5
+Xét học bạ 18 điểm
+11
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04; D14; D15
+15.5
+Xét học bạ 18 điểm
+12
+7310201
+Chính trị học
+A00, C00, C14, C15
+---
+
+13
+
+Quản trị kinh doanh
+C20, C14
+---
+
+14
+7340101
+Quản trị kinh doanh
+A00; D01
+15.5
+Xét học bạ 18 điểm
+15
+7340201
+Tài chính – Ngân hàng
+C20
+---
+
+16
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+15.5
+Xét học bạ 18 điểm
+17
+7340301
+Kế toán
+C20, C14
+---
+
+18
+7340301
+Kế toán
+A00; D01
+15.5
+Xét học bạ 18 điểm
+19
+7380101
+Luật
+C14
+---
+
+20
+7380101
+Luật
+A00; C00; D01
+15.5
+Xét học bạ 18 điểm
+21
+7440301
+Khoa học môi trường
+A00; B00; B03; D07
+15.5
+Xét học bạ 18 điểm
+22
+7480201
+Công nghệ thông tin
+A00; A01; A04; C01
+---
+
+23
+7580201
+Kỹ thuật xây dựng
+A02
+---
+
+24
+7580201
+Kỹ thuật xây dựng
+A00; A01; A04
+15.5
+Xét học bạ 18 điểm
+25
+7620110
+Khoa học cây trồng
+A00; B00; B03; D07
+15.5
+Xét học bạ 18 điểm
+26
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C14, C20
+---
+
+27
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; D01
+15.5
+Xét học bạ 18 điểm
+28
+51140201
+Giáo dục Mầm non
+M00
+---
+
+29
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+C01, C03, C20, D01
+---
+

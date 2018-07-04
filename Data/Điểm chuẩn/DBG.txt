@@ -1,0 +1,79 @@
+DBG
+1
+7310101
+Kinh tế
+A00; A01; D01
+15.5
+Điểm xét tuyển học bạ: 6
+2
+7340301
+Kế toán
+A00; A01; D01
+15.5
+Điểm xét tuyển học bạ: 6
+3
+7420201
+Công nghệ sinh học
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+4
+7540101
+Công nghệ thực phẩm
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+5
+7540106
+Đảm bảo chất lượng và an toàn thực phẩm
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+6
+7620105
+Chăn nuôi
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+7
+7620110
+Khoa học cây trồng
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+8
+7620112
+Bảo vệ thực vật
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+9
+7620205
+Lâm sinh
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+10
+7620211
+Quản lý tài nguyên rừng
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+11
+7640101
+Thú y
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+12
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6
+13
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+15.5
+Điểm xét tuyển học bạ: 6

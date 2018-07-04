@@ -1,0 +1,157 @@
+QSQ
+1
+7220201
+Ngôn ngữ Anh
+A01, D01
+25
+
+2
+7340101
+Quản trị kinh doanh
+A00, A01, D01
+26
+
+3
+7340101_LK
+Quản trị kinh doanh (Chương trình liên kết với Đại học nước ngoài)
+A00, A01, D01
+16.5
+
+4
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01
+24.5
+
+5
+7420201
+Công nghệ sinh học
+
+22.5
+
+6
+7420201_LK
+Công nghệ sinh học (Chương trình liên kết với Đại học nước ngoài)
+A00, A01, B00, D01
+16.5
+
+7
+7440112
+Hoá học
+A00, A01, B00,
+23
+
+8
+7460112
+Toán ứng dụng
+A00, A01
+18
+
+9
+7480106_LK
+Kỹ thuật Máy tính (Chương trình liên kết với Đại học nước ngoài)
+A00, A01
+16.5
+
+10
+7480201
+Công nghệ thông tin
+A00, A01
+23.5
+
+11
+7480201_LK
+Công nghệ thông tin (Chương trình liên kết với Đại học nước ngoài)
+A00, A01
+16.5
+
+12
+7489001
+Khoa học Dữ liệu (dự kiến)
+A00, A01, D01,
+---
+
+13
+7510605
+Logistics và Quản lý chuỗi cung ứng
+A00, A01, D01
+26
+
+14
+7520103
+Kỹ thuật cơ khí
+A00, A01, D01
+---
+
+15
+7520118
+Kỹ thuật hệ thống công nghiệp
+A00, A01, D01
+22
+
+16
+7520118_LK
+Kỹ thuật Hệ thống công nghiệp (Chương trình liên kết với Đại học nước ngoài)
+A00, A01, D01,
+16.5
+
+17
+7520121
+Kỹ thuật không gian
+A00, A01
+18.5
+
+18
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01
+18.5
+
+19
+7520207_LK
+Kỹ thuật Điện tử viễn thông (Chương trình liên kết với Đại học nước ngoài)
+A00, A01, ,
+16.5
+
+20
+7520212
+Kỹ thuật y sinh
+A00, A01, B00
+24.5
+
+21
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00, A01
+19.5
+
+22
+7520301
+Kỹ thuật hoá học
+A00, A01, D01
+---
+
+23
+7520320
+Kỹ thuật môi trường
+A00, A01, B00
+18
+
+24
+7540101
+Công nghệ thực phẩm
+A00, A01, B00
+22
+
+25
+7580201
+Kỹ thuật xây dựng
+A00, A01
+17.5
+
+26
+7620305
+Quản lý thủy sản
+A00, A01, B00, D01
+17.5
+

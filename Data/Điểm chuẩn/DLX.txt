@@ -1,0 +1,49 @@
+DLX
+1
+7310101
+Kinh tế
+A00, A01, D01
+15.75
+Thí sinh có nguyện vọng từ 1 đến 5 (NV1-NV5)
+2
+7310401
+Tâm lý học
+A00, A01, C00, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 2 (NV1-NV2)
+3
+7340101
+Quản trị kinh doanh
+A00, A01, D01
+17.5
+Thí sinh có nguyện vọng từ 1 đến 4 (NV1-NV4)
+4
+7340204
+Bảo hiểm
+A00, A01, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 2 (NV1-NV2)
+5
+7340301
+Kế toán
+A00, A01, D01
+17.5
+Thí sinh có điểm 17,60; nguyện vọng từ 1 đến 2 (NV1-NV2)
+6
+7340404
+Quản trị nhân lực
+A00, A01, D01
+17
+Thí sinh có điểm 17,10; nguyện vọng từ 1 đến 2 (NV1-NV2)
+7
+7380107
+Luật kinh tế
+A00, A01, D01
+16
+Thí sinh có nguyện vọng 1 (NV1)
+8
+7760101
+Công tác xã hội
+A00, A01, C00, D01
+19.25
+Thí sinh có nguyện vọng từ 1 đến 5 (NV1-NV5)

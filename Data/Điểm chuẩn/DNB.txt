@@ -1,0 +1,79 @@
+DNB
+1
+7140201
+Giáo dục Mầm non
+M00
+15.5
+
+2
+7140202
+Giáo dục Tiểu học
+A00; A01; C00; D01
+15.5
+
+3
+7140205
+Giáo dục Chính trị
+C00; C19; C20; D66
+15.5
+
+4
+7140209
+Sư phạm Toán học
+A00; A01; D07; D08
+15.5
+
+5
+7140211
+Sư phạm Vật lý
+A00; A01; A02
+15.5
+
+6
+7140212
+Sư phạm Hoá học
+A00; B00; D07
+15.5
+
+7
+7140213
+Sư phạm Sinh học
+A02, B00,D08
+15.5
+
+8
+7140217
+Sư phạm Ngữ văn
+C00; D14; D15; D66
+15.5
+
+9
+7310630
+Việt Nam học
+C00; D14; D15; D66
+15.5
+
+10
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+15.5
+
+11
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+
+12
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+A00, A01, C00, D01
+---
+Tốt nghiệp THPT
+13
+51140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+A01, D01, D14, D15
+---
+Tốt nghiệp THPT

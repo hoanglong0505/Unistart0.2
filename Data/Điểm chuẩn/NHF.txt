@@ -1,0 +1,103 @@
+NHF
+1
+7220201
+Ngôn ngữ Anh
+D01
+34.58
+Tiếng Anh nhân 2
+2
+7220202
+Ngôn ngữ Nga
+D01; D02
+28.92
+Tiếng Anh nhân 2
+3
+7220203
+Ngôn ngữ Pháp
+D01; D03
+32.17
+Tiếng Anh nhân 2
+4
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04
+33.67
+Tiếng Anh nhân 2
+5
+7220205
+Ngôn ngữ Đức
+D01; D05
+31.75
+Tiếng Anh nhân 2
+6
+7220206
+Ngôn ngữ Tây Ban Nha
+D01
+31.42
+Tiếng Anh nhân 2
+7
+7220207
+Ngôn ngữ Bồ Đào Nha
+D01
+27.75
+Tiếng Anh nhân 2
+8
+7220208
+Ngôn ngữ Italia
+D01
+30.17
+Tiếng Anh nhân 2
+9
+7220209
+Ngôn ngữ Nhật
+D01; D06
+35.08
+Tiếng Anh nhân 2
+10
+7220210
+Ngôn ngữ Hàn Quốc
+D01
+35.08
+Tiếng Anh nhân 2
+11
+7310601
+Quốc tế học
+D01
+31.67
+Tiếng Anh nhân 2
+12
+7320109
+Truyền thông doanh nghiệp
+D01; D03
+31.75
+Tiếng Anh nhân 2
+13
+7340101
+Quản trị kinh doanh
+D01
+33.25
+Tiếng Anh nhân 2
+14
+7340201
+Tài chính – Ngân hàng
+D01
+31
+Tiếng Anh nhân 2
+15
+7340301
+Kế toán
+D01
+32.08
+Tiếng Anh nhân 2
+16
+7480201
+Công nghệ thông tin
+A01; D01
+23
+Tiếng Anh nhân 2
+17
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+D01
+33.75
+Tiếng Anh nhân 2

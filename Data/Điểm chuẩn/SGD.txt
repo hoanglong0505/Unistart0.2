@@ -1,0 +1,295 @@
+SGD
+1
+7140114
+Quản lý giáo dục
+C04
+20.75
+
+2
+7140114
+Quản lý giáo dục
+D01
+19.75
+
+3
+7210205
+Thanh nhạc
+N02
+20.75
+
+4
+7220201
+Ngôn ngữ Anh
+D01
+24
+Tiếng anh nhân đôi
+5
+7220201
+Ngôn ngữ Anh
+N1
+---
+
+6
+7310401
+Tâm lý học
+D01
+20.75
+
+7
+7310601
+Quốc tế học
+D01
+21.75
+tiếng anh nhân hai
+8
+7310601
+Quốc tế học
+N1
+---
+
+9
+7310630
+Việt Nam học
+C00
+23
+
+10
+7320201
+Thông tin - thư viện
+C04, D01
+18
+
+11
+7340101
+Quản trị kinh doanh
+A01
+22.25
+Toán nhân 2
+12
+7340101
+Quản trị kinh doanh
+D01
+21.25
+Toán nhân 2
+13
+7340201
+Tài chính – Ngân hàng
+C01
+21
+Toán nhân 2
+14
+7340201
+Tài chính – Ngân hàng
+D01
+20
+Toán nhân 2
+15
+7340301
+Kế toán
+C01
+21.75
+Toán nhân 2
+16
+7340301
+Kế toán
+D01
+20.75
+Toán nhân 2
+17
+7340406
+Quản trị văn phòng
+C04
+22.25
+Văn nhân 2
+18
+7340406
+Quản trị văn phòng
+D01
+21.25
+Văn nhân 2
+19
+7380101
+Luật
+C03
+23
+Văn nhân 2
+20
+7380101
+Luật
+D01
+22
+Văn nhân 2
+21
+7440301
+Khoa học môi trường
+A00
+18
+
+22
+7440301
+Khoa học môi trường
+B00
+19
+
+23
+7460112
+Toán ứng dụng
+A00
+19.5
+Toán nhân 2
+24
+7460112
+Toán ứng dụng
+A01
+18.5
+Toán nhân 2
+25
+7480201
+Công nghệ thông tin
+A00, A01
+22
+Toán nhân 2
+26
+7480201CLC
+Công nghệ thông tin (chương trình chất lượng cao)
+A00, A01
+---
+
+27
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00
+21.25
+
+28
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A01
+20.25
+
+29
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00
+20
+
+30
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A01
+19
+
+31
+7510406
+Công nghệ kỹ thuật môi trường
+A00
+18
+
+32
+7510406
+Công nghệ kỹ thuật môi trường
+B00
+19
+
+33
+7520201
+Kỹ thuật điện
+A00
+20.75
+
+34
+7520201
+Kỹ thuật điện
+A01
+19.75
+
+35
+7520207
+Kỹ thuật điện tử - viễn thông
+A00
+19.25
+
+36
+7520207
+Kỹ thuật điện tử - viễn thông
+A01
+18.25
+
+37
+7140201
+Giáo dục Mầm non
+M01
+22.5
+
+38
+7140202
+Giáo dục Tiểu học
+D01
+22
+
+39
+7140205
+Giáo dục Chính trị
+C03, D01
+18.5
+
+40
+7140209
+Sư phạm Toán học
+A00, A01
+---
+Toán nhân 2
+41
+7140211
+Sư phạm Vật lý
+A00
+---
+
+42
+7140212
+Sư phạm Hoá học
+A00
+---
+Hóa nhân 2
+43
+7140213
+Sư phạm Sinh học
+B00
+---
+Sinh học nhân 2
+44
+7140217
+Sư phạm Ngữ văn
+C00
+---
+Ngữ văn nhân 2
+45
+7140218
+Sư phạm Lịch sử
+C00
+---
+Lịch sử nhân 2
+46
+7140219
+Sư phạm Địa lý
+C00
+---
+Địa lý nhân 2
+47
+7140221
+Sư phạm Âm nhạc
+N01
+20.75
+
+48
+7140222
+Sư phạm Mỹ thuật
+H00
+16.5
+
+49
+7140231
+Sư phạm Tiếng Anh
+D01
+---
+Tiếng Anh nhân 2

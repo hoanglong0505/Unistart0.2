@@ -1,0 +1,283 @@
+TSN
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+21.5
+
+2
+7310101A
+Kinh tế (chuyên ngành Luật kinh tế)
+A00, A01, D01, D96
+---
+
+3
+7310101B
+Kinh tế (chuyên ngành Kinh tế thủy sản)
+A00, A01, D01, D07
+---
+
+4
+7310105
+Kinh tế phát triển
+
+---
+
+5
+7340101
+Quản trị kinh doanh
+D07
+---
+
+6
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+18.5
+
+7
+7340101P
+Quản trị kinh doanh (chương trình song ngữ Pháp-Việt)
+A00, A01, D03
+---
+
+8
+7340101P
+Quản trị kinh doanh (chương trình song ngữ Pháp-Việt)
+D97
+18
+
+9
+7340115
+Marketing
+D07
+---
+
+10
+7340115
+Marketing
+A00; A01; D01
+17.75
+
+11
+7340121
+Kinh doanh thương mại
+D07
+---
+
+12
+7340121
+Kinh doanh thương mại
+A00; A01; D01
+17.75
+
+13
+7340201
+Tài chính – Ngân hàng
+D07
+---
+
+14
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+17
+
+15
+7340301
+Kế toán
+D07
+---
+
+16
+7340301
+Kế toán
+A00; A01; D01
+17.25
+
+17
+7340405
+Hệ thống thông tin quản lý
+D07
+---
+
+18
+7340405
+Hệ thống thông tin quản lý
+A00; A01;D01
+15.5
+
+19
+7420201
+Công nghệ sinh học
+A00; A02; B00; D07
+16
+
+20
+7480201
+Công nghệ thông tin
+D07
+---
+
+21
+7480201
+Công nghệ thông tin
+A00; A01; D01
+17.5
+
+22
+7510202
+Công nghệ chế tạo máy
+A00; A01; C01; D07
+15.5
+
+23
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01; D07
+16
+
+24
+7520103A
+Kỹ thuật cơ khí (chuyên ngành Kỹ thuật cơ khí)
+A00; A01; C01; D07
+16
+
+25
+7520103B
+Kỹ thuật cơ khí (chuyên ngành Kỹ thuật cơ khí động lực)
+A00; A01; C01; D07
+---
+
+26
+7520114
+Kỹ thuật cơ điện tử
+A00; A01; C01; D07
+15.5
+
+27
+7520115
+Kỹ thuật nhiệt
+A00; A01; C01; D07
+15.5
+
+28
+7520122
+Kỹ thuật tàu thuỷ
+A00; A01; C01; D07
+16
+
+29
+7520130
+Kỹ thuật ô tô
+A00; A01; C01; D07
+17
+
+30
+7520301
+Kỹ thuật hoá học
+B00
+---
+
+31
+7520301
+Kỹ thuật hoá học
+A00; B00; D07
+15.5
+
+32
+7520320
+Kỹ thuật môi trường
+D07
+---
+
+33
+7520320
+Kỹ thuật môi trường
+A00; A01; B00
+15.5
+
+34
+7540101
+Công nghệ thực phẩm
+A00; A01; B00; D07
+16
+
+35
+7540104
+Công nghệ sau thu hoạch
+A00; A01; B00; D07
+15.5
+
+36
+7540105
+Công nghệ chế biến thuỷ sản
+A00; A01; B00; D07
+16
+
+37
+7580201
+Kỹ thuật xây dựng
+D07
+---
+
+38
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01
+16
+
+39
+7620301
+Nuôi trồng thuỷ sản
+D01, D96
+---
+
+40
+7620301
+Nuôi trồng thuỷ sản
+A00; A01
+15.5
+
+41
+7620304
+Khai thác thuỷ sản
+B00
+---
+
+42
+7620304
+Khai thác thuỷ sản
+A00; A01; D07
+15.5
+
+43
+7620305
+Quản lý thủy sản
+A00; A01; B00; D07
+15.5
+
+44
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D97
+19.75
+
+45
+7810103P
+Quản trị dịch vụ du lịch và lữ hành (chương trình song ngữ Pháp-Việt)
+A00, A01
+---
+
+46
+7810103P
+Quản trị dịch vụ du lịch và lữ hành (chương trình song ngữ Pháp-Việt)
+D03;D97
+19
+
+47
+7840106
+Khoa học hàng hải
+A00; A01; C01; D07
+15.5
+

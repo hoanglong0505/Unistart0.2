@@ -1,0 +1,55 @@
+DTB
+1
+CK
+Công nghệ kỹ thuật cơ khí
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+2
+CNTT
+Công nghệ thông tin
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+3
+DDT
+Công nghệ kỹ thuật điện, điện tử
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+4
+KTE
+Kinh tế
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+5
+KTO
+Kế toán
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+6
+LA
+Luật
+A00; C03; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+7
+QTKD
+Quản trị kinh doanh
+A00; B00; C14; D01
+15.5
+Xét học bạ lớp 12: 18 điểm
+8
+TCNH
+Tài chính ngân hàng
+A00; B00; C14; D01
+---
+
+9
+TUD
+Toán ứng dụng
+A00; B00; C14; D01
+---
+

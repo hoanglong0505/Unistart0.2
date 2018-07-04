@@ -1,0 +1,67 @@
+YHB
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7720101
+Y khoa
+B00
+29.25
+Ưu tiên 1: 29.2, Ưu tiên 2: 9.2, Ưu tiên 3: 9.25, Ưu tiên 4: TTNV<=1
+3
+7720101_YHT
+Y Đa khoa Phân hiệu Thanh Hóa
+B00
+26.75
+Ưu tiên 1: 27.75, Ưu tiên 2: 9, Ưu tiên 3: 9.25, Ưu tiên 4: TTNV<=4
+4
+7720110
+Y học dự phòng
+B00
+24.5
+Ưu tiên 1: 24.45, Ưu tiên 2: 8.2, Ưu tiên 3: 8.75, Ưu tiên 4: TTNV<=4
+5
+7720115
+Y học cổ truyền
+B00
+26.75
+Ưu tiên 1: 26.8, Ưu tiên 2: 7.8, Ưu tiên 3: 9.25, Ưu tiên 4: TTNV<=1
+6
+7720301
+Điều dưỡng
+B00
+26
+Ưu tiên 1: 26.4, Ưu tiên 2: 8.4, Ưu tiên 3: 8.75, Ưu tiên 4: TTNV<=6
+7
+7720401
+Dinh dưỡng
+B00
+24.5
+Ưu tiên 1: 24.6, Ưu tiên 2: 8.6, Ưu tiên 3: 7.5, Ưu tiên 4: TTNV<=5
+8
+7720501
+Răng - Hàm - Mặt
+B00
+28.75
+Ưu tiên 1: 28.85, Ưu tiên 2: 9.6, Ưu tiên 3: 8.5, Ưu tiên 4: TTNV<=2
+9
+7720601
+Kỹ thuật xét nghiệm y học
+B00
+26.5
+Ưu tiên 1: 26.4, Ưu tiên 2: 8.4, Ưu tiên 3: 8.75, Ưu tiên 4: TTNV<=4
+10
+7720699
+Khúc xạ nhãn khoa
+B00
+26.5
+Ưu tiên 1: 26.45, Ưu tiên 2: 8.2, Ưu tiên 3: 8.25, Ưu tiên 4: TTNV<=6
+11
+7720701
+Y tế công cộng
+B00
+23.75
+Ưu tiên 1: 23.8, Ưu tiên 2: 8.8, Ưu tiên 3: 6.5, Ưu tiên 4: TTNV<=3

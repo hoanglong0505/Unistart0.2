@@ -1,0 +1,133 @@
+DDD
+1
+7220201
+Ngôn ngữ Anh
+A01; C00; D01; D14
+15.5
+Xét học bạ 18 điểm
+2
+7220204
+Ngôn ngữ Trung Quốc
+A01; C00; D01; D14
+15.5
+Xét học bạ 18 điểm
+3
+7310205
+Quản lý nhà nước
+A00; A01; C00; D01
+15.5
+Xét học bạ 18 điểm
+4
+7310206
+Quan hệ quốc tế
+C00; C04; C09; D01
+15.5
+Xét học bạ 18 điểm
+5
+7310630
+Việt Nam học
+A00; A01; C00; D01
+15.5
+Xét học bạ 18 điểm
+6
+7320201
+Thông tin - thư viện
+A00; A01; C00; D01
+15.5
+Xét học bạ 18 điểm
+7
+7340101
+Quản trị kinh doanh
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+8
+7340201
+Tài chính – Ngân hàng
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+9
+7340301
+Kế toán
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+10
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+15.5
+Xét học bạ 18 điểm
+11
+7420201
+Công nghệ sinh học
+B02
+---
+
+12
+7420201
+Công nghệ sinh học
+A00; A02; D08
+15.5
+Xét học bạ 18 điểm
+13
+7480201
+Công nghệ thông tin
+A02, D01
+---
+
+14
+7480201
+Công nghệ thông tin
+A00; A01
+15.5
+Xét học bạ 18 điểm
+15
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+16
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; A06; B00
+15.5
+Xét học bạ 18 điểm
+17
+7520207
+Kỹ thuật điện tử - viễn thông
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+18
+7580101
+Kiến trúc
+H02
+---
+
+19
+7580101
+Kiến trúc
+H00; V00; V01
+15.5
+Xét học bạ 18 điểm
+20
+7580201
+Kỹ thuật xây dựng
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+21
+7640101
+Thú y
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+22
+7720301
+Điều dưỡng
+A00; A01; B00; C00
+15.5
+Xét học bạ 18 điểm

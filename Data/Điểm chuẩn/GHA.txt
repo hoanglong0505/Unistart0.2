@@ -1,0 +1,223 @@
+GHA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+GHA-01
+Kỹ thuật XD Cầu đường bộ (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+3
+GHA-02
+Kỹ thuật XD Đường bộ (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+4
+GHA-03
+Kỹ thuật XD Cầu hầm (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+5
+GHA-04
+Kỹ thuật XD Đường sắt (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+6
+GHA-05
+Kỹ thuật XD Cầu - Đường sắt (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+7
+GHA-06
+Kỹ thuật XD Cầu - Đường ô tô - Sân bay (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+8
+GHA-07
+Kỹ thuật XD Đường ô tô - Sân bay (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+9
+GHA-08
+Công trình giao thông công chính (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+10
+GHA-09
+Công trình giao thông đô thị (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+11
+GHA-10
+Tự động hóa thiết kế cầu đường (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+12
+GHA-11
+Kỹ thuật giao thông đường bộ (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+13
+GHA-12
+Nhóm chuyên ngành: Kỹ thuật XD Đường sắt đô thị; Kỹ thuật XD Đường hầm và metro; Địa kỹ thuật CTGT; Kỹ thuật GIS và trắc địa CT (ngành Kỹ thuật xây dựng CTGT)
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.4. Điểm Toán + Lý: 9.8. Điểm Toán: 6.8. TTNV=2
+14
+GHA-13
+Quản lý xây dựng
+A00; A01; D07
+---
+
+15
+GHA-14
+Kỹ thuật xây dựng công trình thủy
+A00; A01; D07
+---
+
+16
+GHA-15
+Kỹ thuật xây dựng
+A00; A01; D07
+17
+Điểm gốc (Điểm chưa làm tròn): 16.95. Điểm Toán + Lý: 11.2. Điểm Toán: 6.2. TTNV=1
+17
+GHA-16
+Nhóm chuyên ngành: Công nghệ chế tạo cơ khí; Tự động hóa thiết kế cơ khí; Cơ điện tử (ngành Kỹ thuật cơ khí)
+A00; A01
+18.75
+Điểm gốc (Điểm chưa làm tròn): 18.75. Điểm Toán + Lý: 12.05. Điểm Toán: 6.8. TTNV=2
+18
+GHA-17
+Cơ khí ôtô (ngành Kỹ thuật cơ khí)
+A00; A01
+18.75
+Điểm gốc (Điểm chưa làm tròn): 18.75. Điểm Toán + Lý: 12.05. Điểm Toán: 6.8. TTNV=2
+19
+GHA-18
+Nhóm chuyên ngành: Máy xây dựng; Cơ giới hóa XD cầu đường; Cơ khí giao thông công chính; Kỹ thuật máy động lực; Đầu máy - toa xe; Tàu điện - metro (ngành Kỹ thuật cơ khí)
+A00; A01
+18.75
+Điểm gốc (Điểm chưa làm tròn): 18.75. Điểm Toán + Lý: 12.05. Điểm Toán: 6.8. TTNV=2
+20
+GHA-19
+Kỹ thuật nhiệt
+A00; A01
+---
+
+21
+GHA-20
+Kỹ thuật điện tử - viễn thông
+A00; A01; D07
+19.5
+Điểm gốc (Điểm chưa làm tròn): 19.6. Điểm Toán + Lý: 14.6. Điểm Toán: 7.6. TTNV=2
+22
+GHA-21
+Kỹ thuật điện
+A00; A01; D07
+21.25
+Điểm gốc (Điểm chưa làm tròn): 21.25. Điểm Toán + Lý: 13.9. Điểm Toán: 6.4. TTNV=4
+23
+GHA-22
+Kỹ thuật điều khiển và tự động hoá
+A00; A01; D07
+23
+Điểm gốc (Điểm chưa làm tròn): 23.05. Điểm Toán + Lý: 15.05. Điểm Toán: 7.8. TTNV=4
+24
+GHA-23
+Công nghệ thông tin
+A00; A01; D07
+23
+Điểm gốc (Điểm chưa làm tròn): 22.9. Điểm Toán + Lý: 15.6. Điểm Toán: 8.6. TTNV=11
+25
+GHA-24
+Kinh tế xây dựng
+A00; A01; D07
+20.25
+Điểm gốc (Điểm chưa làm tròn): 20.2. Điểm Toán + Lý: 12.45. Điểm Toán: 6.2. TTNV=5
+26
+GHA-25
+Kinh tế vận tải
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.45. Điểm Toán + Lý: 9.7. Điểm Toán: 6.2. TTNV=3
+27
+GHA-26
+Khai thác vận tải
+A00; A01; D07
+16.5
+Điểm gốc (Điểm chưa làm tròn): 16.5. Điểm Toán + Lý: 9.25. Điểm Toán: 5. TTNV=1
+28
+GHA-27
+Kế toán
+A00; A01; D07
+20.15
+Điểm gốc (Điểm chưa làm tròn): 20.8. Điểm Toán + Lý: 13.55. Điểm Toán: 5.8. TTNV=2
+29
+GHA-28
+Kinh tế
+A00; A01; D07
+18
+Điểm gốc (Điểm chưa làm tròn): 17.95. Điểm Toán + Lý: 10.95. Điểm Toán: 6.2. TTNV=3
+30
+GHA-29
+Quản trị kinh doanh
+A00; A01; D07
+19.5
+Điểm gốc (Điểm chưa làm tròn): 19.45. Điểm Toán + Lý: 11.7. Điểm Toán: 6.2. TTNV=3
+31
+GHA-30
+Công nghệ kỹ thuật giao thông
+A00; A01; D07
+16.75
+Điểm gốc (Điểm chưa làm tròn): 16.8. Điểm Toán + Lý: 10.55. Điểm Toán: 5.8. TTNV=4
+32
+GHA-31
+Kỹ thuật môi trường
+A00; A01; D07
+16.75
+Điểm gốc (Điểm chưa làm tròn): 16.7. Điểm Toán + Lý: 12.1. Điểm Toán: 6.6. TTNV=7
+33
+GHA-32
+Kỹ thuật xây dựng công trình giao thông (Chương trình CLC: Cầu - Đường bộ Việt - Anh; Cầu - Đường bộ Việt - Pháp; Công trình GTĐT Việt - Nhật; Chương trình tiên tiến)
+A00; A01; D07
+18.25
+Điểm gốc (Điểm chưa làm tròn): 18.35. Điểm Toán + Lý: 12.35. Điểm Toán: 6.6. TTNV=6
+34
+GHA-33
+Kỹ thuật xây dựng (Chương trình CLC: Vật liệu và Công nghệ Việt - Pháp)
+A00; A01; D07
+17
+Điểm gốc (Điểm chưa làm tròn): 17.05. Điểm Toán + Lý: 10.75. Điểm Toán: 6. TTNV=3
+35
+GHA-34
+Kinh tế xây dựng (Chương trình CLC: Kinh tế xây dựng công trình Giao thông Việt - Anh)
+A00; A01; D07
+17.75
+Điểm gốc (Điểm chưa làm tròn): 17.8. Điểm Toán + Lý: 11.55. Điểm Toán: 6.8. TTNV=2
+36
+GHA-35
+Kế toán (Chương trình CLC: Kế toán tổng hợp Việt - Anh)
+A00; A01; D07
+19.25
+Điểm gốc (Điểm chưa làm tròn): 19.3. Điểm Toán + Lý: 11.6. Điểm Toán: 5.6. TTNV=1
+37
+GHA-36
+Toán ứng dụng
+A00; A01; D07
+---
+

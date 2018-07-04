@@ -1,0 +1,121 @@
+DDN
+1
+7220201
+Ngôn ngữ Anh
+D01; D09; D11; D14
+15.5
+Xét học bạ 18 điểm
+2
+7220204
+Ngôn ngữ Trung Quốc
+D01, D09, D65, D71
+---
+
+3
+7320108
+Quan hệ công chúng
+C00; C19; C20; D15
+15.5
+Xét học bạ 18 điểm
+4
+7340101
+Quản trị kinh doanh
+A00; C03; D01; D10
+15.5
+Xét học bạ 18 điểm
+5
+7340201
+Tài chính – Ngân hàng
+A01, A10
+---
+
+6
+7340201
+Tài chính – Ngân hàng
+C14; D01
+15.5
+Xét học bạ 18 điểm
+7
+7340301
+Kế toán
+A10
+---
+
+8
+7340301
+Kế toán
+A01; C14; D01
+15.5
+Xét học bạ 18 điểm
+9
+7380107
+Luật kinh tế
+A08; A09; C00; C19
+15.5
+Xét học bạ 18 điểm
+10
+7480201
+Công nghệ thông tin
+A10
+---
+
+11
+7480201
+Công nghệ thông tin
+A00; D84; K01
+15.5
+Xét học bạ 18 điểm
+12
+7580102
+Kiến trúc cảnh quan
+H06; H08; V00; V01
+15.5
+Xét học bạ 18 điểm
+13
+7580201
+Kỹ thuật xây dựng
+A10, C14
+---
+
+14
+7580201
+Kỹ thuật xây dựng
+A00; A01
+15.5
+Xét học bạ 18 điểm
+15
+7720201
+Dược học
+A11
+---
+
+16
+7720201
+Dược học
+A00; B00; D07
+15.5
+Xét học bạ 18 điểm
+17
+7720301
+7720301
+B00
+---
+
+18
+7720301
+Điều dưỡng
+C14, D07, D66
+15.5
+Xét học bạ 18 điểm
+19
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A08
+---
+
+20
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; C00; D01
+15.5
+Xét học bạ 18 điểm

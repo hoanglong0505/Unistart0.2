@@ -1,0 +1,61 @@
+FPT
+1
+7210403
+Thiết kế đồ họa
+A00, A01, D01, D96
+15.5
+
+2
+7220201
+Ngôn ngữ Anh
+A00, A01, D01, D96
+15.5
+
+3
+7220209
+Ngôn ngữ Nhật
+A00, A01, D01, D96
+15.5
+
+4
+7320104
+Truyền thông đa phương tiện
+A00, A01, D01, D96
+15.5
+
+5
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D96
+15.5
+
+6
+7340120
+Kinh doanh quốc tế
+A00, A01, D01, D96
+15.5
+
+7
+7480101
+Khoa học máy tính
+A00, A01, D01, D96
+15.5
+
+8
+7480103
+Kỹ thuật phần mềm
+A00, A01, D01, D96
+15.5
+
+9
+7480202
+An toàn thông tin
+A00, A01, D01, D96
+15.5
+
+10
+7810201
+Quản trị khách sạn
+A00, A01, D01, D96
+15.5
+

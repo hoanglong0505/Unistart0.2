@@ -1,0 +1,43 @@
+CSH
+1
+7860100
+Điều tra trinh sát (nam)
+A01
+28
+Trong số 10 thí sinh cùng mức 28.0 lấy 07 thí sinh: 06 thí sinh có tổng điểm 03 môn chưa làm tròn từ 27.1 điểm; 1 thí sinh có tổng điểm 03 môn chưa làm tròn 27.05 và môn Toán đạt 9.4 điểm.
+2
+7860100
+Điều tra trinh sát (nam)
+C03
+25.75
+Trong số 44 thí sinh cùng mức 25.75 lấy 19 thí sinh: 17 thí sinh có tổng điểm 3 môn chưa làm tròn từ 23.15; 02 thí sinh có tổng điểm 03 môn chưa làm tròn là 22.85 và môn văn đạt 7.75 điểm.
+3
+7860100
+Điều tra trinh sát (nam)
+D01
+26.25
+
+4
+7860100
+Điều tra trinh sát (nữ)
+A01
+29.5
+
+5
+7860100
+Điều tra trinh sát (nữ)
+C03
+28.25
+
+6
+7860100
+Điều tra trinh sát (nữ)
+D01
+28.75
+Trong số 04 thí sinh cùng mức 28.25 lấy 02 thí sinh có tổng điểm 3 môn chưa làm tròn từ 27.3
+7
+7860100
+Điều tra trinh sát
+B00
+---
+

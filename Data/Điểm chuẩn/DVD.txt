@@ -1,0 +1,103 @@
+DVD
+1
+7140201
+Giáo dục Mầm non
+M00, M01
+15.5
+
+2
+7140221
+Sư phạm Âm nhạc
+N00
+15.5
+Xét tuyển học bạ
+3
+7140222
+Sư phạm Mỹ thuật
+H00
+15.5
+Xét tuyển học bạ
+4
+7210103
+Hội hoạ
+H00
+15.5
+Xét tuyển học bạ
+5
+7210104
+Đồ hoạ
+H00
+15.5
+Xét tuyển học bạ
+6
+7210205
+Thanh nhạc
+N00
+19
+
+7
+7210404
+Thiết kế thời trang
+H00
+15.5
+
+8
+7220201
+Ngôn ngữ Anh
+D01, D15, D72, D96
+15.5
+
+9
+7229042
+Quản lý văn hoá
+A16, C15, D01, D14
+15.5
+
+10
+7310205
+Quản lý nhà nước
+A16, C15, D01, D15
+15.5
+
+11
+7310630
+Việt Nam học
+A16, C15, D01, D15
+15.5
+
+12
+7320201
+Thông tin - thư viện
+A16, C15, D01, D15
+15.5
+
+13
+7380101
+Luật
+A16, C15, D01, D15
+18
+Xét tuyển học bạ
+14
+7760101
+Công tác xã hội
+A16, C15, D01, D15
+18
+Xét tuyển học bạ
+15
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A16, C15, D01, D15
+15.5
+
+16
+7810201
+Quản trị khách sạn
+A16, C15, D01, D15
+15.5
+
+17
+7810301
+Quản lý thể dục thể thao
+T00, T01
+15.5
+

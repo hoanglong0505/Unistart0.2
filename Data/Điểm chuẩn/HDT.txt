@@ -1,0 +1,229 @@
+HDT
+1
+7140201
+Giáo dục Mầm non
+M00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+2
+7140202
+Giáo dục Tiểu học
+A00; C00; D01; M00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+3
+7140206
+Giáo dục Thể chất
+T00
+15.5
+xét theo họ bạ các môn học được tính gồm 2 môn thuộc tổ hợp xét tuyển và điểm thi năng khiếu
+4
+7140209
+Sư phạm Toán học
+A00; A01; A02; D07
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+5
+7140211
+Sư phạm Vật lý
+A00; A01; A02; C01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+6
+7140212
+Sư phạm Hoá học
+A00; B00; D07
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+7
+7140213
+Sư phạm Sinh học
+B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+8
+7140217
+Sư phạm Ngữ văn
+C00; C03; C04; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+9
+7140218
+Sư phạm Lịch sử
+C03, D14
+---
+
+10
+7140218
+Sư phạm Lịch sử
+C00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+11
+7140219
+Sư phạm Địa lý
+A00; C00; C04; C20
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+12
+7140231
+Sư phạm Tiếng Anh
+A01; D01; D90; D96
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+13
+7220201
+Ngôn ngữ Anh
+A01; D01; D90; D97
+---
+
+14
+7310101
+Kinh tế
+A00; C01; C02; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+15
+7310301
+Xã hội học
+C00; C14; C19; D01
+---
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+16
+7310401
+Tâm lý học
+B00
+---
+
+17
+7310401
+Tâm lý học
+A00; C00; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+18
+7310630
+Việt Nam học
+C00; C14; C19; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+19
+7340101
+Quản trị kinh doanh
+A00; C01; C02; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+20
+7340201
+Tài chính – Ngân hàng
+A00; C01; C02; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+21
+7340301
+Kế toán
+A00; C01; C02; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+22
+7380101
+Luật
+A00; C00; C14; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+23
+7480201
+Công nghệ thông tin
+A00; A01; D07; D90
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+24
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; A02; B00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+25
+7520201
+Kỹ thuật điện
+A00; A01; A02; B00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+26
+7580201
+Kỹ thuật xây dựng
+A00; A01; A02; B00
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+27
+7620105
+Chăn nuôi
+A00; B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+28
+7620109
+Nông học
+A00; B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+29
+7620112
+Bảo vệ thực vật
+A00; B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+30
+7620114
+Kinh doanh nông nghiệp
+A00; C01; C02; D01
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+31
+7620201
+Lâm học
+A00; B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+32
+7620301
+Nuôi trồng thuỷ sản
+A00; B00; B03; D08
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+33
+7810101
+Du lịch
+
+---
+
+34
+7850101
+Quản lý tài nguyên và môi trường
+A00; C00; C04; C09
+15.5
+Xét theo học bạ có điểm môn học thuộc tổ hợp môn xét tuyển không nhỏ hơn 6,0 (theo thang điểm 10)
+35
+7850103
+Quản lý đất đai
+
+---
+
+36
+5140201
+Giáo dục mầm non (hệ cao đẳng)
+
+---
+Tốt nghiệp THPT
+37
+5140202
+Giáo dục Tiểu học (hệ cao đẳng)
+
+---
+Tốt nghiệp THPT
+38
+5140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+
+---
+Tốt nghiệp THPT

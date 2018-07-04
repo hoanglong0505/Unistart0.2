@@ -1,0 +1,457 @@
+DTT
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7210402
+Thiết kế công nghiệp
+H00; H01; H02
+19
+ Điểm môn NK ≥ 5,0
+3
+7210403
+Thiết kế đồ họa
+H00; H01; H02
+19
+Điểm môn NK ≥ 5,0
+4
+7210404
+Thiết kế thời trang
+H00; H01; H02
+19
+Điểm môn NK ≥ 5,0
+5
+7220201
+Ngôn ngữ Anh
+D01; D11
+23
+
+6
+F7220201
+Ngôn ngữ Anh -Chất lượng cao
+D01; D11
+19.25
+
+7
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04; D11; D55
+20.5
+
+8
+7220204A
+Ngôn ngữ Trung Quốc (Chuyên ngành Trung - Anh)
+D01; D04; D11; D55
+21
+
+9
+7310301
+Xã hội học
+A01; C00; C01; D01
+20
+
+10
+7310630
+Việt Nam học
+A01; C00; C01; D01
+23
+
+11
+7310630Q
+Việt Nam học (Chuyên ngành Du lịch và Quản lý du lịch)
+A01; C00; C01; D01
+23
+
+12
+F7310630Q
+Việt Nam học (Chuyên ngành Du lịch và Quản lý du lịch) - Chất lượng cao
+A01; C00; C01; D01
+19.5
+
+13
+7340101
+Quản trị kinh doanh
+A00; A01; C01; D01
+---
+
+14
+F7340101
+Quản trị kinh doanh -Chất lượng cao
+A00; A01; C01; D01
+---
+
+15
+7340101M
+Quản trị kinh doanh (Chuyên ngành Quản trị Marketing)
+A00; A01; C01; D01
+23.25
+
+16
+F7340101M
+Quản trị kinh doanh (Chuyên ngành Quản trị Marketing)- Chất lượng cao
+A00; A01; C01; D01
+19.5
+
+17
+7340101N
+Quản trị kinh doanh (Chuyên ngành Quản trị Nhà hàng - Khách sạn)
+A00; A01; C01; D01
+23.5
+
+18
+F7340101N
+Quản trị kinh doanh (Chuyên ngành Quản trị Nhà hàng - Khách sạn) -Chất lượng cao
+A00; A01; C01; D01
+19.25
+
+19
+7340120
+Kinh doanh quốc tế
+A00; A01; C01; D01
+24
+
+20
+F7340120
+Kinh doanh quốc tế -Chất lượng cao
+A00; A01; C01; D01
+20.25
+
+21
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+21.5
+
+22
+F7340201
+Tài chính - Ngân hàng - Chất lượng cao
+A00; A01; C01; D01
+18.5
+
+23
+7340301
+Kế toán
+A00; A01; C01; D01
+22.25
+
+24
+F7340301
+Kế toán - Chất lượng cao
+A00; A01; C01; D01
+19
+
+25
+7340408
+Quan hệ lao động
+A00; A01; C01; D01
+18
+
+26
+7380101
+Luật
+A00; A01; C00; D01
+24.25
+
+27
+F7380101
+Luật - Chất Lượng cao
+A00; A01; C00; D01
+19.25
+
+28
+7420201
+Công nghệ sinh học
+A00; B00; D08
+21.5
+
+29
+F7420201
+Công nghệ sinh học (Chất lượng cao)
+A00; B00; D08
+17.25
+
+30
+7440301
+Khoa học môi trường
+A00; B00; C02; D07
+18
+
+31
+F7440301
+Khoa học môi trường(Chất lượng cao)
+A00; B00; C02; D07
+17
+
+32
+7460112
+Toán ứng dụng
+A00; A01; C01
+18
+
+33
+7460201
+Thống kê
+A00; A01; C01
+18
+
+34
+7480101
+Khoa học máy tính
+A00; A01; C01; D01
+21.25
+
+35
+F7480101
+Khoa học máy tính- Chất lượng cao
+A00; A01; C01; D01
+18
+
+36
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01; C01; D01
+19.75
+
+37
+7480103
+Kỹ thuật phần mềm
+A00; A01; C01; D01
+21.25
+
+38
+F7480103
+Kỹ thuật phần mềm - Chất lượng cao
+A00; A01; C01; D01
+18
+
+39
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; C02; D07
+18
+
+40
+7520201
+Kỹ thuật điện
+A00; A01; C01
+20
+
+41
+F7520201
+Kỹ thuật điện - Chất lượng cao
+A00; A01; C01
+17
+
+42
+7520207
+Kỹ thuật điện tử - viễn thông
+A00; A01; C01
+19
+
+43
+F7520207
+Kỹ thuật điện tử - viễn thông (Chất lượng cao)
+A00; A01; C01
+17
+
+44
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00; A01; C01
+20
+
+45
+F7520216
+Kỹ thuật điều khiển và tự động hóa (Chất lượng cao)
+A00; A01; C01
+17
+
+46
+7520301
+Kỹ thuật hoá học
+A00; B00; C02; D07
+19
+
+47
+7580101
+Kiến trúc
+V00; V01
+20
+
+48
+7580105
+Quy hoạch vùng và đô thị
+A00; A01; V00; V01
+18
+
+49
+7580108
+Thiết kế nội thất
+H00; H01; H02
+19
+Điểm môn NK ≥ 5,0
+50
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01
+19
+
+51
+F7580201
+Kỹ thuật xây dựng (Chất lượng cao)
+A00; A01; C01
+17
+
+52
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01; C01
+18
+
+53
+7720201
+Dược học
+A00; B00; D07
+25.25
+
+54
+7760101
+Công tác xã hội
+A01; C00; C01; D01
+19
+
+55
+7810301
+Quản lý thể dục thể thao
+A01; D01; T00; T01
+18
+
+56
+7850201
+Bảo hộ lao động
+A00; B00; C02; D07
+18
+
+57
+B7220201
+Ngôn ngữ Anh -Chương trình học 02 năm đầu tại Bảo Lộc
+D01; D11
+18.25
+
+58
+B7340101N
+Quản trị kinh doanh (Chuyên ngành Quản trị Nhà hàng - Khách sạn) - Chương trình học 02 năm đầu tại Bảo Lộc
+A00; A01; C01; D01
+18.25
+
+59
+B7380101
+Luật - Chương trình học 02 năm đầu tại Bảo Lộc
+A00; A01; C01; D01
+18.25
+
+60
+B7420201
+Công nghệ sinh học - Chương trình học 02 năm đầu tại Bảo Lộc
+A00; B00; D08
+17.5
+
+61
+B7480103
+Kỹ thuật phần mềm - Chương trình học 02 năm đầu tại Bảo Lộc
+A00; A01; C01; D01
+17
+
+62
+N7220201
+Ngôn ngữ Anh- Chương trình học 02 năm đầu tại Nha Trang
+D01; D11
+17
+
+63
+N7340101M
+Quản trị kinh doanh (Chuyên ngành Quản trị Marketing)-Chương trình học 02 năm đầu tại Nha Trang
+A00; A01; C01; D01
+17
+
+64
+N7340101N
+Quản trị kinh doanh (Chuyên ngành Quản trị Nhà hàng - Khách sạn) -Chương trình học 02 năm đầu tại Nha Trang
+A00; A01; C01; D01
+17
+
+65
+N7340301
+Kế toán -Chương trình học 02 năm đầu tại Nha Trang
+A00; A01; C01; D01
+17
+
+66
+N7380101
+Luật -Chương trình học 02 năm đầu tại Nha Trang
+A00; A01; C01; D01
+17
+
+67
+M7220201
+Ngôn ngữ Anh - Chương trình học 02 năm đầu tại Cà Mau
+D01; D11
+---
+
+68
+M7340301
+Kế toán - Chương trình học 02 năm đầu tại Cà Mau
+A00; A01; C01; D01
+17
+
+69
+M7520201
+Kỹ thuật điện - Chương trình học 02 năm đầu tại Cà Mau
+A00; A01; C01
+17
+
+70
+M7520216
+Kỹ thuật điều khiển và tự động hóa -Chương trình học 02 năm đầu tại Cà Mau
+A00; A01; C01
+17
+
+71
+K7310630Q
+Quản lý du lịch và giải trí (song bằng 2+2) Đại học khoa học và công nghệ quốc gia Penghu (Đài Loan)
+A01; C00; C01; D01
+---
+
+72
+K7340101
+Quản trị kinh doanh (song bằng 2+2) Đại học kinh tế Praha (Cộng Hòa Séc)
+A00; A01; C01; D01
+---
+
+73
+K7340101N
+Quản trị nhà hàng khách sạn (song bằng 2,5+1,5) Đại học Taylor’s (Malaysia)
+A00; A01; C01; D01
+---
+
+74
+K7340201
+Tài chính (song bằng 2+2) Đại học Fengchia (Đài Loan)
+A00; A01; C01; D01
+---
+
+75
+K7340301
+Kế toán (song bằng 3+1) Đại học West of England, Bristol (Vương Quốc Anh)
+A00; A01; C01; D01
+---
+
+76
+K7520201
+Kỹ thuật điện – điện tử (song bằng 2,5+1,5) Đại học khoa học ứng dụng Saxion (Hà Lan)
+A00; A01; C01
+---
+

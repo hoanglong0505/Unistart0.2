@@ -1,0 +1,85 @@
+YDS
+1
+7720101
+Y khoa
+B00
+29.25
+Tiếng Anh: 9. Sinh: 9.75
+2
+7720110
+Y học dự phòng
+B00
+23.5
+Tiếng Anh: 6.8. Sinh: 7.75
+3
+7720115
+Y học cổ truyền
+B00
+25.75
+Tiếng Anh: 4.6. Sinh: 8.75
+4
+7720201
+Dược học
+B00
+27.5
+Tiếng Anh: 5.8. Hóa: 9
+5
+7720301
+Điều dưỡng
+B00
+24.5
+Tiếng Anh: 5. Sinh: 7.75
+6
+7720301_02
+Điều dưỡng chuyên ngành Hộ sinh
+B00
+22.75
+Tiếng Anh: 5.8. Sinh: 7.25
+7
+7720301_03
+Điều dưỡng chuyên ngành Gây mê hồi sức
+B00
+24.75
+Sinh: 7.75
+8
+7720401
+Dinh dưỡng
+B00
+---
+
+9
+7720501
+Răng - Hàm - Mặt
+B00
+29
+Tiếng Anh: 4.6. Sinh: 8.5
+10
+7720502
+Kỹ thuật phục hình răng
+B00
+25
+Tiếng Anh: 9. Sinh: 8.5
+11
+7720601
+Kỹ thuật xét nghiệm y học
+B00
+26.25
+Tiếng Anh: 7.2. Sinh: 8.5
+12
+7720602
+Kỹ thuật hình ảnh y học
+B00
+25.25
+Tiếng Anh: 7.8. Sinh: 8.75
+13
+7720603
+Kỹ thuật phục hồi chức năng
+B00
+24.25
+Sinh: 8
+14
+7720701
+Y tế công cộng
+B00
+22.25
+Tiếng Anh: 5.4. Sinh: 5.75

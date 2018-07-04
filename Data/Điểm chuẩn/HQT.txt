@@ -1,0 +1,73 @@
+HQT
+1
+7220201
+Ngôn ngữ Anh
+D01
+---
+
+2
+7310106
+Kinh tế quốc tế
+A00
+26.25
+Toán: 8.0
+3
+7310106
+Kinh tế quốc tế
+A01
+26.25
+Tiếng Anh: 9.4
+4
+7310106
+Kinh tế quốc tế
+D01
+26.25
+Tiếng Anh: 9.2
+5
+7310206
+Quan hệ quốc tế
+A01
+26
+Tiếng Anh: 9.8
+6
+7310206
+Quan hệ quốc tế
+D01
+26
+Tiếng Anh: 9.6
+7
+7310206
+Quan hệ quốc tế
+D03
+26
+Tiếng Pháp: 8.0
+8
+7320107
+Truyền thông quốc tế
+A01
+26.25
+Tiếng Anh: 9.2
+9
+7320107
+Truyền thông quốc tế
+D01
+26.25
+Tiếng Anh: 9.2
+10
+7320107
+Truyền thông quốc tế
+D03
+26.25
+Tiếng Pháp: 8.6
+11
+7380108
+Luật quốc tế
+A01
+25.25
+Tiếng Anh: 7.8
+12
+7380108
+Luật quốc tế
+D01
+25.25
+Tiếng Anh: 7.4

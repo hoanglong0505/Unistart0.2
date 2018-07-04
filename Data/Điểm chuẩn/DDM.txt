@@ -1,0 +1,73 @@
+DDM
+1
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+2
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+3
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+4
+7480201
+Công nghệ thông tin
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+5
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+6
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+7
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+8
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+9
+7520501
+Kỹ thuật địa chất
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+10
+7520503
+Kỹ thuật trắc địa - bản đồ
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+11
+7520601
+Kỹ thuật mỏ
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm
+12
+7520607
+Kỹ thuật tuyển khoáng
+A00; A01; D01; D07
+15.5
+Học bạ THPT 18 điểm

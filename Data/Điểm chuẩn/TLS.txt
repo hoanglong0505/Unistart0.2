@@ -1,0 +1,61 @@
+TLS
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+TLS101
+Kỹ thuật xây dựng công trình thủy
+A00; A01; D01; D07
+15.5
+
+3
+TLS102
+Kỹ thuật tài nguyên nước
+A00; A01; D01; D07
+15.5
+
+4
+TLS104
+Kỹ thuật xây dựng
+A00; A01; D01; D07
+15.5
+
+5
+TLS106
+Công nghệ thông tin
+A00; A01; D01; D07
+15.5
+
+6
+TLS107
+Kỹ thuật cấp thoát nước
+A00; A01; D01; D07
+15.5
+
+7
+TLS111
+Công nghệ kỹ thuật xây dựng
+A00; A01; D01; D07
+15.5
+
+8
+TLS113
+Kỹ thuật xây dựng công trình giao thông
+A00; A01; D01; D07
+---
+
+9
+TLS402
+Quản trị kinh doanh
+A00; A01; D01; D07
+---
+
+10
+TLS403
+Kế toán
+A00; A01; D01; D07
+15.5
+

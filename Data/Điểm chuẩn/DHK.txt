@@ -1,0 +1,133 @@
+DHK
+1
+7310101
+Kinh tế
+A00, A01, A16, D01
+15.5
+
+2
+7310101CL
+Kinh tế (chất lượng cao)
+A00, A01, A16, D01
+---
+
+3
+7310102
+Kinh tế chính trị
+A00, A01, C15, D01
+---
+
+4
+7310107
+Thống kê kinh tế
+A00, A01, A16, D01
+---
+
+5
+7340101
+Quản trị kinh doanh
+A00, A01, C15, D01
+16
+
+6
+7340101CL
+Quản trị kinh doanh (chất lượng cao)
+A00, A01, C15, D01
+---
+
+7
+7340115
+Marketing
+A00, A01, C15, D01
+15.5
+
+8
+7340121
+Kinh doanh thương mại
+A00, A01, C15, D01
+15.5
+
+9
+7340122
+Thương mại điện tử
+A00, A01, C15, D01
+---
+
+10
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D03
+15.5
+
+11
+7340201CL
+Tài chính - Ngân hàng (chất lượng cao)
+A00, A01, D01, D03
+---
+
+12
+7340301
+Kế toán
+A00, A01, A16, D01
+16
+
+13
+7340302
+Kiểm toán
+A00, A01, A16, D01
+15.5
+
+14
+7340302CL
+Kiểm toán (chất lượng cao)
+A00, A01, A16, D01
+---
+
+15
+7340404
+Quản trị nhân lực
+A00, A01, C15, D01
+15.5
+
+16
+7340405
+Hệ thống thông tin quản lý
+A00, A01, A16, D01
+15.5
+
+17
+7340405CL
+Hệ thống thông tin quản lý (chất lượng cao)
+A00, A01, A16, D01
+---
+
+18
+7349001
+Tài chính - Ngân hàng (liên kết)
+A00, A01, D01, D03
+15.5
+
+19
+7349002
+Quản trị kinh doanh (liên kết)
+A00, A01, C15, D01
+15.5
+
+20
+7620114
+Kinh doanh nông nghiệp
+A00, A01, A16, D01
+15.5
+
+21
+7620115
+Kinh tế nông nghiệp
+A00, A01, A16, D01
+15.5
+
+22
+7903124
+Song ngành Kinh tế - Tài chính (liên kết)
+A00, A01, A16, D01
+---
+

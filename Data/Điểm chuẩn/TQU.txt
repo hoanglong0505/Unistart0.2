@@ -1,0 +1,157 @@
+TQU
+1
+7140201
+Giáo dục Mầm non
+M00
+15.5
+Xét theo học bạ 18 điểm
+2
+7140202
+Giáo dục Tiểu học
+A00; C00; D01
+15.5
+Xét theo học bạ 18 điểm
+3
+7140209
+Sư phạm Toán học
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+4
+7140213
+Sư phạm Sinh học
+A00, B00; B04
+15.5
+Xét theo học bạ 18 điểm
+5
+7229030
+Văn học
+C00; C19; C20; D01
+15.5
+Xét theo học bạ 18 điểm
+6
+7229042
+Quản lý văn hoá
+C00; C19; D01
+15.5
+Xét theo học bạ 18 điểm
+7
+7340301
+Kế toán
+A00; A01; D01
+15.5
+Xét theo học bạ 18 điểm
+8
+7440102
+Vật lý học
+A00; A01; A10
+15.5
+Xét theo học bạ 18 điểm
+9
+7440301
+Khoa học môi trường
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+10
+7620105
+Chăn nuôi
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+11
+7620110
+Khoa học cây trồng
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+12
+7620115
+Kinh tế nông nghiệp
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+13
+7760101
+Công tác xã hội
+C00; C19; D01
+15.5
+Xét theo học bạ 18 điểm
+14
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C00; C19; C20; D01
+15.5
+Xét theo học bạ 18 điểm
+15
+7850103
+Quản lý đất đai
+A00; A01; B00
+15.5
+Xét theo học bạ 18 điểm
+16
+51140201
+Giáo dục Mầm non (hệ cao đẳng)
+M00
+10
+Xét theo học bạ 12 điểm
+17
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+A00, C00, D01
+10
+Xét theo học bạ 12 điểm
+18
+51140204
+Giáo dục Công dân (hệ cao đẳng)
+C00, C03, C19, D01
+10
+Xét theo học bạ 12 điểm
+19
+51140209
+Sư phạm Toán học (hệ cao đẳng)
+A00, A01, B00
+10
+Xét theo học bạ 12 điểm
+20
+51140210
+Sư phạm Tin học (hệ cao đẳng)
+A00, A01, B00
+10
+Xét theo học bạ 12 điểm
+21
+51140212
+Sư phạm Hoá học (hệ cao đẳng)
+A00, B00,
+10
+Xét theo học bạ 12 điểm
+22
+51140213
+Sư phạm Sinh học (hệ cao đẳng)
+A00, B00, B04
+10
+Xét theo học bạ 12 điểm
+23
+51140215
+Sư phạm Kỹ thuật nông nghiệp (hệ cao đẳng)
+A00, B00, B04
+10
+Xét theo học bạ 12 điểm
+24
+51140217
+Sư phạm Ngữ văn (hệ cao đẳng)
+C00, C19, C20, D01
+10
+Xét theo học bạ 12 điểm
+25
+51140218
+Sư phạm Lịch sử (hệ cao đẳng)
+A08, C00, C19, D01
+10
+Xét theo học bạ 12 điểm
+26
+51140219
+Sư phạm Địa lý (hệ cao đẳng)
+A00, C00, C20, D01
+10
+Xét theo học bạ 12 điểm

@@ -1,0 +1,133 @@
+DBD
+1
+7140206
+Giáo dục Thể chất
+T00, B00
+15.5
+
+2
+7220201
+Ngôn ngữ Anh
+A01
+---
+
+3
+7220201
+Ngôn ngữ Anh
+A01, D01, D10, D66
+15.5
+
+4
+7229030
+Văn học
+A09
+---
+
+5
+7229030
+Văn học
+A00, C00, D01
+15.5
+
+6
+7310301
+Xã hội học
+A09
+---
+
+7
+7310301
+Xã hội học
+A00, C00, D01
+15.5
+
+8
+7310630
+Việt Nam học
+A01, A09, C00, D01
+15.5
+
+9
+7340101
+Quản trị kinh doanh
+A01, A09, C00, D01
+15.5
+
+10
+7340201
+Tài chính – Ngân hàng
+A01, A09, C00, D01
+15.5
+
+11
+7340301
+Kế toán
+A01, A09, C00, D01
+15.5
+
+12
+7380107
+Luật kinh tế
+A00, A01, C00, D01
+15.5
+
+13
+7420201
+Công nghệ sinh học
+A00, A01, B00, D01
+15.5
+
+14
+7480201
+Công nghệ thông tin
+A02
+---
+
+15
+7480201
+Công nghệ thông tin
+A00, A01, D01
+15.5
+
+16
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+V00, V01
+---
+
+17
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00, A01
+15.5
+
+18
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A02
+---
+
+19
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, D01
+15.5
+
+20
+7580101
+Kiến trúc
+A00, A09
+15.5
+
+21
+7580101
+Kiến trúc
+V00, V01
+---
+
+22
+7720201
+Dược học
+A00, B00, C08, D07
+---
+

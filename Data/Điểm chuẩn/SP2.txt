@@ -1,0 +1,115 @@
+SP2
+1
+7140201
+Giáo dục Mầm non
+M00; M10; M11; M13
+17.25
+Xét học bạ lấy 18 điểm
+2
+7140202
+Giáo dục Tiểu học
+A00; A01; C04; D01
+30.25
+Xét học bạ lấy 31 điểm
+3
+7140204
+Giáo dục Công dân
+C00; C19; D01; D66
+17
+Xét học bạ lấy 18 điểm
+4
+7140206
+Giáo dục Thể chất
+T00; T02; T03; T05
+20.75
+Xét học bạ lấy 26 điểm
+5
+7140209
+Sư phạm Toán học
+A00; A01; D01; D84
+24.25
+Xét học bạ lấy 26 điểm
+6
+7140210
+Sư phạm Tin học
+A00; A01; C01; D01
+20.75
+Xét học bạ lấy 26 điểm
+7
+7140211
+Sư phạm Vật lý
+A00; A01; A01; C01
+20.75
+Xét học bạ lấy 26 điểm
+8
+7140212
+Sư phạm Hoá học
+A00; A06; B00; D07
+20.75
+Xét học bạ lấy 26 điểm
+9
+7140213
+Sư phạm Sinh học
+B00; B02; B03; D08
+20.75
+Xét học bạ lấy 26 điểm
+10
+7140217
+Sư phạm Ngữ văn
+C00; C14; D01; D15
+29
+Xét học bạ lấy 30 điểm
+11
+7140218
+Sư phạm Lịch sử
+C00; C03; C19; D65
+19
+Xét học bạ lấy 26 điểm
+12
+7140231
+Sư phạm Tiếng Anh
+A01; D01; D11; D12
+24.25
+Xét học bạ lấy 26 điểm
+13
+7140246
+Sư phạm công nghệ
+A01, A02, D08, D90
+---
+
+14
+7220201
+Ngôn ngữ Anh
+A01; D01; D11; D12
+22.75
+Xét học bạ lấy 24 điểm
+15
+7220204
+Ngôn ngữ Trung Quốc
+A01; D01; D04; D11
+19.75
+Xét học bạ lấy 24 điểm
+16
+7229030
+Văn học
+C00; C14; D01; D15
+20.75
+Xét học bạ lấy 24 điểm
+17
+7310630
+Việt Nam học
+C00; C14; D01; D15
+20.75
+Xét học bạ lấy 24 điểm
+18
+7320201
+Thông tin - thư viện
+C00, C19, C20, D01
+---
+
+19
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+20.75
+Xét học bạ lấy 24 điểm

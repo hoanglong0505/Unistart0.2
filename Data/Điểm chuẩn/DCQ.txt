@@ -1,0 +1,67 @@
+DCQ
+1
+52220201
+Ngôn ngữ Anh
+D01, D07, D11, D14
+15.5
+Xét học bạ: 18 điểm
+2
+52220202
+Ngôn ngữ Nga
+D01, D07, D11, D14
+15.5
+Xét học bạ: 18 điểm
+3
+52310205
+Quản lý nhà nước
+A00, C00, D01, D11
+15.5
+Xét học bạ: 18 điểm
+4
+52340101
+Quản trị kinh doanh
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm
+5
+52340103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, C00, D01
+15.5
+Xét học bạ: 18 điểm
+6
+52340201
+Tài chính ngân hàng
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm
+7
+52340301
+Kế toán
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm
+8
+52380107
+Luật kinh tế
+A00, A01, C00, D01
+15.5
+Xét học bạ: 18 điểm
+9
+52480103
+Kỹ thuật phần mềm
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm
+10
+52480201
+Công nghệ thông tin
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm
+11
+52510205
+Công nghệ kỹ thuật ô tô
+A00, A01, D01, D07
+15.5
+Xét học bạ: 18 điểm

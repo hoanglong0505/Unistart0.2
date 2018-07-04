@@ -1,0 +1,13 @@
+DHC
+1
+7140206
+Giáo dục Thể chất
+T00
+15.5
+
+2
+7140208
+Giáo dục Quốc phòng - An ninh
+T00
+15.5
+

@@ -1,0 +1,43 @@
+CSS
+1
+7860100
+Nghiệp vụ cảnh sát (Nam)
+A01
+26.25
+Trong số 13 thí sinh cùng mức 26.25 lấy 03 thí sinh có tổng điểm 03 môn chưa làm tròn từ 26.2 điểm
+2
+7860100
+Nghiệp vụ cảnh sát (Nam)
+C03
+25.5
+Trong số 59 thí sinh cùng mức 25.5 lấy 03 thí sinh có tổng điểm 3 môn chưa làm tròn từ 24.5
+3
+7860100
+Nghiệp vụ cảnh sát (nam)
+D01
+26
+Trong số 04 thí sinh cùng mức 26.0 lấy 02 thí sinh: 01 thí sinh có tổng điểm 03 môn chưa làm tròn là 25.55; 01 thí sinh có tổng điểm chưa làm tròn là 24.4 và điểm tiếng Anh 9.8
+4
+7860100
+Nghiệp vụ cảnh sát (nữ)
+A01
+28.75
+
+5
+7860100
+Nghiệp vụ cảnh sát (Nữ)
+C03
+26.5
+Trong số 05 thí sinh cùng mức 26.5 lấy 03 thí sinh có tổng điểm 3 môn chưa làm tròn từ 25.4
+6
+7860100
+Nghiệp vụ cảnh sát (Nữ)
+D01
+27.25
+Trong số 04 thí sinh cùng mức 27.25 lấy 02 thí sinh có tổng điểm 3 môn chưa làm tròn từ 25.85
+7
+7860100
+Nghiệp vụ cảnh sát
+B00
+---
+

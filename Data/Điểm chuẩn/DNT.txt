@@ -1,0 +1,73 @@
+DNT
+1
+7220201
+Ngôn ngữ Anh
+A01, D01, D14, D15
+22.25
+
+2
+7220204
+Ngôn ngữ Trung Quốc
+A01, D01, D04, D14
+21
+
+3
+7310206
+Quan hệ quốc tế
+A01, D01, D07, D14
+20.5
+
+4
+7310608
+Đông phương học
+D01, D06, D14, D15
+21.5
+
+5
+7340101
+Quản trị kinh doanh
+A01, D01, D07, D11
+19.75
+
+6
+7340120
+Kinh doanh quốc tế
+A01, D01, D07, D11
+21.25
+
+7
+7340201
+Tài chính – Ngân hàng
+A01, D01, D07, D11
+18
+
+8
+7340301
+Kế toán
+A01, D01, D07, D11
+18.5
+
+9
+7380107
+Luật kinh tế
+A01, D01, D07, D14
+17.5
+
+10
+7480201
+Công nghệ thông tin
+A00, A01, D01, D07
+19.5
+
+11
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A01, D01, D14, D15
+20.5
+
+12
+7810201
+Quản trị khách sạn
+A01, D01, D14, D15
+20.75
+

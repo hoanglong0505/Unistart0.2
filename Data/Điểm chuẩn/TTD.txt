@@ -1,0 +1,19 @@
+TTD
+1
+7140206
+Giáo dục Thể chất
+T00; T02
+15.5
+
+2
+7140207
+Huấn luyện thể thao
+T00; T02
+15.5
+
+3
+7810301
+Quản lý thể dục thể thao
+T00; T02
+15.5
+

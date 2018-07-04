@@ -1,0 +1,91 @@
+VLU
+1
+7140214
+Sư phạm Kỹ thuật công nghiệp
+A01, C04, C14, D01
+---
+
+2
+7140246
+Sư phạm công nghệ
+A01, C04, C14, D01
+---
+
+3
+7420201
+Công nghệ sinh học
+A01, B00, C04, D01
+15.5
+
+4
+7480201
+Công nghệ thông tin
+A00, A01, C04, D01
+18
+Xét tuyển theo học bạ
+5
+7510104
+Công nghệ kỹ thuật giao thông
+A00, A01, C04, D01
+18
+Xét tuyển theo học bạ
+6
+7510201
+Công nghệ kỹ thuật cơ khí
+A00, A01, C04, D01
+17
+
+7
+7510202
+Công nghệ chế tạo máy
+A00, A01, C04, D01
+18
+Xét tuyển theo học bạ
+8
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00, A01, C04, D01
+17
+
+9
+7510205
+Công nghệ kỹ thuật ô tô
+A00, A01, C04, D01
+19
+
+10
+7510206
+Công nghệ kỹ thuật nhiệt
+A00, A01, C04, D01
+15.75
+
+11
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, C04, D01
+18
+Xét tuyển theo học bạ
+12
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00, A01, C04, D01
+15.5
+
+13
+7540101
+Công nghệ thực phẩm
+A01, B00, C04, D01
+17.25
+
+14
+7640101
+Thú y
+A01, B00, C04, D01
+16
+
+15
+7760101
+Công tác xã hội
+A01, C00, C19, D01
+17.25
+

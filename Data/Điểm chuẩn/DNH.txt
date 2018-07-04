@@ -1,0 +1,19 @@
+DNH
+1
+7220201
+Ngôn ngữ Anh
+D01
+19.75
+Thí sinh mức điểm 19.75 môn Tiếng Anh >=6,8
+2
+7220204
+Ngôn ngữ Trung Quốc
+D01
+21
+
+3
+7220204
+Ngôn ngữ Trung Quốc
+D04
+20.5
+

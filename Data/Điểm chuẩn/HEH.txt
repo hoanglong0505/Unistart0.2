@@ -1,0 +1,13 @@
+HEH
+1
+7860218
+Hậu cần quân sự (thí sinh nam miền Bắc)
+A00, A01
+26.25
+Thí sinh mức 26,25 điểm: Điểm môn Toán ≥ 8,80.
+2
+7860218
+Hậu cần quân sự (thí sinh nam miền Nam)
+A00, A01
+24.25
+Thí sinh mức 24,25 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 7,20. Tiêu chí phụ 2: Điểm môn Lý ≥ 8,25.

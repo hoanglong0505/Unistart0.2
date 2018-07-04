@@ -1,0 +1,55 @@
+VGU
+1
+7340101
+Quản trị kinh doanh
+D05
+---
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D03
+21
+
+3
+7340298
+Tài chính và Kế toán*
+D05
+---
+
+4
+7340298
+Tài chính và Kế toán*
+A00; A01; D01; D03
+21
+
+5
+7480101
+Khoa học máy tính
+A00; A01
+21
+
+6
+7520103
+Kỹ thuật cơ khí
+A00; A01
+21
+
+7
+7520208
+Kỹ thuật điện và công nghệ thông tin
+A00; A01
+21
+
+8
+7580101
+Kiến trúc
+A00; A01; V00; V02
+21
+
+9
+7580201
+Kỹ thuật xây dựng
+A00; A01
+21
+

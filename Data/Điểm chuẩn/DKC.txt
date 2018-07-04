@@ -1,0 +1,241 @@
+DKC
+1
+7210403
+Thiết kế đồ họa
+H01; H02; V00; V02
+16.25
+
+2
+7210404
+Thiết kế thời trang
+H01; H02; V00; V02
+16.5
+
+3
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+20
+
+4
+7220209
+Ngôn ngữ Nhật
+D14
+---
+
+5
+7220209
+Ngôn ngữ Nhật
+A01; D01; D06
+18.5
+
+6
+7310401
+Tâm lý học
+A00; A01; C00; D01
+17
+
+7
+7310608
+Đông phương học
+A01; C00; D01; D15
+17.5
+
+8
+7320104
+Truyền thông đa phương tiện
+A01; C00; D01; D15
+17
+
+9
+7340101
+Quản trị kinh doanh
+A00; A01; C00; D01
+19
+
+10
+7340115
+Marketing
+A00; A01; C00; D01
+21
+
+11
+7340120
+Kinh doanh quốc tế
+
+---
+
+12
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+17
+
+13
+7340301
+Kế toán
+A00; A01; C01; D01
+17
+
+14
+7340405
+Hệ thống thông tin quản lý
+A00; A01; C01; D01
+16
+
+15
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+17.5
+
+16
+7420201
+Công nghệ sinh học
+A00; B00; C08; D07
+17
+
+17
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+19
+
+18
+7480202
+An toàn thông tin
+A00; A01; C01; D01
+---
+
+19
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; C01; D01
+18
+
+20
+7520103
+Kỹ thuật cơ khí
+A00; A01; C01; D01
+16
+
+21
+7520114
+Kỹ thuật cơ điện tử
+A00; A01; C01; D01
+16
+
+22
+7520201
+Kỹ thuật điện
+A00; A01; C01; D01
+16
+
+23
+7520207
+Kỹ thuật điện tử - viễn thông
+A00; A01; C01; D01
+16
+
+24
+7520212
+Kỹ thuật y sinh
+A00; A01; C01; D01
+16
+
+25
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00; A01; C01; D01
+16
+
+26
+7520320
+Kỹ thuật môi trường
+A00; B00; C08; D07
+16
+
+27
+7540101
+Công nghệ thực phẩm
+A00; B00; C08; D07
+17
+
+28
+7540204
+Công nghệ dệt, may
+A00; A01; C01; D01
+16
+
+29
+7580101
+Kiến trúc
+A00, D01
+---
+
+30
+7580101
+Kiến trúc
+H01; H02
+16.5
+
+31
+7580108
+Thiết kế nội thất
+A00, D01, H01, V00
+---
+
+32
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01; D01
+16
+
+33
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01; C01; D01
+16
+
+34
+7580301
+Kinh tế xây dựng
+A00; A01; C01; D01
+16
+
+35
+7580302
+Quản lý xây dựng
+A00; A01; C01; D01
+16
+
+36
+7640101
+Thú y
+A00, B00, C08, C07
+---
+
+37
+7720201
+Dược học
+A00; B00; C08; D07
+18
+
+38
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; C00; D01
+18.5
+
+39
+7810201
+Quản trị khách sạn
+A00; A01; C00; D01
+19
+
+40
+7810202
+Quản trị nhà hàng và dịch vụ ăn uống
+A00; A01; C00; D01
+18.5
+

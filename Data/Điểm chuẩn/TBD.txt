@@ -1,0 +1,79 @@
+TBD
+1
+7220201
+Ngôn ngữ Anh
+D01; D14; D66; D84
+15.5
+Xét học bạ: 18
+2
+7310608
+Đông phương học
+C00; C20
+15.5
+Xét học bạ: 18
+3
+7340101
+Quản trị kinh doanh
+A04, A08, A09
+---
+
+4
+7340101
+Quản trị kinh doanh
+A00
+15.5
+Xét học bạ: 18
+5
+7340201
+Tài chính – Ngân hàng
+A04, A08, A09
+---
+
+6
+7340201
+Tài chính – Ngân hàng
+A00
+15.5
+Xét học bạ: 18
+7
+7340301
+Kế toán
+A09
+---
+
+8
+7340301
+Kế toán
+A00; A04; A08
+15.5
+Xét học bạ: 18
+9
+7380101
+Luật
+C19, C20, D01
+---
+
+10
+7380101
+Luật
+C00
+15.5
+Xét học bạ: 18
+11
+7480201
+Công nghệ thông tin
+A04, A10, A11
+---
+
+12
+7480201
+Công nghệ thông tin
+A00
+15.5
+Xét học bạ: 18
+13
+7810101
+Du lịch
+C00, C19, C20, D01
+---
+

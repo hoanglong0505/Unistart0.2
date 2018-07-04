@@ -1,0 +1,25 @@
+KQH
+1
+7860220
+Chỉ huy tham mưu thông tin (thí sinh nam miền Bắc)
+A00, A01
+27.5
+Thí sinh mức 27.50 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 9.40. Tiêu chí phụ 2: Điểm môn Lý ≥ 9.50.
+2
+7860220
+Chỉ huy tham mưu thông tin (thí sinh nam miền Nam)
+A00, A01
+25.25
+Thí sinh mức 25.25 điểm: Điểm môn Toán ≥ 8.20.
+3
+7860220
+Chỉ huy tham mưu thông tin (thí sinh nữ miền Bắc)
+A00, A01
+30
+
+4
+7860220
+Chỉ huy tham mưu thông tin (thí sinh nữ miền Nam)
+A00, A01
+28.75
+Thí sinh mức 28.75 điểm: Điểm môn Toán ≥ 9.60.

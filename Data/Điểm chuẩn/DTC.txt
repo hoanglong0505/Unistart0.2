@@ -1,0 +1,103 @@
+DTC
+1
+7210403
+Thiết kế đồ họa
+C04; D01; D10; D15
+15.5
+Xét theo học bạ: 18.0
+2
+7320104
+Truyền thông đa phương tiện
+A01; C01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+3
+7320106
+Công nghệ truyền thông
+C04; D01; D10; D15
+15.5
+Xét theo học bạ: 18.0
+4
+7340122
+Thương mại điện tử
+A00; C00; C04; D01
+15.5
+Xét theo học bạ: 18.0
+5
+7340405
+Hệ thống thông tin quản lý
+A00; C00; C04; D01
+15.5
+Xét theo học bạ: 18.0
+6
+7340406
+Quản trị văn phòng
+A00; C00; C04; D01
+15.5
+Xét theo học bạ: 18.0
+7
+7480101
+Khoa học máy tính
+A00; A01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+8
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+9
+7480103
+Kỹ thuật phần mềm
+A00; A01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+10
+7480104
+Hệ thống thông tin
+A00; A01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+11
+7480108
+Công nghệ kỹ thuật máy tính
+A00; A01; C01; D01
+15.5
+Xét theo học bạ: 18.0
+12
+7480201
+Công nghệ thông tin
+A00; A01; C02; D01
+15.5
+Xét theo học bạ: 18.0
+13
+7480202
+An toàn thông tin
+A00, A01, C02, D01
+15.5
+Xét theo học bạ: 18.0
+14
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01; D01
+15.5
+Xét theo học bạ: 18.0
+15
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; C01; C04; D01
+15.5
+Xét theo học bạ: 18.0
+16
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; C01; D01
+15.5
+Xét theo học bạ: 18.0
+17
+7520212
+Kỹ thuật y sinh
+A00; B00; D01; D07
+15.5
+Xét theo học bạ: 18.0

@@ -1,0 +1,13 @@
+PBH
+1
+7860205
+Chỉ huy tham mưu Pháo binh (miền Nam)
+A00, A01
+20.25
+Thí sinh mức 20,25 điểm: Điểm môn Toán ≥ 7,20.
+2
+7860205
+Chỉ huy tham mưu Pháo binh (miền Bắc)
+A01, A00
+24.25
+Thí sinh mức 24,25 điểm: Điểm môn Toán ≥ 8,80.

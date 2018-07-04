@@ -1,0 +1,127 @@
+DMS
+1
+7220201
+Ngôn ngữ Anh
+D01
+---
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D96
+23
+
+3
+7340101C
+Quản trị kinh doanh
+A00; A01; D01; D96
+---
+
+4
+7340101Q
+Quản trị kinh doanh
+A00; A01; D01; D96
+---
+
+5
+7340115
+Marketing
+A00; A01; D01; D96
+23.5
+
+6
+7340115C
+Marketing
+A00; A01; D01; D96
+---
+
+7
+7340115Q
+Marketing
+A00; A01; D01; D96
+---
+
+8
+7340116
+Bất động sản
+A00; A01; D01; D96
+21.25
+
+9
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D96
+23.5
+
+10
+7340120C
+Kinh doanh quốc tế
+A00; A01; D01; D96
+---
+
+11
+7340120Q
+Kinh doanh quốc tế
+A00; A01; D01; D96
+---
+
+12
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D96
+21.75
+
+13
+7340201C
+Tài chính – Ngân hàng
+A00; A01; D01; D96
+---
+
+14
+7340301
+Kế toán
+A00; A01; D01; D96
+23
+
+15
+7340301C
+Kế toán
+A00; A01; D01; D96
+---
+
+16
+7340301Q
+Kế toán
+A00; A01; D01; D96
+---
+
+17
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01; D96
+21.25
+
+18
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D96
+23.25
+
+19
+7810201
+Quản trị khách sạn
+A00; A01; D01; D96
+23.25
+
+20
+7810201C
+Quản trị khách sạn
+A00; A01; D01; D96
+---
+
+21
+7810202
+Quản trị nhà hàng và dịch vụ ăn uống
+A00; A01; D01; D96
+23
+

@@ -1,0 +1,49 @@
+DVX
+1
+7220201
+Ngôn ngữ Anh
+A01, D01, D78, D90
+15.5
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D90
+15.5
+
+3
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D90
+15.5
+
+4
+7340301
+Kế toán
+A00; A01; D01; D90
+15.5
+
+5
+7420201
+Công nghệ sinh học
+A00; A02; B00; D90
+15.5
+
+6
+7480201
+Công nghệ thông tin
+A00; A01; A16; D90
+15.5
+
+7
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01; D07
+15.5
+
+8
+7810201
+Quản trị khách sạn
+A00; A04; D01; D96
+15.5
+

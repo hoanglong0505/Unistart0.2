@@ -1,0 +1,25 @@
+DTP
+1
+7620105
+Chăn nuôi
+A00; B00; C02; D01
+---
+B00
+2
+7620110
+Khoa học cây trồng
+A00; B00; C02; D01
+---
+B00
+3
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C00; C03; C04; D01
+---
+C03
+4
+7850101
+Quản lý tài nguyên và môi trường
+A00; B00; C02; D01
+---
+B00

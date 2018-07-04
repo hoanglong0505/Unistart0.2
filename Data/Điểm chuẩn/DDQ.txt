@@ -1,0 +1,103 @@
+DDQ
+1
+7310101
+Kinh tế
+A00, A01, D01, D90
+21.5
+TTNV <= 10
+2
+7310107
+Thống kê kinh tế
+A00, A01, D01, D90
+20
+TTNV <= 6
+3
+7310205
+Quản lý nhà nước
+A00, A01, D01, D96
+20.25
+TTNV <= 10
+4
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D90
+22
+TTNV <= 10
+5
+7340115
+Marketing
+A00, A01, D01, D90
+22.5
+TTNV <= 8
+6
+7340120
+Kinh doanh quốc tế
+A00, A01, D01, D90
+24.5
+TTNV <= 13
+7
+7340121
+Kinh doanh thương mại
+A00, A01, D01, D90
+21.75
+TTNV <= 8
+8
+7340122
+Thương mại điện tử
+A00, A01, D01, D90
+---
+
+9
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D90
+20.25
+TTNV <= 20
+10
+7340301
+Kế toán
+A00, A01, D01, D90
+21.75
+TTNV <= 10
+11
+7340302
+Kiểm toán
+A00, A01, D01, D90
+21
+TTNV <= 13
+12
+7340404
+Quản trị nhân lực
+A00, A01, D01, D90
+21.75
+TTNV <= 12
+13
+7340405
+Hệ thống thông tin quản lý
+A00, A01, D01, D90
+20
+TTNV <= 7
+14
+7380101
+Luật
+A00, A01, D01, D96
+21.75
+TTNV <= 9
+15
+7380107
+Luật kinh tế
+A00, A01, D01, D96
+22.5
+TTNV <= 8
+16
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, D01, D90
+22.5
+TTNV <= 7
+17
+7810201
+Quản trị khách sạn
+A00, A01, D01, D90
+---
+

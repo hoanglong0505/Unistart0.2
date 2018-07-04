@@ -1,0 +1,73 @@
+DKK
+1
+7540101
+Công nghệ thực phẩm*
+A00; A01; B00; D01
+18.25
+
+2
+7540202
+Công nghệ sợi, dệt
+A00; A01; C01; D01
+15.75
+
+3
+7540204
+Công nghệ may
+A00; A01; C01; D01
+20.25
+
+4
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+19.25
+
+5
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; C01; D01
+18.75
+
+6
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01; D01
+18.75
+
+7
+7510302
+Công nghệ kỹ thuật điện tử, truyền thông
+A00; A01; C01; D01
+17
+
+8
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; C01; D01
+18
+
+9
+7340301
+Kế toán
+A00; A01; C01; D01
+17.5
+
+10
+7340101
+Quản trị kinh doanh
+A00; A01; C01; D01
+17.5
+
+11
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+16.5
+
+12
+7340121
+Kinh doanh thương mại
+A00; A01; C01; D01
+15.75
+

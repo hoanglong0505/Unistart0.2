@@ -1,0 +1,157 @@
+DPQ
+1
+7140210
+Sư phạm Tin học
+A00; A01; D01; D72
+15.5
+Xét học bạ 18 điểm
+2
+7140211
+Sư phạm Vật lý
+A00; A01; D90
+15.5
+Xét học bạ 18 điểm
+3
+7140217
+Sư phạm Ngữ văn
+C00; D78
+15.5
+Xét học bạ 18 điểm
+4
+7140231
+Sư phạm Tiếng Anh
+D01; D72; D96
+15.5
+Xét học bạ 18 điểm
+5
+7220201
+Ngôn ngữ Anh
+D01; D72; D96
+15.5
+Xét học bạ 18 điểm
+6
+7310105
+Kinh tế phát triển
+A00, A01, D01, D90
+---
+
+7
+7480201
+Công nghệ thông tin
+A00; A01; D01; D72
+15.5
+Xét học bạ 18 điểm
+8
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D90
+15.5
+Xét học bạ 18 điểm
+9
+7520114
+Kỹ thuật cơ điện tử
+A00; A01; D90
+---
+
+10
+51140201
+Giáo dục Mầm non (cao đẳng)
+M00
+16
+Xét học bạ 22.27 điểm
+11
+51140202
+Giáo dục Tiểu học (cao đẳng)
+A00; A01; C00; D78
+16.25
+Xét học bạ 23.8 điểm
+12
+51140206
+Giáo dục Thể chất (cao đẳng)
+T00
+---
+
+13
+51140209
+Sư phạm Toán học (cao đẳng)
+A00; A01; D90
+10
+Xét học bạ 10 điểm
+14
+51140210
+Sư phạm Tin học (cao đẳng)
+A00; A01; D01; D72
+10
+Xét học bạ 10 điểm
+15
+51140211
+Sư phạm Vật lý (cao đẳng)
+A00; A01; D90
+10
+Xét học bạ 10 điểm
+16
+51140212
+Sư phạm Hoá học (cao đẳng)
+A00; B00; D90
+10
+Xét học bạ 10 điểm
+17
+51140213
+Sư phạm Sinh học (cao đẳng)
+B00; D90
+10
+Xét học bạ 10 điểm
+18
+51140217
+Sư phạm Ngữ văn (cao đẳng)
+C00; D78
+10
+Xét học bạ 10 điểm
+19
+51140218
+Sư phạm Lịch sử (cao đẳng)
+C00; D78
+10
+Xét học bạ 10 điểm
+20
+51140219
+Sư phạm Địa lý (cao đẳng)
+C00; D78
+10
+Xét học bạ 10 điểm
+21
+51140221
+Sư phạm Âm nhạc (cao đẳng)
+N00
+19.75
+Xét học bạ 28.37 điểm
+22
+51140222
+Sư phạm Mỹ thuật (cao đẳng)
+H00
+10
+Xét học bạ 10 điểm
+23
+51140231
+Sư phạm Tiếng Anh (cao đẳng)
+D01; D72; D96
+---
+
+24
+42140201
+Sư phạm mầm non (trung cấp)
+M00
+---
+
+25
+42140202
+Sư phạm tiểu học (trung cấp)
+A00, A01, C00, D78
+---
+
+26
+42140206
+Sư phạm thể dục thể thao (trung cấp)
+T00
+---
+

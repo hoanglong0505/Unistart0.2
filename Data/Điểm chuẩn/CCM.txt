@@ -1,0 +1,49 @@
+CCM
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7210404
+Thiết kế thời trang
+D01; H00; V00; V01
+17.5
+
+3
+7340115
+Marketing
+A00; A01; D01; D07
+---
+
+4
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D01; D07
+15.75
+
+5
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; D01; D07
+---
+
+6
+7510601
+Quản lý công nghiệp
+A00; A01; D01; D07
+18.5
+
+7
+7540202
+Công nghệ sợi, dệt
+A00; A01; D01; D07
+18
+
+8
+7540209
+Công nghệ may
+A00; A01; D01; D07
+19.5
+

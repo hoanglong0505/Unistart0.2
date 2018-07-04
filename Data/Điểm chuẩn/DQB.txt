@@ -1,0 +1,163 @@
+DQB
+1
+7140201
+Giáo dục Mầm non
+M00
+18
+
+2
+7140202
+Giáo dục Tiểu học
+A00; C00; C14; D01
+20.75
+
+3
+7140205
+Giáo dục Chính trị
+C00; C19; C20; D66
+15.5
+
+4
+7140209
+Sư phạm Toán học
+A02
+---
+
+5
+7140209
+Sư phạm Toán học
+A00; A01; D07
+15.5
+
+6
+7140212
+Sư phạm Hoá học
+A00; B00; D07
+15.5
+
+7
+7140217
+Sư phạm Ngữ văn
+C19, C20, D66
+---
+
+8
+7140217
+Sư phạm Ngữ văn
+C00
+15.5
+
+9
+7140218
+Sư phạm Lịch sử
+C00; D09; D14
+15.5
+
+10
+7220201
+Ngôn ngữ Anh
+D01; D09; D14; D15
+15.5
+
+11
+7310501
+Địa lý học
+D15
+---
+
+12
+7310501
+Địa lý học
+C00; C20; D01
+15.5
+
+13
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+15.5
+
+14
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+
+15
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01; D07
+---
+
+16
+7380101
+Luật
+A00; A01; C00; D01
+15.5
+
+17
+7480103
+Kỹ thuật phần mềm
+A00; A01; A02; D01
+15.5
+
+18
+7480201
+Công nghệ thông tin
+A00; A01; A02; D01
+15.5
+
+19
+7520201
+Kỹ thuật điện
+A00; A01; A02; D07
+15.5
+
+20
+7620116
+Phát triển nông thôn
+C03, C04
+---
+
+21
+7620116
+Phát triển nông thôn
+A00; B03
+15.5
+
+22
+7620201
+Lâm học
+A00; A02; B00; B03
+15.5
+
+23
+7620211
+Quản lý tài nguyên rừng
+
+---
+
+24
+7850101
+Quản lý tài nguyên và môi trường
+B02
+---
+
+25
+7850101
+Quản lý tài nguyên và môi trường
+A00; A02; B00
+15.5
+
+26
+51140201
+Giáo dục Mầm non (hệ cao đẳng)
+
+---
+
+27
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+
+---
+

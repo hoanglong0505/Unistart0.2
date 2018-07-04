@@ -1,0 +1,43 @@
+DKB
+1
+7340101
+Quản trị kinh doanh
+A00; A01; C03; D01
+15.5
+
+2
+7340201
+Tài chính – Ngân hàng
+A00; A01; C03; D01
+15.5
+
+3
+7340301
+Kế toán
+A00; A01; C03; D01
+15.5
+
+4
+7340406
+Quản trị văn phòng
+A00; A01; C03; D01
+15.5
+
+5
+7480201
+Công nghệ thông tin
+A00; A01; C01
+15.5
+
+6
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01
+15.5
+
+7
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01; C01
+15.5
+

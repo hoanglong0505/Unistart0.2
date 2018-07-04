@@ -1,0 +1,115 @@
+TTG
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220330
+Văn học
+C00; D01; D14; D78
+15.5
+
+3
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D90
+17.5
+
+4
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D90
+14.5
+
+5
+7340301
+Kế toán
+A00; A01; D01; D90
+18.5
+
+6
+7420201
+Công nghệ sinh học
+A00; A01; B00; D08
+14.5
+
+7
+7460112
+Toán ứng dụng
+A00; A01; D07; D90
+14.5
+
+8
+7480104
+Hệ thống thông tin
+A00; A01; D07; D90
+14.5
+
+9
+7480201
+Công nghệ thông tin
+A00; A01; D07; D90
+15.5
+
+10
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; A01; D07; D90
+14.5
+
+11
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D07; D90
+15.5
+
+12
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; D07; D90
+14.5
+
+13
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; D07; D90
+14.5
+
+14
+7540101
+Công nghệ thực phẩm*
+A00; A01; B00; D08
+17
+
+15
+7620110
+Khoa học cây trồng
+A00; A01; B00; D08
+14.5
+
+16
+7620301
+Nuôi trồng thủy sản
+A00; A01; B00; D08
+14.5
+
+17
+
+Các ngành đào tạo cao đẳng
+
+---
+
+18
+51140201
+Giáo dục Mầm non.
+M00
+21.5
+
+19
+51140201
+Giáo dục Mầm non.
+M01
+20.75
+

@@ -1,0 +1,19 @@
+TTQ
+1
+7220201
+Ngôn ngữ Anh
+D01; D15; D72; D78
+15.5
+Xét học bạ: Tốt nghiệp THPT; Điểm trung bình cả năm lớp 12 đạt 6.0 trở lên; Điểm trung bình chung cả năm lớp 12 của 3 môn thuộc khối xét tuyển đạt từ 6.0 trở lên; Hạnh kiểm từ loại Khá.
+2
+7340101
+Quản trị kinh doanh
+A00; A01; C00; D01
+15.5
+Xét học bạ: Tốt nghiệp THPT; Điểm trung bình cả năm lớp 12 đạt 6.0 trở lên; Điểm trung bình chung cả năm lớp 12 của 3 môn thuộc khối xét tuyển đạt từ 6.0 trở lên; Hạnh kiểm từ loại Khá.
+3
+7480101
+Khoa học máy tính
+A00; A01; D01; D90
+15.5
+Xét học bạ: Tốt nghiệp THPT; Điểm trung bình cả năm lớp 12 đạt 6.0 trở lên; Điểm trung bình chung cả năm lớp 12 của 3 môn thuộc khối xét tuyển đạt từ 6.0 trở lên; Hạnh kiểm từ loại Khá.

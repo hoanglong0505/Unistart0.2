@@ -1,0 +1,97 @@
+NQH
+1
+7860231
+Trinh sát kỹ thuật phía Bắc
+A00; A01
+25.5
+
+2
+7860231
+Trinh sát kỹ thuật phía Nam
+A00; A01
+25.5
+
+3
+7220201
+Ngôn ngữ Anh nam phía Bắc
+D01
+25
+Thí sinh mức 25,00 điểm: Điểm môn Tiếng Anh ≥ 9,60.
+4
+7220201
+Ngôn ngữ Anh nam phía Nam
+D01
+23.25
+
+5
+7220201
+Ngôn ngữ Anh nữ toàn quốc
+D01
+29
+
+6
+7220202
+Ngôn ngữ Nga nam phía Bắc
+D01
+18.25
+
+7
+7220202
+Ngôn ngữ Nga nữ toàn quốc
+D01
+25.75
+
+8
+7220202
+Ngôn ngữ Nga nam phía Bắc
+D02
+19.5
+
+9
+7220202
+Ngôn ngữ Nga nữ toàn quốc
+D02
+27.5
+
+10
+7220204
+Ngôn ngữ Trung nam phía Bắc
+D01
+18.75
+
+11
+7220204
+Ngôn ngữ Trung nam phía Nam
+D01
+17.75
+
+12
+7220204
+Ngôn ngữ Trung nữ toàn quốc
+D01
+27.75
+
+13
+7220204
+Ngôn ngữ Trung nam phía Bắc
+D04
+23.75
+
+14
+7220204
+Ngôn ngữ Trung nữ toàn quốc
+D04
+27.25
+
+15
+7310206
+Quan hệ quốc tế- Thí sinh Nam miền Bắc
+D01
+18
+
+16
+7310206
+Quan hệ quốc tế- Thí sinh nữ
+D01
+26.25
+

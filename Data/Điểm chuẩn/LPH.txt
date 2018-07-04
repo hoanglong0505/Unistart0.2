@@ -1,0 +1,73 @@
+LPH
+1
+7380101
+Luật
+A01
+24.5
+
+2
+7380101
+Luật
+A00
+24
+
+3
+7380101
+Luật
+C00
+27.5
+
+4
+7380101
+Luật
+D01
+23.5
+
+5
+7380107
+Luật kinh tế
+A01
+26.75
+
+6
+7380107
+Luật kinh tế
+A00
+27
+
+7
+7380107
+Luật kinh tế
+C00
+28.75
+
+8
+7380107
+Luật kinh tế
+D01
+25.75
+
+9
+7380109
+Luật thương mại quốc tế
+A01
+26.25
+Tiếng Anh nhân hệ số 2. Quy về thang điểm 30.
+10
+7380109
+Luật thương mại quốc tế
+D01
+25.25
+Tiếng Anh nhân hệ số 2. Quy về thang điểm 30.
+11
+7380109
+Ngôn ngữ Anh (chuyên ngành Tiếng Anh pháp lý)
+A01
+24.5
+Tiếng Anh nhân hệ số 2. Quy về thang điểm 30.
+12
+7380109
+Ngôn ngữ Anh (chuyên ngành Tiếng Anh pháp lý)
+D01
+24
+Tiếng Anh nhân hệ số 2. Quy về thang điểm 30.

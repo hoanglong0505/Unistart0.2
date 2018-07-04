@@ -1,0 +1,67 @@
+VHD
+1
+7310101
+Kinh tế
+A00; A01; C01; D01
+15.5
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; C01; D01
+15.5
+
+3
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+15.5
+
+4
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+15.5
+
+5
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; A01; C01; D07
+15.5
+
+6
+7510201
+Công nghệ kỹ thuật cơ khí
+D01
+---
+
+7
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; C01
+15.5
+
+8
+7510205
+Công nghệ kỹ thuật ô tô
+D01
+---
+
+9
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; C01
+15.5
+
+10
+7510301
+Công nghệ kỹ thuật điện, điện tử
+D01
+---
+
+11
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01
+15.5
+

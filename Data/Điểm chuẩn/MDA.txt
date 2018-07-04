@@ -1,0 +1,103 @@
+MDA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+16
+
+3
+7340301
+Kế toán
+A00; A01; D01
+15.5
+
+4
+7480201
+Công nghệ thông tin
+A00; A01; D01
+16.5
+
+5
+7510401
+Công nghệ kỹ thuật hoá học
+A00; A01; D07
+17
+
+6
+7520103
+Kỹ thuật cơ khí
+A00; A01
+15.5
+
+7
+7520201
+Kỹ thuật điện
+A00; A01
+17.99
+
+8
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00; A01
+17.99
+
+9
+7520320
+Kỹ thuật môi trường
+A00; A01; B00
+16
+
+10
+7520501
+Kỹ thuật địa chất
+A00; A01; A04; A06
+15.5
+
+11
+7520502
+Kỹ thuật địa vật lý
+A00; A01
+17
+
+12
+7520503
+Kỹ thuật trắc địa - bản đồ
+A00; A01; C01; D01
+15.5
+
+13
+7520601
+Kỹ thuật mỏ
+A00; A01; D01
+15.5
+
+14
+7520604
+Kỹ thuật dầu khí
+A00; A01
+17
+
+15
+7520607
+Kỹ thuật tuyển khoáng
+A00; A01; D01
+15.5
+
+16
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01; D07
+15.5
+
+17
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+15.5
+

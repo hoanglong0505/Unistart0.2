@@ -1,0 +1,103 @@
+DTM
+1
+7340101
+Quản trị kinh doanh
+A00, A01, B00, D01
+19
+xét học bạ 24
+2
+7440201
+Địa chất học
+A00, A01, B00, A02
+15.5
+xét học bạ 18.5
+3
+7440221
+Khí tượng và khí hậu học
+A00, A01, B00, D01
+15.5
+xét học bạ 18.5
+4
+7440224
+Thuỷ văn học
+A00, A01, B00, D01
+15.5
+xét học bạ 18.5
+5
+7440298
+Biến đổi khí hậu và Phát triển bền vững
+A00, A01, B00, D01
+15.5
+xét học bạ 18.5
+6
+7480104
+Hệ thống thông tin
+A00, A01, B00, D01
+17
+xét học bạ 20
+7
+7480201
+Công nghệ thông tin
+A00, A01, B00, D01
+18.25
+xét học bạ 22.5
+8
+7510406
+Công nghệ kỹ thuật môi trường
+A00, A01, B00, A02
+17
+xét học bạ 20
+9
+7520503
+Kỹ thuật trắc địa - bản đồ
+A00, A01, B00, A02
+15.5
+xét học bạ 18.5
+10
+7580212
+Kỹ thuật tài nguyên nước
+A00, A01, B00, A02
+15.5
+xét học bạ 18.5
+11
+7580213
+Kỹ thuật cấp thoát nước
+A00, A01, B00, A02
+15.5
+xét học bạ 18.5
+12
+7850101
+Quản lý tài nguyên và môi trường
+A00, A01, B00, A02
+18.5
+xét học bạ 22.5
+13
+7850102
+Kinh tế tài nguyên thiên nhiên
+A00, A01, B00, D01
+15.5
+xét học bạ 19
+14
+7850103
+Quản lý đất đai
+A00, A01, B00, D01
+18.5
+xét học bạ 22.5
+15
+7850195
+Quản lý tổng hợp tài nguyên nước
+A00, A01, B00, D01
+15.5
+xét học bạ 18.5
+16
+7850196
+Quản lý tài nguyên khoáng sản
+A00, A01, A02, B00
+---
+
+17
+7850197
+Quản lý tài nguyên và môi trường biển đảo
+A00, A01, B00, A14
+15.5
+xét học bạ 18.5

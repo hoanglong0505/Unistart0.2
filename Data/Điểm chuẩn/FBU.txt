@@ -1,0 +1,49 @@
+FBU
+1
+7220201
+Ngôn ngữ Anh
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+2
+7340101
+Quản trị kinh doanh
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+3
+7340121
+Kinh doanh thương mại
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+4
+7340201
+Tài chính – Ngân hàng
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+5
+7340301
+Kế toán
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+6
+7340302
+Kiểm toán
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+7
+7380107
+Luật kinh tế
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)
+8
+7480201
+Công nghệ thông tin
+A00; A01; C04; D01
+15.5
+Xét học bạ 18 điểm trở lên (toán 6 điểm trở lên)

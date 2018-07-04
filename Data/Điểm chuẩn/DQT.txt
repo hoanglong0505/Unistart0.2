@@ -1,0 +1,91 @@
+DQT
+1
+7220201
+Ngôn ngữ Anh
+D15, D66, D84
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01; D11; D78; D96
+15.5
+
+3
+7310101
+Kinh tế
+D01
+15.5
+
+4
+7310101
+Kinh tế
+A07, C20, D01, D84
+---
+
+5
+7340101
+Quản trị kinh doanh
+D01
+---
+
+6
+7340101
+Quản trị kinh doanh
+A07, A08, A09
+15.5
+
+7
+7340201
+Tài chính – Ngân hàng
+D01
+15.5
+
+8
+7340201
+Tài chính – Ngân hàng
+A03, A04, A07
+---
+
+9
+7340301
+Kế toán
+D01
+15.5
+
+10
+7340301
+Kế toán
+A07, B02, B04
+---
+
+11
+7480201
+Công nghệ thông tin
+D01
+15.5
+
+12
+7480201
+Công nghệ thông tin
+A04, A10, B02
+---
+
+13
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; A01; A02; A16
+---
+
+14
+7620115
+Kinh tế nông nghiệp
+D01
+15.5
+
+15
+7620115
+Kinh tế nông nghiệp
+A09, B02, C19
+---
+

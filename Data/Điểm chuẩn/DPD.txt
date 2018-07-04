@@ -1,0 +1,115 @@
+DPD
+1
+7220201
+Ngôn ngữ Anh
+D01, D02, D03, D04
+15.5
+
+2
+7220204
+Ngôn ngữ Trung Quốc
+D01, D02, D03, D04
+15.5
+
+3
+7220209
+Ngôn ngữ Nhật
+D01, D02, D03, D04
+15.5
+
+4
+7310630
+Việt Nam học
+A00, A01, C00, D01
+15.5
+
+5
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D02
+15.5
+
+6
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D02
+15.5
+
+7
+7340301
+Kế toán
+A00, A01, D01, D02
+15.5
+
+8
+7340406
+Quản trị văn phòng
+A00, A01, C00, D01
+15.5
+
+9
+7420201
+Công nghệ sinh học
+A00, B00, D07, D08
+15.5
+
+10
+7480201
+Công nghệ thông tin
+A00, A01, C01, D01
+15.5
+
+11
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00, A01, C01, D01
+15.5
+
+12
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, C01, D01
+15.5
+
+13
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00, A01, C02, D01
+15.5
+
+14
+7510406
+Công nghệ kỹ thuật môi trường
+A00, B00, D07, D08
+15.5
+
+15
+7580101
+Kiến trúc
+V00, V01, V02, V05
+18
+
+16
+7580201
+Kỹ thuật xây dựng
+A00, A01, C01, D01
+18
+
+17
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00, A01, C01, D01
+15.5
+
+18
+7580301
+Kinh tế xây dựng
+A00, A01, D01, D02
+15.5
+
+19
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, C00, D01
+15.5
+

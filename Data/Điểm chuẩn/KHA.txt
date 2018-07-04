@@ -1,0 +1,229 @@
+KHA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220201
+Ngôn ngữ Anh
+A01; D01; D09; D10
+34.42
+Tiếng Anh hệ số 2
+3
+7310101
+Kinh tế
+A00; A01; D01; D07
+25.5
+
+4
+7310104
+Kinh tế đầu tư
+A00; A01; B00; D01
+25.75
+
+5
+7310105
+Kinh tế phát triển
+A00; A01; D01; D07
+---
+
+6
+7310106
+Kinh tế quốc tế
+A00; A01; D01; D07
+27
+
+7
+7310107
+Thống kê kinh tế
+A00; A01; D01; D07
+24
+
+8
+7310108
+Toán kinh tế
+A00; A01; D01; D07
+23.25
+
+9
+7320108
+Quan hệ công chúng
+A01; C03; C04; D01
+---
+
+10
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+26.25
+
+11
+7340115
+Marketing
+A00; A01; D01; D07
+26.5
+
+12
+7340116
+Bất động sản
+A00; A01; D01; D07
+24.25
+
+13
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D07
+26.75
+
+14
+7340121
+Kinh doanh thương mại
+A00; A01; D01; D07
+26
+
+15
+7340122
+Thương mại điện tử
+A00; A01; D01; D07
+---
+
+16
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+26
+
+17
+7340204
+Bảo hiểm
+A00; A01; D01; D07
+24
+
+18
+7340301
+Kế toán
+A00; A01; D01; D07
+27
+
+19
+7340401
+Khoa học quản lý
+A00; A01; D01; D07
+---
+
+20
+7340403
+Quản lý công
+A00; A01; D01; D07
+---
+
+21
+7340404
+Quản trị nhân lực
+A00; A01; D01; D07
+---
+
+22
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01; D07
+24.25
+
+23
+7340409
+Quản lý dự án
+A00; A01; B00; D01
+---
+
+24
+7380107
+Luật kinh tế
+A00; A01; D01; D07
+---
+
+25
+7480101
+Khoa học máy tính
+A00; A01; D01; D07
+---
+
+26
+7480201
+Công nghệ thông tin
+A00; A01; D01; D07
+24.5
+
+27
+7510605
+Logistics và Quản lý chuỗi cung ứng
+A00; A01; D01; D07
+---
+
+28
+7620115
+Kinh tế nông nghiệp
+A00; A01; B00; D01
+---
+
+29
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D07
+25.25
+
+30
+7810201
+Quản trị khách sạn
+A00; A01; D01; D07
+26
+
+31
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; D01; D07
+---
+
+32
+7850102
+Kinh tế tài nguyên thiên nhiên
+A00; A01; B00; D01
+24.25
+
+33
+7850103
+Quản lý đất đai
+A00; A01; D01; D07
+---
+
+34
+EBBA
+Quản trị kinh doanh học bằng tiếng Anh (EBBA)
+A00; A01; D01; D07
+25.25
+
+35
+EP01
+Khởi nghiệp và phát triển kinh doanh (BBAE) học bằng tiếng Anh (tiếng Anh hệ số 2)
+A01; D01; D07; D09
+---
+
+36
+EP02
+Định phí Bảo hiểm & Quản trị rủi ro (Actuary) học bằng tiếng Anh
+A00; A01; D01; D07
+---
+
+37
+EPMP
+Quản lý công và chính sách học bằng tiếng Anh (EPMP)
+A00; A01; D01; D07
+23.25
+
+38
+POHE
+Các chương trình định hướng ứng dụng (POHE - tiếng Anh hệ số 2)
+A01; D01; D07; D09
+31
+

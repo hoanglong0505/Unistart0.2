@@ -1,0 +1,55 @@
+CKC
+1
+
+Công nghệ Kỹ thuật Ô tô
+
+18.75
+
+2
+
+Công nghệ Kỹ thuật Cơ khí
+
+17.5
+
+3
+
+Công nghệ Kỹ thuật Cơ điện tử
+
+17
+
+4
+
+Công nghệ Kỹ thuật Nhiệt (Cơ điện lạnh)
+
+16.75
+
+5
+
+Công nghệ Kỹ thuật Điện, Điện tử
+
+16
+
+6
+
+Công nghệ Kỹ thuật Điều khiển và Tự động hóa
+
+16
+
+7
+
+Công nghệ Kỹ thuật Điện tử, Truyền thông
+
+15.5
+
+8
+
+Công nghệ Thông tin
+
+15.25
+
+9
+
+Kế toán
+
+14
+

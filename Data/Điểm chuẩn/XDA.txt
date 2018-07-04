@@ -1,0 +1,121 @@
+XDA
+1
+7580101
+Kiến trúc
+V00; V02; V10
+17.25
+
+2
+7580101_01
+Kiến trúc (chuyên ngành: Nội thất)
+V00; V02
+15.5
+
+3
+7580105
+Quy hoạch vùng và đô thị
+V00; V01; V02
+---
+
+4
+7580201_01
+Kỹ thuật xây dựng (chuyên ngành: Xây dựng Dân dụng và Công nghiệp)
+A00; A01; D07; D29
+23.5
+
+5
+7580201_02
+Kỹ thuật xây dựng (chuyên ngành: Hệ thống kỹ thuật trong công trình)
+A00; A01; D07
+22
+
+6
+7580201_03
+Kỹ thuật xây dựng (chuyên ngành: Tin học xây dựng)
+A00; A01; D07
+15.5
+
+7
+7580205_01
+Kỹ thuật xây dựng công trình Giao thông (Chuyên ngành: Xây dựng Cầu đường)
+A00; A01; D07
+18.75
+
+8
+7580213_01
+Kỹ thuật Cấp thoát nước (chuyên ngành: Cấp thoát nước - Môi trường nước)
+A00; A01; B00; D07
+---
+
+9
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; D07
+16.5
+
+10
+7580202_01
+Kỹ thuật xây dựng Công trình thủy (chuyên ngành: Xây dựng Cảng - Đường thuỷ)
+A00; A01; D07
+15.25
+
+11
+7580202_02
+Kỹ thuật xây dựng Công trình thủy (chuyên ngành: Xây dựng Thuỷ lợi - Thuỷ điện)
+A00; A01; D07
+15.5
+
+12
+7580203
+Kỹ thuật xây dựng công trình biển
+A00; A01; D07
+15.5
+
+13
+7510105
+Công nghệ kỹ thuật vật liệu xây dựng
+A00; D07
+16
+
+14
+7480201
+Công nghệ thông tin
+A00; A01; D07
+23.25
+
+15
+7520103_01
+Kỹ thuật cơ khí (chuyên ngành: Máy xây dựng)
+A00; A01; D07
+15.75
+
+16
+7520103_02
+Kỹ thuật cơ khí (chuyên ngành: Cơ giới hoá xây dựng)
+A00; A01; D07
+16
+
+17
+7520503_01
+Kỹ thuật Trắc địa - Bản đồ (Chuyên ngành: Kỹ thuật Trắc địa xây dựng - Địa chính)
+A00; A01; D07
+15.75
+
+18
+7580301
+Kinh tế xây dựng
+A00; A01; D07
+21
+
+19
+7580302_01
+Quản lý xây dựng (chuyên ngành: Kinh tế và Quản lý đô thị).
+A00; A01; D07
+16
+
+20
+7580302_02
+Quản lý xây dựng (chuyên ngành: Kinh tế và Quản lý Bất động sản).
+A00; A01; D07
+14.75
+

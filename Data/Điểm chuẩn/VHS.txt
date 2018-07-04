@@ -1,0 +1,91 @@
+VHS
+1
+7220112
+Văn hoá các dân tộc thiểu số Việt Nam
+C00; D01; D09; D15
+19
+
+2
+7229040A
+Văn hóa học, chuyên ngành Văn hóa Việt Nam
+C00; D01; D09; D15
+20
+
+3
+7229040B
+Văn hóa học, chuyên ngành Công nghiệp Văn hóa
+C00; D01; D09; D15
+---
+
+4
+7229040C
+Văn hóa học, chuyên ngành Truyền thông Văn hóa
+C00; D01; D09, D14
+22.25
+Điểm thi năng khiếu từ 5 điểm trở lên
+5
+7229042A
+Quản lý văn hóa, chuyên ngành (1) Quản lý hoạt động Văn hóa Xã hội
+C00; D01; D09; D15
+21
+
+6
+7229042B
+Quản lý văn hóa, chuyên ngành (2) Quản lý Di sản văn hóa
+C00; D01; D09; D15
+19.75
+
+7
+7229042C
+Quản lý văn hóa, chuyên ngành (3) Tổ chức hoạt động Văn hóa Nghệ thuật
+R01; R02; R03; R04
+17
+Điểm thi năng khiếu từ 5 điểm trở lên
+8
+7229042D
+Quản lý văn hóa,chuyên ngành (4) Biểu diễn âm nhạc
+R01; R02; R03; R04
+18.5
+Điểm thi năng khiếu từ 5 điểm trở lên
+9
+7310630
+Việt Nam học
+C00; D01; D09; D15
+22.75
+
+10
+7320201
+Thông tin - thư viện
+C00; D01; D09; D15
+18.75
+
+11
+7320305
+Bảo tàng học
+D09
+---
+
+12
+7320305
+Bảo tàng học
+C00; D01; D15
+19.75
+
+13
+7320402
+Kinh doanh xuất bản phẩm
+C00; D01; D09; D15
+20
+
+14
+7810103A
+Quản trị dịch vụ du lịch và lữ hành, chuyên ngành Quản trị lữ hành
+D01, D09, D10, D15
+---
+
+15
+7810103B
+Quản trị dịch vụ du lịch và lữ hành, chuyên ngành Hướng dẫn du lịch
+C00, D01, D09, D15
+---
+

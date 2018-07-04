@@ -1,0 +1,43 @@
+EIU
+1
+7340101
+Quản trị kinh doanh
+A00; A01; B00; D01
+15.5
+
+2
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01; B00; D01
+15.5
+
+3
+7480103
+Kỹ thuật phần mềm
+A00; A01; B00; D01
+15.5
+
+4
+7520114
+Kỹ thuật cơ điện tử
+A00; A01; B00; D01
+15.5
+
+5
+7520201
+Kỹ thuật điện
+A00; A01; B00; D01
+15.5
+
+6
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00; A01; B00; D01
+15.5
+
+7
+7720301
+Điều dưỡng
+A00; A01; B00; D01
+15.5
+

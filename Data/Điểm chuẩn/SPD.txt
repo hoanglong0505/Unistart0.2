@@ -1,0 +1,343 @@
+SPD
+1
+7140201
+Giáo dục Mầm non
+M00
+18
+Xét học bạ 21.5, Môn NK GDMN nhân 2
+2
+7140201
+Giáo dục Mầm non
+M05, MO7, M11
+---
+
+3
+7140202
+Giáo dục Tiểu học
+C01; C03; C04; D01
+19
+
+4
+7140205
+Giáo dục Chính trị
+C00; C19; D01; D14
+15.5
+
+5
+7140206
+Giáo dục Thể chất
+T05, T06, T07
+---
+
+6
+7140206
+Giáo dục Thể chất
+T00
+15.5
+Xét học bạ 18.75, Môn NK TDTT nhân 2
+7
+7140209
+Sư phạm Toán học
+A02, A04
+---
+
+8
+7140209
+Sư phạm Toán học
+A00; A01
+15.5
+
+9
+7140210
+Sư phạm Tin học
+A02, A04
+---
+
+10
+7140210
+Sư phạm Tin học
+A00; A01
+17
+
+11
+7140211
+Sư phạm Vật lý
+A02, A04
+---
+
+12
+7140211
+Sư phạm Vật lý
+A00; A01
+22.5
+
+13
+7140212
+Sư phạm Hoá học
+A06
+---
+
+14
+7140212
+Sư phạm Hoá học
+A00; B00; D07
+15.5
+
+15
+7140213
+Sư phạm Sinh học
+B02
+---
+
+16
+7140213
+Sư phạm Sinh học
+A02; B00; D08
+22.75
+
+17
+7140217
+Sư phạm Ngữ văn
+C00; C19; D14; D15
+18.5
+
+18
+7140218
+Sư phạm Lịch sử
+D09
+---
+
+19
+7140218
+Sư phạm Lịch sử
+C00; C19; D14
+15.5
+
+20
+7140219
+Sư phạm Địa lý
+A07
+---
+
+21
+7140219
+Sư phạm Địa lý
+C00; C04; D10
+17
+
+22
+7140221
+Sư phạm Âm nhạc
+N00
+15.5
+Xét học bạ 20.5, Hát nhân 2
+23
+7140221
+Sư phạm Âm nhạc
+N01
+---
+
+24
+7140222
+Sư phạm Mỹ thuật
+H00, H07
+---
+
+25
+7140231
+Sư phạm Tiếng Anh
+D13
+---
+
+26
+7140231
+Sư phạm Tiếng Anh
+D01; D14; D15
+15.5
+Tiếng Anh nhân 2
+27
+7220201
+Ngôn ngữ Anh
+D13
+---
+
+28
+7220201
+Ngôn ngữ Anh
+D01; D14; D15
+15.5
+Xét học bạ 18.75, Tiếng Anh nhân 2
+29
+7220204
+Ngôn ngữ Trung Quốc
+C00; D01; D14; D15
+15.5
+Xét học bạ 19.5
+30
+7229042
+Quản lý văn hoá
+C00; C19; C20; D14
+15.5
+Xét học bạ 20.75
+31
+7310630
+Việt Nam học
+C00; C19; C20; D14
+15.5
+Xét học bạ 19
+32
+A00; A01; D01
+Quản trị kinh doanh
+D10
+---
+
+33
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+15.5
+Xét học bạ 18.5
+34
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+15.5
+Xét học bạ 20
+35
+7340301
+Kế toán
+D10
+---
+
+36
+7340301
+Kế toán
+A00; A01; D01
+15.5
+Xét học bạ 19
+37
+7440301
+Khoa học môi trường
+A00; B00; D07; D08
+15.5
+Xét học bạ 19.25
+38
+7480101
+Khoa học máy tính
+A02, A04
+---
+
+39
+7480101
+Khoa học máy tính
+A00; A01
+15.5
+Xét học bạ 18.75
+40
+7620109
+Nông học
+A00; B00; D07; D08
+15.5
+Xét học bạ 19.75
+41
+7620301
+Nuôi trồng thuỷ sản
+A00; B00; D07; D08
+15.5
+Xét học bạ 19.25
+42
+7760101
+Công tác xã hội
+C00; C19; C20; D14
+15.5
+Xét học bạ 19.75
+43
+7850103
+Quản lý đất đai
+A00; A01; B00; D07
+24
+Xét học bạ 26.25
+44
+51140201
+Giáo dục Mầm non (Hệ cao đẳng)
+M05, MO7, M11
+---
+
+45
+51140201
+Giáo dục Mầm non (Hệ cao đẳng)
+M00
+12.5
+Xét học bạ 15; Môn NK GDMN điểm nhân 2
+46
+51140202
+Giáo dục Tiểu học (Hệ cao đẳng)
+C01; C03; C04; D01
+12.5
+
+47
+51140206
+Giáo dục Thể chất (Hệ cao đẳng)
+T00, T05, T06, T07
+---
+
+48
+51140209
+Sư phạm Toán học (Hệ cao đẳng)
+A00, A01, A02, A04
+---
+
+49
+51140210
+Sư phạm Tin học (Hệ cao đẳng)
+A00, A01, A02, A04
+---
+
+50
+51140211
+Sư phạm Vật lý (Hệ cao đẳng)
+A00, A01, A02, A04
+---
+
+51
+51140212
+Sư phạm Hoá học (Hệ cao đẳng)
+A00, A06, B00, D07
+---
+
+52
+51140213
+Sư phạm Sinh học (Hệ cao đẳng)
+A02, B00, B02, D08
+---
+
+53
+51140217
+Sư phạm Ngữ văn (Hệ cao đẳng)
+C00, C19, D14, D15
+---
+
+54
+51140218
+Sư phạm Lịch sử (Hệ cao đẳng)
+C00, C19, D09, D14
+---
+
+55
+51140219
+Sư phạm Địa lý (Hệ cao đẳng)
+A07, C00, C04, D10
+---
+
+56
+51140221
+Sư phạm Âm nhạc (Hệ cao đẳng)
+N00, N01
+---
+
+57
+51140222
+Sư phạm Mỹ thuật (Hệ cao đẳng)
+H00, H07
+---
+

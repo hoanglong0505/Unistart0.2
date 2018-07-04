@@ -1,0 +1,415 @@
+QST
+1
+7420101
+Sinh học
+B00
+20.75
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ: Sinh: 7.5, Hóa: 6, Toán: 6.2
+2
+7420101
+Sinh học
+D90
+20.75
+
+3
+7420101_BT
+Sinh học (Tuyển sinh đào tạo tại Phân hiệu ĐHQG-HCM tại tỉnh Bến Tre)
+B00, D90
+---
+
+4
+7420201
+Công nghệ sinh học
+A00
+25.25
+
+5
+7420201
+Công nghệ sinh học
+B00
+25.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ:Sinh: 9; Hóa: 7; Toán: 7.8
+6
+7420201
+Công nghệ sinh học
+D90
+25.25
+
+7
+7420201_CLC
+Công nghệ Sinh học (Chương trình Chất lượng cao)
+A00, B00, D90
+---
+
+8
+7440102
+Vật lý học
+A00
+18
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Lý: 5.75; Toán: 6.2; Hoá: 6
+9
+7440102
+Vật lý học
+A01
+18
+
+10
+Vật lý học
+Vật lý học
+D90
+---
+
+11
+7440102
+Vật lý học
+A02
+18
+
+12
+7440112
+Hoá học
+A00
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 8; Lý 8; Toán 7.6
+13
+7440112
+Hoá học
+B00
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 8.25; Sinh: 6.75; Toán: 8.4
+14
+7440112
+Hoá học
+D07
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 8; Toán: 6.8; Anh Văn: 8.6
+15
+7440112
+Hoá học
+D90
+25
+
+16
+7440112_VP
+Hoá học (Chương trình liên kết Việt - Pháp)
+A00
+24.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 9.5; Lý: 6.5; Toán: 8.2
+17
+7440112_VP
+Hoá học (Chương trình liên kết Việt - Pháp)
+B00
+24.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 6.5; Sinh: 8.75; Toán: 8.4
+18
+7440112_VP
+Hoá học (Chương trình liên kết Việt - Pháp)
+D07
+24.25
+
+19
+7440112_VP
+Hoá học (Chương trình liên kết Việt - Pháp)
+D24
+---
+
+20
+7440122
+Khoa học vật liệu
+A00
+20
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ: Lý: 5; Hoá: 6.5; Toán 7
+21
+7440122
+Khoa học vật liệu
+A01
+20
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Lý: 5.25; Toán: 7.2, Anh Văn: 6.6
+22
+7440122
+Khoa học vật liệu
+B00
+20
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 4.5; Sinh: 7; Toán: 7.6
+23
+7440122
+Khoa học vật liệu
+D07
+---
+
+24
+7440201
+Địa chất học
+A00
+18
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 5.8; Hoá: 5.5; Lý: 6.75
+25
+7440201
+Địa chất học
+B00
+18
+
+26
+7440201
+Địa chất học
+A01, D07
+---
+
+27
+7440228
+Hải dương học
+A00
+18
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 4.8; Lý: 5.25; Hoá: 7
+28
+7440228
+Hải dương học
+B00
+18
+
+29
+7440228
+Hải dương học
+A01, D07
+---
+
+30
+7440301
+Khoa học môi trường
+A00
+21.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 5.5; Toán: 8; Lý: 7
+31
+7440301
+Khoa học môi trường
+B00
+21.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Sinh: 5.75; Hoá: 7; Toán: 7.2
+32
+7440301
+Khoa học môi trường
+D07
+21.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 7; Toán: 7.4; Anh Văn: 7
+33
+7440301
+Khoa học môi trường
+D08
+---
+
+34
+7440301_BT
+Khoa học Môi trường (Tuyển sinh đào tạo tại Phân hiệu ĐHQG-HCM tại tỉnh Bến Tre)
+A00, B00, D07, D08
+---
+
+35
+7460101
+Toán học
+A00
+18
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 6.6; Lý: 4.5; Hoá: 6
+36
+7460101
+Toán học
+A01
+18
+
+37
+7460101
+Toán học
+D90
+18
+
+38
+7480201
+Công nghệ thông tin
+A00
+26
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.6; Lý: 7.75; Hoá: 7.25
+39
+7480201
+Công nghệ thông tin
+A01
+26
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.4; Lý 7.5; Anh văn: 9.6
+40
+7480201
+Công nghệ thông tin
+D07
+26
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.4; Anh Văn: 7.8; Hoá: 9.25
+41
+7480201
+Công nghệ thông tin
+D08
+26
+
+42
+7480201_CLC
+Công nghệ thông tin (Chương trình Chất lượng cao)
+A00
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 8; Lý: 8.25; Hoá: 7.75
+43
+7480201_CLC
+Công nghệ thông tin (Chương trình Chất lượng cao)
+A01
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.4; Lý: 7.5; Anh Văn: 9
+44
+7480201_CLC
+Công nghệ thông tin (Chương trình Chất lượng cao)
+D07
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 8.4; Anh Văn: 8; Hoá: 8
+45
+7480201_CLC
+Công nghệ thông tin (Chương trình Chất lượng cao)
+D08
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 8.6; Anh văn: 9; Sinh: 7.5
+46
+7480201_TT
+Công nghệ thông tin (Chương trình Tiên tiến)
+A00
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 8.8; Lý 8; Hoá: 8.25
+47
+7480201_TT
+Công nghệ thông tin (Chương trình Tiên tiến)
+A01
+25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 8.6; Lý: 6.75; Anh Văn: 9.6
+48
+7480201_TT
+Công nghệ thông tin (Chương trình Tiên tiến)
+D07
+25
+
+49
+7480201_TT
+Công nghệ thông tin (Chương trình Tiên tiến)
+D08
+25
+
+50
+7480201_VP
+Công nghệ thông tin (Chương trình liên kết Việt - Pháp)
+A00
+21.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từToán: 6.8; lý: 5.75; Hoá: 7.25
+51
+7480201_VP
+Công nghệ thông tin (Chương trình liên kết Việt - Pháp)
+A01
+21.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 6.8; Lý: 7.5; Anh văn: 7
+52
+7480201_VP
+Công nghệ thông tin (Chương trình liên kết Việt - Pháp)
+D07
+21.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 6.8; Anh văn: 7.2;Hoá: 7.25
+53
+7480201_VP
+Công nghệ thông tin (Chương trình liên kết Việt - Pháp)
+D29
+---
+
+54
+7510401_CLC
+Công nghệ kỹ thuật Hoá học(Chương trình Chất lượng cao)
+A00
+22.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 8.25; Lý: 6.25; Toán: 8
+55
+7510401_CLC
+Công nghệ kỹ thuật Hoá học(Chương trình Chất lượng cao)
+B00
+22.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 8.5; Sinh: 6.25; Toán: 6.8
+56
+7510401_CLC
+Công nghệ kỹ thuật Hoá học(Chương trình Chất lượng cao)
+D07
+22.5
+
+57
+7510401_CLC
+Công nghệ kỹ thuật Hoá học(Chương trình Chất lượng cao)
+D90
+22.5
+
+58
+7510406
+Công nghệ kỹ thuật môi trường
+A00
+22.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 7; Toán: 7.6; Lý: 7
+59
+7510406
+Công nghệ kỹ thuật môi trường
+B00
+22.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Sinh: 7.25; Hoá: 7.25; Toán: 7.6
+60
+7510406
+Công nghệ kỹ thuật môi trường
+D07
+22.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Hóa: 7; Toán: 8.2; Anh Văn: 7.2
+61
+7510406
+Công nghệ kỹ thuật môi trường
+D08
+---
+
+62
+7520207
+Kỹ thuật điện tử - viễn thông
+A00
+23.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.4; Lý: 7; hoá: 7.75
+63
+7520207
+Kỹ thuật điện tử - viễn thông
+A01
+23.25
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Toán: 7.4; lý: 7; anh văn: 8.8
+64
+7520207
+Kỹ thuật điện tử - viễn thông
+D07
+---
+
+65
+7520207_CLC
+Kỹ thuật điện tử - viễn thông (Chương trình Chất lượng cao)
+A00, A01, D07
+---
+
+66
+7520402
+Kỹ thuật hạt nhân
+A00
+20.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Lý: 4.25; Toán: 8.2; Hoá: 7.5
+67
+7520402
+Kỹ thuật hạt nhân
+A01
+20.5
+
+68
+7520402
+Kỹ thuật hạt nhân
+A02
+20.5
+Thí sinh có mức bằng điểm chuẩn yêu cầu điểm các môn từ Lý: 5; Toán: 7.8; Sinh: 6.75
+69
+7520402
+Kỹ thuật hạt nhân
+D90
+20.5
+

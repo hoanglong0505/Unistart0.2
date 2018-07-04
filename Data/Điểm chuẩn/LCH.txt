@@ -1,0 +1,37 @@
+LCH
+1
+7310202
+Xây dựng Đảng và chính quyền và nước (Thí sinh Nam miền Bắc)
+C00
+28
+Thí sinh mức 28,00 điểm: Tiêu chí phụ 1: Điểm môn Văn ≥ 8,75. Tiêu chí phụ 2: Điểm môn Sử ≥ 8,75.
+2
+7310202
+Xây dựng Đảng và chính quyền và nước (Thí sinh Nam miền Nam)
+C00
+26.5
+Thí sinh mức 26,50 điểm: Tiêu chí phụ 1: Điểm môn Văn ≥ 7,00. Tiêu chí phụ 2: Điểm môn Sử ≥ 9,00. Tiêu chí phụ 3: Điểm môn Địa ≥ 9,50.
+3
+7310202
+Xây dựng Đảng và chính quyền và nước (Thí sinh Nam miền Bắc)
+A00
+26.5
+Thí sinh mức 26,50 điểm: Điểm môn Toán ≥ 8,20.
+4
+7310202
+Xây dựng Đảng và chính quyền và nước(Thí sinh Nam miền Nam)
+A00
+23
+
+5
+7310202
+Xây dựng Đảng và chính quyền và nước (Thí sinh Nam miền Bắc)
+D01
+20
+
+6
+7310202
+Xây dựng Đảng và chính quyền và nước (Thí sinh Nam miền Nam)
+D01
+18
+

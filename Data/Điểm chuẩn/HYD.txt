@@ -1,0 +1,19 @@
+HYD
+1
+7720101
+Y khoa
+B00
+26.25
+Ưu tiên 1: 26.35; Ưu tiên 2- Môn Sinh: 8.5; Ưu tiên 3- Môn Toán: 7.6; Ưu tiên 4:TTNV <=4
+2
+7720115
+Y học cổ truyền
+B00
+24.25
+Ưu tiên 1: 24.15; Ưu tiên 2- Môn Sinh: 8.5; Ưu tiên 3- Môn Toán: 8.4; Ưu tiên 4: TTHN<=7
+3
+7720201
+Dược học
+A00
+25.5
+Ưu tiên 1: 25.45; Ưu tiên 2- Môn Toán: 7.0; Ưu tiên 3- Môn Toán: 7.2; Ưu tiên 4:TTNV <=2

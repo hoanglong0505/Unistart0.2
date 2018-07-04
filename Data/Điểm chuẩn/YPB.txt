@@ -1,0 +1,55 @@
+YPB
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7720101
+Y khoa
+B00
+27
+Tiêu chí phụ: môn 1: 9, môn 2: 8.5, môn 3: 8
+3
+7720110
+Y học dự phòng
+B00
+22.5
+Tiêu chí phụ: môn 1: 7.5, môn 2: 6.75, môn 3: 7.2
+4
+7720115
+Y học cổ truyền
+B00
+23.75
+Tiêu chí phụ: môn 1: 6.75, môn 2: 8, môn 3: 8
+5
+7720201A
+Dược học (A)
+A00
+26.25
+Tiêu chí phụ: môn 1: 9, môn 2: 9.4, môn 3: 6.75
+6
+7720201B
+Dược học (B)
+B00
+26.25
+Tiêu chí phụ: môn 1: 8.75, môn 2: 9, môn 3: 7.4
+7
+7720301
+Điều dưỡng
+B00
+24
+Tiêu chí phụ: môn 1: 8.25, môn 2: 6.25, môn 3: 8.4
+8
+7720501
+Răng - Hàm - Mặt
+B00
+26.5
+Tiêu chí phụ: môn 1: 8.75, môn 2: 8.75, môn 3: 8.4
+9
+7720601
+Kỹ thuật xét nghiệm y học
+B00
+24.5
+Tiêu chí phụ: môn 1: 7, môn 2: 8, môn 3: 8.6

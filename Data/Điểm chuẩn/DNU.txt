@@ -1,0 +1,115 @@
+DNU
+1
+7140201
+Giáo dục Mầm non
+M00, M05
+16
+
+2
+7140202
+Giáo dục Tiểu học
+A00, A01,C00, D01
+20.75
+
+3
+7140209
+Sư phạm Toán học
+A00, A01
+17
+
+4
+7140211
+Sư phạm Vật lý
+A00, A01
+15.5
+
+5
+7140212
+Sư phạm Hoá học
+A00, B00,D07
+15.75
+
+6
+7140213
+Sư phạm Sinh học
+A02, B00
+15.75
+
+7
+7140217
+Sư phạm Ngữ văn
+C00, D01,D14
+17
+
+8
+7140218
+Sư phạm Lịch sử
+C00, D14
+15.5
+
+9
+7140231
+Sư phạm Tiếng Anh
+A01, D01
+19
+
+10
+7220201
+Ngôn ngữ Anh
+A01, D01
+18
+
+11
+7340101
+Quản trị kinh doanh
+A00, A01,D01
+17
+
+12
+7340301
+Kế toán
+A00, A01,D01
+16.5
+
+13
+51140201
+Giáo dục Mầm non (hệ cao đẳng)
+M00, M05
+10
+
+14
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+A00, A01,C00, D01
+17.5
+
+15
+51140206
+Giáo dục Thể chất (hệ cao đẳng)
+T00, T04
+---
+
+16
+51140210
+Sư phạm Tin học (hệ cao đẳng)
+A00, A01,D01
+---
+
+17
+51140221
+Sư phạm Âm nhạc (hệ cao đẳng)
+N00, N01
+---
+
+18
+51140222
+Sư phạm Mỹ thuật (hệ cao đẳng)
+H00,
+---
+
+19
+51140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+A01, D01
+10
+

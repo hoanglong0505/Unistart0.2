@@ -1,0 +1,79 @@
+DTE
+1
+7310101
+Kinh tế
+B00, D08
+---
+
+2
+7310101
+Kinh tế
+A01; D01
+15.5
+Xét tuyển theo học bạ 18,00
+3
+7310104
+Kinh tế đầu tư
+A00, A01, D01, D10
+---
+
+4
+7310105
+Kinh tế phát triển
+A00, A01, C04, D01
+---
+
+5
+7340101
+Quản trị kinh doanh
+A00; A01; C01; D01
+15.5
+Xét tuyển theo học bạ 18,00
+6
+7340115
+Marketing
+D10
+---
+
+7
+7340115
+Marketing
+A00; C04; D01
+15.5
+Xét tuyển theo học bạ 18,00
+8
+7340201
+Tài chính – Ngân hàng
+C01
+---
+
+9
+7340201
+Tài chính – Ngân hàng
+A00; D01; D07
+15.5
+Xét tuyển theo học bạ 18,00
+10
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18,01
+11
+7340403
+Quản lý công
+A00, A01, C01, D01
+---
+
+12
+7380107
+Luật kinh tế
+A00; C00; D01; D14
+15.5
+Xét tuyển theo học bạ 18,01
+13
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A01, C04, D01, D01
+---
+

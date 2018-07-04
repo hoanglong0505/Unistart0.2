@@ -1,0 +1,25 @@
+TTH
+1
+7860221
+Chỉ huy kỹ thuật Thông tin phía Bắc
+A00
+24.5
+Thí sinh mức 24,50 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 7,80. Tiêu chí phụ 2: Điểm môn Lý ≥ 8,25.
+2
+7860221
+Chỉ huy kỹ thuật Thông tin phía Bắc
+A01
+24.5
+Thí sinh mức 24,50 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 7,80. Tiêu chí phụ 2: Điểm môn Lý ≥ 8,25.
+3
+7860221
+Chỉ huy kỹ thuật Thông tin phía Nam
+A00
+23.5
+Thí sinh mức 23,50 điểm: Điểm môn Toán ≥ 7,60.
+4
+7860221
+Chỉ huy kỹ thuật Thông tin phía Nam
+A01
+23.5
+Thí sinh mức 23,50 điểm: Điểm môn Toán ≥ 7,60.

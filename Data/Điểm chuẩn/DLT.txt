@@ -1,0 +1,37 @@
+DLT
+1
+7340101
+Quản trị kinh doanh
+A00, A01, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 5 (NV1-NV5)
+2
+7340204
+Bảo hiểm
+A00, A01, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 5 (NV1-NV5)
+3
+7340301
+Kế toán
+A00, A01, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 6 (NV1-NV6)
+4
+7340404
+Quản trị nhân lực
+A00, A01, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 8 (NV1-NV8)
+5
+7760101
+Công tác xã hội
+A00, A01, C00, D01
+15.5
+Thí sinh có nguyện vọng từ 1 đến 7 (NVlệ-NV7)
+6
+7760101
+Công tác xã hội
+A00, A01, C00, D01
+16
+Thí sinh có nguyện vọng từ 1 đến 5 (NV1-NV5)

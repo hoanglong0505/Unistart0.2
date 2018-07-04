@@ -1,0 +1,37 @@
+DDC
+1
+7510103
+Công nghệ kỹ thuật xây dựng (Chuyên ngành Xây dựng dân dụng và công nghiệp)
+A00; A16; D01; D90
+15.5
+TO >= 4.2;TTNV <= 2
+2
+7510201
+Công nghệ kỹ thuật cơ khí (Chuyên ngành Cơ khí chế tạo máy)
+A00; A16; D01; D90
+15.5
+TO >= 4;TTNV <= 2
+3
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A16; D01; D90
+15.5
+TO >= 2.8;TTNV <= 1
+4
+7510301
+Công nghệ kỹ thuật điện, điện tử (Các chuyên ngành: Hệ thống cung cấp điện - Kỹ thuật điện tử)
+A00; A16; D01; D90
+15.5
+TO >= 4.6;TTNV <= 1
+5
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A16; D01; D90
+15.5
+TO >= 4.8;TTNV <= 1
+6
+7510406
+Công nghệ kỹ thuật môi trường
+A16; B00; D01; D90
+15.5
+TO >= 5.6;TTNV <= 7

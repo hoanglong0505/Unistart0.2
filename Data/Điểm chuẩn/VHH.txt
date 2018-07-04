@@ -1,0 +1,343 @@
+VHH
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220110
+Sáng tác văn học
+N00
+---
+
+3
+7220112
+Văn hoá các dân tộc thiểu số Việt Nam
+C00
+20
+
+4
+7220112
+Văn hoá các dân tộc thiểu số Việt Nam
+D01; D78
+17
+
+5
+7220201
+Ngôn ngữ Anh
+D01; D78; D96
+19
+
+6
+7229040A
+Văn hoá học - Nghiên cứu văn hoá
+C00
+21.5
+
+7
+7229040A
+Văn hoá học - Nghiên cứu văn hoá
+D01
+18.5
+
+8
+7229040A
+Văn hoá học - Nghiên cứu văn hoá
+D78
+---
+
+9
+7229040B
+Văn hoá học - Văn hoá truyền thông
+C00
+23.5
+
+10
+7229040B
+Văn hoá học - Văn hoá truyền thông
+D01
+20.5
+
+11
+7229040B
+Văn hoá học - Văn hoá truyền thông
+D78
+---
+
+12
+7229042A
+QLVH - Chính sách văn hoá và Quản lý nghệ thuật
+C00
+20
+
+13
+7229042A
+QLVH - Chính sách văn hoá và Quản lý nghệ thuật
+D01
+17
+
+14
+7229042A
+QLVH - Chính sách văn hoá và Quản lý nghệ thuật
+D78
+---
+
+15
+7229042B
+QLVH - Quản lý nhà nước về gia đình
+C00
+19
+
+16
+7229042B
+QLVH - Quản lý nhà nước về gia đình
+D01
+16
+
+17
+7229042B
+QLVH - Quản lý nhà nước về gia đình
+D78
+16
+
+18
+7229042C
+Quản lý di sản văn hoá
+C00
+20.5
+
+19
+7229042C
+Quản lý di sản văn hoá
+D01
+17.5
+
+20
+7229042C
+Quản lý di sản văn hoá
+D78
+---
+
+21
+7229042D
+QLVH - Biểu diễn âm nhạc
+N00
+22
+
+22
+7229042E
+QLVH - Đạo diễn sự kiện
+N05
+19.5
+
+23
+7229042G
+QLVH - Biên đạo múa đại chúng
+N00
+21.5
+
+24
+7229042LT
+Liên thông Quản lý văn hoá
+C00
+25
+
+25
+7229042LT
+Liên thông Quản lý văn hoá
+D01
+22
+
+26
+7229042LT
+Liên thông Quản lý văn hoá
+D78
+---
+
+27
+7229045
+Gia đình học
+C00
+19.5
+
+28
+7229045
+Gia đình học
+D01
+16.5
+
+29
+7229045
+Gia đình học
+D78
+16.5
+
+30
+7320101
+Báo chí
+C00
+24.5
+
+31
+7320101
+Báo chí
+D01; D78
+21.5
+
+32
+7320201
+Thông tin - thư viện
+C00
+21
+
+33
+7320201
+Thông tin - thư viện
+D01; D96
+18
+
+34
+7320201LT
+Liên thông Thư viện
+C00; D01; D96
+---
+
+35
+7320205
+Quản lý thông tin
+C00; D01; D96
+---
+
+36
+7320305
+Bảo tàng học
+C00
+19
+
+37
+7320305
+Bảo tàng học
+D01
+16
+
+38
+7320305
+Bảo tàng học
+D78
+---
+
+39
+7320402
+Kinh doanh xuất bản phẩm
+C00
+20.5
+
+40
+7320402
+Kinh doanh xuất bản phẩm
+D01
+17.5
+
+41
+7320402
+Kinh doanh xuất bản phẩm
+D96
+---
+
+42
+7380101
+Luật
+C00
+24.5
+
+43
+7380101
+Luật
+D01
+21.5
+
+44
+7380101
+Luật
+D96
+---
+
+45
+7810101A
+Du lịch - Văn hoá du lịch
+C00
+24
+
+46
+7810101A
+Du lịch - Văn hoá du lịch
+D01
+21
+
+47
+7810101A
+Du lịch - Văn hoá du lịch
+D78
+---
+
+48
+7810101B
+Du lịch - Lữ hành, Hướng dẫn du lịch
+C00
+25.5
+
+49
+7810101B
+Du lịch - Lữ hành, Hướng dẫn du lịch
+D01
+22.5
+
+50
+7810101B
+Du lịch - Lữ hành, Hướng dẫn du lịch
+D78
+---
+
+51
+7810101C
+Du lịch - Hướng dẫn du lịch quốc tế
+D01
+21.5
+
+52
+7810101C
+Du lịch - Hướng dẫn du lịch quốc tế
+D78
+21.5
+
+53
+7810101C
+Du lịch - Hướng dẫn du lịch quốc tế
+D96
+21.5
+
+54
+7810101LT
+Liên thông Du lịch
+C00; D01; D78
+---
+
+55
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C00
+23.5
+
+56
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+D01
+20.5
+
+57
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+D78
+---
+

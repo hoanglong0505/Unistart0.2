@@ -1,0 +1,61 @@
+DKQ
+1
+7340101
+Quản trị kinh doanh
+A00; A01; A16; D01
+15.5
+
+2
+7340120
+Kinh doanh quốc tế
+A00; A01; A16; D01
+15.5
+
+3
+7340120H
+Kinh doanh quốc tế (Phân hiệu tại Thừa Thiên Huế)
+
+---
+
+4
+7340201
+Tài chính – Ngân hàng
+A00; A01; A16; D01
+15.5
+
+5
+7340201H
+Tài chính-Ngân hàng (Phân hiệu tại Thừa Thiên Huế)
+
+---
+
+6
+7340301
+Kế toán
+A00; A01; A16; D01
+15.5
+
+7
+7340301H
+Kế toán (Phân hiệu tại Thừa Thiên Huế)
+
+---
+
+8
+7340302
+Kiểm toán
+A00; A01; A16; D01
+15.5
+
+9
+7380107
+Luật kinh tế
+A00; C00; C15; D01
+15.5
+
+10
+7380107H
+Luật kinh tế (Phân hiệu tại Thừa Thiên Huế)
+
+---
+

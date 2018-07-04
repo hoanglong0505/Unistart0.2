@@ -1,0 +1,217 @@
+LNH
+1
+7210402
+Thiết kế công nghiệp
+A00; A17; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+2
+72908532
+Quản lý tài nguyên thiên nhiên (T. Việt)
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+3
+72908532A
+Quản lý tài nguyên thiên nhiên*(T.Anh)
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+4
+7310101
+Kinh tế
+A00; A16; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+5
+7340101
+Quản trị kinh doanh
+A00; A16; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+6
+7340301
+Kế toán
+A00; C16; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+7
+7420201
+Công nghệ sinh học
+A00; A16; B00; D08
+15.5
+Xét học bạ lấy 18 điểm
+8
+7420201A
+Công nghệ sinh học (Chất lượng cao)
+A00; A16; B00; D08
+15.5
+Xét học bạ lấy 18 điểm
+9
+7440301
+Khoa học môi trường
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+10
+7480104
+Hệ thống thông tin
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+11
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; A16; D01
+15.5
+Xét học bạ lấy 18 điểm
+12
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; A16; D01
+15.5
+Xét học bạ lấy 18 điểm
+13
+7510402
+Công nghệ vật liệu
+A00; A16; D01; D07
+15.5
+Xét học bạ lấy 18 điểm
+14
+7520103
+Kỹ thuật cơ khí
+A00; A16; D01
+15.5
+Xét học bạ lấy 18 điểm
+15
+7520103A
+Kỹ thuật cơ khí (Chất lượng cao)
+A00; A16; D01
+15.5
+Xét học bạ lấy 18 điểm
+16
+7540104
+Công nghệ sau thu hoạch
+A00, A16, D01, D96
+---
+
+17
+7549001
+Công nghệ chế biến lâm sản
+A00; A16; D01; D07
+15.5
+Xét học bạ lấy 18 điểm
+18
+7549001A
+Công nghệ chế biến lâm sản (Chất lượng cao)
+A00; A16; D01; D07
+15.5
+Xét học bạ lấy 18 điểm
+19
+7580102
+Kiến trúc cảnh quan
+A00; A17; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+20
+7580108
+Thiết kế nội thất
+A00; A17; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+21
+7580201
+Kỹ thuật xây dựng
+A00; A01; A16; D01
+15.5
+Xét học bạ lấy 18 điểm
+22
+7620102
+Khuyến nông
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+23
+7620105
+Chăn nuôi
+A00; A16; B00; D08
+15.5
+Xét học bạ lấy 18 điểm
+24
+7620110
+Khoa học cây trồng
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+25
+7620112
+Bảo vệ thực vật
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+26
+7620115
+Kinh tế nông nghiệp
+A00; A16; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+27
+7620201
+Lâm học
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+28
+7620201A
+Lâm học (CT đào tạo bằng Tiếng Anh)
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+29
+7620202
+Lâm nghiệp đô thị
+A00; A17; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+30
+7620205
+Lâm sinh
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+31
+7620211
+Quản lý tài nguyên rừng
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm
+32
+7640101
+Thú y
+A00; A16; B00; D08
+15.5
+Xét học bạ lấy 18 điểm
+33
+7760101
+Công tác xã hội
+A00; C00; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+34
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; C00; C15; D01
+15.5
+Xét học bạ lấy 18 điểm
+35
+7850101
+Quản lý tài nguyên và môi trường
+A00, A16, B00, D01
+15.5
+Xét học bạ lấy 18 điểm
+36
+7850103
+Quản lý đất đai
+A00; A16; B00; D01
+15.5
+Xét học bạ lấy 18 điểm

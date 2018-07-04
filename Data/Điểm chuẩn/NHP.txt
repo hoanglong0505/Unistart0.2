@@ -1,0 +1,13 @@
+NHP
+1
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+15.5
+Tiêu chí phụ môn Toán
+2
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+Tiêu chí phụ môn Toán

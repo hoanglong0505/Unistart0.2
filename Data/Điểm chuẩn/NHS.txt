@@ -1,0 +1,49 @@
+NHS
+1
+7220201
+Ngôn ngữ Anh
+D01, D96
+23
+
+2
+7310106
+Kinh tế quốc tế
+A00, A01, D01, D90
+22
+
+3
+7340001
+Chương trình cử nhân chất lượng cao
+A00, A01, D01, D90
+20
+
+4
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D90
+22
+
+5
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D90
+22
+
+6
+7340301
+Kế toán
+A00, A01, D01, D90
+22
+
+7
+7340405
+Hệ thống thông tin quản lý
+A00, A01, D01, D90
+20
+
+8
+7380107
+Luật kinh tế
+D01, D96
+21
+

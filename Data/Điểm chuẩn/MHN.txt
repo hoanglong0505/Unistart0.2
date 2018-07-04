@@ -1,0 +1,103 @@
+MHN
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7210402
+Thiết kế công nghiệp
+H00; H01; H06
+20.5
+Hình họa: 7.5. TTNV=1
+3
+7220201
+Ngôn ngữ Anh
+D01
+29.33
+Tiếng Anh: 7.6. TTNV=2
+4
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04
+28.75
+Tiếng Anh/ Tiếng Trung: 7.4. TTNV=6
+5
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+21.25
+Toán/Tiếng Anh:6. TTNV=2
+6
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+20
+Toán: 6.2. TTNV=4
+7
+7340301
+Kế toán
+A00; A01; D01
+21
+Toán: 7.6. TTNV=5
+8
+7380101
+Luật
+A00; A01; C00; D01
+19.75
+Toán: 6.8. TTNV=7
+9
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+20.5
+Toán: 7.8. TTNV=3
+10
+7380108
+Luật quốc tế
+A00; A01; C00; D01
+19.25
+Toán: 7.8. TTNV=3
+11
+7420201
+Công nghệ sinh học
+A00; B00; D07
+15.5
+Hóa: 5.5. TTNV=3
+12
+7480201
+Công nghệ thông tin
+A00; A01; D01
+20.5
+Toán: 7. TTNV=2
+13
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01; C01; D01
+20.25
+Lý: 4.5. TTNV=2
+14
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; C01; D01
+---
+
+15
+7540101
+Công nghệ thực phẩm
+A00; B00; D07
+---
+
+16
+7580101
+Kiến trúc
+V00; V01; V02
+21.75
+Vẽ MT/Hình họa: 5.5. TTNV=1
+17
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+D01
+---
+

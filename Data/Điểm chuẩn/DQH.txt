@@ -1,0 +1,31 @@
+DQH
+1
+7480101
+Khoa học máy tính
+A00, A01
+---
+
+2
+7480201
+Công nghệ thông tin
+A00; A01
+24.5
+
+3
+7520114
+Kỹ thuật cơ điện tử
+A00; A01
+22
+
+4
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01
+---
+
+5
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00; A01
+22.25
+

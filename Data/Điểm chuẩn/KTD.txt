@@ -1,0 +1,115 @@
+KTD
+1
+7210403
+Thiết kế đồ họa
+H00, V00, V01, V02
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D14, D15
+---
+
+3
+7220201
+Ngôn ngữ Anh
+A01; D01
+15
+Xét tuyển theo học bạ 18,0
+4
+7220204
+Ngôn ngữ Trung Quốc
+D14, D15
+---
+
+5
+7220204
+Ngôn ngữ Trung Quốc
+A01; D01
+15
+Xét tuyển theo học bạ 18,0
+6
+7340101
+Quản trị kinh doanh
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,0
+7
+7340201
+Tài chính – Ngân hàng
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,0
+8
+7340301
+Kế toán
+A00, A01, B00, D01
+15
+Xét tuyển theo học bạ 18,0
+9
+7480201
+Công nghệ thông tin
+A00, A01, B00, D01
+15
+Xét tuyển theo học bạ 18,1
+10
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,2
+11
+7580101
+Kiến trúc
+V00, V01,V01, V03
+19
+Xét tuyển theo học bạ 21,0
+12
+7580105
+Quy hoạch vùng và đô thị
+V03
+---
+
+13
+7580105
+Quy hoạch vùng và đô thị
+V00; V01; V02
+16
+Xét tuyển theo học bạ 21,0
+14
+7580108
+Thiết kế nội thất
+H00, V00, V01, V02
+18
+Xét tuyển theo học bạ 19,5 (đối với tổ hợp 4)
+15
+7580201
+Kỹ thuật xây dựng
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,0
+16
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,0
+17
+7580210
+Kỹ thuật cơ sở hạ tầng
+A00, A01, B00, D01
+---
+
+18
+7580302
+Quản lý xây dựng
+A00; A01; B00; D01
+15
+Xét tuyển theo học bạ 18,0
+19
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, B00, D01
+---
+

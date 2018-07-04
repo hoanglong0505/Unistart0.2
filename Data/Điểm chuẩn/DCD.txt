@@ -1,0 +1,181 @@
+DCD
+1
+7220201
+Ngôn ngữ Anh
+A01, D14, D15
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01
+15.5
+
+3
+7340101
+Quản trị kinh doanh
+A01,A07, C04
+---
+
+4
+7340101
+Quản trị kinh doanh
+D01
+15.5
+
+5
+7340201
+Tài chính – Ngân hàng
+A00, A04, A07
+---
+
+6
+7340201
+Tài chính – Ngân hàng
+C04
+15.5
+
+7
+7340301
+Kế toán
+A00, A04, A07
+---
+
+8
+7340301
+Kế toán
+D01
+15.5
+
+9
+7420201
+Công nghệ sinh học
+A00, C08, D01
+---
+
+10
+7420201
+Công nghệ sinh học
+B00
+15.5
+
+11
+7480201
+Công nghệ thông tin
+A04, D11
+---
+
+12
+7480201
+Công nghệ thông tin
+A00; A01
+15.5
+
+13
+7510103
+Công nghệ kỹ thuật xây dựng
+A04, C17
+---
+
+14
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; C04
+15.5
+
+15
+7510202
+Công nghệ chế tạo máy
+A04, C09
+---
+
+16
+7510202
+Công nghệ chế tạo máy
+A00; C04
+15.5
+
+17
+7510205
+Công nghệ kỹ thuật ô tô
+A04, C09
+---
+
+18
+7510205
+Công nghệ kỹ thuật ô tô
+A00; C04
+15.5
+
+19
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A04, C16
+---
+
+20
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; C04
+15.5
+
+21
+7510401
+Công nghệ kỹ thuật hoá học
+B00, C11, D01
+---
+
+22
+7510401
+Công nghệ kỹ thuật hoá học
+A00
+15.5
+
+23
+7510406
+Công nghệ kỹ thuật môi trường
+C10, D01
+---
+
+24
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00
+15.5
+
+25
+7540101
+Công nghệ thực phẩm
+B00, C10, D01
+---
+
+26
+7540101
+Công nghệ thực phẩm
+A00
+15.5
+
+27
+7720301
+Điều dưỡng
+A00, B00, C13, D01
+---
+
+28
+7720601
+Kỹ thuật xét nghiệm y học
+B00, C12, D01
+---
+
+29
+7720601
+Kỹ thuật xét nghiệm y học
+A00
+15.5
+
+30
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C01; D01; D72; D96
+---
+

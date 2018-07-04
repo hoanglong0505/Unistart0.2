@@ -1,0 +1,109 @@
+KTC
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+18
+
+2
+7220209
+Ngôn ngữ Nhật
+D14
+---
+
+3
+7220209
+Ngôn ngữ Nhật
+A01; D01; D15
+16
+
+4
+7310206
+Quan hệ quốc tế
+D14
+---
+
+5
+7310206
+Quan hệ quốc tế
+A01; D01; D15
+16
+
+6
+7320108
+Quan hệ công chúng
+A00; A01; C00; D01
+18
+
+7
+7340101
+Quản trị kinh doanh
+A00; A01; C00; D01
+20
+
+8
+7340115
+Marketing
+A00; A01; C00; D01
+19
+
+9
+7340120
+Kinh doanh quốc tế
+A00; A01; C00; D01
+21
+
+10
+7340122
+Thương mại điện tử
+A00; A01; C01; D01
+16
+
+11
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+17
+
+12
+7340301
+Kế toán
+A00; A01; C01; D01
+17
+
+13
+7340404
+Quản trị nhân lực
+A00; A01; C00; D01
+17
+
+14
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+20
+
+15
+7380108
+Luật quốc tế
+A00; A01; D01; C00
+16
+
+16
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+16
+
+17
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; C00; D01
+18
+
+18
+7810201
+Quản trị khách sạn
+A00; A01; C00; D01
+21
+

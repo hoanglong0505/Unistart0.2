@@ -1,0 +1,301 @@
+TAG
+1
+7140201
+Giáo dục Mầm non
+M00
+18.75
+
+2
+7140202
+Giáo dục Tiểu học
+A00; A01; C00; D01
+22.75
+
+3
+7140205
+Giáo dục Chính trị
+C19, D66
+---
+
+4
+7140205
+Giáo dục Chính trị
+C00; D01
+19.5
+
+5
+7140209
+Sư phạm Toán học
+A00; A01
+15.5
+
+6
+7140211
+Sư phạm Vật lý
+A00; A01
+16
+
+7
+7140212
+Sư phạm Hoá học
+A00; B00
+15.75
+
+8
+7140213
+Sư phạm Sinh học
+B00
+16.25
+
+9
+7140217
+Sư phạm Ngữ văn
+D01, D14, D15
+---
+
+10
+7140217
+Sư phạm Ngữ văn
+C00
+18
+
+11
+7140218
+Sư phạm Lịch sử
+C19, C20, D14
+---
+
+12
+7140218
+Sư phạm Lịch sử
+C00
+18
+
+13
+7140219
+Sư phạm Địa lý
+A00, C04
+---
+
+14
+7140219
+Sư phạm Địa lý
+C00
+19.5
+
+15
+7140231
+Sư phạm Tiếng Anh
+A01
+---
+
+16
+7140231
+Sư phạm Tiếng Anh
+D01
+19
+
+17
+7220201
+Ngôn ngữ Anh
+A01
+---
+
+18
+7220201
+Ngôn ngữ Anh
+D01
+18.75
+
+19
+7229001
+Triết học
+A01, C00,C01, D01
+---
+
+20
+7229030
+Văn học
+C00, D01, D14, D15
+---
+
+21
+7310106
+Kinh tế quốc tế
+A00; A01; D01
+16.75
+
+22
+7310630
+Việt Nam học
+A00; A01; D01
+21
+
+23
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+18.5
+
+24
+7340115
+Marketing
+A00; A01; D01
+---
+
+25
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+17.75
+
+26
+7340301
+Kế toán
+A00; A01; D01
+18.25
+
+27
+7380101
+Luật
+A01, C01
+---
+
+28
+7380101
+Luật
+C00; D01
+21.25
+
+29
+7420201
+Công nghệ sinh học
+A00; A01; B00
+15.5
+
+30
+7420203
+Sinh học ứng dụng
+A00; A01; B00
+---
+
+31
+7440112
+Hoá học
+A00, B00
+---
+
+32
+7460112
+Toán ứng dụng
+A00, A01
+---
+
+33
+7480103
+Kỹ thuật phần mềm
+A00; A01; D01
+15.5
+
+34
+7480201
+Công nghệ thông tin
+A00; A01; D01
+17
+
+35
+7510401
+Công nghệ kỹ thuật hoá học
+A00, A01, B00
+---
+
+36
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; B00
+15.5
+
+37
+7540101
+Công nghệ thực phẩm
+A00; A01; B00
+17
+
+38
+7620105
+Chăn nuôi
+A00; A01; B00
+15.5
+
+39
+7620110
+Khoa học cây trồng
+A00; A01; B00
+15.5
+
+40
+7620112
+Bảo vệ thực vật
+A00; A01; B00
+17
+
+41
+7620116
+Phát triển nông thôn
+A00; A01; B00
+15.75
+
+42
+7620301
+Nuôi trồng thuỷ sản
+A00; A01; B00
+15.5
+
+43
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00
+15.75
+
+44
+51140201
+Giáo dục Mầm non (hệ cao đẳng)
+M00
+16
+
+45
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+A00; A01; C00; D01
+17.25
+
+46
+51140206
+Giáo dục Thể chất (hệ cao đẳng)
+T00
+15.75
+
+47
+51140221
+Sư phạm Âm nhạc (hệ cao đẳng)
+N00
+18
+
+48
+51140222
+Sư phạm Mỹ thuật (hệ cao đẳng)
+H00
+18.25
+
+49
+51140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+D01
+14
+
+50
+51140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+A01
+---
+

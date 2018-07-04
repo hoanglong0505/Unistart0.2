@@ -1,0 +1,37 @@
+HPN
+1
+7310399
+Giới và phát triển
+A00; A01; C00; D01
+17.5
+
+2
+7320104
+Truyền thông đa phương tiện
+D01; A00; A01; C00
+16.5
+
+3
+7340101
+Quản trị kinh doanh
+A00; A01; D01; C00
+21.5
+
+4
+7380101
+Luật
+A00; A01; C00; D01
+22.5
+
+5
+7760101
+Công tác xã hội
+A00; A01; C00; D01
+21.5
+
+6
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+
+19.5
+

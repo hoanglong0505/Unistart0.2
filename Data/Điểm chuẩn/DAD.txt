@@ -1,0 +1,259 @@
+DAD
+1
+1010301
+Xây dựng dân dụng & công nghiệp
+A00, A01, A16, B00
+---
+
+2
+1010302
+Xây dựng cầu đường
+A00, A01, A16, B00
+---
+
+3
+2020101
+Biên dịch - phiên dịch
+A01, A16, C15, D01
+---
+
+4
+2020102
+Tiếng Anh – Du lịch
+A01, A16, C15, D01
+---
+
+5
+2030101
+Điều dưỡng đa khoa
+A01; A16; B00; B03
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+6
+2030102
+Điều dưỡng sản phụ khoa
+A01; A16; B00; B03
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+7
+2030103
+Điều dưỡng chăm sóc người cao tuổi
+A01; A16; B00; B03
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+8
+4010101
+Quản trị kinh doanh
+C15
+---
+
+9
+4010101
+Quản trị kinh doanh
+A00; A01; A16
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+10
+4010102
+Quản trị marketing
+
+---
+
+11
+4010103
+Quản trị kinh doanh khách sạn - Nhà hàng
+A00, A01, A16, C15
+---
+
+12
+4010104
+Quản trị kinh doanh du lịch và lữ hành
+A00, A01, A16, C15
+---
+
+13
+4010106
+Quản trị truyền thông tích hợp
+A00, A01, A16, C15
+---
+
+14
+4010108
+Quản lý chất lượng & ATTP
+A00, B00, D07, D08
+---
+
+15
+4010109
+Công nghệ sinh học
+A00, B00, D07, D08
+---
+
+16
+4020101
+Tài chính ngân hàng
+C15
+---
+
+17
+4020101
+Tài chính ngân hàng
+A00; A01; A16
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+18
+4020102
+Tài chính doanh nghiệp
+A00, A01, A16, C15
+---
+
+19
+4030101
+Kế toán
+C15
+---
+
+20
+4030101
+Kế toán
+A00; A01; A16
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+21
+4030102
+Kiểm toán
+A00; A01; A16, C15
+---
+
+22
+4040601
+Lưu trữ học & Quản trị văn phòng
+C00, C15, D01, D14
+---
+
+23
+4040602
+Văn thư lưu trữ
+C00, C15, D01, D14
+---
+
+24
+4040603
+Quản trị hành chính-văn thư
+C00, C15, D01, D14
+---
+
+25
+7140201
+Giáo dục Mầm non
+MN1, MN2, MN3, MN4
+---
+
+26
+7140202
+Giáo dục Tiểu học
+A00, A16, C15, D01
+---
+
+27
+7220201
+Ngôn ngữ Anh
+A01; A16; C15; D01
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+28
+7310401
+Tâm lý học
+A16, C00, C15, D01
+---
+
+29
+7340404
+Quản trị nhân lực
+C15
+---
+
+30
+7340404
+Quản trị nhân lực
+A00; A01; C00
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+31
+7380107
+Luật kinh tế
+A16, C15
+---
+
+32
+7380107
+Luật kinh tế
+A00; A01
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+33
+7480201
+Công nghệ thông tin
+A00; A01; A16; B00
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+34
+7510205
+Công nghệ kỹ thuật ô tô
+A00, A01, B00, C15
+---
+
+35
+7510301
+Công nghệ kỹ thuật điện, điện tử
+C15
+---
+
+36
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; B00
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+37
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00, A01, B00, C15
+---
+
+38
+7540101
+Công nghệ thực phẩm
+A00; B00; D07; D08
+15.5
+Xét học bạ điểm trung bình chung cả năm lớp 12 = 6.0 điểm
+39
+7580101
+Kiến trúc
+KT1, KT2, KT3, LT4
+---
+
+40
+7720401
+Dinh dưỡng
+A02, A16, B00, LT4
+---
+
+41
+8020101
+Công nghệ phần mềm
+A00, A01, A16, B00
+---
+
+42
+8020103
+Thiết kế đồ họa
+A00, A01, A16, B00
+---
+
+43
+8020105
+Quản trị mạng và An ninh mạng
+A00, A01, A16, B00
+---
+

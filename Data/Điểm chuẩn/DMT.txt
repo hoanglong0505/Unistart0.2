@@ -1,0 +1,103 @@
+DMT
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7340301
+Kế toán
+A00; A01; B00; D01
+16.5
+
+3
+7440221
+Khí tượng và khí hậu học
+A00; A01; B00; D01
+15.5
+
+4
+7440224
+Thuỷ văn học
+A00; A01; B00; D01
+15.5
+
+5
+7440298
+Biến đổi khí hậu và Phát triển bền vững
+A00; A01; B00; D01
+15.5
+
+6
+7440299
+Khí tượng thủy văn biển
+A00; A01; B00; D01
+15.5
+
+7
+7480201
+Công nghệ thông tin
+A00; A01; B00; D01
+16.5
+
+8
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; B00; D01
+15.5
+
+9
+7520501
+Kỹ thuật địa chất
+A00; A01; B00; D01
+15.5
+
+10
+7520503
+Kỹ thuật trắc địa - bản đồ
+A00; A01; B00; D01
+15.5
+
+11
+7620103
+Khoa học đất
+A00; A01; B00; D01
+15.5
+
+12
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; B00; D01
+18.5
+
+13
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00; D01
+16.5
+
+14
+7850102
+Kinh tế tài nguyên thiên nhiên
+A00; A01; B00; D01
+15.5
+
+15
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+16
+
+16
+7850198
+Quản lý tài nguyên nước
+A00; A01; B00; D01
+15.5
+
+17
+7850199
+Quản lý biển
+A00; A01; B00; D01
+15.5
+

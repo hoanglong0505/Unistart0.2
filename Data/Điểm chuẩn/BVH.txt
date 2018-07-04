@@ -1,0 +1,61 @@
+BVH
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7320104
+Truyền thông đa phương tiện
+A00; A01; D01
+23.75
+TTNV<= 8
+3
+7329001
+Công nghệ đa phương tiện
+A00; A01; D01
+23.25
+TTNV = 1
+4
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+21.5
+TTNV<= 3
+5
+7340115
+Marketing
+A00; A01; D01
+22.5
+TTNV<= 4
+6
+7340301
+Kế toán
+A00; A01; D01
+21.5
+TTNV = 1
+7
+7480201
+Công nghệ thông tin
+A00; A01
+25
+TTNV = 1
+8
+7480202
+An toàn thông tin
+A00; A01
+24
+TTNV<= 4
+9
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01
+21.75
+TTNV<= 2
+10
+7520207
+Kỹ thuật điện tử - viễn thông
+A00; A01
+22.5
+TTNV<= 3

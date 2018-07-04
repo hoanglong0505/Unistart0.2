@@ -1,0 +1,355 @@
+GTS
+1
+7480102
+Mạng máy tính và truyền thông dữ liệu
+D90
+---
+
+2
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00, A01
+19
+
+3
+7480201
+Công nghệ thông tin
+A00, A01
+22
+
+4
+7480201
+Công nghệ thông tin
+D90
+---
+
+5
+7520103
+Kỹ thuật cơ khí
+A00, A01
+21
+
+6
+7520103
+Kỹ thuật cơ khí
+D90
+---
+
+7
+7520103H
+Kỹ thuật cơ khí (Chuyên ngành Cơ khí ô tô)
+A00, A01
+21
+
+8
+7520103H
+Kỹ thuật cơ khí (Chuyên ngành Cơ khí ô tô)
+D90
+---
+
+9
+7520122
+Kỹ thuật tàu thuỷ
+A00, A01
+16
+
+10
+7520122
+Kỹ thuật tàu thuỷ
+D90
+---
+
+11
+7520201
+Kỹ thuật điện
+A00, A01
+21
+
+12
+7520201
+Kỹ thuật điện
+D90
+---
+
+13
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01
+20
+
+14
+7520207
+Kỹ thuật điện tử - viễn thông
+D90
+---
+
+15
+7520207H
+Kỹ thuật điện tử - viễn thông (Chuyên ngành Điện tử viễn thông)
+A00, A01
+18
+
+16
+7520207H
+Kỹ thuật điện tử - viễn thông (Chuyên ngành Điện tử viễn thông)
+D90
+---
+
+17
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00, A01
+22
+
+18
+7520216
+Kỹ thuật điều khiển và tự động hoá
+D90
+---
+
+19
+7520320
+Kỹ thuật môi trường
+A00, A01, B00
+18
+
+20
+7520320
+Kỹ thuật môi trường
+D90
+---
+
+21
+7580201
+Kỹ thuật xây dựng
+A00, A01
+20
+
+22
+7580201
+Kỹ thuật xây dựng
+D90
+---
+
+23
+7580201H
+Kỹ thuật xây dựng
+A00, A01
+18
+
+24
+7580201H
+Kỹ thuật xây dựng
+D90
+---
+
+25
+7580205109
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng Công trình thủy và thềm lục địa)
+A00, A01
+19
+
+26
+7580205109
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng Công trình thủy và thềm lục địa)
+D90
+---
+
+27
+7580205111
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu đường)
+A00, A01
+19
+
+28
+7580205111
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu đường)
+D90
+---
+
+29
+7580205111H
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu đường)
+A00, A01
+19
+
+30
+7580205111H
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu đường)
+D90
+---
+
+31
+7580205117
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Quy hoạch và thiết kế công trình giao thông)
+A00, A01
+19
+
+32
+7580205117
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Quy hoạch và thiết kế công trình giao thông)
+D90
+---
+
+33
+7580205120
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng đường sắt – Metro)
+A00, A01
+19
+
+34
+7580205120
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng đường sắt – Metro)
+D90
+---
+
+35
+7580205122
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu hầm)
+A00, A01
+19
+
+36
+7580205122
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng cầu hầm)
+D90
+---
+
+37
+7580205123
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng đường bộ)
+A00, A01
+19
+
+38
+7580205123
+Kỹ thuật xây dựng công trình giao thông (Chuyên ngành Xây dựng đường bộ)
+D90
+---
+
+39
+7580301
+Kinh tế xây dựng
+A00, A01, D01
+20
+
+40
+7580301
+Kinh tế xây dựng
+D90
+---
+
+41
+7580301H
+Kinh tế xây dựng
+A00, A01, D01
+18
+
+42
+7580301H
+Kinh tế xây dựng
+D90
+---
+
+43
+7840101
+Khai thác vận tải
+A00, A01, D01
+24
+
+44
+7840101
+Khai thác vận tải
+D90
+---
+
+45
+7840101H
+Khai thác vận tải (Chuyên ngành Quản trị Logistics và vận tải đa phương thức)
+A00, A01, D01
+22
+
+46
+7840101H
+Khai thác vận tải (Chuyên ngành Quản trị Logistics và vận tải đa phương thức)
+D90
+---
+
+47
+7840104
+Kinh tế vận tải
+A00, A01, D01
+21
+
+48
+7840104
+Kinh tế vận tải
+D90
+---
+
+49
+7840104H
+Kinh tế vận tải
+A00, A01, D01
+19
+
+50
+7840104H
+Kinh tế vận tải
+D90
+---
+
+51
+7840106101
+Khoa học Hàng hải (Chuyên ngành Điều khiển tàu biển)
+A00, A01
+17
+
+52
+7840106101
+Khoa học Hàng hải (Chuyên ngành Điều khiển tàu biển)
+D90
+---
+
+53
+7840106101H
+Khoa học Hàng hải (Chuyên ngành Điều khiển tàu biển
+A00, A01
+16
+
+54
+7840106101H
+Khoa học Hàng hải (Chuyên ngành Điều khiển tàu biển
+D90
+---
+
+55
+7840106103
+Khoa học Hàng hải (Chuyên ngành Thiết bị năng lượng tàu thủy)
+A00, A01
+15
+
+56
+7840106103
+Khoa học Hàng hải (Chuyên ngành Thiết bị năng lượng tàu thủy)
+D90
+---
+
+57
+7840106104
+Khoa học Hàng hải (Chuyên ngành Quản lý hàng hải)
+A00, A01
+19
+
+58
+7840106104
+Khoa học Hàng hải (Chuyên ngành Quản lý hàng hải)
+D90
+---
+
+59
+7840106104H
+Khoa học Hàng hải (Chuyên ngành Quản lý hàng hải)
+A00, A01, D90
+---
+

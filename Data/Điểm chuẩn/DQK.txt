@@ -1,0 +1,151 @@
+DQK
+1
+7210402
+Thiết kế công nghiệp
+H00, H01, H02, H08
+18
+
+2
+7210403
+Thiết kế đồ họa
+H00, H01, H02, H08
+18
+
+3
+7220201
+Ngôn ngữ Anh
+A01, D01, D09, D10
+17
+
+4
+7220202
+Ngôn ngữ Nga
+A01, D01, D09, D10
+---
+
+5
+7220204
+Ngôn ngữ Trung Quốc
+A01, D01, D14, D15
+18
+
+6
+7310205
+Quản lý nhà nước
+B00, C00, C03, D09
+17
+
+7
+7340101
+Quản trị kinh doanh
+A00, A01, A08, D01
+18
+
+8
+7340120
+Kinh doanh quốc tế
+A00, A04, A09, D01
+17
+
+9
+7340201
+Tài chính – Ngân hàng
+A00, A01, A02, D10
+15.5
+
+10
+7340301
+Kế toán
+A00, A01, A08, D01
+17
+
+11
+7380107
+Luật kinh tế
+A08, C00, C14, D01
+18
+
+12
+7480201
+Công nghệ thông tin
+A00, A01, D01, D08
+16
+
+13
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00, A03, A10, D01
+15.5
+
+14
+7510205
+Công nghệ kỹ thuật ô tô
+A00, A04, A07, A10
+17
+
+15
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, A10, D01
+15.5
+
+16
+7510406
+Công nghệ kỹ thuật môi trường
+A06, B00, B02, B04
+---
+
+17
+7580101
+Kiến trúc
+V00, V01, V02, V03
+18
+
+18
+7580108
+Thiết kế nội thất
+H00, H01, H02, H08
+---
+
+19
+7580201
+Kỹ thuật xây dựng
+A00, A06, B02, C01
+15.5
+
+20
+7720101
+Y khoa
+A00, A02, B00
+20
+
+21
+7720201
+Dược học
+A00, A02, B00
+18
+
+22
+7720301
+Điều dưỡng
+A00, A02, B00
+---
+
+23
+7720501
+Răng - Hàm - Mặt
+A00, A02, B00
+---
+
+24
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, A07, D66
+18
+
+25
+7850101
+Quản lý tài nguyên và môi trường
+A06, A11, B00, B02
+15.5
+

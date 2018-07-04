@@ -1,0 +1,25 @@
+YTC
+1
+7720401
+Dinh dưỡng
+
+---
+Xét theo kết quả học tập THPT 24, Tiêu chí phụ 1- Môn toán: 6,2
+2
+7720601
+Kỹ thuật xét nghiệm y học
+A00; A02; B00
+22.75
+Tiêu chí phụ 1-Môn Toán: 7.2; Tiêu chí phụ 2: TTNV<=1
+3
+7720701
+Y tế công cộng
+A00; B00; D01; D08
+20.25
+Tiêu chí phụ 1-Môn Toán: 6.6; Tiêu chí phụ 2: TTNV<=3
+4
+7760101
+Công tác xã hội
+
+---
+Xét theo kết quả học tập THPT 19.4, Tiêu chí phụ- môn Toán: 7,3

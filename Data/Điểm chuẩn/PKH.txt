@@ -1,0 +1,25 @@
+PKH
+1
+7520120
+Kỹ thuật hàng không (miền Bắc)
+A00, A01
+26.75
+Thí sinh mức 26. 75 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 9,40. Tiêu chí phụ 2: Điểm môn Lý ≥ 8. 00
+2
+7520120
+Kỹ thuật hàng không (miền Nam)
+A00, A01
+23
+Thí sinh mức 23. 25 điểm: Điểm môn Toán ≥ 8.20
+3
+7860226
+Chỉ huy kỹ thuật Phòng không (miền Bắc)
+A00, A01
+25
+Thí sinh mức 25.00 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 8.40. Tiêu chí phụ 2: Điểm môn Lý ≥ 8.25
+4
+7860226
+Chỉ huy kỹ thuật Phòng không (miền Nam)
+A00, A01
+21.5
+Thí sinh mức 21.50 điểm: Điểm môn Toán ≥ 7.00

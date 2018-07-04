@@ -1,0 +1,391 @@
+SPK
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7140231D
+Sư phạm tiếng Anh (Đại trà)
+D01; D96
+25
+
+3
+7210403D
+Thiết kế đồ họa (Đại trà)
+V01; V02; V07; V08
+---
+
+4
+7210404D
+Thiết kế thời trang (Đại trà)
+V01; V02
+20
+
+5
+7220201D
+Ngôn ngữ Anh (Đại trà)
+D01; D96
+24.75
+
+6
+7340122D
+Thương mại điện tử (Đại trà)
+A00; A01; D01; D90
+23.25
+
+7
+7340301C
+Kế toán (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+18.75
+
+8
+7340301D
+Kế toán (Đại trà)
+A00; A01; D01; D90
+22.75
+
+9
+7480108A
+Công nghệ kỹ thuật máy tính (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+---
+
+10
+7480108C
+Công nghệ kỹ thuật máy tính (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+21
+
+11
+7480108D
+Công nghệ kỹ thuật máy tính (Đại trà)
+A00; A01; D01; D90
+23.75
+
+12
+7480201A
+CN thông tin (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+21.25
+
+13
+7480201C
+CN thông tin (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+22.25
+
+14
+7480201D
+CN thông tin (Đại trà)
+A00; A01; D01; D90
+25
+
+15
+7480203D
+Kỹ thuật dữ liệu (Đại trà)
+A00; A01; D01; D90
+21
+
+16
+7510102A
+Công nghệ kỹ thuật công trình xây dựng (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+19.5
+
+17
+7510102C
+Công nghệ kỹ thuật công trình xây dựng (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+20.25
+
+18
+7510102D
+Công nghệ kỹ thuật công trình xây dựng (Đại trà)
+A00; A01; D01; D90
+23.5
+
+19
+7510201A
+Công nghệ kỹ thuật cơ khí (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+21
+
+20
+7510201C
+Công nghệ kỹ thuật cơ khí (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+22.25
+
+21
+7510201D
+Công nghệ kỹ thuật cơ khí (Đại trà)
+A00; A01; D01; D90
+24.75
+
+22
+7510202A
+CN chế tạo máy (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+20
+
+23
+7510202C
+CN chế tạo máy (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+21.5
+
+24
+7510202D
+CN chế tạo máy (Đại trà)
+A00; A01; D01; D90
+24.25
+
+25
+7510203A
+Công nghệ kỹ thuật cơ điện tử (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+21
+
+26
+7510203C
+Công nghệ kỹ thuật cơ điện tử (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+22.75
+
+27
+7510203D
+Công nghệ kỹ thuật cơ điện tử (Đại trà)
+A00; A01; D01; D90
+25.25
+
+28
+7510205A
+Công nghệ kỹ thuật ô tô (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+22.25
+
+29
+7510205C
+Công nghệ kỹ thuật ô tô (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+23.75
+
+30
+7510205D
+Công nghệ kỹ thuật ô tô (Đại trà)
+A00; A01; D01; D90
+25.5
+
+31
+7510206A
+Công nghệ kỹ thuật nhiệt (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+---
+
+32
+7510206C
+Công nghệ kỹ thuật nhiệt (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+20
+
+33
+7510206D
+Công nghệ kỹ thuật nhiệt (Đại trà)
+A00; A01; D01; D90
+23.5
+
+34
+7510208D
+Năng lượng tái tạo (Đại trà)
+A00; A01; D01; D90
+---
+
+35
+7510301A
+Công nghệ kỹ thuật điện, điện tử (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+20.25
+
+36
+7510301C
+Công nghệ kỹ thuật điện, điện tử (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+22.25
+
+37
+7510301D
+Công nghệ kỹ thuật điện, điện tử (Đại trà)
+A00; A01; D01; D90
+25
+
+38
+7510302A
+Công nghệ kỹ thuật điện tử - viễn thông (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+19
+
+39
+7510302C
+Công nghệ kỹ thuật điện tử - viễn thông (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+20
+
+40
+7510302D
+Công nghệ kỹ thuật điện tử - viễn thông (Đại trà)
+A00; A01; D01; D90
+23.75
+
+41
+7510303A
+Công nghệ kỹ thuật điều khiển và tự động hóa (Chất lượng cao tiếng Anh)
+A00; A01; D01; D90
+21.75
+
+42
+7510303C
+Công nghệ kỹ thuật điều khiển và tự động hóa (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+22.75
+
+43
+7510303D
+Công nghệ kỹ thuật điều khiển và tự động hóa (Đại trà)
+A00; A01; D01; D90
+25
+
+44
+7510401D
+Công nghệ kỹ thuật Hóa học (Đại trà)
+A00; B00; D07; D90
+25
+
+45
+7510402D
+Công nghệ vật liệu (Đại trà)
+A00; A01; D07; D90
+21.75
+
+46
+7510406C
+Công nghệ kỹ thuật môi trường (Chất lượng cao tiếng Việt)
+A00; B00; D07; D90
+18
+
+47
+7510406D
+Công nghệ kỹ thuật môi trường (Đại trà)
+A00; B00; D07; D90
+21.5
+
+48
+7510601C
+Quản lý công nghiệp (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+19.75
+
+49
+7510601D
+Quản lý công nghiệp (Đại trà)
+A00; A01; D01; D90
+24
+
+50
+7510605D
+Logistics & Quản lý chuỗi cung ứng (Đại trà)
+A00; A01; D01; D90
+24.5
+
+51
+7510801C
+Công nghệ kỹ thuật in (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+---
+
+52
+7510801D
+Công nghệ kỹ thuật in (Đại trà)
+A00; A01; D01; D90
+---
+
+53
+7520117D
+KT công nghiệp (Đại trà)
+A00; A01; D01; D90
+---
+
+54
+7520212D
+Kỹ thuật y sinh (Điện tử YS) (Đại trà)
+A00; A01; D01; D90
+23.25
+
+55
+7540101A
+Công nghệ thực phẩm (Chất lượng cao tiếng Anh)
+A00; B00; D07; D90
+20.5
+
+56
+7540101C
+Công nghệ thực phẩm (Chất lượng cao tiếng Việt)
+A00; B00; D07; D90
+21.75
+
+57
+7540101D
+Công nghệ thực phẩm (Đại trà)
+A00; B00; D07; D90
+25
+
+58
+7540205C
+Công nghệ may (Chất lượng cao tiếng Việt)
+A00; A01; D01; D90
+19.75
+
+59
+7540205D
+Công nghệ may (Đại trà)
+A00; A01; D01; D90
+24
+
+60
+7549001D
+CN chế biến lâm sản (chế biến gỗ) (Đại trà)
+A00; A01; D01; D90
+---
+
+61
+7580101D
+Kiến trúc (Đại trà)
+V03; V04; V05; V06
+---
+
+62
+7580205D
+KT xây dựng công trình giao thông (Đại trà)
+A00; A01; D01; D90
+---
+
+63
+7580302D
+Quản lý xây dựng (Đại trà)
+A00; A01; D01; D90
+---
+
+64
+7810202D
+Quản trị nhà hàng và dịch vụ ăn uống (Đại trà)
+A00; A01; D01; D07
+---
+
+65
+7810502D
+Kỹ thuật nữ công (Đại trà)
+A00; B00; D01; D07
+---
+

@@ -1,0 +1,25 @@
+ZCH
+1
+7140208
+Giáo dục Quốc phòng - An ninh
+A00; A01; C00
+15.5
+
+2
+7520103
+Kỹ thuật cơ khí
+A00; A01
+15.5
+
+3
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01
+15.5
+
+4
+7580208
+Kỹ thuật xây dựng
+A00; A01
+15.5
+

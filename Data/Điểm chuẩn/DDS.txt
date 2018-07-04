@@ -1,0 +1,205 @@
+DDS
+1
+7140201
+Giáo dục Mầm non
+M00
+21.5
+Năng khiếu >= 6.25;TO >= 5.8;VA >= 8.5;TTNV <= 1
+2
+7140202
+Giáo dục Tiểu học
+D01
+22
+TO >= 6.2;VA >= 7.5;N1 >= 8.4;TTNV <= 3
+3
+7140205
+Giáo dục Chính trị
+C00, C20, D66
+24
+VA >= 5.5;TTNV <= 2
+4
+7140209
+Sư phạm Toán học
+A00, A01
+24.25
+TO >= 7;LI >= 8;TTNV <= 6
+5
+7140210
+Sư phạm Tin học
+A00, A01
+15.75
+TO >= 3.4;LI >= 5.5;TTNV <= 1
+6
+7140211
+Sư phạm Vật lý
+A00, A01, A02
+21.5
+LI >= 5;TO >= 8.6;TTNV <= 6
+7
+7140212
+Sư phạm Hoá học
+A00, B00, D07
+22
+HO >= 6.75;TO >= 7.6;TTNV <= 4
+8
+7140213
+Sư phạm Sinh học
+B00, D08,
+17.5
+SI >= 6.25;TO >= 5.2;HO >= 5.5;TTNV <= 2
+9
+7140217
+Sư phạm Ngữ văn
+C00, C14, D66
+23.5
+VA >= 5.75;SU >= 5.75;DI >= 8.5;TTNV <= 2
+10
+7140218
+Sư phạm Lịch sử
+C00, C19,
+22.25
+SU >= 5.25;VA >= 5;TTNV <= 2
+11
+7140219
+Sư phạm Địa lý
+C00, D15,
+21.5
+DI >= 7.25;VA >= 4.5;SU >= 6.25;TTNV <= 1
+12
+7140221
+Sư phạm Âm nhạc
+N00
+21.75
+Năng khiếu 1 >= 6.5;Năng khiếu 2 >= 7; VA >= 7.75;TTNV <= 1
+13
+7229010
+Lịch sử
+C00, C19, D14
+16.25
+SU >= 2.75;VA >= 6;TTNV <= 3
+14
+7229030
+Văn học
+C00, C14, D15, D66
+15.5
+VA >= 4.5;TTNV <= 5
+15
+7229040
+Văn hoá học
+C00, C14, D15, D66
+15.5
+VA >= 5;TTNV <= 4
+16
+7310401
+Tâm lý học
+B00, C00, D01
+16.75
+TTNV <= 6
+17
+7310401CLC
+Tâm lý học (Chất lượng cao)
+B00, C00, D01
+---
+
+18
+7310501
+Địa lý học
+C00, D15,
+16.75
+DI >= 3.75;VA >= 3.75;TTNV <= 3
+19
+7310630
+Việt Nam học
+C00, D14, D15
+16.75
+VA >= 3;TTNV <= 3
+20
+7310630CLC
+Việt Nam học CLC
+C00, D14, D15
+---
+
+21
+7320101
+Báo chí
+C00, C14, D15
+18.25
+VA >= 4;TTNV <= 3
+22
+7320101CLC
+Báo chí (Chất lượng cao)
+C00, C14, D15
+---
+
+23
+7420201
+Công nghệ sinh học
+A00, B00, D08
+16
+SI >= 3.5;HO >= 6.25;TO >= 6.2;TTNV <= 1
+24
+7440102
+Vật lý học
+A00, A01, A02
+15.75
+LI >= 5.25;TO >= 5.6;TTNV <= 3
+25
+7440112
+Hoá học
+A00, B00, D07
+15.5
+HO >= 5.5;TO >= 5.2;TTNV <= 2
+26
+7440112CLC
+Hóa học CLC
+A00, B00, D07
+---
+
+27
+7440301
+Khoa học môi trường
+A00, B00, D07
+15.75
+HO >= 4;TO >= 5;TTNV <= 3
+28
+7460112
+Toán ứng dụng
+A00, A01,
+15.5
+TO >= 5.8;LI >= 4.5;TTNV <= 3
+29
+7480201
+Công nghệ thông tin
+A00, A01,
+17.75
+TO >= 5.2;LI >= 5.25;TTNV <= 3
+30
+7480201CLC
+Công nghệ thông tin CLC
+A00, A01,
+16.5
+TO >= 5.2;LI >= 4.25;TTNV <= 4
+31
+7480201DT
+Công nghệ thông tin (đặc thù)
+A00, A01,
+---
+
+32
+7760101
+Công tác xã hội
+C00, D01,
+16.75
+VA >= 4;TTNV <= 2
+33
+7850101
+Quản lý tài nguyên và môi trường
+A00, B00, D08
+15.5
+SI >= 3.25;TO >= 5.6;HO >= 5.75;TTNV <= 4
+34
+7850101CLC
+Quản lý tài nguyên và môi trường (Chất lượng cao)
+A00, B00, D08
+---
+

@@ -1,0 +1,61 @@
+DDA
+1
+7340101
+Quản trị kinh doanh
+A00, A01, C00,D01
+15.5
+
+2
+7340201
+Tài chính – Ngân hàng
+A00, A01, C00,D01
+15.5
+
+3
+7340301
+Kế toán
+A00, A01, C00,D01
+15.5
+
+4
+7480201
+Công nghệ thông tin
+A00, A01, A02, D01
+15.5
+
+5
+7510202
+Công nghệ chế tạo máy
+A00, A01, A02, D01
+15.5
+
+6
+7510206
+Công nghệ kỹ thuật nhiệt
+A00, A01, A02, D01
+15.5
+
+7
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, A02, D01
+15.5
+
+8
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00, A01, A02, D01
+15.5
+
+9
+7540101
+Công nghệ thực phẩm
+A00, A01, A02, B00
+15.5
+
+10
+7580201
+Kỹ thuật xây dựng
+A00, A01, A02, D01
+15.5
+

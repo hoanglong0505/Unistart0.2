@@ -1,0 +1,55 @@
+YKV
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7720101
+Y khoa
+B00
+25
+
+3
+7720103
+Y học dự phòng
+B00
+18
+
+4
+7720201
+Dược học
+A00, B00
+---
+
+5
+7720501
+Điều dưỡng
+B00
+18
+
+6
+7720332
+Kỹ thuật xét nghiệm y học
+B00
+19
+
+7
+7720301
+Y tế công cộng
+B00
+15
+
+8
+LT7720101
+Y khoa liên thông CQ
+B00
+---
+
+9
+LT7720301
+Điều dưỡng liên thông CQ
+B00
+---
+

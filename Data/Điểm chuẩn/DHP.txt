@@ -1,0 +1,61 @@
+DHP
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220201
+Ngôn ngữ Anh
+A00; D01
+15.5
+Xét học bạ 18 điểm
+3
+7310630
+Việt Nam học
+A00; C00; D01
+15.5
+Xét học bạ 18 điểm
+4
+7340101
+Quản trị kinh doanh
+A00; C00; D01
+15.5
+Xét học bạ 18 điểm
+5
+7380101
+Luật
+A01; C00; D01
+---
+
+6
+7480201
+Công nghệ thông tin
+A00; A01
+15.5
+Xét học bạ 18 điểm
+7
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; V01
+15.5
+Xét học bạ 18 điểm
+8
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+9
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; B00
+15.5
+Xét học bạ 18 điểm
+10
+7620101
+Nông nghiệp
+A00; A01; B00
+15.5
+Xét học bạ 18 điểm

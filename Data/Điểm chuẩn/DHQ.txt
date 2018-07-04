@@ -1,0 +1,55 @@
+DHQ
+1
+7210403
+Thiết kế đồ họa
+H00
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01, D14, D15
+---
+
+3
+7340101
+Quản trị kinh doanh
+A00, A01, C15, D01
+15.5
+
+4
+7480201
+Công nghệ thông tin
+A00, A01
+---
+
+5
+7510406
+Công nghệ kỹ thuật môi trường
+A00, A02, B00, D07
+15.5
+
+6
+7520201
+Kỹ thuật điện
+A00, A01, D01, D07
+15.5
+
+7
+7580201
+Kỹ thuật xây dựng
+A00, A01, C01, D07
+15.5
+
+8
+7580301
+Kinh tế xây dựng
+A00, A01, C01, D01
+---
+
+9
+7810101
+Du lịch
+A00, A01, D01, D1
+---
+

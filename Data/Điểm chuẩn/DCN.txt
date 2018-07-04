@@ -1,0 +1,205 @@
+DCN
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7210404
+Thiết kế thời trang
+A00; A01; D01
+21.5
+Điểm Toán >= 8.6; TTNV <= 4
+3
+7220201
+Ngôn ngữ Anh
+D01
+22
+Điểm Tiếng Anh >= 7.4; TTNV <= 2
+4
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04
+21.25
+
+5
+7310104
+Kinh tế đầu tư
+A00; A01; D01
+---
+
+6
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+19.75
+Điểm Toán >= 6.2; TTNV <= 7
+7
+7340101_CLC
+Quản trị kinh doanh chất lượng cao
+A00; A01; D01
+18.25
+Điểm toán >=5.8; TTNV=1
+8
+7340115
+Marketing
+A00; A01; D01
+22
+Điểm Toán >= 6.4; TTNV <= 5
+9
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+19.25
+Điểm Toán >= 7; TTNV <= 6
+10
+7340301
+Kế toán
+A00; A01; D01
+20.25
+Điểm Toán >= 7.2; TTNV <= 3
+11
+7340302
+Kiểm toán
+A00; A01; D01
+20.25
+Điểm Toán >= 6.8; TTNV <= 4
+12
+7340404
+Quản trị nhân lực
+A00; A01; D01
+20.75
+Điểm Toán >= 6.6; TTNV = 1
+13
+7340406
+Quản trị văn phòng
+A00; A01; D01
+19.25
+Điểm Toán >= 5.8; TTNV <= 3
+14
+7480101
+Khoa học máy tính
+A00; A01
+20.5
+Điểm Toán >= 6.8; TTNV <= 2
+15
+7480101_QT
+Khoa học máy tính (LK với ĐH Frostburg)
+A00; A01
+16.5
+Tiêu chí phụ 1: Điểm Toán >=5.60; Tiêu chí phụ 2: TTNV<=2
+16
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01
+20.25
+Điểm Toán >= 7.6; TTNV = 1
+17
+7480103
+Kỹ thuật phần mềm
+A00; A01
+21.5
+Điểm Toán >=7; TTNV<=3
+18
+7480104
+Hệ thống thông tin
+A00; A01
+20
+Điểm Toán >=7.6; TTNV<=4
+19
+7480108
+Công nghệ kỹ thuật máy tính
+A00; A01
+20.25
+Điểm toán>=6.4, TTNV=1
+20
+7480201
+Công nghệ thông tin
+A00; A01
+23
+Điểm Toán >=8, TTNV<=3
+21
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01
+22.25
+Điểm Toán >=7.2, TTNV<=6
+22
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01
+24
+Điểm Toán >=7.4, TTNV<=3
+23
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01
+22.5
+Điểm toán >=6.8, TTNV= 1
+24
+7510206
+Công nghệ kỹ thuật nhiệt
+A00; A01
+19.25
+Điểm Toán>=8.4; TTNV<=3
+25
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01
+22.25
+Điểm toán >=7.6; TTNV<=3
+26
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01
+20.25
+Điểm toán>=7; TTNV<=4
+27
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01
+24
+Điểm toán>=8.2; TTNV<=3
+28
+7510401
+Công nghệ kỹ thuật hoá học
+A00; B00; D07
+17
+Điểm toán>=4.8, TTNV<=5
+29
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; D07
+17
+Điểm toán >=5.6, TTNV<=2
+30
+7540101
+Công nghệ thực phẩm
+A00; B00; D07
+---
+
+31
+7540204
+Công nghệ dệt, may
+A00; A01; D01
+22.75
+Điểm toán>=8.2; TTNV<=3; TTNV<=3
+32
+7810101
+Du lịch
+C00; D01; D14
+---
+
+33
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01
+---
+
+34
+7810201
+Quản trị khách sạn
+A00; A01; D01
+---
+

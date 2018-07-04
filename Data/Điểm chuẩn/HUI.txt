@@ -1,0 +1,283 @@
+HUI
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7210404
+Thiết kế thời trang
+A00; C01; D01; D90
+17
+
+3
+7220201
+Ngôn ngữ Anh
+D01; D14; D15; D96
+20.5
+
+4
+7340101
+Quản trị kinh doanh
+A01; C01; D01; D96
+20
+
+5
+7340101C
+Ngành Quản trị kinh doanh (Hệ đại học Chất lượng cao)
+A01; C01; D01; D96
+17
+
+6
+7340115
+Marketing
+A01; C01; D01; D96
+17.5
+
+7
+7340115C
+Ngành Marketing (Hệ đại học Chất lượng cao)
+A01; C01; D01; D96
+16.5
+
+8
+7340120
+Kinh doanh quốc tế
+A01; C01; D01; D96
+19
+
+9
+7340120C
+Ngành Kinh doanh quốc tế (Hệ đại học Chất lượng cao)
+A01; C01; D01; D96
+16.5
+
+10
+7340122
+Thương mại điện tử
+A01; C01; D01; D90
+19
+
+11
+7340201
+Tài chính – Ngân hàng
+A00; C01; D01; D90
+17
+
+12
+7340201C
+Ngành Tài chính ngân hàng (Hệ đại học Chất lượng cao)
+A00; C01; D01; D90
+16.5
+
+13
+7340301
+Kế toán
+A00; C01; D01; D90
+18.5
+
+14
+7340301C
+Ngành Kế toán (Hệ đại học Chất lượng cao)
+A00; C01; D01; D90
+17.5
+
+15
+7380107
+Luật kinh tế
+A00; C00; D01; D96
+23.5
+
+16
+7380108
+Luật quốc tế
+A00; C00; D01; D96
+21.5
+
+17
+7420201
+Công nghệ sinh học
+A00; B00; D07; D90
+17.5
+
+18
+7420201C
+Ngành Công nghệ sinh học (Hệ đại học Chất lượng cao)
+A00; B00; D07; D90
+16.5
+
+19
+7440301
+Khoa học môi trường
+A00; B00; D07; D90
+---
+
+20
+7480103C
+Ngành Kỹ thuật phần mềm (Hệ đại học Chất lượng cao)
+A00; C01; D01; D90
+18
+
+21
+7480201
+Công nghệ thông tin
+A00; C01; D01; D90
+20.75
+
+22
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; C01; D90
+21.5
+
+23
+7510201C
+Ngành Công nghệ kỹ thuật cơ khí (Hệ đào tạo Chất lượng cao)
+A00; A01; C01; D90
+18.75
+
+24
+7510202
+Công nghệ chế tạo máy
+A00; A01; C01; D90
+19.5
+
+25
+7510202C
+Ngành Công nghệ chế tạo máy (Hệ đại học Chất lượng cao)
+A00; A01; C01; D90
+16.5
+
+26
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; C01; D90
+22
+
+27
+7510203C
+Ngành Công nghệ kỹ thuật cơ điện tử( Hệ đào tạo Chất lượng cao)
+A00; A01; C01; D90
+17
+
+28
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; C01; D90
+22
+
+29
+7510206
+Công nghệ kỹ thuật nhiệt
+A00; A01; C01; D90
+17.5
+
+30
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01; D90
+20.75
+
+31
+7510301C
+Ngành Công nghệ kỹ thuật điện, điện tử (Hệ đào tạo chất lượng cao)
+A00; A01; C01; D90
+18
+
+32
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01; C01; D90
+17.5
+
+33
+7510302C
+Ngành Công nghệ kỹ thuật điện tử - viễn thông(Hệ đào tạo Chất lượng cao)
+A00; A01; C01; D90
+16.5
+
+34
+7510401
+Công nghệ kỹ thuật hoá học
+A00; B00; D07; D90
+18
+
+35
+7510401C
+Ngành Công nghệ hóa học (Hệ đại học Chất lượng cao)
+A00; B00; D07; D90
+16.5
+
+36
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; D07; D90
+17
+
+37
+7510406C
+Ngành Công nghệ kỹ thuật môi trường( Hệ đại học Chất lượng cao)
+A00; B00; D07; D90
+16.5
+
+38
+7540101
+Công nghệ thực phẩm
+A00; B00; D07; D90
+20.75
+
+39
+7540101C
+Ngành Công nghệ thực phẩm(Hệ đại học Chất lượng cao)
+A00; B00; D07; D90
+19
+
+40
+7540106
+Đảm bảo chất lượng và an toàn thực phẩm
+A00; B00; D07; D90
+---
+
+41
+7540204
+Công nghệ dệt, may
+A00; C01; D01; D90
+20.75
+
+42
+7580201
+Kỹ thuật xây dựng
+A00; A01; C01; D90
+17
+
+43
+7720497
+Dinh dưỡng và khoa học thực phẩm
+A00; B00; D07; D90
+---
+
+44
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A01; C01; D01; D96
+20.5
+
+45
+7810201
+Quản trị khách sạn
+A01
+20.5
+
+46
+7810202
+Quản trị nhà hàng và dịch vụ ăn uống
+A01
+20.5
+
+47
+7850101
+Quản lý tài nguyên và môi trường
+A00
+17
+

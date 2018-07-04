@@ -1,0 +1,43 @@
+MTC
+1
+7210103
+Hội họa
+H00; H07
+17.75
+Xét học bạ 17.75 điểm
+2
+7210105
+Điêu khắc
+H00; H07
+18
+Xét học bạ 18 điểm
+3
+7210107
+Gốm
+H00; H07
+18
+Xét học bạ 18 điểm
+4
+7210402
+Thiết kế công nghiệp
+H00; H07
+15.5
+Xét học bạ 15.5 điểm
+5
+7210403
+Thiết kế đồ họa
+H00; H07
+20
+Xét học bạ 19.5 điểm
+6
+7210404
+Thiết kế thời trang
+H00; H07
+17
+Xét học bạ 18 điểm
+7
+7210405
+Thiết kế nội thất
+H00; H07
+18
+Xét học bạ 18.5 điểm

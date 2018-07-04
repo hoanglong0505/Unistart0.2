@@ -1,0 +1,151 @@
+DTA
+1
+7220201
+Ngôn ngữ Anh
+D14, D15, D66
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+3
+7340101
+Quản trị kinh doanh
+C01
+---
+
+4
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+5
+7340201
+Tài chính – Ngân hàng
+C01
+---
+
+6
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+7
+7340301
+Kế toán
+C01
+---
+
+8
+7340301
+Kế toán
+A00; A01; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+9
+7340404
+Quản trị nhân lực
+A00; A01; C00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+10
+7340406
+Quản trị văn phòng
+A00; A01; C00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+11
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+12
+7420201
+Công nghệ sinh học
+D01
+---
+
+13
+7420201
+Công nghệ sinh học
+A00; A01; B00
+15.5
+Xét học bạ trung bình môn 6 điểm
+14
+7440301
+Khoa học môi trường
+A00; A01; B00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+15
+7480101
+Khoa học máy tính
+C01
+---
+
+16
+7480101
+Khoa học máy tính
+A00; A01; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+17
+7580201
+Kỹ thuật xây dựng
+C01, D01
+---
+
+18
+7580201
+Kỹ thuật xây dựng
+A00; A01
+15.5
+Xét học bạ trung bình môn 6 điểm
+19
+7620201
+Lâm học
+D01
+---
+
+20
+7620201
+Lâm học
+A00; A01; B00
+15.5
+Xét học bạ trung bình môn 6 điểm
+21
+7720201
+Dược học
+A02
+---
+
+22
+7720201
+Dược học
+A00; B00; D08
+15.5
+Xét học bạ trung bình môn 6 điểm
+23
+7720301
+Điều dưỡng
+A02
+---
+
+24
+7720301
+Điều dưỡng
+A00; B00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm
+25
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+15.5
+Xét học bạ trung bình môn 6 điểm

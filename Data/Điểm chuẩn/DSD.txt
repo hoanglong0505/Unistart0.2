@@ -1,0 +1,31 @@
+DSD
+1
+
+Hệ đại học
+
+---
+
+2
+7210227
+Đạo diễn sân khấu
+S1
+27
+Điểm tối thiểu năng khiếu 7, điểm tối thiểu văn 5
+3
+7210234
+Diễn viên kịch - điện ảnh
+S2
+28
+Điểm tối thiểu năng khiếu 9, điểm tối thiểu văn 5
+4
+7210235
+Đạo diễn điện ảnh - truyền hình
+S4
+24.5
+Điểm tối thiểu năng khiếu 7, điểm tối thiểu văn 5
+5
+7210236
+Quay phim
+S3
+26
+Điểm tối thiểu năng khiếu 7.5, điểm tối thiểu văn 5

@@ -1,0 +1,61 @@
+NVS
+1
+7210201
+Âm nhạc học (4 năm)
+
+21
+Chuyên môn 8, kiến thức 5
+2
+7210203
+Sáng tác âm nhạc (4 năm)
+
+21
+Chuyên môn 8, kiến thức 5
+3
+7210204
+Chỉ huy âm nhạc (4 năm): Chỉ huy Hợp xướng; Chỉ huy Dàn nhạc
+
+21
+Chuyên môn 8, kiến thức 5
+4
+7210205
+Thanh nhạc (4 năm)
+
+20
+Chuyên môn 7.5, kiến thức 5
+5
+7210207
+Biểu diễn nhạc cụ phương Tây (4 năm): Violon, Violon Alto, Violoncelle, Contrebasse; Harpe, Flûte, Tuba, Hautbois, Clarinette, Basson, Cor, Trompette, Trombone, Gõ giao hưởng, Accordéon, Guitare, Saxophone, Gõ nhạc nhẹ, Orgue điện tử, Piano nhạc nhẹ, Orgue điện tử, Piano nhạc nhẹ, Guitare nhạc nhẹ.
+
+21
+Chuyên môn 8, kiến thức 5
+6
+7210208
+Piano (4 năm)
+
+21
+Chuyên môn 8, kiến thức 5
+7
+7210210
+Biểu diễn nhạc cụ truyền thống (4 năm): Sáo trúc, Tranh, Bầu, Nguyệt, Tỳ bà, Ghi-ta phím lốm, Nhị, Tam Thập lục.
+
+21
+Chuyên môn 8, kiến thức 5
+8
+7210201
+Âm nhạc học VB2 (2 năm)
+
+21
+Chuyên môn 8, kiến thức 5
+9
+7210203
+Sáng tác âm nhạc VB2 (2 năm)
+
+21
+Chuyên môn 8, kiến thức 5
+10
+7210204
+Chỉ huy âm nhạc VB2 (2 năm): Chỉ huy Hợp xướng; Chỉ huy Dàn nhạc
+
+21
+Chuyên môn 8, kiến thức 5

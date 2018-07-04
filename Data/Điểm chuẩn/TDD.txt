@@ -1,0 +1,73 @@
+TDD
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220201
+Ngôn ngữ Anh
+B00; D01
+15.5
+
+3
+7310630
+Việt Nam học
+A00; A01; C00; D01
+15.5
+
+4
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D02
+15.5
+
+5
+7340301
+Kế toán
+A00; A01; D01; D02
+15.5
+
+6
+7340406
+Quản trị văn phòng
+A00; A01; C00; D01
+15.5
+
+7
+7480201
+Công nghệ thông tin
+A00; A01; D01; D02
+15.5
+
+8
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; D01; D02
+15.5
+
+9
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; D01; D02
+15.5
+
+10
+7720201
+Dược học
+A00; B00
+15.5
+
+11
+7810201
+Quản trị khách sạn
+A00; A01; C00; D01
+15.5
+
+12
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00; D01
+15.5
+

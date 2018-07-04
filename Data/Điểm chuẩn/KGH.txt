@@ -1,0 +1,25 @@
+KGH
+1
+7860203
+Chỉ huy tham mưu Không quân (miền Bắc)
+A00
+22.75
+Thí sinh mức 22,75 điểm: Điểm môn Toán ≥ 8,20.
+2
+7860203
+Chỉ huy tham mưu Không quân (miền Bắc)
+A01
+---
+
+3
+7860203
+Chỉ huy tham mưu Không quân (miền Nam)
+A00
+19.25
+
+4
+7860203
+Chỉ huy tham mưu Không quân (miền Nam)
+A01
+---
+

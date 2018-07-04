@@ -1,0 +1,145 @@
+NTH
+1
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+A00
+28.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 28.2. Điểm môn Toán 9.2.
+2
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+A01
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.2. Điểm môn Toán 8.4.
+3
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D01
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.2. Điểm môn Toán 8.4.
+4
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D02
+26.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.2. Điểm môn Toán 8.2.
+5
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D03
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.25. Điểm môn Toán 9.0.
+6
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D04
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.25. Điểm môn Toán 8.0.
+7
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D06
+27.25
+
+8
+NTH01
+Kinh tế, Kinh tế quốc tế, Luật
+D07
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.2. Điểm môn Toán 8.2.
+9
+NTH02
+Quản trị kinh doanh, Kinh doanh Quốc tế, Kinh doanh quốc tế theo mô hình tiên tiến Nhật Bản
+A00
+28
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.95. Điểm môn Toán 9.2.
+10
+NTH02
+Quản trị kinh doanh, Kinh doanh Quốc tế, Kinh doanh quốc tế theo mô hình tiên tiến Nhật Bản
+A01
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.95. Điểm môn Toán 8.6.
+11
+NTH02
+Quản trị kinh doanh, Kinh doanh Quốc tế, Kinh doanh quốc tế theo mô hình tiên tiến Nhật Bản
+D01
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.95. Điểm môn Toán 8.6.
+12
+NTH02
+Quản trị kinh doanh, Kinh doanh Quốc tế, Kinh doanh quốc tế theo mô hình tiên tiến Nhật Bản
+D06
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27. Điểm môn Toán 8.2.
+13
+NTH02
+Quản trị kinh doanh, Kinh doanh Quốc tế, Kinh doanh quốc tế theo mô hình tiên tiến Nhật Bản
+D07
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.95. Điểm môn Toán 9.0.
+14
+NTH03
+Kế toán , Tài chính - Ngân hàng
+A00
+27.75
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 27.65. Điểm môn Toán 8.4.
+15
+NTH03
+Kế toán , Tài chính - Ngân hàng
+A01
+26.75
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.65. Điểm môn Toán 8.4.
+16
+NTH03
+Kế toán , Tài chính - Ngân hàng
+D01
+26.75
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.65. Điểm môn Toán 8.4.
+17
+NTH03
+Kế toán , Tài chính - Ngân hàng
+D07
+26.75
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.65. Điểm môn Toán 8.8.
+18
+NTH04
+Ngôn ngữ Anh
+D01
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.75. Điểm môn Toán 8.8. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+19
+NTH05
+Ngôn ngữ Pháp
+D03
+24.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 24.5. Điểm môn Toán 7.8. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+20
+NTH06
+Ngôn ngữ Trung
+D01
+26.75
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.1. Điểm môn Toán 8.0. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+21
+NTH06
+Ngôn ngữ Trung
+D04
+25.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.7. Điểm môn Toán 7.4. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+22
+NTH07
+Ngôn ngữ Nhật
+D01
+27
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 26.05. Điểm môn Toán 9.0. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+23
+NTH07
+Ngôn ngữ Nhật
+D06
+25.5
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng điểm khu vực) - 25. Điểm môn Toán 7.0. Ngoại ngữ nhân hệ số 2. Điểm chuẩn quy đổi theo thang điểm 30
+24
+NTH08
+Nhóm ngành Kế toán, Kinh doanh quốc tế, Quản trị kinh doanh (tại Quảng Ninh)
+A00; A01; D01; D07
+18.75
+

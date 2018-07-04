@@ -1,0 +1,451 @@
+HBT
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+527
+Ngành Kinh tế, chuyên ngành Quản lý kinh tế
+A16; C15; D01
+23
+
+3
+527M
+Ngành Kinh tế, chuyên ngành Quản lý kinh tế (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+4
+528
+Ngành Kinh tế, chuyên ngành Kinh tế và Quản lý (chất lượng cao)
+A16; C15; D01
+---
+
+5
+528M
+Ngành Kinh tế, chuyên ngành Kinh tế và Quản lý (chất lượng cao) (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+6
+529
+Ngành Kinh tế, chuyên ngành Kinh tế và Quản lý
+D01
+21
+
+7
+529
+Ngành Kinh tế, chuyên ngành Kinh tế và Quản lý
+A16; C15
+---
+
+8
+529M
+Ngành Kinh tế, chuyên ngành Kinh tế và Quản lý (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+9
+530
+Ngành Chính trị học, chuyên ngành Quản lý hoạt động tư tưởng - văn hóa
+D01
+20
+
+10
+530
+Ngành Chính trị học, chuyên ngành Quản lý hoạt động tư tưởng - văn hóa
+A16; C15
+---
+
+11
+531
+Ngành Chính trị học, chuyên ngành Chính trị học phát triển
+A16; C15; D01
+20
+
+12
+532
+Ngành Chính trị học, chuyên ngành Quản lý xã hội
+A16; C15; D01
+20
+
+13
+533
+Ngành Chính trị học, chuyên ngành Tư tưởng Hồ Chí Minh
+A16; C15; D01
+20
+
+14
+535
+Ngành Chính trị học, chuyên ngành Văn hóa phát triển
+A16; C15; D01
+20
+
+15
+536
+Ngành Chính trị học, chuyên ngành Chính sách công
+A16; C15; D01
+19
+
+16
+538
+Ngành Chính trị học, chuyên ngành Truyền thông chính sách
+A16; C15; D01
+---
+
+17
+538M
+Ngành Chính trị học, chuyên ngành Truyền thông chính sách (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+18
+602
+Ngành Báo chí, chuyên ngành Báo in
+R05; R06; R15; R16
+---
+
+19
+602M
+Ngành Báo chí, chuyên ngành Báo in (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+20
+603
+Ngành Báo chí, chuyên ngành Ảnh báo chí
+R07; R08; R09; R17
+---
+
+21
+603M
+Ngành Báo chí, chuyên ngành Ảnh báo chí (Sử dụng chứng chỉ Tiếng Anh)
+R20
+---
+
+22
+604
+Ngành Báo chí, chuyên ngành Báo phát thanh
+R05; R06; R15; R16
+---
+
+23
+604M
+Ngành Báo chí, chuyên ngành Báo phát thanh (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+24
+605
+Ngành Báo chí, chuyên ngành Báo truyền hình
+R05; R06; R15; R16
+---
+
+25
+605M
+Ngành Báo chí, chuyên ngành Báo truyền hình (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+26
+606
+Ngành Báo chí, chuyên ngành Quay phim truyền hình
+R11; R12; R13; R18
+---
+
+27
+606M
+Ngành Báo chí, chuyên ngành Quay phim truyền hình (Sử dụng chứng chỉ Tiếng Anh)
+R21
+---
+
+28
+607
+Ngành Báo chí, chuyên ngành Báo mạng điện tử
+R05; R06; R15; R16
+---
+
+29
+607M
+Ngành Báo chí, chuyên ngành Báo mạng điện tử (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+30
+608
+Ngành Báo chí, chuyên ngành Báo truyền hình (chất lượng cao)
+R05; R06; R15; R16
+---
+
+31
+608M
+Ngành Báo chí, chuyên ngành Báo truyền hình (chất lượng cao) (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+32
+609
+Ngành Báo chí, chuyên ngành Báo mạng điện tử (chất lượng cao)
+R05; R06; R15; R16
+---
+
+33
+609M
+Ngành Báo chí, chuyên ngành Báo mạng điện tử (chất lượng cao) (Sử dụng chứng chỉ Tiếng Anh)
+R19
+---
+
+34
+610
+Ngành Quan hệ quốc tế, chuyên ngành Thông tin đối ngoại
+D01; D72; D78
+---
+
+35
+610M
+Ngành Quan hệ quốc tế, chuyên ngành Thông tin đối ngoại (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+36
+611
+Ngành Quan hệ quốc tế, chuyên ngành Quan hệ chính trị và truyền thông quốc tế
+D01; D72; D78
+---
+
+37
+611M
+Ngành Quan hệ quốc tế, chuyên ngành Quan hệ chính trị và truyền thông quốc tế (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+38
+614
+Ngành Quan hệ quốc tế, chuyên ngành Quan hệ quốc tế và truyền thông toàn cầu (chất lượng cao)
+D01; D72; D78
+32
+
+39
+614
+Ngành Quan hệ quốc tế, chuyên ngành Quan hệ quốc tế và truyền thông toàn cầu (chất lượng cao)
+D72; D78
+---
+
+40
+614M
+Ngành Quan hệ quốc tế, chuyên ngành Quan hệ quốc tế và truyền thông toàn cầu (chất lượng cao) (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+41
+615
+Ngành Quan hệ công chúng, chuyên ngành Quan hệ công chúng chuyên nghiệp
+D01
+33
+
+42
+615
+Ngành Quan hệ công chúng, chuyên ngành Quan hệ công chúng chuyên nghiệp
+D72; D78
+---
+
+43
+615M
+Ngành Quan hệ công chúng, chuyên ngành Quan hệ công chúng chuyên nghiệp (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+44
+616
+Ngành Quan hệ công chúng, chuyên ngành Truyền thông marketing (chất lượng cao)
+D01
+33
+
+45
+616
+Ngành Quan hệ công chúng, chuyên ngành Truyền thông marketing (chất lượng cao)
+D72; D78
+---
+
+46
+616M
+Ngành Quan hệ công chúng, chuyên ngành Truyền thông marketing (chất lượng cao) (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+47
+7220201
+Ngôn ngữ Anh
+D01
+33
+
+48
+7220201
+Ngôn ngữ Anh
+D01; D72; D78
+---
+
+49
+7220201M
+Ngành Ngôn ngữ Anh (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+50
+7229001
+Triết học
+A16; C15; D01
+---
+
+51
+7229008
+Chủ nghĩa xã hội khoa học
+A16; C15; D01
+20
+
+52
+7229010
+Lịch sử
+C00; C03; C19; D14
+---
+
+53
+7229010M
+Ngành Lịch sử, chuyên ngành Lịch sử Đảng Cộng sản Việt Nam
+R23
+---
+
+54
+7310102
+Kinh tế chính trị
+A16; C15; D01
+22
+
+55
+7310202
+Xây dựng Đảng và chính quyền nhà nước
+A16; C15; D01
+22
+
+56
+7310205
+Quản lý nhà nước
+A16; C15; D01
+---
+
+57
+7310205M
+Ngành Quản lý nhà nước (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+58
+7310301
+Xã hội học
+A16; C15; D01
+22
+
+59
+7310301M
+Ngành Xã hội học (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+60
+7320104
+Truyền thông đa phương tiện
+A16; C15; D01
+---
+
+61
+7320104M
+Ngành Truyền thông đa phương tiện (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+62
+7320105
+Truyền thông đại chúng
+A16; C15; D01
+---
+
+63
+7320105M
+Ngành Truyền thông đại chúng (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+64
+7320107
+Truyền thông quốc tế
+D01; D72; D78
+---
+
+65
+7320107M
+Ngành Truyền thông quốc tế (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+66
+7320110
+Quảng cáo
+D01
+32
+
+67
+7320110
+Quảng cáo
+D72; D78
+---
+
+68
+7320110M
+Ngành Quảng cáo (Sử dụng chứng chỉ Tiếng Anh)
+R24; R25; R26
+---
+
+69
+7320401
+Xuất bản
+A16; C15
+---
+
+70
+7320401
+Xuất bản
+D01
+23
+
+71
+7320401M
+Ngành Xuất bản
+R22
+---
+
+72
+7340403
+Quản lý công
+A16; C15; D01
+---
+
+73
+7340403M
+Ngành Quản lý công (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+
+74
+7760101
+Công tác xã hội
+A16; C15; D01
+22
+
+75
+7760101M
+Ngành Công tác xã hội (Sử dụng chứng chỉ Tiếng Anh)
+R22
+---
+

@@ -1,0 +1,31 @@
+TDB
+1
+7140206
+Giáo dục Thể chất
+T00
+15.5
+Điểm thi môn năng khiếu >=5.0. Tiêu chí phụ KQ Thi THPT Quốc gia:Tổng điểm TB 2 môn Toán và Sinh ở kỳ thi THPTQG >=10.5; Xét học bạ 15, Tổng điểm TB 2 môn Toán và Sinh lớp 12 >=10
+2
+7140207
+Huấn luyện thể thao
+T00
+15.5
+Điểm thi môn năng khiếu >=5.0. Tiêu chí phụ KQ Thi THPT Quốc gia:Tổng điểm TB 2 môn Toán và Sinh ở kỳ thi THPTQG >=10.5; Xét học bạ 15, Tổng điểm TB 2 môn Toán và Sinh lớp 12 >=10
+3
+7729001
+Y sinh học thể dục thể thao
+T00
+15.5
+Điểm thi môn năng khiếu >=5.0. Tiêu chí phụ KQ Thi THPT Quốc gia:Tổng điểm TB 2 môn Toán và Sinh ở kỳ thi THPTQG >=10.5; Xét học bạ 15, Tổng điểm TB 2 môn Toán và Sinh lớp 12 >=10
+4
+7810301
+Quản lý thể dục thể thao
+T00
+15.5
+Điểm thi môn năng khiếu >=5.0. Tiêu chí phụ KQ Thi THPT Quốc gia:Tổng điểm TB 2 môn Toán và Sinh ở kỳ thi THPTQG >=10.5; Xét học bạ 15, Tổng điểm TB 2 môn Toán và Sinh lớp 12 >=10
+5
+51140206
+Giáo dục Thể chất (hệ cao đẳng)
+T00
+---
+

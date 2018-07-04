@@ -1,0 +1,97 @@
+KTS
+1
+7580201
+Kỹ thuật xây dựng
+A00, A01
+21
+
+2
+7580210
+Kỹ thuật cơ sở hạ tầng
+A00, A01
+18
+
+3
+7580302
+Quản lý xây dựng
+A00, A01
+---
+
+4
+7580101
+Kiến trúc
+V00, V01
+23
+
+5
+7580102
+Kiến trúc cảnh quan
+V00, V01
+21
+
+6
+7580105
+Quy hoạch vùng và đô thị
+V00, V01
+20
+
+7
+7210110
+Mỹ thuật đô thị
+V00, V01
+---
+
+8
+7580108
+Thiết kế nội thất
+V00, V01
+23
+
+9
+7210402
+Thiết kế công nghiệp
+H01, H02
+22
+
+10
+7210403
+Thiết kế đồ họa
+H01, H06
+23
+
+11
+7210404
+Thiết kế thời trang
+H01, H06
+22
+
+12
+7580201CT
+Kỹ thuật xây dựng
+A00, A01
+16
+
+13
+7580101CT
+Kiến trúc
+V00, V01
+20
+
+14
+7580108CT
+Thiết kế nội thất
+V00, V01
+17
+
+15
+7580201DL
+Kỹ thuật xây dựng
+A00, A01
+15
+
+16
+7580101DL
+Kiến trúc
+V00, V01
+18
+

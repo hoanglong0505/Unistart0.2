@@ -1,0 +1,67 @@
+VUI
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D07; D14
+15.5
+ĐTB học bạ: 18
+2
+7340101
+Quản trị kinh doanh
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+3
+7340301
+Kế toán
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+4
+7420201
+Công nghệ sinh học
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+5
+7440112
+Hoá học
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+6
+7480201
+Công nghệ thông tin
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+7
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+8
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+9
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+10
+7510401
+Công nghệ kỹ thuật hoá học
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18
+11
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; B00; D01
+15.5
+ĐTB học bạ: 18

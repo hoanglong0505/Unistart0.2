@@ -1,0 +1,229 @@
+DDK
+1
+7420201
+Công nghệ sinh học
+A00, B00, D07
+23.75
+TO >= 4.8;LI >= 6;TTNV <= 3
+2
+7480201
+Công nghệ thông tin
+A00, A01
+26
+TO >= 7.6;LI >= 8.75;TTNV <= 3
+3
+7480201CLC
+Công nghệ thông tin (Chất lượng cao - ngoại ngữ Nhật)
+A00, A01
+23
+TO >= 6;LI >= 8.5;TTNV <= 2
+4
+7480201DT
+Công nghệ thông tin (đào tạo theo cơ chế đặc thù)
+A00, A01
+24.5
+TO >= 7.4;LI >= 8;TTNV <= 1
+5
+7510105
+Công nghệ kỹ thuật vật liệu xây dựng
+A00, A01
+17
+TO >= 6;LI >= 4.25;TTNV <= 2
+6
+7510202
+Công nghệ chế tạo máy
+A00, A01
+21.75
+TO >= 6.4;LI >= 6;TTNV <= 1
+7
+7510601
+Quản lý công nghiệp
+A00, A01
+19.25
+TO >= 6.2;LI >= 5.5;TTNV <= 2
+8
+7510701CLC
+Công nghệ dầu khí và khai thác dầu (chất lượng cao)
+A00, D07
+20.5
+TO >= 6.6;HO >= 8.5;TTNV <= 5
+9
+7520103
+Kỹ thuật cơ khí
+A00, A01
+23
+TO >= 6.4;LI >= 7.5;TTNV <= 1
+10
+7520103CLC
+Kỹ thuật cơ khí - chuyên ngành Cơ khí động lực (Chất lượng cao)
+A00, A01
+---
+
+11
+7520114
+Kỹ thuật cơ điện tử
+A00, A01
+24.25
+TO >= 6;LI >= 7.75;TTNV <= 2
+12
+7520114CLC
+Kỹ thuật cơ điện tử (Chất lượng cao)
+A00, A01
+---
+
+13
+7520115
+Kỹ thuật nhiệt
+A00, A01
+19.5
+TO >= 5.6;LI >= 6.25;TTNV <= 3
+14
+7520115CLC
+Kỹ thuật nhiệt (Chất lượng cao)
+A00, A01
+---
+
+15
+7520122
+Kỹ thuật tàu thuỷ
+A00, A01
+17
+TO >= 5.6;LI >= 5.25;TTNV <= 2
+16
+7520201
+Kỹ thuật điện
+A00, A01
+23.5
+TO >= 7;LI >= 7;TTNV <= 1
+17
+7520201CLC
+Kỹ thuật điện (Chất lượng cao)
+A00, A01
+16
+TO >= 5.2;LI >= 4;TTNV <= 2
+18
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01
+21.5
+TO >= 6.6;LI >= 7;TTNV <= 3
+19
+7520207CLC
+Kỹ thuật điện tử - viễn thông (Chất lượng cao)
+A00, A01
+20
+TO >= 6;LI >= 7;TTNV <= 1
+20
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00, A01
+25
+TO >= 7.2;LI >= 7.25;TTNV <= 2
+21
+7520216CLC
+Kỹ thuật điều khiển và tự động hóa (Chất lượng cao)
+A00, A01
+17.75
+TO >= 5.8;LI >= 4.75;TTNV <= 1
+22
+7520301
+Kỹ thuật hoá học
+A00, D07
+21.25
+TO >= 5.8;HO >= 7.25;TTNV <= 3
+23
+7520320
+Kỹ thuật môi trường
+A00, D07
+17.5
+TO >= 5.4;HO >= 5.5;TTNV <= 3
+24
+7540101
+Công nghệ thực phẩm
+A00, B00, D07
+25
+TO >= 6.8;HO >= 7;TTNV <= 4
+25
+7540101CLC
+Công nghệ thực phẩm (Chất lượng cao)
+A00, B00, D07
+20
+TO >= 5.6;HO >= 6.5;TTNV <= 3
+26
+7580101CLC
+Kiến trúc (Chất lượng cao)
+V00, V01, V02
+19.5
+Vẽ mỹ thuật >= 5.25;TO >= 5.6;TTNV <= 1
+27
+7580201A
+Kỹ thuật xây dựng - chuyên ngành Xây dựng dân dụng & công nghiệp
+A00, A01
+21
+TO >= 6.8;LI >= 6.5;TTNV <= 2
+28
+7580201B
+Kỹ thuật xây dựng - chuyên ngành Tin học xây dựng
+A00, A01
+19.75
+TO >= 6.4;LI >= 6.5;TTNV <= 2
+29
+7580201CLC
+Kỹ thuật xây dựng - chuyên ngành Xây dựng dân dụng & công nghiệp (Chất lượng cao)
+A00, A01
+18
+TO >= 6.8;LI >= 4.5;TTNV <= 5
+30
+7580202
+Kỹ thuật xây dựng công trình thuỷ
+A00, A01
+16.25
+TO >= 7;LI >= 4.75;TTNV <= 2
+31
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00, A01
+18
+TO >= 6.2;LI >= 5.75;TTNV <= 3
+32
+7580205CLC
+Kỹ thuật xây dựng công trình giao thông (Chất lượng cao)
+A00, A01
+18
+TO >= 6.8;LI >= 4.5;TTNV <= 5
+33
+7580301
+Kinh tế xây dựng
+A00, A01
+20.25
+TO >= 6.2;LI >= 5.75;TTNV <= 1
+34
+7580301CLC
+Kinh tế xây dựng (Chất lượng cao)
+A00, A01
+---
+
+35
+7850101
+Quản lý tài nguyên và môi trường
+A00, D07
+19.5
+TO >= 5;HO >= 6.5;TTNV <= 3
+36
+7905206
+Chương trình tiên tiến ngành Điện tử viễn thông
+A00, D07
+16.5
+N1 >= 4.6;TO >= 5.6;TTNV <= 6
+37
+7905216
+Chương trình tiên tiến ngành Hệ thống nhúng
+A00, D07
+16.25
+N1 >= 3.4;TO >= 8;TTNV <= 1
+38
+PFIEV
+Chương trình đào tạo kỹ sư chất lượng cao Việt-Pháp
+A00, A01
+19.25
+TO >= 6.6;LI >= 5.75;TTNV <= 1

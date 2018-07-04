@@ -1,0 +1,25 @@
+PCS
+1
+7860113
+Phòng cháy chữa cháy (Nam phía Bắc)
+A00
+28.25
+Trong số 16 thí sinh cùng mức 28.25 lấy 06 thí sinh: 04 thí sinh có tổng điểm 03 môn chưa làm tròn đạt 27.65 điểm; 02 thí sinh có tổng điểm 03 môn chưa làm tròn 27.35 điểm và môn Toán đạt 9.6
+2
+7860113
+Phòng cháy chữa cháy (Nữ phía Bắc)
+A00
+30.25
+Trong số 04 thí sinh cùng mức 30.25 lấy 03 thí sinh có tổng điểm 03 môn chưa làm tròn từ 28.35 điểm
+3
+7860113
+Phòng cháy chữa cháy (Nam phía Nam)
+A00
+27
+Trong số 18 thí sinh cùng mức 27.0 lấy 05 thí sinh: 03 thí sinh có tổng điểm 03 môn chưa làm tròn đạt từ 26.55 điểm; 02 thí sinh có tổng điểm 03 môn chưa làm tròn 26.0 điểm và môn Toán đạt 9.0
+4
+7860113
+Phòng cháy chữa cháy (Nữ phía Nam)
+A00
+28.5
+Trong số 06 thí sinh cùng mức 27.0 lấy 03 thí sinh: 01 thí sinh có tổng điểm 03 môn chưa làm tròn đạt 27.95 điểm; 02 thí sinh có tổng điểm 03 môn chưa làm tròn 27.4 điểm và môn Toán đạt 9.4

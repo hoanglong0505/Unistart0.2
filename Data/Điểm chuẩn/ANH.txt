@@ -1,0 +1,43 @@
+ANH
+1
+7860100
+Nghiệp vụ An ninh (Nam)
+A01
+27.75
+Trong số 08 thí sinh cùng mức 27.75 lấy 03 thí sinh: 02 thí sinh có tổng điểm 03 môn chưa làm tròn từ 27.2 điểm; 01 thí sinh có tổng điểm 03 môn chưa làm tròn đạt 27.15 và môn toán đạt 9.4
+2
+7860100
+Nghiệp vụ An ninh (Nam)
+C03
+25.5
+Trong số 29 thí sinh cùng mức 25.5 lấy 04 thí sinh: 03 thí sinh có tổng điểm 3 môn chưa làm tròn là 25.05; 01 thí sinh có tổng điểm 03 môn chưa làm tròn 24.95 và môn Văn đạt 8.25
+3
+7860100
+Nghiệp vụ An ninh (Nam)
+D01
+26.25
+
+4
+7860100
+Nghiệp vụ An ninh (Nữ)
+A01
+29.5
+
+5
+7860100
+Nghiệp vụ An ninh (Nữ)
+C03
+28
+Trong số 03 thí sinh cùng mức 28.0 lấy 02 thí sinh có tổng điểm 3 môn chưa làm tròn từ 26.6
+6
+7860100
+Nghiệp vụ An ninh (Nữ)
+D01
+29
+Trong số 02 thí sinh cùng mức 29.0 lấy 01 thí sinh có tổng điểm 3 môn chưa làm tròn đạt 25.5 và điểm tiếng Anh đạt 8.2
+7
+7860100
+Nghiệp vụ An ninh
+B00
+---
+

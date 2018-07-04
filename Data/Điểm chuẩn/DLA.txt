@@ -1,0 +1,55 @@
+DLA
+1
+7220201
+Ngôn ngữ Anh
+D01; D12; D15; D66
+15.5
+
+2
+7340101
+Quản trị kinh doanh
+A01; B03; C20; D13
+15.5
+
+3
+7340201
+Tài chính – Ngân hàng
+A08; B00; C08; D07
+15.5
+
+4
+7340301
+Kế toán
+A00; A09; C02; D10
+15.5
+
+5
+7380107
+Luật kinh tế
+A00; C00; C04; C05
+15.5
+
+6
+7480101
+Khoa học máy tính
+A00; C01; C14; D08
+15.5
+
+7
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; A02; A10; D84
+15.5
+
+8
+7580101
+Kiến trúc
+V00; V01; V02; V03
+15.5
+
+9
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+D01, D15, D66, D84
+---
+

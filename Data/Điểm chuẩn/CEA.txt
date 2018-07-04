@@ -1,0 +1,43 @@
+CEA
+1
+7310101
+Kinh tế
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+2
+7340101
+Quản trị kinh doanh
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+3
+7340301
+Kế toán
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+4
+7620110
+Khoa học cây trồng
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+5
+7620201
+Lâm học
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+6
+7640101
+Thú y
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm
+7
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+15.5
+Xét học bạ 18 điểm

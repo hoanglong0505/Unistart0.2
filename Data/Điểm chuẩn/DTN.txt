@@ -1,0 +1,187 @@
+DTN
+1
+7340116
+Bất động sản
+A00, A02, D10, D14
+---
+
+2
+7420201
+Công nghệ sinh học
+C04, D10
+---
+
+3
+7420201
+Công nghệ sinh học
+A00; B00; C02; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+4
+7440301
+Khoa học môi trường
+C04, C17
+---
+
+5
+7440301
+Khoa học môi trường
+A00; B00
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+6
+7510406
+Công nghệ kỹ thuật môi trường
+C02, D01
+---
+
+7
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+8
+7540101
+Công nghệ thực phẩm
+C04, D10
+---
+
+9
+7540101
+Công nghệ thực phẩm
+A00; B00
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+10
+7540104
+Công nghệ sau thu hoạch
+A00, B00, C04, D10
+---
+
+11
+7540106
+Đảm bảo chất lượng và an toàn thực phẩm
+A00, B00, C04, D10
+---
+
+12
+7620101
+Nông nghiệp
+A00, B00, B02, C02
+---
+
+13
+7620105
+Chăn nuôi
+A00; B00; C02; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+14
+7620110
+Khoa học cây trồng
+B02
+---
+
+15
+7620110
+Khoa học cây trồng
+A00; B00; C02
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+16
+7620112
+Bảo vệ thực vật
+B02
+---
+
+17
+7620112
+Bảo vệ thực vật
+A00; B00; C02; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+18
+7620115
+Kinh tế nông nghiệp
+B02
+---
+
+19
+7620115
+Kinh tế nông nghiệp
+A00; B00; C02
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+20
+7620116
+Phát triển nông thôn
+B02
+---
+
+21
+7620116
+Phát triển nông thôn
+A00; B00; C02
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+22
+7620205
+Lâm sinh
+A00, B00, B02, C02
+---
+
+23
+7620211
+Quản lý tài nguyên rừng
+A14, B03
+---
+
+24
+7620211
+Quản lý tài nguyên rừng
+A00; B00
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+25
+7640101
+Thú y
+A00; B00; C02; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+26
+7850101
+Quản lý tài nguyên và môi trường
+A06, C00, C14, D14
+---
+
+27
+7850103
+Quản lý đất đai
+A02, C13, D10
+---
+
+28
+7850103
+Quản lý đất đai
+A00
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+29
+7904492
+Khoa học & Quản lý môi trường (CTTT)
+A00, A01, B04, D10
+---
+
+30
+7905419
+Công nghệ thực phẩm (CTTT)
+A00; B00; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên
+31
+7906425
+Kinh tế nông nghiệp (CTTT)
+A00; B00; C02; D01
+15.5
+Điểm 2 học kỳ lớp 12: 36, học lực khá trở lên

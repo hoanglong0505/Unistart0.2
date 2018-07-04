@@ -1,0 +1,109 @@
+BPH
+1
+7860214
+Biên phòng Thí sinh Nam miền Bắc
+C00
+28.5
+Thí sinh mức 28,50 điểm: Điểm môn Văn ≥ 7,50.
+2
+7860214
+Biên phòng Thí sinh Nam Quân khu 4 (Quảng Trị và TT-Huế)
+C00
+27.25
+
+3
+7860214
+Biên phòng Thí sinh Nam Quân khu 5
+C00
+26.75
+Thí sinh mức 26,75 điểm: Điểm môn Văn ≥ 7,00.
+4
+7860214
+Biên phòng Thí sinh Nam Quân khu 7
+C00
+25.75
+Thí sinh mức 25,75 điểm: Điểm môn Văn ≥ 7,00.
+5
+7860214
+Biên phòng Thí sinh Nam Quân khu 9
+C00
+26.5
+Thí sinh mức 26,50 điểm: Điểm môn Văn ≥ 5,50.
+6
+7860214
+Biên phòng Thí sinh Nam miền Bắc
+A01
+24.5
+
+7
+7860214
+Thí sinh Nam Quân khu 5
+A01
+23
+
+8
+7860214
+Biên phòng Thí sinh Nam Quân khu 7
+A01
+23.25
+
+9
+7860214
+Biên phòng Thí sinh Nam Quân khu 9
+A01
+19
+
+10
+7380101
+Luật Thí sinh Nam miền Bắc
+C00
+28.25
+Thí sinh mức 28,25 điểm: Điểm môn Văn ≥ 8,00.
+11
+7380101
+Luật Thí sinh Nam Quân khu 4 (Quảng Trị và TT-Huế)
+C00
+27
+Thí sinh mức 27,00 điểm: Điểm môn Văn ≥ 7,00.
+12
+7380101
+Luật Thí sinh Nam Quân khu 5
+C00
+26.5
+Thí sinh mức 26,50 điểm: Điểm môn Văn ≥ 7,50.
+13
+7380101
+Luật Thí sinh Nam Quân khu 7
+C00
+25.5
+Thí sinh mức 25,50 điểm: Điểm môn Văn ≥ 7,25.
+14
+7380101
+Luật Thí sinh Nam Quân khu 9
+C00
+25.75
+Thí sinh mức 25,75 điểm: Tiêu chí phụ 1: Điểm môn Văn ≥ 7,00. Tiêu chí phụ 2: Điểm môn Sử ≥ 9,00.
+15
+7380101
+Luật Thí sinh Nam miền Bắc
+A01
+24.25
+Thí sinh mức 24,25 điểm: Điểm môn Toán ≥ 7,80.
+16
+7380101
+Luật Thí sinh Nam Quân khu 5
+A01
+22.75
+
+17
+7380101
+Luật Thí sinh Nam Quân khu 7
+A01
+22.5
+Thí sinh mức 22,50 điểm: Điểm môn Toán ≥ 8,60.
+18
+7380101
+Luật Thí sinh Nam Quân khu 9
+A01
+18.5
+

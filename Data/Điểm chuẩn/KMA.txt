@@ -1,0 +1,19 @@
+KMA
+1
+7480201
+Công nghệ thông tin
+A00, A01, D90
+22.75
+
+2
+7480202
+An toàn thông tin
+A00, A01, D90
+21.25
+
+3
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01, D90
+20.25
+

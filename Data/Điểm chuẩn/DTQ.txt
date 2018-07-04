@@ -1,0 +1,31 @@
+DTQ
+1
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D10
+---
+A01
+2
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D10
+---
+A01
+3
+7340301
+Kế toán
+D96
+---
+
+4
+7340301
+Kế toán
+A00; A01; D01
+---
+A01
+5
+7850101
+Quản lý tài nguyên và môi trường
+B00; D15; D84; D90
+---
+D15

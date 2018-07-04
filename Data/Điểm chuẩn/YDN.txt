@@ -1,0 +1,61 @@
+YDN
+1
+7720101
+Y khoa
+B00
+27.25
+SI >= 8.75;TTNV <= 3
+2
+7720201
+Dược học
+B00
+26
+HO >= 8.25;TTNV <= 13
+3
+7720301A
+Điều dưỡng đa khoa
+B00
+22.25
+SI >= 7;TTNV <= 3
+4
+7720301B
+Điều dưỡng nha khoa
+B00
+21
+SI >= 7;TTNV <= 3
+5
+7720301C
+Điều dưỡng gây mê hồi sức
+B00
+21.75
+SI >= 6.25;TTNV <= 1
+6
+7720301D
+Điều dưỡng phụ sản
+B00
+---
+
+7
+7720601
+Kỹ thuật xét nghiệm y học
+B00
+24.5
+SI >= 7.25;TTNV <= 2
+8
+7720602
+Kỹ thuật hình ảnh y học
+B00
+23.75
+SI >= 7.25;TTNV <= 2
+9
+7720603
+Kỹ thuật phục hồi chức năng
+B00
+23.5
+SI >= 8.25;TTNV <= 3
+10
+7720701
+Y tế công cộng
+B00
+20.75
+SI >= 6.5;TTNV <= 8

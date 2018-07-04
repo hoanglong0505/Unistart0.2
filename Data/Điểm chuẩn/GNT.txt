@@ -1,0 +1,61 @@
+GNT
+1
+7140221
+Sư phạm Âm nhạc
+N00
+16
+
+2
+7140222
+Sư phạm Mỹ thuật
+H00
+15.5
+
+3
+7210103
+Hội hoạ
+H00
+16.5
+
+4
+7210205
+Thanh nhạc
+N00
+19
+
+5
+7210208
+Piano
+N00
+18.5
+
+6
+7210234
+Diễn viên kịch, điện ảnh - truyền hình
+S00
+17.5
+
+7
+7210403
+Thiết kế đồ họa
+H00
+18
+
+8
+7210404
+Thiết kế thời trang
+H00
+18
+
+9
+7229042
+Quản lý văn hoá
+C00, H00, N00, R00
+15.5
+
+10
+7540204
+Công nghệ dệt, may
+H00
+15.5
+

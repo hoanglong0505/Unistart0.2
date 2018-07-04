@@ -1,0 +1,541 @@
+SPH
+1
+7140114A
+Quản lí giáo dục
+A00
+20.25
+TO >= 6.8;LI >= 5.5;TTNV <= 3
+2
+7140114C
+Quản lí giáo dục
+C00
+23.75
+VA >= 7;SU >= 5.75;TTNV <= 3
+3
+7140114D
+Quản lí giáo dục
+D01, D02
+20.5
+NN >= 5.8;VA >= 8.5;TTNV <= 2
+4
+7140201A
+Giáo dục Mầm non
+M00
+22.25
+NK6 >= 6;VA >= 8.75;TTNV <= 4
+5
+7140201B
+Giáo dục Mầm non SP Tiếng Anh
+M01
+20.5
+N1 >= 6.2;NK6 >= 7.5;TTNV <= 3
+6
+7140201C
+Giáo dục Mầm non SP Tiếng Anh
+M02
+22
+N1 >= 6.2;NK6 >= 6.5;TTNV <= 2
+7
+7140202A
+Giáo dục Tiểu học
+D01, D02, D03
+25.25
+VA >= 7.5;TO >= 8.8;TTNV <= 8
+8
+7140202B
+Giáo dục Tiểu học
+D11, D52, D54
+20.5
+VA >= 8.5;LI >= 6.25;TTNV <= 2
+9
+7140202C
+Giáo dục Tiểu học SP Tiếng Anh
+D11
+20.5
+N1 >= 7.6;LI >= 8;TTNV <= 6
+10
+7140202D
+Giáo dục Tiểu học SP Tiếng Anh
+D01
+24.75
+N1 >= 8;TO >= 8;TTNV <= 3
+11
+7140203B
+Giáo dục Đặc biệt
+B03
+19.25
+VA >= 6.5;SI >= 6.25;TTNV <= 2
+12
+7140203C
+Giáo dục Đặc biệt
+C00
+26.75
+VA >= 8.25;SU >= 9.25;TTNV <= 4
+13
+7140203D
+Giáo dục Đặc biệt
+D01, D02, D03
+23
+VA >= 7;TO >= 7.6;TTNV <= 7
+14
+7140204A
+Giáo dục công dân
+C14
+23.5
+VA >= 7.75;GD >= 7.75;TTNV <= 6
+15
+7140204B
+Giáo dục công dân
+D66, D68, D70
+21.25
+VA >= 6.75;GD >= 8;TTNV <= 7
+16
+7140204D
+Giáo dục công dân
+D01, D02, D03
+17
+VA >= 5.75;NN >= 4.6;TTNV <= 2
+17
+7140205A
+Giáo dục chính trị
+C14
+21
+VA >= 6.75;GD >= 9.5;TTNV <= 1
+18
+7140205B
+Giáo dục chính trị
+D66, D68, D70
+18.75
+VA >= 6.25;GD >= 8.25;TTNV <= 2
+19
+7140205D
+Giáo dục chính trị
+D01, D02, D03
+17.5
+VA >= 6;NN >= 7.4;TTNV <= 7
+20
+7140206
+Giáo dục Thể chất
+
+---
+
+21
+7140208A
+Giáo dục Quốc phòng – An ninh
+
+17
+TO >= 6;LI >= 5;TTNV <= 1
+22
+7140208B
+Giáo dục Quốc phòng – An ninh
+
+18.25
+TO >= 7.2;VA >= 5.5;TTNV <= 6
+23
+7140208C
+Giáo dục Quốc phòng – An ninh
+
+23
+SU >= 5.75;DI >= 7.25;TTNV <= 1
+24
+7140209A
+SP Toán học
+A00
+26
+TO >= 7.4;LI >= 8.25;TTNV <= 5
+25
+7140209B
+SP Toán học (dạy Toán bằng tiếng Anh)
+A00
+26
+TO >= 9;LI >= 8;TTNV <= 7
+26
+7140209C
+SP Toán học (dạy Toán bằng tiếng Anh)
+A01
+27.75
+TO >= 8.6;LI >= 9;TTNV <= 4
+27
+7140209D
+SP Toán học (dạy Toán bằng tiếng Anh)
+D01
+27
+TO >= 9.2;N1 >= 9;TTNV <= 10
+28
+7140210A
+SP Tin học
+A00
+19
+TO >= 6.2;LI >= 5.75;TTNV <= 8
+29
+7140210B
+SP Tin học
+A01
+17.75
+TO >= 6.4;N1 >= 5.6;TTNV <= 11
+30
+7140210C
+SP Tin học (dạy Tin bằng tiếng Anh)
+A00
+23.5
+TO >= 8.2;LI >= 5.75;TTNV <= 4
+31
+7140210D
+SP Tin học (dạy Tin bằng tiếng Anh)
+A01
+20
+TO >= 7.4;N1 >= 7.2;TTNV <= 4
+32
+7140211A
+SP Vật lý
+A00
+23
+LI >= 7.5;TO >= 7.4;TTNV <= 11
+33
+7140211B
+SP Vật lý
+A01
+22.75
+LI >= 8.25;TO >= 8;TTNV <= 4
+34
+7140211C
+SP Vật lý
+C01
+22.75
+LI >= 7.75;TO >= 8.4;TTNV <= 1
+35
+7140211D
+SP Vật lý (dạy Lý bằng tiếng Anh)
+A00
+22.5
+LI >= 6.25;TO >= 7.4;TTNV <= 1
+36
+7140211E
+SP Vật lý (dạy Lý bằng tiếng Anh)
+A01
+22.75
+LI >= 6.75;N1 >= 6.6;TTNV <= 3
+37
+7140211G
+SP Vật lý (dạy Lý bằng tiếng Anh)
+C01
+19
+LI >= 5.25;TO >= 6;TTNV <= 5
+38
+7140212A
+SP Hoá học
+A00
+23.75
+HO >= 8;TO >= 8.4;TTNV <= 5
+39
+7140212B
+SP Hoá học (dạy Hoá bằng tiếng Anh)
+D07
+21
+HO >= 7.25;N1 >= 4.2;TTNV <= 3
+40
+7140213A
+SP Sinh học
+A00
+19.5
+HO >= 5.75;TO >= 7;TTNV <= 2
+41
+7140213B
+SP Sinh học
+B00
+22
+SI >= 7;HO >= 6.5;TTNV <= 5
+42
+7140213C
+SP Sinh học
+B03
+20.25
+N1 >= 7.2;TO >= 6.8;TTNV <= 4
+43
+7140213D
+SP Sinh học (dạy Sinh bằng tiếng Anh)
+D01
+19.5
+SI >= 7;N1 >= 5.6;TTNV <= 5
+44
+7140213E
+SP Sinh học (dạy Sinh bằng tiếng Anh)
+D07
+18
+N1 >= 5.2;HO >= 6.75;TTNV <= 2
+45
+7140213F
+SP Sinh học (dạy Sinh bằng tiếng Anh)
+D08
+---
+
+46
+7140217C
+SP Ngữ văn
+C00
+27
+VA >= 6.75;SU >= 8;TTNV <= 1
+47
+7140217D
+SP Ngữ văn
+D01, D02, D03
+23.5
+VA >= 7;TO >= 8.4;TTNV <= 3
+48
+7140218C
+SP Lịch sử
+C00
+25.5
+SU >= 8.5;VA >= 7.5;TTNV <= 4
+49
+7140218D
+SP Lịch sử
+D14, D62, D64
+22
+SU >= 8;VA >= 6.5;TTNV <= 1
+50
+7140219A
+SP Địa lý
+A00
+18
+TO >= 6.2;LI >= 5.5;TTNV <= 4
+51
+7140219B
+SP Địa lý
+C04
+22.5
+DI >= 9.5;TO >= 5;TTNV <= 2
+52
+7140219C
+SP Địa lý
+C00
+25.5
+DI >= 8.75;VA >= 7;TTNV <= 2
+53
+7140221
+Sư phạm Âm nhạc
+
+17.5
+NK2 >= 6;NK1 >= 5.5;TTNV <= 1
+54
+7140222
+Sư phạm Mỹ thuật
+
+19
+NK3 >= 6;NK4 >= 7;TTNV <= 1
+55
+7140231
+Sư phạm Tiếng Anh
+D01
+25.75
+N1 >= 8.4;VA >= 8;TTNV <= 2
+56
+7140233C
+SP Tiếng Pháp
+D15, D42, D44
+21.5
+NN >= 7;VA >= 7.5;TTNV <= 2
+57
+7140233D
+SP Tiếng Pháp
+D01, D02, D03
+19.5
+NN >= 6.8;VA >= 4.75;TTNV <= 2
+58
+7140246A
+SP Công nghệ
+A00
+---
+
+59
+7140246B
+SP Công nghệ
+A01
+---
+
+60
+7140246C
+SP Công nghệ
+C01
+---
+
+61
+7220201
+Ngôn ngữ Anh
+D01
+23.25
+N1 >= 7.6;VA >= 8;TTNV <= 3
+62
+7229001B
+Triết học
+C03
+20.5
+VA >= 5.5;SU >= 6.5;TTNV <= 3
+63
+7229001C
+Triết học
+C00
+19
+VA >= 4;DI >= 7.25;TTNV <= 2
+64
+7229001D
+Triết học
+D01, D02, D03
+18.5
+VA >= 7.5;NN >= 4.8;TTNV <= 3
+65
+7229030C
+Văn học
+C00
+17.75
+VA >= 6;SU >= 4.25;TTNV <= 4
+66
+7229030D
+Văn học
+D01, D02, D03
+17.5
+VA >= 7.5;TO >= 5.6;TTNV <= 2
+67
+7310201A
+Chính trị học (Kinh tế chính trị Mác Lênin)
+C14
+21.5
+TO >= 7.6;LI >= 6.5;TTNV <= 3
+68
+7310201B
+Chính trị học (Kinh tế chính trị Mác Lênin)
+D84, D86, D87
+20.5
+VA >= 5.5;SU >= 6.5;TTNV <= 3
+69
+7310201D
+Chính trị học (Kinh tế chính trị Mác Lênin)
+D01, D02, D03
+18.5
+VA >= 7.5;NN >= 4.8;TTNV <= 3
+70
+7310401A
+Tâm lý học (Tâm lý học trường học)
+C03
+19.25
+VA >= 7.25;TO >= 6.8;TTNV <= 2
+71
+7310401C
+Tâm lý học (Tâm lý học trường học)
+C00
+21.75
+VA >= 8;SU >= 6;TTNV <= 4
+72
+7310401D
+Tâm lý học (Tâm lý học trường học)
+D01, D02, D03
+20.25
+VA >= 7.75;NN >= 5.6;TTNV <= 8
+73
+7310403A
+Tâm lý học giáo dục
+C03
+17.5
+VA >= 8;TO >= 2.6;TTNV <= 3
+74
+7310403C
+Tâm lý học giáo dục
+C00
+24.5
+VA >= 7.5;SU >= 8;TTNV <= 1
+75
+7310403D
+Tâm lý học giáo dục
+D01, D02
+22.75
+VA >= 8;NN >= 7.8;TTNV <= 1
+76
+7310630B
+Việt Nam học
+C04
+18.5
+VA >= 7;TO >= 4.2;TTNV <= 1
+77
+7310630C
+Việt Nam học
+C00
+21.25
+VA >= 7.25;DI >= 7.25;TTNV <= 4
+78
+7310630D
+Việt Nam học
+D01, D02, D03
+21.25
+VA >= 7.25;DI >= 7.25;TTNV <= 4
+79
+7420101A
+Sinh học
+A00
+19
+HO >= 5.25;TO >= 8.2;TTNV <= 14
+80
+7420101B
+Sinh học
+B00
+19
+SI >= 7;HO >= 5;TTNV <= 7
+81
+7420101C
+Sinh học
+C04
+---
+
+82
+7440112
+Hoá học
+A00
+---
+
+83
+7460101B
+Toán học
+A00
+19.5
+TO >= 7.6;LI >= 5.5;TTNV <= 1
+84
+7460101C
+Toán học
+A01
+19.5
+TO >= 6.8;LI >= 5.5;TTNV <= 1
+85
+7460101D
+Toán học
+D01
+17.75
+TO >= 5.8;N1 >= 4.8;TTNV <= 6
+86
+7480201A
+Công nghệ thông tin
+A00
+17.25
+TO >= 5.8;LI >= 5;TTNV <= 2
+87
+7480201B
+Công nghệ thông tin
+A01
+18
+TO >= 6.2;N1 >= 7.4;TTNV <= 10
+88
+7760101B
+Công tác xã hội
+D14, D62
+17.25
+NN >= 4.2;VA >= 5.75;TTNV <= 3
+89
+7760101C
+Công tác xã hội
+C00
+19
+VA >= 7;SU >= 5;TTNV <= 4
+90
+7760101D
+Công tác xã hội
+D01, D02
+17
+NN >= 5;VA >= 5.5;TTNV <= 3

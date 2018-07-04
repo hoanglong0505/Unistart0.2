@@ -1,0 +1,199 @@
+KSA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7310101
+Kinh tế
+A00; A01; D01; D07
+---
+
+3
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+25.5
+
+4
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D07
+---
+
+5
+7340121
+Kinh doanh thương mại
+A00; A01; D01; D07
+25.5
+
+6
+7340115
+Marketing
+A00; A01; D01; D07
+25.5
+
+7
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+25.5
+
+8
+7340301
+Kế toán
+A00; A01; D01; D07
+25.5
+
+9
+7310101_01
+Chuyên ngành Kinh tế học ứng dụng
+A00; A01; D01; D96
+23.5
+
+10
+7310101_02
+Chuyên ngành Kinh tế nông nghiệp
+A00; A01; D01; D96
+21.5
+
+11
+7310101_03
+Chuyên ngành Kinh tế chính trị
+A00; A01; D01; D96
+21.75
+
+12
+7340101_01
+Chuyên ngành Quản trị bệnh viện
+A00; A01; D01; D07
+23.75
+
+13
+7340120_01
+Chuyên ngành Ngoại thương
+A00; A01; D01; D07
+---
+
+14
+7810103_01
+Chuyên ngành Quản trị lữ hành
+A00; A01; D01; D07
+---
+
+15
+7810201_01
+Chuyên ngành Quản trị khách sạn
+A00; A01; D01; D07
+---
+
+16
+7810201_02
+Chuyên ngành Quản trị sự kiện và dịch vụ giải trí
+A00; A01; D01; D07
+---
+
+17
+7340201_01
+Chuyên ngành Thuế trong kinh doanh
+A00; A01; D01; D07
+---
+
+18
+7340201_02
+Chuyên ngành Quản trị hải quan - ngoại thương
+A00; A01; D01; D07
+---
+
+19
+7340201_03
+Chuyên ngành Ngân hàng đầu tư
+A00; A01; D01; D07
+---
+
+20
+7340201_04
+Chuyên ngành Thị trường chứng khoán
+A00; A01; D01; D07
+---
+
+21
+7340201_05
+Chuyên ngành Quản trị rủi ro tài chính và bảo hiểm
+A00; A01; D01; D07
+---
+
+22
+7340201_06
+Chuyên ngành Đầu tư tài chính
+A00; A01; D01; D07
+---
+
+23
+7340201_07
+Chuyên ngành Tài chính quốc tế
+A00; A01; D01; D07
+---
+
+24
+7310108_01
+Chuyên ngành Toán tài chính
+A00; A01; D01; D07
+23.25
+
+25
+7310107_01
+Chuyên ngành Thống kê kinh doanh
+A00; A01; D01; D07
+22.75
+
+26
+7340405_01
+Chuyên ngành Hệ thống thông tin kinh doanh
+A00; A01; D01; D07
+23.25
+
+27
+7340405_02
+Chuyên ngành Thương mại điện tử
+A00; A01; D01; D07
+24.25
+
+28
+7340405_03
+Chuyên ngành Hệ thống hoạch định nguồn lực doanh nghiệp
+A00; A01; D01; D07
+---
+
+29
+7480103_01
+Chuyên ngành Công nghệ phần mềm
+A00; A01; D01; D07
+---
+
+30
+7220201_01
+Chuyên ngành Tiếng Anh thương mại
+D01; D96
+---
+
+31
+7380101_01
+Chuyên ngành Luật kinh doanh
+A00; A01; D01; D96
+---
+
+32
+7380101_02
+Chuyên ngành Luật kinh doanh quốc tế
+A00; A01; D01; D96
+---
+
+33
+7340403_01
+Chuyên ngành Quản lý công
+A00; A01; D01; D07
+---
+

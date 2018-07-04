@@ -1,0 +1,91 @@
+NTU
+1
+7210403
+Thiết kế đồ họa
+C01, C03, C04, C09
+---
+
+2
+7220209
+Ngôn ngữ Nhật
+A01, C00, D01, D63
+---
+
+3
+7320108
+Quan hệ công chúng
+C12, C19
+---
+
+4
+7320108
+Quan hệ công chúng
+C00;D01
+15.5
+Xét học bạ 18 điểm
+5
+7340101
+Quản trị kinh doanh
+A07, C04
+---
+
+6
+7340101
+Quản trị kinh doanh
+A00; D01
+15.5
+Xét học bạ 18 điểm
+7
+7340201
+Tài chính – Ngân hàng
+A07, C04
+---
+
+8
+7340201
+Tài chính – Ngân hàng
+A00; D01
+15.5
+Xét học bạ 18 điểm
+9
+7340301
+Kế toán
+A07, C04
+---
+
+10
+7340301
+Kế toán
+A00; D01
+15.5
+Xét học bạ 18 điểm
+11
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00
+15.5
+Xét học bạ 18 điểm
+12
+7520320
+Kỹ thuật môi trường
+B01, B02, B03
+---
+
+13
+7520320
+Kỹ thuật môi trường
+B00
+15.5
+Xét học bạ 18 điểm
+14
+7580101
+Kiến trúc
+A00, A01, A03, A07
+---
+
+15
+7580108
+Thiết kế nội thất
+C01, C03, C04, C09
+---
+

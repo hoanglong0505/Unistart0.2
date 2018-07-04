@@ -1,0 +1,139 @@
+DCT
+1
+7220201
+Ngôn ngữ Anh
+A01, D01, D09, D10
+18.5
+20 (Xét theo học bạ)
+2
+7340101
+Quản trị kinh doanh
+A01, A01, D01, D10
+20
+22 (Xét theo học bạ)
+3
+7340201
+Tài chính – Ngân hàng
+A01, A01, D01, D10
+18.75
+21,5 (Xét theo học bạ)
+4
+7340301
+Kế toán
+A00, A01, D01, D10
+19.25
+22 (Xét theo học bạ)
+5
+7420201
+Công nghệ sinh học
+A00, A01, D01, D07
+20.5
+21.5(Xét theo học bạ)
+6
+7480201
+Công nghệ thông tin
+A00, A01, D01, D07
+19.5
+21.5 (Xét theo học bạ)
+7
+7480202
+An toàn thông tin
+A00, A01, D01, D07
+16
+18 (Xét theo học bạ)
+8
+7510202
+Công nghệ chế tạo máy
+A00, A01, D01, D07
+17.5
+20 (Xét theo học bạ)
+9
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00, A01, D01, D07
+18.5
+21 (Xét theo học bạ)
+10
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, D01, D07
+18.5
+20 (Xét theo học bạ)
+11
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00, A01, D01, D07
+16
+18 (Xét theo học bạ)
+12
+7510401
+Công nghệ kỹ thuật hoá học
+A00, A01, D01, D07
+17.5
+21 (Xét theo học bạ)
+13
+7510402
+Công nghệ vật liệu
+A00, A01, B00, D07
+16.25
+18 (Xét theo học bạ)
+14
+7510406
+Công nghệ kỹ thuật môi trường
+A00, A01, B00, D07
+17
+20 (Xét theo học bạ)
+15
+7540101
+Công nghệ thực phẩm
+A00, A01, B00, D07
+23
+24 (Xét theo học bạ)
+16
+7540105
+Công nghệ chế biến thuỷ sản
+A00, A01, B00, D07
+18.25
+20 (Xét theo học bạ)
+17
+7540110
+Đảm bảo Chất lượng & ATTP
+A00, A01, B00, D07
+20.75
+21.5 (Xét theo học bạ)
+18
+7540204
+Công nghệ dệt, may
+A00, A01, D01, D7
+20
+21 (Xét theo học bạ)
+19
+7720498
+Khoa học chế biến món ăn
+A00, A01, B00, D07
+---
+
+20
+7720499
+Khoa học dinh dưỡng và ẩm thực
+A00, A01, B00, D07
+19
+21 (Xét theo học bạ)
+21
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, D01, D10
+19.75
+21(Xét theo học bạ)
+22
+7810202
+Quản trị nhà hàng và dịch vụ ăn uống
+A00, A01, D01, D10
+19.25
+21 (Xét theo học bạ)
+23
+7850101
+Quản lý tài nguyên và môi trường
+A00, A01, B00, D07
+16
+18 (Xét theo học bạ)

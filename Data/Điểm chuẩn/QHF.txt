@@ -1,0 +1,115 @@
+QHF
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7140231
+Sư phạm Tiếng Anh
+D01; D78; D90
+34.5
+Ngoại ngữ nhân đôi
+3
+7140232
+Sư phạm Tiếng Nga
+D01; D02; D78; D90
+27.5
+Ngoại ngữ nhân đôi
+4
+7140233
+Sư phạm Tiếng Pháp
+D01; D03; D78; D90
+30.5
+Ngoại ngữ nhân đôi
+5
+7140234
+Sư phạm Tiếng Trung Quốc
+D01; D04; D78; D90
+33
+Ngoại ngữ nhân đôi
+6
+7140235
+Sư phạm Tiếng Đức
+D01; D05; D78; D90
+---
+
+7
+7140236
+Sư phạm Tiếng Nhật
+D01; D06; D78; D90
+34
+Ngoại ngữ nhân đôi
+8
+7140237
+Sư phạm Tiếng Hàn Quốc
+D01; D78; D90
+33.75
+Ngoại ngữ nhân đôi
+9
+7220201
+Ngôn ngữ Anh
+D01; D78; D90
+35.25
+Ngoại ngữ nhân đôi
+10
+7220202
+Ngôn ngữ Nga
+D01; D02; D78; D90
+30.5
+Ngoại ngữ nhân đôi
+11
+7220203
+Ngôn ngữ Pháp
+D01; D03; D78; D90
+32.25
+Ngoại ngữ nhân đôi
+12
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04; D78; D90
+34.5
+Ngoại ngữ nhân đôi
+13
+7220204CLC
+Ngôn ngữ Trung Quốc** CTĐT CLC TT23
+D01; D04; D78; D90
+---
+
+14
+7220205
+Ngôn ngữ Đức
+D01; D05; D78; D90
+32.5
+Ngoại ngữ nhân đôi
+15
+7220209
+Ngôn ngữ Nhật
+D01; D06; D78; D90
+35.5
+Ngoại ngữ nhân đôi
+16
+7220209CLC
+Ngôn ngữ Nhật** CTĐT CLC TT23
+D01; D06; D78; D90
+---
+
+17
+7220210
+Ngôn ngữ Hàn Quốc
+D01; D78; D90
+35.5
+Ngoại ngữ nhân đôi
+18
+7220210CLC
+Ngôn ngữ Hàn Quốc** CTĐT CLC TT23
+D01; D78; D90
+---
+
+19
+7220211
+Ngôn ngữ Ảrập
+D01; D78; D90
+30
+Ngoại ngữ nhân đôi

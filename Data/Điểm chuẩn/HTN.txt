@@ -1,0 +1,55 @@
+HTN
+1
+7310202
+Xây dựng Đảng và chính quyền nhà nước
+D01
+21
+
+2
+7310202
+Xây dựng Đảng và chính quyền nhà nước
+A00, C00, C04
+20.5
+
+3
+7310205
+Quản lý nhà nước
+A00, A01, C00, D01
+---
+
+4
+7320108
+Quan hệ công chúng
+A01, D01, D14, D15
+---
+
+5
+7380101
+Luật
+A00, A01, C00, D01
+---
+
+6
+7760101
+Công tác xã hội
+C00
+21
+
+7
+7760101
+Công tác xã hội
+C14, D01, D15
+20.5
+
+8
+7760102
+Công tác thanh thiếu niên
+C00
+21.5
+
+9
+7760102
+Công tác thanh thiếu niên
+A00, C04, D01
+---
+

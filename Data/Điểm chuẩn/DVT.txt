@@ -1,0 +1,379 @@
+DVT
+1
+5140201
+CĐ Giáo dục mầm non
+M00, M01, M02
+---
+
+2
+7140201
+Giáo dục Mầm non
+M00, M01, M02
+---
+
+3
+7140202
+Giáo dục Tiểu học
+A00, A01, D84, D90
+---
+
+4
+7140217
+Sư phạm Ngữ văn
+C00, D14
+---
+
+5
+7210201
+Âm nhạc học
+N00
+---
+
+6
+7210210
+Biểu diễn nhạc cụ truyền thống
+N00
+---
+
+7
+7210402
+Thiết kế công nghiệp
+A00, A01, C01, D07
+---
+
+8
+7220106
+Ngôn ngữ Khmer
+D01, D14
+---
+
+9
+7220106
+Ngôn ngữ Khmer
+C00
+22.25
+
+10
+7220112
+Văn hoá các dân tộc thiểu số Việt Nam
+C14
+---
+
+11
+7220112
+Văn hoá các dân tộc thiểu số Việt Nam
+C00
+23.25
+
+12
+7220201
+Ngôn ngữ Anh
+D01, D09
+19.45
+
+13
+7229040
+Văn hoá học
+C00, D14
+18
+
+14
+7310101
+Kinh tế
+A01
+---
+
+15
+7310101
+Kinh tế
+A00, C01, D01
+20.75
+
+16
+7310201
+Chính trị học
+D01
+---
+
+17
+7310201
+Chính trị học
+C00
+22
+
+18
+7310205
+Quản lý nhà nước
+C00, C04, D01, D14
+---
+
+19
+7340101
+Quản trị kinh doanh
+A00, A01, C01, D01
+20.75
+
+20
+7340122
+Thương mại điện tử
+A00, A01, C01, D01
+---
+
+21
+7340201
+Tài chính – Ngân hàng
+A00, A01, C01, D01
+20
+
+22
+7340301
+Kế toán
+A00, A01, C01, D01
+19.75
+
+23
+7340405
+Hệ thống thông tin quản lý
+A00, A01, C01, D01
+---
+
+24
+7340406
+Quản trị văn phòng
+D01
+---
+
+25
+7340406
+Quản trị văn phòng
+C00, C04, C14
+20.5
+
+26
+7380101
+Luật
+A00, A01, C01, D01
+20
+
+27
+7420201
+Công nghệ sinh học
+A00, B00, D08, D90
+---
+
+28
+7440122
+Khoa học vật liệu
+A00, A01, A02, B00
+---
+
+29
+7460112
+Toán ứng dụng
+A00
+22.5
+
+30
+7460112
+Toán ứng dụng
+A01, D90
+---
+
+31
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00,A01, C01, D07
+---
+
+32
+7480201
+Công nghệ thông tin
+A00,A01, C01, D07
+20.5
+
+33
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00, A01, C01
+20.75
+
+34
+7510201
+Công nghệ kỹ thuật cơ khí
+A00, A01, C01, D01
+20.5
+
+35
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00, A01, C01
+19
+
+36
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A01, C01
+---
+
+37
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00
+22.5
+
+38
+7510401
+Công nghệ kỹ thuật hoá học
+D07
+---
+
+39
+7510401
+Công nghệ kỹ thuật hoá học
+A00, B00
+21
+
+40
+7520320
+Kỹ thuật môi trường
+D90
+---
+
+41
+7520320
+Kỹ thuật môi trường
+A02, B00, D08
+20.25
+
+42
+7540101
+Công nghệ thực phẩm
+D90
+---
+
+43
+7540101
+Công nghệ thực phẩm
+A00, B00, D07
+20.5
+
+44
+7580205
+Kỹ thuật xây dựng công trình giao thông
+C01
+---
+
+45
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00, A01
+21.5
+
+46
+7620101
+Nông nghiệp
+D08, D90
+---
+
+47
+7620101
+Nông nghiệp
+A02, B00
+19.5
+
+48
+7620105
+Chăn nuôi
+A00, B00, D08, D90
+---
+
+49
+7620301
+Nuôi trồng thuỷ sản
+D08, D90
+---
+
+50
+7620301
+Nuôi trồng thuỷ sản
+A02, B00
+20
+
+51
+7640101
+Thú y
+D90
+---
+
+52
+7640101
+Thú y
+A02, B00, D08
+20.5
+
+53
+7720101
+Y khoa
+B00, D08
+---
+
+54
+7720201
+Dược học
+A00, B00
+---
+
+55
+7720301
+Điều dưỡng
+B00, D08
+25.25
+
+56
+7720501
+Răng - Hàm - Mặt
+B00, D08
+---
+
+57
+7720601
+Kỹ thuật xét nghiệm y học
+A00, B00
+---
+
+58
+7720603
+Kỹ thuật phục hồi chức năng
+A00, B00
+---
+
+59
+7720701
+Y tế công cộng
+A00, B00
+21
+
+60
+7760101
+Công tác xã hội
+D66, D78
+---
+
+61
+7760101
+Công tác xã hội
+C00, C04
+20.5
+
+62
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+C00, C04, D01, D15
+---
+
+63
+7810301
+Quản lý thể dục thể thao
+B04, C18, T00, T03
+---
+

@@ -1,0 +1,49 @@
+DTF
+1
+7140231
+Sư phạm Tiếng Anh
+A01, D01, D15, D66
+15.5
+(Môn Ngoại ngữ không nhân hệ số)
+2
+7140232
+Sư phạm Tiếng Nga
+A01, D01, D02, D66
+15.5
+(Môn Ngoại ngữ không nhân hệ số)
+3
+7140234
+Sư phạm Tiếng Trung Quốc
+A01, D01, D04, D66
+---
+
+4
+7220201
+Ngôn ngữ Anh
+A01, D01, D15, D66
+19
+Điểm trúng tuyển được tính như sau: ((Môn 1 + Môn 2 + Ngoại ngữ x 2) x 3)/4 (làm tròn đến 0,25) + điểm ưu tiên; sau đó làm tròn đến hai chữ số thập phân.
+5
+7220202
+Ngôn ngữ Nga
+A01, D01, D02, D66
+---
+
+6
+7220203
+Ngôn ngữ Pháp
+A01, D01, D03, D66
+---
+
+7
+7220204
+Ngôn ngữ Trung Quốc
+A01, D01, D04, D66
+19
+Điểm trúng tuyển được tính như sau: ((Môn 1 + Môn 2 + Ngoại ngữ x 2) x 3)/4 (làm tròn đến 0,25) + điểm ưu tiên; sau đó làm tròn đến hai chữ số thập phân.
+8
+51140231
+Sư phạm Tiếng Anh (hệ cao đẳng)
+A01, D01, D15, D66
+10
+(Môn Ngoại ngữ không nhân hệ số)

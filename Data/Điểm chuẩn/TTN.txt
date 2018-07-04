@@ -1,0 +1,355 @@
+TTN
+1
+7140201
+Giáo dục Mầm non
+M00
+20
+NK1 >= 5.38;TTNV <= 1
+2
+7140201
+Giáo dục Mầm non
+M01
+20
+NK1 >= 5.38;TTNV <= 1
+3
+7140202
+Giáo dục Tiểu học
+A00
+24
+TTNV <= 5
+4
+7140202
+Giáo dục Tiểu học
+C00
+24
+TTNV <= 5
+5
+7140202
+Giáo dục Tiểu học
+C03
+24
+TTNV <= 5
+6
+7140202JR
+Giáo dục Tiểu học - Tiếng J'rai
+C00
+20.5
+TTNV <= 3
+7
+7140202JR
+Giáo dục Tiểu học - Tiếng J'rai
+D01
+20.5
+TTNV <= 3
+8
+7140205
+Giáo dục Chính trị
+C19; D66
+22.25
+TTNV <= 2
+9
+7140205
+Giáo dục Chính trị
+C00
+22.25
+TTNV <= 2
+10
+7140205
+Giáo dục Chính trị
+D01
+22.25
+TTNV <= 2
+11
+7140206
+Giáo dục Thể chất
+T01; T02; T03
+15.5
+NK2 >= 8;TTNV <=
+12
+7140206
+Giáo dục Thể chất
+T00
+15.5
+NK2 >= 8;TTNV <=
+13
+7140209
+Sư phạm Toán học
+A00
+18.5
+TO >= 6.4;TTNV <= 1
+14
+7140211
+Sư phạm Vật lý
+A00
+15.5
+LI >= 4;TTNV <= 5
+15
+7140212
+Sư phạm Hóa học
+A00
+15.5
+HO >= 3.25;TTNV <= 3
+16
+7140213
+Sư phạm Sinh học
+B00
+15.5
+SI >= 5;TTNV <= 4
+17
+7140217
+Sư phạm Ngữ văn
+C00
+21.5
+VA >= 5.5;TTNV <= 2
+18
+7140231
+Sư phạm Tiếng Anh
+D01
+20.25
+N1 >= 6;TTNV <= 1
+19
+7220201
+Ngôn ngữ Anh
+D01
+18
+TTNV <= 1
+20
+7220301
+Triết học
+C19; C20
+15.5
+TTNV <= 1
+21
+7220301
+Triết học
+C00; D01
+15.5
+TTNV <= 1
+22
+7220330
+Văn học
+C00
+15.5
+TTNV <= 10
+23
+7310101
+Kinh tế
+A00
+15.5
+TTNV <= 5
+24
+7310101
+Kinh tế
+D01
+15.5
+TTNV <= 5
+25
+7340101
+Quản trị kinh doanh
+A00
+17.5
+TTNV <= 1
+26
+7340101
+Quản trị kinh doanh
+D01
+17.5
+TTNV <= 1
+27
+7340201
+Tài chính – Ngân hàng
+A00; D01
+15.5
+TTNV <= 8
+28
+7340301
+Kế toán
+A00
+17.25
+TTNV <= 1
+29
+7340301
+Kế toán
+D01
+17.25
+TTNV <= 1
+30
+7420101
+Sinh học
+B00
+15.5
+TTNV <= 1
+31
+7420201
+Công nghệ sinh học
+A00
+15.5
+TTNV <= 2
+32
+7420201
+Công nghệ sinh học
+B00
+15.5
+TTNV <= 2
+33
+7480201
+Công nghệ thông tin
+A00
+15.5
+TTNV <= 3
+34
+7480201
+Công nghệ thông tin
+A01
+15.5
+TTNV <= 3
+35
+7510406
+Công nghệ kỹ thuật môi trường
+A02
+15.5
+TTNV <= 4
+36
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00
+15.5
+TTNV <= 4
+37
+7540104
+Công nghệ sau thu hoạch
+A02
+15.5
+TTNV <= 3
+38
+7540104
+Công nghệ sau thu hoạch
+A00; B00; D07
+15.5
+TTNV <= 3
+39
+7620105
+Chăn nuôi
+B00
+15.5
+TTNV <= 6
+40
+7620105
+Chăn nuôi
+D08
+15.5
+TTNV <= 6
+41
+7620105
+Chăn nuôi
+A02
+15.5
+TTNV <= 6
+42
+7620110
+Khoa học cây trồng
+B00; D08
+15.5
+TTNV <= 2
+43
+7620110
+Khoa học cây trồng
+A02
+15.5
+TTNV <= 2
+44
+7620112
+Bảo vệ thực vật
+B00
+15.5
+TTNV <= 1
+45
+7620112
+Bảo vệ thực vật
+A02; B08
+15.5
+TTNV <= 1
+46
+7620115
+Kinh tế nông nghiệp
+A00; D01
+15.5
+TTNV <= 6
+47
+7620205
+Lâm sinh
+A02; D08
+15.5
+TTNV <= 1
+48
+7620205
+Lâm sinh
+B00
+15.5
+TTNV <= 1
+49
+7620211
+Quản lý tài nguyên rừng
+A02; D08
+15.5
+TTNV <= 2
+50
+7620211
+Quản lý tài nguyên rừng
+B00
+15.5
+TTNV <= 2
+51
+7640101
+Thú y
+B00
+17.5
+TTNV <= 1
+52
+7640101
+Thú y
+D08
+17.5
+TTNV <= 1
+53
+7640101
+Thú y
+A02
+17.5
+TTNV <= 1
+54
+7720101
+Y đa khoa
+B00
+26
+SI >= 9.25;TTNV <= 3
+55
+7720101LT
+Y đa khoa (Hệ liên thông)
+B00
+25
+SI >= 7.75;TTNV <= 3
+56
+7720332
+Xét nghiệm y học
+B00
+21.5
+SI >= 6;TTNV <= 5
+57
+7720501
+Điều dưỡng
+B00
+20.75
+SI >= 7.25;TTNV <= 1
+58
+7850103
+Quản lý đất đai
+A00; A01
+15.5
+TTNV <= 3
+59
+7850103
+Quản lý đất đai
+A02
+15.5
+TTNV <= 3

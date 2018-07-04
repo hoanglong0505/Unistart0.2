@@ -1,0 +1,145 @@
+QHT
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7460101
+Toán học
+A00; A01; D07; D08
+18.75
+
+3
+7460117
+Toán tin
+A00; A01; D07; D08
+18.75
+
+4
+7480110QTD
+Máy tính và khoa học thông tin
+A00; A01; D07; D08
+21.75
+
+5
+7480110CLC
+Máy tính và khoa học thông tin**
+A00; A01; D07; D08
+---
+
+6
+7440102
+Vật lý học
+A00; A01; B00; C01
+17.5
+
+7
+7440122
+Khoa học vật liệu
+A00; A01; B00; C01
+17.25
+
+8
+7510407
+Công nghệ kỹ thuật hạt nhân
+A00; A01; B00; C01
+17.5
+
+9
+7440112
+Hoá học
+A00; B00; D07
+19.75
+
+10
+7440112TT
+Hoá học**
+A00; B00; D07
+---
+
+11
+7510401
+Công nghệ kỹ thuật hoá học
+A00; B00; D07
+21
+
+12
+7510401CLC
+Công nghệ kỹ thuật hoá học**
+A00; B00; D07
+17.25
+
+13
+7720203CLC
+Hoá dược
+A00; B00; D07
+24
+
+14
+7440217
+Địa lý tự nhiênkỹ thuật
+A00; A01; B00; D10
+17
+
+15
+7440230QTD
+Khoa học thông tin địa không gian
+A00; A01; B00; D10
+---
+
+16
+7850103
+Quản lý đất đai
+A00; A01; B00; D10
+17.5
+
+17
+7420101
+Sinh học
+A00; A02; B00; D08
+18
+
+18
+7420201
+Công nghệ sinh học
+A00; A02; B00; D08
+23.5
+
+19
+7420201CLC
+Công nghệ sinh học**
+A00; A02; B00; D08
+21.75
+
+20
+7440301
+Khoa học môi trường
+A00; A01; B00; D07
+17.5
+
+21
+7440301TT
+Khoa học môi trường**
+A00; A01; B00; D07
+---
+
+22
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; B00; D07
+17.5
+
+23
+QHTN01
+Khí tượng Thủy văn và Biến đổi khí hậu
+A00; A01; B00; D07
+---
+
+24
+QHTN02
+Tài nguyên trái đất
+A00; A01; A16; D07
+---
+

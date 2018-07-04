@@ -1,0 +1,109 @@
+QSC
+1
+7340122
+Thương mại điện tử
+A00; A01; D01
+24
+
+2
+7480101
+Khoa học máy tính
+A00; A01; D01
+25.75
+
+3
+7480101_CLCA
+Khoa học máy tính (chất lượng cao)
+A00; A01; D01
+22
+
+4
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01; D01
+24.5
+
+5
+7480102_CLCA
+Mạng máy tính và truyền thông dữ liệu (chất lượng cao)
+A00; A01; D01
+18
+
+6
+7480103
+Kỹ thuật phần mềm
+A00; A01; D01
+27
+
+7
+7480103_CLCA
+Kỹ thuật phần mềm (chất lượng cao)
+A00; A01; D01
+23.25
+
+8
+7480104
+Hệ thống thông tin
+A00; A01; D01
+24.5
+
+9
+7480104_CLCA
+Hệ thống thông tin (chất lượng cao)
+A00; A01; D01
+20
+
+10
+7480104_TT
+Hệ thống thông tin (tiên tiến)
+A00; A01; D01
+18
+
+11
+7480106
+Kỹ thuật máy tính
+A00; A01; D01
+24.75
+
+12
+7480106_CLCA
+Kỹ thuật máy tính (chất lượng cao)
+A00; A01; D01
+20.75
+
+13
+7480201
+Công nghệ thông tin
+A00; A01; D01
+25.75
+
+14
+7480201_BT
+Công nghệ thông tin (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre)
+A00; A01; D01
+---
+
+15
+7480201_CLCN
+Công nghệ thông tin (chất lượng cao định hướng Nhật Bản)
+A00; A01; D01
+---
+
+16
+7480201_KHDL
+Công nghệ thông tin (Khoa học dữ liệu)
+A00; A01; D01
+---
+
+17
+7480202
+An toàn thông tin
+A00; A01; D01
+25.5
+
+18
+7480202_CLCA
+An toàn thông tin (chất lượng cao)
+A00; A01; D01
+21
+

@@ -1,0 +1,115 @@
+ETU
+1
+7210403
+Thiết kế đồ họa
+H00, H01, V01, V01
+---
+
+2
+7210404
+Thiết kế thời trang
+H00, H01, V01, V01
+---
+
+3
+7220201
+Ngôn ngữ Anh
+A01, D01, D15, D15
+---
+
+4
+7320106
+Công nghệ truyền thông
+A01, A10, D90, D90
+---
+
+5
+7320108
+Quan hệ công chúng
+C00, C20, D15, D15
+---
+
+6
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D01
+---
+
+7
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D01
+---
+
+8
+7340301
+Kế toán
+A00, A01, D01, D01
+---
+
+9
+7380107
+Luật kinh tế
+A01, C00, D01, D01
+---
+
+10
+7480201
+Công nghệ thông tin
+A01, A10, D90, D90
+---
+
+11
+7480299
+Công nghệ đa phương tiện
+A01, A10, D90, D90
+---
+
+12
+7520207
+Kỹ thuật điện tử - viễn thông
+A01, A10, D90, D90
+---
+
+13
+7580101
+Kiến trúc
+V00, V01, ,
+---
+
+14
+7580108
+Thiết kế nội thất
+H00, H01, V01, V01
+---
+
+15
+7580201
+Kỹ thuật xây dựng
+A00, A01, D01, D01
+---
+
+16
+7720201
+Dược học
+A00, A01, D01, D01
+---
+
+17
+7720301
+Điều dưỡng
+A00, A01, D01, D01
+---
+
+18
+7760101
+Công tác xã hội
+A00, B00, D01, D01
+---
+
+19
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, B00, D01, D01
+---
+

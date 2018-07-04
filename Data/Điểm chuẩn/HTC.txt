@@ -1,0 +1,55 @@
+HTC
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01
+31.92
+Điểm tiêu chí phụ môn tiếng Anh: 8.2. TTNV: 1-3
+3
+7310101
+Kinh tế
+A01; D01
+23
+
+4
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+24.5
+Điểm tiêu chí phụ môn Toán: 8.4. TTNV: 1-2
+5
+7340201
+Tài chính – Ngân hàng
+A00; A01
+22.5
+Điểm tiêu chí phụ môn Toán: 7.2. TTNV: 1-4
+6
+7340201D
+Tài chính - Ngân hàng
+D01
+22.5
+Điểm tiêu chí phụ môn Toán: 7.8. TTNV: 1-5
+7
+7340301
+Kế toán
+A00; A01
+25
+Điểm tiêu chí phụ môn Toán: 8.4. TTNV: 1-3
+8
+7340301D
+Kế toán
+D01
+24.5
+Điểm tiêu chí phụ môn Toán: 8.4. TTNV: 1
+9
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01
+22.25
+Điểm tiêu chí phụ môn Toán: 7. TTNV: 1-4

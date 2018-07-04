@@ -1,0 +1,37 @@
+YTB
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7720101
+Y khoa
+B00
+27.5
+TTNV<=2
+3
+7720115
+Y học cổ truyền
+B00
+25
+TTNV<=1
+4
+7720201
+Dược học
+A00
+26
+TTNV<=1
+5
+7720301
+Điều dưỡng
+B00
+24.25
+TTNV<=2
+6
+7720701
+Y tế công cộng
+B00
+20
+TTVN<=3

@@ -1,0 +1,25 @@
+HHK
+1
+7340101
+Quản trị kinh doanh
+A00, A01, D01
+21
+
+2
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00,A01, D90
+20
+
+3
+7520120
+Kỹ thuật hàng không
+A00, A01, D90
+23
+
+4
+7840102
+Quản lý hoạt động bay
+A00, A01, D01
+25
+

@@ -1,0 +1,73 @@
+DDB
+1
+7310201
+Chính trị học
+A00, A04, C00, D01
+---
+
+2
+7310205
+Quản lý nhà nước
+A00, A04, C00, D01
+---
+
+3
+7340101
+Quản trị kinh doanh
+A00, A04, D01, C03
+15.5
+Xét học bạ 18 điểm
+4
+7340201
+Tài chính – Ngân hàng
+A00, A04, D01, C03
+15.5
+Xét học bạ 18 điểm
+5
+7340301
+Kế toán
+A00, A04, D01, C03
+15.5
+Xét học bạ 18 điểm
+6
+7380107
+Luật kinh tế
+A00, B00, B02, C03
+15.5
+Xét học bạ 18 điểm
+7
+7480201
+Công nghệ thông tin
+A00, D01, C03, D66
+15.5
+Xét học bạ 18 điểm
+8
+7510103
+Công nghệ kỹ thuật xây dựng
+A00, A04, A05, D01
+15.5
+Xét học bạ 18 điểm
+9
+7640101
+Thú y
+A00, A05, B00, B02
+---
+
+10
+7720301
+Điều dưỡng
+A00, A05, B00, B02
+15.5
+Xét học bạ 18 điểm
+11
+7720401
+Dinh dưỡng
+A00, A05, B00, B02
+15.5
+Xét học bạ 18 điểm
+12
+7850103
+Quản lý đất đai
+A00, A04, D01, C03
+15.5
+Xét học bạ 18 điểm

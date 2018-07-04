@@ -1,0 +1,49 @@
+YQH
+1
+7720101
+Y khoa (với thí sinh nam miền Bắc)
+A00
+29
+Thí sinh mức 29,00 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 9,60. Tiêu chí phụ 2: Điểm môn Lý ≥ 9,00. Tiêu chí phụ 3: Điểm môn Hóa ≥ 9,50.
+2
+7720101
+Y khoa (với thí sinh nam miền Nam)
+A00
+27.25
+Thí sinh mức 27,25 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 8,80. Tiêu chí phụ 2: Điểm môn Lý ≥ 8,75.
+3
+7720101
+Y khoa (với thí sinh nữ miền Bắc)
+A00
+29.5
+
+4
+7720101
+Y khoa (với thí sinh nữ miền Nam)
+A00
+30
+
+5
+7720101
+Y khoa (với thí sinh nam miền Bắc)
+B00
+27.75
+Thí sinh mức 27,75 điểm: Điểm môn Sinh ≥ 9,50.
+6
+7720101
+Y khoa (với thí sinh nam miền Nam)
+B00
+27
+Thí sinh mức 27,00 điểm: Điểm môn Sinh ≥ 9,00.
+7
+7720101
+Y khoa (với thí sinh nữ miền Bắc)
+B00
+30
+
+8
+7720101
+Y khoa (với thí sinh nữ miền Nam)
+B00
+29
+Thí sinh mức 29,00 điểm: Điểm môn Sinh ≥ 9,00.

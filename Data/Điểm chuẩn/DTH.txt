@@ -1,0 +1,115 @@
+DTH
+1
+7220201
+Ngôn ngữ Anh
+D01; D09; D14; D15
+21.75
+Thang điểm 40
+2
+7310401
+Tâm lý học
+A01; D01; D08; D09
+16
+
+3
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D03; D09
+16
+
+4
+73404
+Nhóm ngành Quản trị - Quản lý (Gồm 3 ngành: Quản trị nhân lực; Hệ thống thông tin quản lý; Quản trị văn phòng)
+A00; A01; D01; D03; D09
+16
+
+5
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D03; D09
+16
+
+6
+7810201
+Quản trị khách sạn
+A00; A01; D01; D03; D09
+16
+
+7
+7810202
+Quản trị nhà hàng và dịch vụ ăn uống
+A00; A01; D01; D03; D09
+16
+
+8
+7340115
+Marketing
+A00; A01; D01; D03; D09
+16
+
+9
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D03; D09
+16
+
+10
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D03; D09
+16
+
+11
+7340301
+Kế toán
+A00; A01; D01; D03; D09
+16
+
+12
+7340410
+Quản trị công nghệ truyền thông*
+A00; A01; D01; D03; D09
+16
+
+13
+7460112
+Toán ứng dụng
+A00; A01; D01; D03; D07
+21.75
+Thang điểm 40
+14
+7480102
+Truyền thông và mạng máy tính
+A00; A01; D01; D03; D07
+16
+
+15
+7480201
+Công nghệ thông tin
+A00; A01; D01; D03; D07
+16
+
+16
+748
+Nhóm ngành Công nghệ thông tin và truyền thông (Gồm 2 ngành: Kỹ thuật phần mềm; Hệ thống thông tin quản lý)
+A00; A01; D01; D03; D07
+16
+
+17
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; D07; D08
+16
+
+18
+78501010
+Quản lý tài nguyên và môi trường
+A00; B00; D07; D08
+16
+
+19
+7540101
+Công nghệ thực phẩm
+A00; B00; D07; D08
+16
+

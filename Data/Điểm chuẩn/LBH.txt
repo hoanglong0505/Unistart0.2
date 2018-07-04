@@ -1,0 +1,31 @@
+LBH
+1
+7860201
+Thí sinh Nam Quân khu 4(Quảng Trị và TT-Huế)
+A00
+23.5
+Thí sinh mức 23,50 điểm: Điểm môn Toán ≥ 8,60.
+2
+7860201
+Thí sinh Nam Quân khu 5
+A00
+24
+Thí sinh mức 24,00 điểm: Tiêu chí phụ 1: Điểm môn Toán ≥ 7,20. Tiêu chí phụ 2: Điểm môn Lý ≥ 9,00.
+3
+7860201
+Thí sinh Nam Quân khu 7
+A00
+23.25
+Thí sinh mức 23,25 điểm: Điểm môn Toán ≥ 7,60.
+4
+7860201
+Thí sinh Nam Quân khu 9
+A00
+23.75
+Thí sinh mức 23,75 điểm: Điểm môn Toán ≥ 8,20.
+5
+7860201
+Chỉ huy tham mưu lục quân
+A01
+---
+

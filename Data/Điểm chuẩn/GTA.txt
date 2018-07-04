@@ -1,0 +1,169 @@
+GTA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+16.5
+
+3
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+16.5
+
+4
+7340301
+Kế toán
+A00; A01; D01; D07
+17
+
+5
+7340301TN
+Kế toán
+A00; A01; D01; D07
+---
+
+6
+7340301VP
+Kế toán
+A00; A01; D01; D07
+15.5
+
+7
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01; D01; D07
+17
+
+8
+7480104
+Hệ thống thông tin
+A00; A01; D01; D07
+17
+
+9
+7480104TN
+Hệ thống thông tin
+A00; A01; D01; D07
+---
+
+10
+7480104VP
+Hệ thống thông tin
+A00; A01; D01; D07
+15.5
+
+11
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; D01; D07
+16
+
+12
+7510102TN
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; D01; D07
+---
+
+13
+7510102VP
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; D01; D07
+15.5
+
+14
+7510104
+Công nghệ kỹ thuật giao thông
+A00; A01; D01; D07
+16
+
+15
+7510104TN
+Công nghệ kỹ thuật giao thông
+A00; A01; D01; D07
+---
+
+16
+7510104VP
+Công nghệ kỹ thuật giao thông
+A00; A01; D01; D07
+15.5
+
+17
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D01; D07
+16
+
+18
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; D01; D07
+17.5
+
+19
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; D01; D07
+19
+
+20
+7510205TN
+Công nghệ kỹ thuật ô tô
+A00; A01; D01; D07
+---
+
+21
+7510205VP
+Công nghệ kỹ thuật ô tô
+A00; A01; D01; D07
+15.5
+
+22
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01; D01; D07
+17
+
+23
+7510302VP
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01; D01; D07
+15.5
+
+24
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A01; D01; D07
+16
+
+25
+7580301
+Kinh tế xây dựng
+A00; A01; D01; D07
+17
+
+26
+7580301TN
+Kinh tế xây dựng
+A00; A01; D01; D07
+---
+
+27
+7580301VP
+Kinh tế xây dựng
+A00; A01; D01; D07
+15.5
+
+28
+7840101
+Khai thác vận tải
+A00; A01; D01; D07
+---
+

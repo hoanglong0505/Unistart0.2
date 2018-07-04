@@ -1,0 +1,43 @@
+ZNH
+1
+7140221
+Sư phạm Âm nhạc
+N01
+24
+điểm thi 2 môn năng khiếu > 13.75
+2
+7210203
+Sáng tác âm nhạc
+N05
+15.75
+điểm thi 2 môn năng khiếu > 8.00
+3
+7210205
+Thanh nhạc
+N02
+20.25
+điểm thi 2 môn năng khiếu > 16.50
+4
+7210207
+Biểu diễn nhạc cụ phương tây
+N04
+16.75
+điểm thi 2 môn năng khiếu > 11.75
+5
+7210243
+Biên đạo múa
+N03
+23
+Điểm mỗi môn thi của thí sinh phải > 5.00
+6
+7229042
+Quản lý văn hoá
+N01
+23.25
+điểm thi 2 môn năng khiếu > 15.00
+7
+7320101
+Báo chí
+C00
+25.25
+

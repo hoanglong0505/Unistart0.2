@@ -1,0 +1,115 @@
+DTL
+1
+7210205
+Thanh nhạc
+
+---
+
+2
+7220201
+Ngôn ngữ Anh
+D01
+19
+Tiêu chí phụ: Điểm tiếng Anh; Thang điểm 30.
+3
+7220204
+Ngôn ngữ Trung Quốc
+D01, D04
+19
+Tiêu chí phụ: Điểm ngoại ngữ; Thang điểm 30.
+4
+7220209
+Ngôn ngữ Nhật
+D01, D06
+18
+Tiêu chí phụ: Điểm ngoại ngữ; Thang điểm 30.
+5
+7220210
+Ngôn ngữ Hàn Quốc
+D01
+20
+Tiêu chí phụ: Điểm Tiếng Anh; Thang điểm 30.
+6
+7310630
+Việt Nam học
+C00, D01, D03, D04
+---
+
+7
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D03
+17.25
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+8
+7340201
+Tài chính – Ngân hàng
+A00, A01, D01, D03
+17.25
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+9
+7340301
+Kế toán
+A00, A01, D01, D04
+17.25
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+10
+7460112
+Toán ứng dụng
+A00; A01
+15.5
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+11
+7480101
+Khoa học máy tính
+A00; A01
+15.5
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+12
+7480102
+Mạng máy tính và truyền thông dữ liệu
+A00; A01
+15.5
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+13
+7480104
+Hệ thống thông tin
+A00; A01
+15.5
+Tiêu chí phụ: Điểm Toán; Thang điểm 30.
+14
+7720301
+Điều dưỡng
+B00
+15.75
+Tiêu chí phụ: Điểm Sinh học; Thang điểm 30.
+15
+7720401
+Dinh dưỡng
+B00
+---
+
+16
+7720701
+Y tế công cộng
+B00
+---
+
+17
+7720802
+Quản lý bệnh viện
+B00
+---
+
+18
+7760101
+Công tác xã hội
+C00; D01; D03; D04
+18
+Tiêu chí phụ: Điểm Ngữ Văn; Thang điểm 30.
+19
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, A01, D01, D03
+---
+

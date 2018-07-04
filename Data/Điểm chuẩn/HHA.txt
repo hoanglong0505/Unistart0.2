@@ -1,0 +1,253 @@
+HHA
+1
+7220201D124
+Tiếng Anh thương mại
+A01; D01; D10; D14
+28.67
+Tiếng Anh nhân đôi
+2
+7220201D125
+Ngôn ngữ Anh,
+A01; D01; D10; D14
+29.17
+Tiếng Anh nhân đôi
+3
+7340101D403
+Quản trị kinh doanh,
+A00; A01; C01; D01
+19.75
+
+4
+7340101D404
+Quản trị tài chính kế toán
+A00; A01; C01; D01
+20.25
+
+5
+7340101D411
+Quản trị tài chính ngân hàng
+A00; A01; C01; D01
+15.75
+
+6
+7340120A409
+Kinh doanh quốc tế và logistics
+A01; D01; D07; D15
+18.75
+
+7
+7340120D402
+Kinh tế ngoại thương
+A00; A01; C01; D01
+22
+
+8
+7340120H402
+Kinh tế ngoại thương (CLC)
+A00; A01; C01; D01
+17.5
+
+9
+7480201D114
+Công nghệ thông tin,
+A00; A01; C01; D01
+20
+
+10
+7480201D118
+Công nghệ phần mềm
+A00; A01; C01; D01
+16
+
+11
+7480201D119
+Kỹ thuật truyền thông và mạng máy tính
+A00; A01; C01; D01
+16
+
+12
+7480201H114
+Công nghệ thông tin (CLC)
+A00; A01; C01; D01
+16
+
+13
+7520103D109
+Máy và tự động hóa xếp dỡ
+A00; A01; C01; D01
+15.5
+
+14
+7520103D116
+Kỹ thuật cơ khí,
+A00; A01; C01; D01
+15.5
+
+15
+7520103D117
+Kỹ thuật cơ điện tử
+A00; A01; C01; D01
+15.5
+
+16
+7520103D122
+Kỹ thuật ôtô
+A00; A01; C01; D01
+16.5
+
+17
+7520103D123
+Kỹ thuật nhiệt lạnh
+A00; A01; C01; D01
+15.5
+
+18
+7520103D128
+Máy và tự động công nghiệp
+A00; A01; C01; D01
+15.5
+
+19
+7520122D106
+Máy tàu thủy
+A00; A01; C01; D01
+15.5
+
+20
+7520122D107
+Thiết kế tàu và công trình ngoài khơi
+A00; A01; C01; D01
+15.5
+
+21
+7520122D108
+Đóng tàu và công trình ngoài khơi
+A00; A01; C01; D01
+15.5
+
+22
+7520207D104
+Điện tử viễn thông
+A00; A01; C01; D01
+15.5
+
+23
+7520216D103
+Điện tự động tàu thủy
+A00; A01; C01; D01
+15.5
+
+24
+7520216D105
+Điện tự động công nghiệp
+A00; A01; C01; D01
+18
+
+25
+7520216D121
+Tự động hóa hệ thống điện
+A00; A01; C01; D01
+15.5
+
+26
+7520216H105
+Điện tự động công nghiệp (CLC)
+A00; A01; C01; D01
+15.5
+
+27
+7520320D115
+Kỹ thuật môi trường,
+A00; A01; C01; D01
+15.5
+
+28
+7520320D126
+Kỹ thuật hóa dầu
+A00; A01; C01; D01
+15.5
+
+29
+7580201D112
+Xây dựng dân dụng và công nghiệp
+A00; A01; C01; D01
+15.5
+
+30
+7580201D127
+Kiến trúc dân dụng và công nghiệp
+H01; H02; H03; H04
+20.67
+Vẽ hệ số hai
+31
+7580203D110
+Xây dựng công trình thủy
+A00; A01; C01; D01
+15.5
+
+32
+7580203D111
+Kỹ thuật an toàn hàng hải
+A00; A01; C01; D01
+15.5
+
+33
+7580205D113
+Kỹ thuật cầu đường
+A00; A01; C01; D01
+15.5
+
+34
+7840104A408
+Kinh tế Hàng hải
+A01; D01; D07; D15
+16.75
+
+35
+7840104D401
+Kinh tế vận tải biển
+A00; A01; C01; D01
+20.5
+
+36
+7840104D407
+Logistics và chuỗi cung ứng
+A00; A01; C01; D01
+21.5
+
+37
+7840104D410
+Kinh tế vận tải thủy
+A00; A01; C01; D01
+18
+
+38
+7840104H401
+Kinh tế vận tải biển (CLC)
+A00; A01; C01; D01
+17.25
+
+39
+7840106D101
+Điều khiển tàu biển
+A00; A01; C01; D01
+15.75
+
+40
+7840106D102
+Khai thác máy tàu biển
+A00; A01; C01; D01
+15.5
+
+41
+7380101D120
+Luật hàng hải
+A00; A01; C01; D01
+15.5
+
+42
+7340101A403
+Quản lý kinh doanh và marketing
+A01; D01; D07; D15
+15.5
+

@@ -1,0 +1,31 @@
+QHQ
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7340120
+Kinh doanh quốc tế
+A00; A01; D01; D02
+18.5
+
+3
+7340303
+Kế toán, Phân tích và Kiểm toán
+A00; A01; D01; D02
+17
+
+4
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01; D02
+17.25
+
+5
+7480111
+Tin học và kỹ thuật máy tính
+A00; A01; D01; D02
+---
+

@@ -1,0 +1,259 @@
+HVN
+1
+7140215P
+Sư phạm kỹ thuật nông nghiệp
+A00; A01; B00; D01
+25.5
+
+2
+7220201
+Ngôn ngữ Anh
+D01; D07; D14; D15
+19.5
+
+3
+7310101
+Kinh tế
+A00; A01; C00; D01
+16
+
+4
+7310101E
+Kinh tế tài chính chất lượng cao
+A00; A01; B00; D01
+---
+
+5
+7310104
+Kinh tế đầu tư
+A00; A01; B00; D01
+---
+
+6
+7310301
+Xã hội học
+A00; A01; C00; D01
+20.25
+
+7
+7340101
+Quản trị kinh doanh
+A00; A01; C02; D01
+18
+
+8
+7340102T
+Quản trị kinh doanh nông nghiệp tiên tiến
+A00; A01; B00; D01
+---
+
+9
+7340301
+Kế toán
+A00; A01; C00; D01
+18
+
+10
+7340301P
+Kế toán (POHE)
+A00; A01; C00; D01
+---
+
+11
+7420201
+Công nghệ sinh học
+A00; B00; D01; D08
+20
+
+12
+7420201E
+Công nghệ sinh học chất lượng cao
+A00; B00; D01; D08
+---
+
+13
+7420201P
+Công nghệ sinh học (POHE)
+A00; B00; D01; D08
+---
+
+14
+7440301
+Khoa học môi trường
+A01; B00; C00; D01
+15.5
+
+15
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+18.75
+
+16
+7480201P
+Công nghệ thông tin (POHE)
+A00; A01; C01; D01
+---
+
+17
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; C01; D01
+---
+
+18
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; C01; D01
+---
+
+19
+7520103
+Kỹ thuật cơ khí
+A00; A01; C01; D01
+16.25
+
+20
+7520103P
+Kỹ thuật cơ khí (POHE)
+A00; A01; C01; D01
+---
+
+21
+7520201
+Kỹ thuật điện
+A00; A01; C01; D01
+16.25
+
+22
+7540101
+Công nghệ thực phẩm
+A00; A01; B00; D01
+22.5
+
+23
+7540104
+Công nghệ sau thu hoạch
+A00; A01; B00; D01
+17
+
+24
+7540108
+Công nghệ và kinh doanh thực phẩm
+A00; A01; B00; D01
+---
+
+25
+7580210
+Kỹ thuật cơ sở hạ tầng
+A00; A01; C01; D01
+---
+
+26
+7580212
+Kỹ thuật tài nguyên nước
+A00; A01; A02; C01
+20.5
+
+27
+7620101P
+Nông nghiệp
+A00; A01; B00; D01
+---
+
+28
+7620103
+Khoa học đất
+A00; B00; D07; D08
+23
+
+29
+7620105
+Chăn nuôi
+A00; A01; B00; D01
+17
+
+30
+7620105P
+Chăn nuôi (POHE)
+A00; A01; B00; D01
+---
+
+31
+7620110
+Khoa học cây trồng
+A00; A01; B00; D01
+16.25
+
+32
+7620111T
+Khoa học cây trồng tiên tiến
+A00; A01; B00; D01
+---
+
+33
+7620112
+Bảo vệ thực vật
+A00; A01; B00; D01
+17.25
+
+34
+7620113P
+Công nghệ rau hoa quả và cảnh quan
+A00; A01; B00; D01
+---
+
+35
+7620114
+Kinh doanh nông nghiệp
+A00; A01; C02; D01
+16.25
+
+36
+7620115
+Kinh tế nông nghiệp
+A00; B00; D01; D07
+15.5
+
+37
+7620115E
+Kinh tế nông nghiệp chất lượng cao
+B00; D01; D07; D15
+---
+
+38
+7620116
+Phát triển nông thôn
+A00; B00; C00; D01
+15.5
+
+39
+7620116P
+Phát triển nông thôn (POHE)
+A00; B00; C00; D01
+---
+
+40
+7620118
+Nông nghiệp công nghệ cao
+A00; A01; B00; D01
+---
+
+41
+7620301
+Nuôi trồng thuỷ sản
+A00; A01; B00; D01
+---
+
+42
+7640101
+Thú y
+A00; A01; B00; D01
+19.75
+
+43
+7850103
+Quản lý đất đai
+A00; B00; D01; D08
+16
+

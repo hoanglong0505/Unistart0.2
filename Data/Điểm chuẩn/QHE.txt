@@ -1,0 +1,43 @@
+QHE
+1
+7310101
+Kinh tế
+A00; A01; C04; D01
+25
+
+2
+7310105
+Kinh tế phát triển
+A00; A01; C04; D01
+24
+
+3
+7310106
+Kinh tế quốc tế
+A01; D01; D09; D10
+26
+
+4
+7340101
+Quản trị kinh doanh
+A01; D01; D09; D10
+25.5
+
+5
+7340101QT
+Quản trị kinh doanh (liên kết quốc tế do Đại học Troy - Hoa Kỳ cấp bằng)
+A01; D01; D07; D08
+---
+
+6
+7340201
+Tài chính – Ngân hàng
+A01; D01; D09; D10
+24.75
+
+7
+7340301
+Kế toán
+A01; D01; D09; D10
+25.5
+

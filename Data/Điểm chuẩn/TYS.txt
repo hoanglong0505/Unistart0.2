@@ -1,0 +1,97 @@
+TYS
+1
+7720101
+Y khoa
+B00
+27
+
+2
+7720101TP
+Y khoa
+B00
+---
+
+3
+7720201
+Dược học
+B00
+---
+
+4
+7720201TP
+Dược học
+B00
+---
+
+5
+7720301
+Điều dưỡng
+B00
+23.25
+
+6
+7720301TP
+Điều dưỡng
+B00
+---
+
+7
+7720501
+Răng - Hàm - Mặt
+B00
+27.25
+
+8
+7720501TP
+Răng - Hàm - Mặt
+B00
+---
+
+9
+7720601
+Kỹ thuật xét nghiệm y học
+B00
+25.75
+
+10
+7720601TP
+Kỹ thuật xét nghiệm y học
+B00
+---
+
+11
+7720602
+Kỹ thuật hình ảnh y học
+B00
+24.5
+
+12
+7720602TP
+Kỹ thuật hình ảnh y học
+B00
+---
+
+13
+7720699
+Khúc xạ nhãn khoa
+B00
+25.25
+
+14
+7720699TP
+Khúc xạ nhãn khoa
+B00
+---
+
+15
+7720701
+Y tế công cộng
+B00
+21.75
+
+16
+7720701TP
+Y tế công cộng
+B00
+---
+

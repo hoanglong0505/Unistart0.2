@@ -1,0 +1,49 @@
+BVS
+1
+7329001
+Công nghệ đa phương tiện
+A00; A01; D01
+21.75
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+20.5
+
+3
+7340115
+Marketing
+A00; A01; D01
+21.25
+
+4
+7340301
+Kế toán
+A00; A01; D01
+19.75
+
+5
+7480201
+Công nghệ thông tin
+A00; A01
+23.25
+
+6
+7480202
+An toàn thông tin
+A00; A01
+21.75
+
+7
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01
+19
+
+8
+7520207
+Kỹ thuật điện tử - viễn thông
+A00; A01
+19.5
+

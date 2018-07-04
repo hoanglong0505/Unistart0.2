@@ -1,0 +1,241 @@
+QSB
+1
+106
+Khoa học Máy tính; Kỹ thuật Máy tính; (Nhóm ngành)
+A00; A01
+28
+
+2
+108
+Kỹ thuật Điện;Kỹ thuật Điện tử - Viễn thông;Kỹ thuật Điều khiển và tự động hóa;(Nhóm ngành)
+A00; A01
+26.25
+
+3
+109
+Kỹ thuật Cơ khí; Kỹ thuật Cơ điện tử ; (Nhóm ngành)
+A00; A01
+25.75
+
+4
+112
+Kỹ thuật Dệt; Công nghệ Dệt may; (Nhóm ngành)
+A00; A01
+24
+
+5
+114
+Kỹ thuật Hóa học; Công nghệ Thực phẩm; Công nghệ Sinh học; (Nhóm ngành)
+A00; B00; D07
+26.5
+
+6
+115
+Kỹ thuật Xây dựng; Kỹ thuật Xây dựng Công trình giao thông;Kỹ thuật Xây dựng Công trình thủy; Kỹ thuật Xây dựng Công trình biển;Kỹ thuật Cơ sở hạ tầng;(Nhóm ngành)
+A00; A01
+24
+
+7
+117
+Kiến trúc
+V00; V01
+21.25
+
+8
+120
+Kỹ thuật Địa chất; Kỹ thuật Dầu khí; (Nhóm ngành)
+A00; A01
+23.5
+
+9
+123
+Quản lý Công nghiệp
+A00; A01; D01; D07
+25.25
+
+10
+125
+Kỹ thuật Môi trường; Quản lý Tài nguyên và Môi trường; (Nhóm ngành)
+A00; A01; B00; D07
+24.25
+
+11
+128
+Kỹ thuật Hệ thống Công nghiệp;Logistics và Quản lý chuỗi Cung ứng;(Nhóm ngành)
+A00; A01
+25.75
+
+12
+129
+Kỹ thuật Vật liệu
+A00; A01; D07
+22.75
+
+13
+130
+Kỹ thuật Trắc địa - Bản đồ
+A00; A01
+20
+
+14
+131
+Công nghệ Kỹ thuật Vật liệu Xây dựng
+A00; A01
+23
+
+15
+137
+Vật lý Kỹ thuật
+A00; A01
+24
+
+16
+138
+Cơ Kỹ thuật
+A00; A01
+23.5
+
+17
+140
+Kỹ thuật Nhiệt (Nhiệt lạnh)
+A00; A01
+25.75
+
+18
+141
+Bảo dưỡng Công nghiệp
+A00; A01
+---
+
+19
+142
+Kỹ thuật Ô tô
+A00; A01
+26.25
+
+20
+143
+Kỹ thuật Tàu thủy
+A00; A01
+26.25
+
+21
+144
+Kỹ thuật Hàng không
+A00; A01
+26.25
+
+22
+206
+Khoa học Máy tính (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+26
+
+23
+207
+Kỹ thuật Máy tính (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+24.5
+
+24
+208
+Kỹ thuật Điện - Điện tử (CT Tiên tiến. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+23.25
+
+25
+209
+Kỹ thuật Cơ khí (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+22.75
+
+26
+210
+Kỹ thuật Cơ điện tử (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+24.5
+
+27
+214
+Kỹ thuật Hóa học (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; B00; D07
+25.5
+
+28
+215
+Kỹ thuật Xây dựng (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+21.75
+
+29
+219
+Công nghệ Thực phẩm (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; B00; D07
+25.25
+
+30
+220
+Kỹ thuật Dầu khí (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+20
+
+31
+223
+Quản lý Công nghiệp (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01; D01; D07
+22.5
+
+32
+225
+Quản lý Tài nguyên và Môi trường (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01; B00; D07
+20.5
+
+33
+241
+Kỹ thuật Môi trường (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01; B00; D07
+21.25
+
+34
+242
+Kỹ thuật Ô tô (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+23.5
+
+35
+245
+Kỹ thuật Xây dựng Công trình Giao thông (CT Chất lượng cao. giảng dạy bằng tiếng Anh. học phí tương ứng)
+A00; A01
+20
+
+36
+408
+Kỹ thuật Điện (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre. thí sinh phải thỏa điều kiện quy định của Phân hiệu)
+A00. A01
+---
+
+37
+410
+Kỹ thuật Cơ điện tử (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre. thí sinh phải thỏa điều kiện quy định của Phân hiệu)
+A00. A01
+---
+
+38
+415
+Kỹ thuật Xây dựng (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre. thí sinh phải thỏa điều kiện quy định của Phân hiệu)
+A00. A01
+---
+
+39
+419
+Công nghệ Thực phẩm (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre. thí sinh phải thỏa điều kiện quy định của Phân hiệu)
+A00. B00. D07
+---
+
+40
+425
+Quản lý Tài nguyên và Môi trường (Đào tạo tại Phân hiệu ĐHQG-HCM tại Bến Tre. thí sinh phải thỏa điều kiện quy định của Phân hiệu)
+A00. A01.B00. D07
+---
+

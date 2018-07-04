@@ -1,0 +1,85 @@
+UKH
+1
+7140209
+Sư phạm Toán học
+A00; A01; B00; D07
+15.5
+
+2
+7140209
+Sư phạm Toán học (TS hộ khẩu ngoài Khánh Hòa)
+A00; A01; B00; D07
+16.75
+
+3
+7140211
+Sư phạm Vật lý
+A00; A01; B00; D07
+15.5
+
+4
+7140211
+Sư phạm Vật lý (TS hộ khẩu ngoài Khánh Hòa)
+A00; A01; B00; D07
+15.5
+
+5
+7140217
+Sư phạm Ngữ văn
+C00; D01; D14; D15
+16.75
+
+6
+7140217
+Sư phạm Ngữ văn (TS hộ khẩu ngoài Khánh Hòa)
+C00; D01; D14; D15
+20.25
+
+7
+7310630
+Việt Nam học
+A01; D01; D14; D15
+16.5
+
+8
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+19.25
+
+9
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A01; D01; D14; D15
+17.75
+
+10
+7420203
+Sinh học ứng dụng
+A00; A01; B00; D07
+15.5
+
+11
+7440112
+Hóa học
+A00; A01; B00; D07
+15.5
+
+12
+51140202
+Giáo dục Tiểu học (bậc cao đẳng)
+A00; B00; C00; D01
+18
+
+13
+51140212
+Sư phạm Hóa học (bậc cao đẳng)
+A00; A01; B00; D07
+10.25
+
+14
+51140231
+Sư phạm Tiếng Anh (bậc cao đẳng)
+A01; D01; D14; D15
+16
+

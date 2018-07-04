@@ -1,0 +1,103 @@
+DDF
+1
+7140231
+Sư phạm Tiếng Anh
+D01
+24.75
+N1 >= 9.2;TTNV <= 1
+2
+7140233
+Sư phạm Tiếng Pháp
+D01, D03, D78, D96
+18.75
+TTNV <= 2
+3
+7140234
+Sư phạm Tiếng Trung Quốc
+D01, D03, D78, D96
+22.25
+TTNV <= 2
+4
+7220201
+Ngôn ngữ Anh
+D01
+22.5
+N1 >= 8.4;TTNV <= 4
+5
+7220201CLC
+Ngôn ngữ Anh CLC
+D01
+19.75
+N1 >= 7.2;TTNV <= 1
+6
+7220202
+Ngôn ngữ Nga
+D01, D02, D78, D96
+18.75
+TTNV <= 3
+7
+7220203
+Ngôn ngữ Pháp
+D01, D03, D78, D96
+20.5
+TTNV <= 1
+8
+7220204
+Ngôn ngữ Trung Quốc
+D01, D04, D78, D83
+23.5
+TTNV <= 2
+9
+7220204CLC
+Ngôn ngữ Trung Quốc CLC
+D01, D04, D78, D83
+---
+
+10
+7220209
+Ngôn ngữ Nhật
+D01, D06
+25
+TTNV <= 5
+11
+7220209CLC
+Ngôn ngữ Nhật CLC
+D01, D06
+---
+
+12
+7220210
+Ngôn ngữ Hàn Quốc
+D01, D78, D96
+24.25
+N1 >= 8;TTNV <= 7
+13
+7220210CLC
+Ngôn ngữ Hàn Quốc CLC
+D01, D78, D96
+---
+
+14
+7220214
+Ngôn ngữ Thái Lan
+D01, D15, D78, D96
+20.75
+N1 >= 6.2;TTNV <= 1
+15
+7310601
+Quốc tế học
+D01, D09, D78, D96
+20.5
+N1 >= 8.4;TTNV <= 2
+16
+7310601CLC
+Quốc tế học CLC
+D01, D09, D78, D96
+19.25
+N1 >= 6;TTNV <= 2
+17
+7310608
+Đông phương học
+D01, D06, D78, D96
+20.75
+TTNV <= 3

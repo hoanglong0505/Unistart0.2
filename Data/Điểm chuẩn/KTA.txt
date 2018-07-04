@@ -1,0 +1,91 @@
+KTA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+KTA01
+Nhóm ngành 1: Kiến trúc - Quy hoạch vùng và đô thị
+V00
+---
+
+3
+KTA02
+Nhóm ngành 2: Kiến trúc cảnh quan - Chương trình tiên tiến ngành Kiến trúc
+V00
+20.33
+Vẽ nhân 2
+4
+KTA03
+Nhóm ngành 3: Thiết kế đồ họa - Thiết kế thời trang
+H00
+---
+
+5
+KTA04
+Nhóm ngành 4: Thiết kế nội thất - Điêu khắc
+H00
+---
+
+6
+7580201
+Kỹ thuật xây dựng
+A00
+15.5
+
+7
+7580201_1
+Kỹ thuật xây dựng (Chuyên ngành Xây dựng công trình ngầm đô thị)
+A00
+18.5
+
+8
+7510105
+Công nghệ kỹ thuật vật liệu xây dựng
+A00; B00
+15.5
+
+9
+7580302
+Quản lý xây dựng
+15.5
+---
+
+10
+7580301
+Kinh tế xây dựng
+A00; A01
+15.5
+
+11
+7580213
+Kỹ thuật cấp thoát nước
+A00; B00
+16.25
+
+12
+7580210
+Kỹ thuật cơ sở hạ tầng
+A00
+---
+
+13
+7580210_1
+Kỹ thuật cơ sở hạ tầng (Chuyên ngành Kỹ thuật môi trường đô thị)
+A00; B00
+---
+
+14
+7580205
+Kỹ thuật xây dựng công trình giao thông
+A00; A01
+16.75
+
+15
+7480201
+Công nghệ thông tin
+A00; A01
+15.5
+

@@ -1,0 +1,157 @@
+DVL
+1
+7210205
+Thanh nhạc
+N00
+---
+
+2
+7210208
+Piano
+N00
+---
+
+3
+7210402
+Thiết kế công nghiệp
+H03; H04; H05; H06
+15.5
+Xét theo học bạ 21
+4
+7210403
+Thiết kế đồ họa
+H03; H04; H05; H06
+16.5
+Xét theo học bạ 21
+5
+7210404
+Thiết kế thời trang
+H03; H04; H05; H06
+16.5
+Xét theo học bạ 21
+6
+7220201
+Ngôn ngữ Anh
+D01; D08; D10
+19
+Xét theo học bạ 21
+7
+7229030
+Văn học
+C00; D01; D14; D66
+15.5
+Xét theo học bạ 18
+8
+7310401
+Tâm lý học
+B00, B03, C00, D01
+---
+
+9
+7310608
+Đông phương học
+A01, C00, D01
+---
+
+10
+7320108
+Quan hệ công chúng
+A00; A01; C00; D01
+19
+Xét theo học bạ 20.5
+11
+7340101
+Quản trị kinh doanh
+A00; A01; C04; D01
+19
+Xét theo học bạ 20
+12
+7340121
+Kinh doanh thương mại
+A00; A01; D01; D10
+17
+Xét theo học bạ 18
+13
+7340201
+Tài chính – Ngân hàng
+A00; A01; C04; D01
+17
+Xét theo học bạ 18
+14
+7340301
+Kế toán
+A00; A01; D01; D10
+17
+Xét theo học bạ 18
+15
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+18
+Xét theo học bạ 18
+16
+7420201
+Công nghệ sinh học
+A00; A02; B00; D08
+15.5
+Xét theo học bạ 18
+17
+7480103
+Kỹ thuật phần mềm
+A00; A01; D01; D10
+15.5
+Xét theo học bạ 18
+18
+7510406
+Công nghệ kỹ thuật môi trường
+A00; B00; D07; D08
+15.5
+Xét theo học bạ 18
+19
+7520115
+Kỹ thuật nhiệt
+A00; A01; D07
+15.5
+Xét theo học bạ 18
+20
+7580101
+Kiến trúc
+H02; V00; V01
+15.5
+Xét theo học bạ 21
+21
+7580108
+Thiết kế nội thất
+H03; H04; H05; H06
+15.5
+Xét theo học bạ 21
+22
+7580201
+Kỹ thuật xây dựng
+A00; A01
+15.5
+Xét theo học bạ 21
+23
+7720301
+Điều dưỡng
+B00, C08, D07, D08
+---
+
+24
+7720601
+Kỹ thuật xét nghiệm y học
+A00, B00, D07, D08
+---
+
+25
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D03
+18
+Xét theo học bạ 18
+26
+7810201
+Quản trị khách sạn
+A00; A01; D01; D03
+18.5
+Xét theo học bạ 18

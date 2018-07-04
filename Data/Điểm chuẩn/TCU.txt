@@ -1,0 +1,13 @@
+TCU
+1
+7480201
+Công nghệ thông tin
+A00, A01, C01, D01
+---
+
+2
+7520207
+Kỹ thuật điện tử - viễn thông
+A00, A01, C01, D01
+---
+

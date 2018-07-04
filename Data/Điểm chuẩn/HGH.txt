@@ -1,0 +1,25 @@
+HGH
+1
+7860229
+Chỉ huy kỹ thuật hóa học phía Bắc
+A01
+---
+
+2
+7860229
+Chỉ huy kỹ thuật hóa học phía Bắc
+A00
+23.75
+Thí sinh mức 23,75 điểm: Điểm môn Hóa ≥ 7,75.
+3
+7860229
+Chỉ huy kỹ thuật hóa học phía Nam
+A01
+---
+
+4
+7860229
+Chỉ huy kỹ thuật hóa học phía Nam
+A00
+17.5
+

@@ -1,0 +1,91 @@
+SKH
+1
+7140214
+Sư phạm Kỹ thuật công nghiệp
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+2
+7220201
+Ngôn ngữ Anh
+D09
+---
+
+3
+7220201
+Ngôn ngữ Anh
+A00; A01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+4
+7310101
+Kinh tế
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+5
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+6
+7340301
+Kế toán
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+7
+7480201
+Công nghệ thông tin
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+8
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+9
+7510202
+Công nghệ chế tạo máy
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+10
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+11
+7510205
+Công nghệ kỹ thuật ô tô
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+12
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+13
+7510401
+Công nghệ kỹ thuật hoá học
+A00; A02; B00; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+14
+7510406
+Công nghệ kỹ thuật môi trường
+A00; A02; B00; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)
+15
+7540205
+Công nghệ may
+A00; A01; D01; D07
+15.5
+Xét tuyển theo học bạ 18 (chưa tính điểm ưu tiên và KV)

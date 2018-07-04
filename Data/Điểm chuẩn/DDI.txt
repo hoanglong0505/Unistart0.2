@@ -1,0 +1,25 @@
+DDI
+1
+7340101
+Quản trị kinh doanh
+A00, A01, D01, D90
+15.5
+TO >= 4;TTNV <= 2
+2
+7480108
+Công nghệ kỹ thuật máy tính
+A00, A01, D01, D90
+15.5
+TO >= 5.4;TTNV <= 3
+3
+7480201
+Công nghệ thông tin
+A00, A01, D01, D90
+17
+TO >= 4.4;TTNV <= 4
+4
+7480201DT
+Công nghệ thông tin (đặc thù)
+A00, A01, D01, D90
+---
+

@@ -1,0 +1,253 @@
+NLS
+1
+7140215
+Sư phạm Kỹ thuật nông nghiệp
+A00, A01, B00, D08
+19
+
+2
+7220201
+Ngôn ngữ Anh
+A01, D01, D14, D15
+22
+
+3
+7310101
+Kinh tế
+A00, A01, D01
+20
+
+4
+7340101
+Quản trị kinh doanh
+A00, A01, D01
+21
+
+5
+7340101C
+Quản trị kinh doanh (CLC)
+A00, A01, D01
+18
+
+6
+7340120Q
+Kinh doanh (LKQT)
+A00, A01, D01, D07
+20
+
+7
+7340121Q
+Thương mại (LKQT)
+A00, A01, D01, D07
+20
+
+8
+7340301
+Kế toán
+
+21
+
+9
+7420201
+Công nghệ sinh học
+A00, A02, B00
+23
+
+10
+7420201C
+Công nghệ sinh học (CLC)
+A01, D07, D08
+20
+
+11
+7420201Q
+Công nghệ sinh học (LKQT)
+A01, D07, D08
+17
+
+12
+7440212
+Bản đồ học
+A00, A01, D07
+23
+
+13
+7440301
+Khoa học môi trường
+A00, A01, B00
+18
+
+14
+7480201
+Công nghệ thông tin
+A00, A01, D07
+21
+
+15
+7510201
+Công nghệ kỹ thuật cơ khí
+A00, A01, D07
+21
+
+16
+7510201C
+Công nghệ kỹ thuật cơ khí (CLC)
+A00, A01, D07
+18
+
+17
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00, A01, D07
+21
+
+18
+7510205
+Công nghệ kỹ thuật ô tô
+A00, A01, D07
+22
+
+19
+7510206
+Công nghệ kỹ thuật nhiệt
+A00, A01, D07
+18
+
+20
+7510401
+Công nghệ kỹ thuật hoá học
+A00, A01, B00, D07
+22
+
+21
+7520216
+Kỹ thuật điều khiển và tự động hoá
+A00, A01, D07
+21
+
+22
+7520320
+Kỹ thuật môi trường
+A00, A01, B00, D07
+19
+
+23
+7520320C
+Kỹ thuật môi trường (CLC)
+A00, A01, B00, D07
+23
+
+24
+7540101
+Công nghệ thực phẩm
+A00, A01, B00, D08
+23
+
+25
+7540101C
+Công nghệ thực phẩm (CLC)
+A00, A01, B00, D08
+20
+
+26
+7540101T
+Công nghệ thực phẩm(CTTT)
+A00, A01, B00, D08
+20
+
+27
+7540105
+Công nghệ chế biến thuỷ sản
+A00, A01, D07, D08
+21
+
+28
+7549001
+Công nghệ chế biến lâm sản
+A00, A01, B00, D01
+17
+
+29
+7620105
+Chăn nuôi
+A00, A01, D07, D08
+20
+
+30
+7620109
+Nông học
+A00, D07, D08
+21
+
+31
+7620112
+Bảo vệ thực vật
+A00, D07, D08
+21
+
+32
+7620113
+Công nghệ rau hoa quả và cảnh quan
+A00, A01, D07, D08
+18
+
+33
+7620114
+Kinh doanh nông nghiệp
+A00, A01, D01
+19
+
+34
+7620114Q
+Quản lý và kinh doanh nông nghiệp quốc tế
+A00, A01, D07, D08
+19
+
+35
+7620116
+Phát triển nông thôn
+A00, A01, D01
+18
+
+36
+7620201
+Lâm học
+A00, A01, D07, D08
+17
+
+37
+7620211
+Quản lý tài nguyên rừng
+A00, A01, D07, D08
+17
+
+38
+7620301
+Nuôi trồng thuỷ sản
+A00, A01, D07, D08
+18
+
+39
+7640101
+Thú y
+A00, A01, D07, D08
+23.75
+
+40
+7640101T
+Thú y ( CTTT)
+A00, A01, D07, D08
+23
+
+41
+7850101
+Quản lý tài nguyên và môi trường
+A00, A01, B00, D07
+18
+
+42
+7850103
+Quản lý đất đai
+A00, A01, A04, D01
+18
+

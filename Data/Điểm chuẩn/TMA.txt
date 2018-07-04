@@ -1,0 +1,133 @@
+TMA
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+QLKT
+Kinh tế (Quản lý kinh tế)
+A00; A01; D01
+23.25
+DS>=17.5
+3
+KTDN
+Kế toán (Kế toán doanh nghiệp)
+A00; A01; D01
+24
+DS>=17.5
+4
+KTC
+Kế toán (Kế toán công)
+A00; A01; D01
+24
+DS>=17.5
+5
+QTNL
+Quản trị nhân lực (Quản trị nhân lực doanh nghiệp)
+A00; A01; D01
+22.5
+DS>=17.5
+6
+TMDT
+Thương mại điện tử (Quản trị Thương mại điện tử)
+A00; A01; D01
+23.25
+DS>=17.5
+7
+HTTT
+Hệ thống thông tin quản lý (Quản trị hệ thống thông tin kinh tế)
+A00; A01; D01
+22
+DS>=17.5
+8
+QTKD
+Quản trị kinh doanh (Quản trị kinh doanh)
+A00; A01; D01
+23.5
+DS>=17.5
+9
+TPTM
+Quản trị kinh doanh (Tiếng Pháp thương mại)
+A00; A01; D03
+22
+DS>=17.5
+10
+TTTM
+Quản trị kinh doanh (Tiếng Trung thương mại)
+A00; A01; D04
+22.5
+DS>=17.5
+11
+QTKS
+Quản trị khách sạn (Quản trị khách sạn)
+A00; A01; D01
+23.25
+DS>=17.5
+12
+DLLH
+Quản trị dịch vụ du lịch và lữ hành (Quản trị dịch vụ du lịch và lữ hành)
+A00; A01; D01
+23.25
+DS>=17.5
+13
+MAR
+Marketing (Marketing thương mại)
+A00; A01; D01
+24.5
+DS>=17.5
+14
+QTTH
+Marketing (Quản trị thương hiệu)
+A00; A01; D01
+23.25
+DS>=17.5
+15
+LKT
+Luật kinh tế (Luật kinh tế)
+A00; A01; D01
+22.75
+DS>=17.5
+16
+TCNH
+Tài chính - Ngân hàng (Tài chính – Ngân hàng thương mại)
+A00; A01; D01
+22
+DS>=17.5
+17
+TCC
+Tài chính - Ngân hàng (Tài chính công)
+A00; A01; D01
+22
+DS>=17.5
+18
+TMQT
+Kinh doanh quốc tế (Thương mại quốc tế)
+A00; A01; D01
+23.75
+DS>=17.5
+19
+KTQT
+Kinh tế quốc tế (Kinh tế quốc tế)
+A00; A01; D01
+23.5
+DS>=17.5
+20
+NNA
+Ngôn ngữ Anh (Tiếng Anh Thương mại)
+D01
+33
+DS>=17.5
+21
+KTCLC
+Kế toán (Kế toán doanh nghiệp)-Chất lượng cao
+A01; D01
+---
+
+22
+TCNHCLC
+Tài chính - Ngân hàng (TC-NH thương mại)-Chất lượng cao
+A01; D01
+---
+

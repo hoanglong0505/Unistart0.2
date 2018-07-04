@@ -1,0 +1,97 @@
+DKS
+1
+7380101
+Luật (nữ miền Bắc)
+A00
+26
+Nữ khối A00 điểm chuẩn là 26 và những thí sinh có điểm Toán (chưa làm tròn) đạt từ 8.8 trở lên.
+2
+7380101
+Luật (nữ miền Bắc)
+A01
+26.5
+
+3
+7380101
+Luật (nữ miền Bắc)
+C00
+30.25
+Nữ khối C00 điểm chuẩn là 30.25 và những thí sinh có điểm Ngữ Văn (chưa làm tròn) đạt từ 8.5 điểm trở lên.
+4
+7380101
+Luật (nữ miền Bắc)
+D01
+25.5
+Nữ khối D01 điểm chuẩn là 25.5 và những thí sinh có điểm Tiếng Anh (chưa làm tròn) đạt từ 9 điểm trở lên.
+5
+7380101
+Luật (nam miền Bắc)
+A00
+24.75
+Nam khối A00 điểm chuẩn là 24.75 và những thí sinh có điểm Toán (chưa làm tròn) đạt từ 8.6 điểm trở lên.
+6
+7380101
+Luật (nam miền Bắc)
+A01
+23.5
+
+7
+7380101
+Luật (nam miền Bắc)
+D01
+22.5
+
+8
+7380101
+Luật (nam miền Bắc)
+C00
+27.75
+Nam khối C00  điểm chuẩn là 27.75 và những thí sinh có điểm Ngữ Văn (chưa làm tròn) đạt từ 7.75 điểm trở lên.
+9
+7380101
+Luật (nữ miền Nam)
+A00
+26.5
+
+10
+7380101
+Luật (nữ miền Nam)
+A01
+25.25
+
+11
+7380101
+Luật (nữ miền Nam)
+C00
+28.25
+Nữ khối C00 điểm chuẩn là 28.25 và những thí sinh có điểm Ngữ Văn (chưa làm tròn) đạt từ 8 điểm trở lên.
+12
+7380101
+Luật (nữ miền Nam)
+D01
+24
+Nữ khối D01 điểm chuẩn là 24 và những thí sinh có điểm Tiếng Anh (chưa làm tròn) đạt từ 8.4 điểm trở lên.
+13
+7380101
+Luật (nam miền Nam)
+A00
+24.25
+
+14
+7380101
+Luật (nam miền Nam)
+A01
+23
+
+15
+7380101
+Luật (nam miền Nam)
+C00
+26
+Nam khối C00 điểm chuẩn là 26 và những thí sinh có điểm Ngữ Văn (chưa làm tròn) đạt từ 7.5 điểm trở lên.
+16
+7380101
+Luật (nam miền Nam)
+D01
+17.5
+

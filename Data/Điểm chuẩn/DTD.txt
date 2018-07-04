@@ -1,0 +1,109 @@
+DTD
+1
+7220201
+Ngôn ngữ Anh
+D01; D14; D15; D66
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+2
+7229030
+Văn học
+C00; C04; D14; D15
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+3
+7310630
+Việt Nam học
+C00; D01; D14; D15
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+4
+7340101
+Quản trị kinh doanh
+A00; A01; C04; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+5
+7340201
+Tài chính – Ngân hàng
+A00; A01; C04; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+6
+7340301
+Kế toán
+A00; A01; C04; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+7
+7380107
+Luật kinh tế
+C00; D14; D66; D84
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+8
+7480201
+Công nghệ thông tin
+A00; A01; A02; C01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+9
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00; A01; A02; C01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+10
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; A02; C01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+11
+7540101
+Công nghệ thực phẩm
+A00; A01; A02; C01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+12
+7620301
+Nuôi trồng thuỷ sản
+A00; A01; B00; D07
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+13
+7640101
+Thú y
+A06, B00, B02, C02
+---
+
+14
+7720201
+Dược học
+A00; B00; C02; D07
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+15
+7720301
+Điều dưỡng
+A02; B00; C02; D07
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+16
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; C04; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+17
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên
+18
+7850103
+Quản lý đất đai
+A00; A01; B00; D01
+15.5
+thí sinh có hộ khẩu thường trú từ 3 năm, học 3 năm liên tục và tốt nghiệp THPT tại các tỉnh/thành phố thuộc Khu vực Tây Nam Bộ, Tây Bắc, Tây Nguyên đạt từ 14.5 điểm trở lên

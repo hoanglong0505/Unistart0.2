@@ -1,0 +1,91 @@
+BVU
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+---
+D01
+2
+7310608
+Đông phương học
+C20, D15
+---
+
+3
+7310608
+Đông phương học
+C00; D01
+---
+C20
+4
+7340101
+Quản trị kinh doanh
+A00; C00; D01; D15
+---
+C00
+5
+7340301
+Kế toán
+A00; A04; C01; D01
+---
+A04
+6
+7480201
+Công nghệ thông tin
+A00; A04; C01; D01
+---
+A01
+7
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A01, A05
+---
+
+8
+7510102
+Công nghệ kỹ thuật công trình xây dựng
+A00; A04
+---
+A01
+9
+7510201
+Công nghệ kỹ thuật cơ khí
+A00; A04; C01; D01
+---
+A04
+10
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A04; C01; D01
+---
+A04
+11
+7510401
+Công nghệ kỹ thuật hoá học
+C08
+---
+
+12
+7510401
+Công nghệ kỹ thuật hoá học
+A00; A06; B00
+---
+A06
+13
+7510605
+Logistics và Quản lý chuỗi cung ứng
+A00; C00; C01, D01
+---
+C00
+14
+7540101
+Công nghệ thực phẩm
+A00, B00, B02, C08
+---
+B00
+15
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00, C00, C01, D01
+---
+C00

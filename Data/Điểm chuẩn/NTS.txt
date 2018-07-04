@@ -1,0 +1,31 @@
+NTS
+1
+NTS01
+Kinh tế, Quản trị kinh doan, Tài chính- Ngân hàng, Kế toán
+D01
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng khu vực, đối tượng): 27,15, Điểm môn Toán: 8
+2
+NTS01
+Kinh tế, Quản trị kinh doan, Tài chính- Ngân hàng, Kế toán
+D06
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng khu vực, đối tượng): 27,15; Điểm môn Toán: 8
+3
+NTS01
+Kinh tế, Quản trị kinh doan, Tài chính- Ngân hàng, Kế toán
+D07
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng khu vực, đối tượng): 27,15; Điểm môn Toán: 8
+4
+NTS01
+Kinh tế, Quản trị kinh doan, Tài chính- Ngân hàng, Kế toán
+A01
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng khu vực, đối tượng): 27,15; Điểm môn Toán: 8
+5
+NTS01
+Kinh tế, Quản trị kinh doan, Tài chính- Ngân hàng, Kế toán
+A00
+27.25
+Tổng điểm thực 3 môn không làm tròn 0,25 (đã cộng khu vực, đối tượng): 28,15; Điểm môn Toán: 8

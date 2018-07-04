@@ -1,0 +1,181 @@
+DTS
+1
+7140101_C00
+Giáo dục học
+C00
+17
+
+2
+7140101_C04
+Giáo dục học
+C04
+17
+
+3
+7140101_C20
+Giáo dục học
+C20
+18.5
+
+4
+7140201_M00
+Giáo dục Mầm non
+M00
+18.5
+((Toán + Văn + Năng khiếu x 2)x3)/4 (làm tròn đến 0.25) + điểm ưu tiên; sau đó làm tròn đến chữ số thập phân thứ hai.
+5
+7140201_M01
+Giáo dục Mầm non
+M01
+20.5
+((Toán + Văn + Năng khiếu x 2)x3)/4 (làm tròn đến 0.25) + điểm ưu tiên; sau đó làm tròn đến chữ số thập phân thứ hai.
+6
+7140202_D01
+Giáo dục Tiểu học
+D01
+19.25
+
+7
+7140202_D09
+Giáo dục Tiểu học
+D09
+17.25
+
+8
+7140202_D11
+Giáo dục Tiểu học
+D11
+17.25
+
+9
+7140205_C00
+Giáo dục Chính trị
+C00
+18
+
+10
+7140205_C19
+Giáo dục Chính trị
+C19
+18
+
+11
+7140205_C20
+Giáo dục Chính trị
+C20
+19
+
+12
+7140209_A00
+Sư phạm Toán học
+A00
+15.5
+
+13
+7140209_A01
+Sư phạm Toán học
+A01
+15.5
+
+14
+7140210_A00
+Sư phạm Tin học
+A00
+15.5
+
+15
+7140211_A00
+Sư phạm Vật Lý
+A00
+15.5
+
+16
+7140211_A01
+Sư phạm Vật Lý
+A01
+15.5
+
+17
+7140212_A00
+Sư phạm Hoá học
+A00
+15.5
+
+18
+7140212_D07
+Sư phạm Hoá học
+D07
+15.5
+
+19
+7140213_B00
+Sư phạm Sinh học
+B00
+15.5
+
+20
+7140213_D08
+Sư phạm Sinh học
+D08
+15.5
+
+21
+7140217_C00
+Sư phạm Ngữ Văn
+C00
+17
+
+22
+7140217_D01
+Sư phạm Ngữ Văn
+D01
+16.5
+
+23
+7140217_D14
+Sư phạm Ngữ Văn
+D14
+16.25
+
+24
+7140218_C00
+Sư phạm Lịch Sử
+C00
+16.5
+
+25
+7140218_C03
+Sư phạm Lịch Sử
+C03
+16
+
+26
+7140219_C00
+Sư phạm Địa Lý
+C00
+20
+
+27
+7140219_C04
+Sư phạm Địa Lý
+C04
+18
+
+28
+7140219_D10
+Sư phạm Địa Lý
+D10
+18
+
+29
+7140221_N00
+Sư phạm Âm nhạc
+N00
+15.5
+((Văn + NK1 x 2 + NK2 x 2)x 4)/5 (làm tròn đến 0.25) + điểm ưu tiên; sau đó làm tròn đến hai chữ số thập phân.
+30
+7140231_D01
+Sư phạm Tiếng Anh
+D01
+19
+((Toán + Văn + Tiếng Anh x 2) x 3)/4 (làm tròn đến 0.25) + điểm ưu tiên; sau đó làm tròn đến hai chữ số thập phân.

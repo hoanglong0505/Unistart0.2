@@ -1,0 +1,103 @@
+UKB
+1
+7201403
+Thiết kế đồ họa
+H00
+15.5
+
+2
+7210404
+Thiết kế thời trang
+H00
+15.5
+
+3
+7220201
+Ngôn ngữ Anh
+A01, D01, D10, D14
+---
+
+4
+7310205
+Quản lý nhà nước
+C00
+---
+
+5
+7310205
+Quản lý nhà nước
+A00; A01; D01
+15.5
+
+6
+7340101
+Quản trị kinh doanh
+C04
+---
+
+7
+7340101
+Quản trị kinh doanh
+A00; A01; D01
+15.5
+
+8
+7340201
+Tài chính – Ngân hàng
+A00; A01; C04; D01
+15.5
+
+9
+7340301
+Kế toán
+A00; A01; C04; D01
+15.5
+
+10
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+15.5
+
+11
+7480201
+Công nghệ thông tin
+A00; A01; C04; D01
+15.5
+
+12
+7510302
+Công nghệ kỹ thuật điện tử - viễn thông
+A00; A01; C04; D01
+15.5
+
+13
+7580101
+Kiến trúc
+V02, V03
+---
+
+14
+7580101
+Kiến trúc
+V00; V01
+15.5
+
+15
+7580108
+Thiết kế nội thất
+H00
+15.5
+
+16
+7580302
+Quản lý xây dựng
+A00; A01; C04; D01
+15.5
+
+17
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; C00; D01
+15.5
+

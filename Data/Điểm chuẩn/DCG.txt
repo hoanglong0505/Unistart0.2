@@ -1,0 +1,37 @@
+DCG
+1
+7220201
+Ngôn ngữ Anh
+D01; D13; D14; D15
+19
+
+2
+7340101
+Quản trị kinh doanh
+A00; A01; A06; C13
+19
+
+3
+7340201
+Tài chính – Ngân hàng
+A00; A01; A03; A07
+17
+
+4
+7340301
+Kế toán
+A01; B01; B02; C12
+15.5
+
+5
+7480102
+Truyền thông và mạng máy tính
+A00; A01; A02; D01
+18.75
+
+6
+7480103
+Kỹ thuật phần mềm
+A00; A01; A04; B00
+21.5
+

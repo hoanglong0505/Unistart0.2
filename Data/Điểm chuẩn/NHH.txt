@@ -1,0 +1,61 @@
+NHH
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D07; D09
+23.25
+Tiếng Anh
+2
+7340101
+Quản trị kinh doanh
+A00; A01; D01; D07
+22.25
+Toán
+3
+7340101_1
+Quản trị kinh doanh (Liên kết với Đại học CityU, Hoa Kỳ)
+A00; A01; D01; D07
+18.25
+Tiếng Anh
+4
+7340120
+Kinh doanh quốc tế
+A01; D01; D07; D09
+22.25
+Tiếng Anh
+5
+7340201
+Tài chính – Ngân hàng
+A00; A01; D01; D07
+22.25
+Toán
+6
+7340201_1
+Tài chính ngân hàng (chuyên ngành Tài chính doanh nghiệp)
+A00; A01; D01; D07
+17.25
+Tiếng Anh
+7
+7340301
+Kế toán
+A00; A01; D01; D07
+23.25
+Toán
+8
+7340301_1
+Quản lý Tài chính- Kế toán (Liên kết với Đại học Sunderland, Vương quốc Anh)
+A00; A01; D01; D07
+15.75
+Tiếng Anh
+9
+7340405
+Hệ thống thông tin quản lý
+A00; A01; D01; D07
+22
+Toán
+10
+7380107
+Luật kinh tế
+A00; A01; C00; D01
+25.25
+Toán (A00; D01; D09); Ngữ Văn (C00)

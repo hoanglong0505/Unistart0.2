@@ -1,0 +1,97 @@
+SKD
+1
+7210225
+Biên kịch sân khấu
+S00
+---
+Chuyên môn
+2
+7210226
+Diễn viên sân khấu kịch hát
+S00
+15
+Chuyên môn 12
+3
+7210227
+Đạo diễn sân khấu
+S00
+15.5
+Chuyên môn 12.5
+4
+7210231
+Lý luận, lịch sử và phê bình điện ảnh, truyền hình
+S00
+16.5
+Chuyên môn 11
+5
+7210233
+Biên kịch điện ảnh, truyền hình
+S00
+15
+Chuyên môn 11
+6
+7210234
+Diễn viên kịch, điện ảnh - truyền hình
+S00
+15
+Chuyên môn 12
+7
+7210235
+Đạo diễn điện ảnh
+S00
+16.5
+Chuyên môn 12.5
+8
+7210235
+Đạo diễn truyền hình
+S00
+16
+Đạo diễn truyền hình: Chuyên môn 12
+9
+7210236
+Quay phim điện ảnh
+S00
+17.5
+Chuyên môn 13
+10
+7210236
+Quay phim truyền hình
+S00
+15
+Chuyên môn 12
+11
+7210243
+Biên đạo múa
+S00
+18.5
+Chuyên môn 14
+12
+7210244
+Huấn luyện múa
+S00
+19.5
+Chuyên môn 15
+13
+7210301
+Nhiếp ảnh
+S00
+15.5
+Nhiếp ảnh nghệ thuật 15.5, Chuyên môn 12; nhiếp ảnh báo chí 15, chuyên môn 10
+14
+7210302
+Công nghệ dựng phim
+S01
+13.5
+Chuyên môn 10
+15
+7210302
+Âm thanh điện ảnh truyền hình
+S01
+15.5
+Chuyên môn 12
+16
+7210406
+Thiết kế mỹ thuật sân khấu, điện ảnh
+S00
+16
+Chuyên môn 12

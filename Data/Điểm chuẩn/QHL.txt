@@ -1,0 +1,25 @@
+QHL
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7380101
+Luật
+A00; C00; D01; D03; D78; D82
+27.25
+
+3
+7380101CLC
+Luật chất lượng cao đáp ứng Thông tư 23
+A01; D01; D07; D07; D78
+---
+
+4
+7380110
+Luật kinh doanh
+A00; A01; D01; D03; D78; D82
+24
+

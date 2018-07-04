@@ -1,0 +1,79 @@
+DBL
+1
+7220101
+Tiếng Việt và văn hoá Việt Nam
+C00; C15; D01; D78
+15.5
+Xét học bạ: 18
+2
+7220201
+Ngôn ngữ Anh
+D01; D09; D78
+15.5
+Xét học bạ: 18
+3
+7340101
+Quản trị kinh doanh
+A00; A01; A16; D90
+15.5
+Xét học bạ: 18
+4
+7340201
+Tài chính – Ngân hàng
+A00; A01; A16; D90
+15.5
+Xét học bạ: 18
+5
+7340301
+Kế toán
+A00; A01; A16; D90
+15.5
+Xét học bạ: 18
+6
+7440301
+Khoa học môi trường
+A00; A16; B00; D90
+15.5
+Xét học bạ: 18
+7
+7480201
+Công nghệ thông tin
+A00; A01; A16; D90
+15.5
+Xét học bạ: 18
+8
+7620105
+Chăn nuôi
+A00; A16; B00; D90
+15.5
+Xét học bạ: 18
+9
+7620112
+Bảo vệ thực vật
+A00; A16; B00; D90
+15.5
+Xét học bạ: 18
+10
+7620301
+Nuôi trồng thuỷ sản
+A00; A16; B00; D90
+15.5
+Xét học bạ: 18
+11
+51140201
+Giáo dục Mầm non (hệ cao đẳng)
+M00
+17.25
+Xét học bạ: 17.5
+12
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+C00; C15; D01; D78
+19.5
+Xét học bạ: 20
+13
+51140206
+Giáo dục Thể chất (hệ cao đẳng)
+T00
+10
+Xét học bạ: 11

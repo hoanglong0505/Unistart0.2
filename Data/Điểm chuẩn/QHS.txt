@@ -1,0 +1,19 @@
+QHS
+1
+GD1
+Toán và Khoa học tự nhiên
+A00; A16; B00; D90
+---
+Sư phạm Toán: 30.5; Sư phạm vật lý: 23; Sư phạm hóa: 26.5; sư phạm sinh: 23
+2
+GD2
+Ngữ văn và Lịch sử
+C00; D01; D78
+---
+Sư phạm Văn: 32.25; sư phạm sử: 29.75
+3
+GD3
+Quản trị trường học
+A00; C00; C15; D01
+---
+

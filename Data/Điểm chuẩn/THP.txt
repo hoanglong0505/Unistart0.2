@@ -1,0 +1,193 @@
+THP
+1
+
+Các ngành đào tạo đại học
+
+---
+
+2
+7140201
+Giáo dục Mầm non
+M00; M01; M02
+15.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+3
+7140202
+Giáo dục Tiểu học
+A00; C01; C02; D01
+16.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+4
+7140205
+Giáo dục Chính trị
+A00; B00; C14; C15
+15.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+5
+7140206
+Giáo dục Thể chất
+T00; T01
+21
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+6
+7140209
+Sư phạm Toán học
+A00; A01; C01; D01
+16
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+7
+7140211
+Sư phạm Vật lý
+A00; A01; C01; D01
+23
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+8
+7140212
+Sư phạm Hoá học
+A00; B00; C02; D01
+24.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+9
+7140217
+Sư phạm Ngữ văn
+C00; D01; D14; D15
+17
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+10
+7140219
+Sư phạm Địa lý
+A00; B00; C00; D01
+15.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+11
+7140231
+Sư phạm Tiếng Anh
+A01; D01; D06; D14
+20.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+12
+7220201
+Ngôn ngữ Anh
+A01; D01; D14; D15
+20.5
+
+13
+7220204
+Ngôn ngữ Trung Quốc
+D01; D02; D03; D04
+20.5
+
+14
+7229030
+Văn học
+C00; D01; D14; D15
+15.5
+
+15
+7310101
+Kinh tế
+A00; A01; C01; D01
+15.5
+
+16
+7310630
+Việt Nam học
+C00; D01; D14; D15
+15.5
+
+17
+7340101
+Quản trị kinh doanh
+A00; A01; C01; D01
+15.5
+
+18
+7340201
+Tài chính – Ngân hàng
+A00; A01; C01; D01
+15.5
+
+19
+7340301
+Kế toán
+A00; A01; C01; D01
+15.5
+
+20
+7420201
+Công nghệ sinh học
+A00; B00; C02; D01
+15.5
+
+21
+7480201
+Công nghệ thông tin
+A00; A01; C01; D01
+15.5
+
+22
+7510103
+Công nghệ kỹ thuật xây dựng
+A00; A01; C01; D01
+15.5
+
+23
+7510202
+Công nghệ chế tạo máy
+A00; A01; C01; D01
+15.5
+
+24
+7510203
+Công nghệ kỹ thuật cơ điện tử
+A00; A01; C01; D01
+15.5
+
+25
+7510301
+Công nghệ kỹ thuật điện, điện tử
+A00; A01; C01; D01
+15.5
+
+26
+7510303
+Công nghệ kỹ thuật điều khiển và tự động hóa
+A00; A01; C01; D01
+15.5
+
+27
+7580101
+Kiến trúc
+V00; V01; V02; V03
+20.5
+
+28
+7620110
+Khoa học cây trồng
+A00; B00; C02; D01
+22
+
+29
+7760101
+Công tác xã hội
+C00; C01; C02; D01
+15.5
+
+30
+
+Các ngành đào tạo cao đẳng
+
+---
+
+31
+51140201
+Giáo dục Mầm non
+M00; M01; M02
+11.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng
+32
+51140202
+Giáo dục Tiểu học
+A00; C01; C02; D01
+11.5
+Chỉ tuyển thí sinh có hộ khẩu thường trú tại Hải Phòng

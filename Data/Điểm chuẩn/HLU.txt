@@ -1,0 +1,97 @@
+HLU
+1
+7220201
+Ngôn ngữ Anh
+A01; D01; D10; D78
+16.5
+
+2
+7220204
+Ngôn ngữ Trung Quốc
+D78
+---
+
+3
+7220204
+Ngôn ngữ Trung Quốc
+D01; D04; D10
+17
+
+4
+7220209
+Ngôn ngữ Nhật
+D78
+---
+
+5
+7220209
+Ngôn ngữ Nhật
+D01; D06; D10
+16
+
+6
+7229042
+Quản lý văn hoá
+D15
+---
+
+7
+7229042
+Quản lý văn hoá
+C00; D01; D78
+17
+
+8
+7480101
+Khoa học máy tính
+A00; A01; D01; D90
+15.5
+
+9
+7620301
+Nuôi trồng thuỷ sản
+A01, D10
+---
+
+10
+7620301
+Nuôi trồng thuỷ sản
+A00; B00
+15.5
+
+11
+7810103
+Quản trị dịch vụ du lịch và lữ hành
+A00; A01; D01; D90
+17
+
+12
+7810201
+Quản trị khách sạn
+A00; A01; D01; D90
+16
+
+13
+7850101
+Quản lý tài nguyên và môi trường
+D10
+---
+
+14
+7850101
+Quản lý tài nguyên và môi trường
+A00; A01; B00
+15.5
+
+15
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+D10
+---
+
+16
+51140202
+Giáo dục Tiểu học (hệ cao đẳng)
+A01; D01
+13.5
+Xét học bạ điểm trung bình 6 điểm
