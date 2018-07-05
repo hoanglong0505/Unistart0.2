@@ -5,8 +5,13 @@
  */
 package restful;
 
+import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
+import controller.login.GoogleLogin;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.List;
 import javax.persistence.EntityManager;
+import javax.persistence.FlushModeType;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
@@ -33,14 +38,18 @@ public class UserFacadeREST extends AbstractFacade<Users> {
 
     public UserFacadeREST() {
         super(Users.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
     }
 
     @POST
     @Override
+    @Path("add-user")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Users entity) {
+<<<<<<< HEAD
         System.out.println(entity.toString());
+=======
+>>>>>>> 41b24756cc7f821ee777a6ef3583b43150fcd482
         em.getTransaction().begin();
         super.create(entity);
         em.getTransaction().commit();
@@ -87,9 +96,27 @@ public class UserFacadeREST extends AbstractFacade<Users> {
         return String.valueOf(super.count());
     }
 
+    @POST
+    @Path("get-g-user")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Users getUser(String idToken) throws GeneralSecurityException, IOException {
+        GoogleIdToken.Payload payload = GoogleLogin.verified(idToken);
+        if (payload != null) {
+            Users u = new Users();
+            String name = (String) payload.get("name");
+            String pictureUrl = (String) payload.get("picture");
+            
+            u.setName(name);
+            u.setAvatar(pictureUrl);
+            u.setEmail(payload.getEmail());
+            return u;
+        }
+        return null;
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

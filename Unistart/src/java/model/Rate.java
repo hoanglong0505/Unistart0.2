@@ -11,6 +11,8 @@ import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
@@ -19,10 +21,13 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import restful.SchoolFacadeREST;
+import restful.UserFacadeREST;
 
 /**
  *
@@ -47,6 +52,7 @@ public class Rate implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "RateId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer rateId;
     @Basic(optional = false)
     @NotNull
@@ -75,12 +81,7 @@ public class Rate implements Serializable {
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<Report> reportCollection;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
-    @ManyToOne
-    private School schoolId;
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
-    @ManyToOne
-    private Users userId;
+   
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<RateDetail> rateDetailCollection;
 
@@ -177,21 +178,9 @@ public class Rate implements Serializable {
         this.reportCollection = reportCollection;
     }
 
-    public School getSchoolId() {
-        return schoolId;
-    }
+    
 
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
-    }
-
-    public Users getUserId() {
-        return userId;
-    }
-
-    public void setUserId(Users userId) {
-        this.userId = userId;
-    }
+   
 
     @XmlTransient
     public Collection<RateDetail> getRateDetailCollection() {
@@ -225,6 +214,61 @@ public class Rate implements Serializable {
     @Override
     public String toString() {
         return "model.Rate[ rateId=" + rateId + " ]";
+    }
+    //===============
+     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @ManyToOne
+    private School school;
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
+    @ManyToOne
+    private Users user;
+    
+
+    @Column(name="SchoolId",insertable = false , updatable = false)  
+    private Integer schoolId;
+        public School getSchool() {
+            
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+        
+        
+    }
+
+    public Integer getSchoolId() {
+        return schoolId;
+    }
+
+    public void setSchoolId(Integer schoolId) {
+        this.schoolId = schoolId;
+    }
+    @Column(name="UserId",insertable = false , updatable = false)
+        private Integer userId;
+     public Users getUser() {
+        return user;
+    }
+
+    public void setUser(Users userId) {
+        this.user = userId;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
+    }
+
+    
+    //===
+    public void setUpdateInfo(){
+        if(school ==null && user ==null){
+                school = new SchoolFacadeREST().find(schoolId);
+                user = new UserFacadeREST().find(userId);
+            }
     }
     
 }
