@@ -9,6 +9,8 @@ import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -21,7 +23,7 @@ import javax.validation.constraints.Size;
  * @author TNT
  */
 @Entity
-@Table(name = "Users", catalog = "unistart2", schema = "dbo")
+@Table(name = "Users")
 @NamedQueries({
     @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u")
     , @NamedQuery(name = "Users.findByUserId", query = "SELECT u FROM Users u WHERE u.userId = :userId")
@@ -35,6 +37,7 @@ public class Users implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "UserId", nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer userId;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
     @Size(max = 200)
@@ -106,9 +109,11 @@ public class Users implements Serializable {
         return true;
     }
 
+
+
     @Override
     public String toString() {
-        return "model.Users[ userId=" + userId + " ]";
+        return "Users{" + "userId=" + userId + ", email=" + email + ", name=" + name + ", avatar=" + avatar + '}';
     }
-    
+ 
 }
