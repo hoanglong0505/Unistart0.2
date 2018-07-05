@@ -40,7 +40,10 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Rate entity) {
+        em.getTransaction().begin();
+        entity.setUpdateInfo();
         super.create(entity);
+        em.getTransaction().commit();
     }
 
     @PUT
