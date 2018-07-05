@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.1" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="UnistartPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>model.Report</class>
+    <class>model.School</class>
+    <class>model.RateCriteria</class>
+    <class>model.SubjectCombination</class>
+    <class>model.Article</class>
+    <class>model.Type</class>
+    <class>model.Location</class>
+    <class>model.User</class>
+    <class>model.Rate</class>
+    <class>model.FieldType</class>
+    <class>model.Answer</class>
+    <class>model.Branch</class>
+    <class>model.EntranceInfo</class>
+    <class>model.Field</class>
+    <class>model.Question</class>
+    <class>model.Region</class>
+    <class>model.Character</class>
+    <class>model.Genitite</class>
+    <class>model.RateDetail</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=unistart2"/>
+      <property name="javax.persistence.jdbc.user" value="sa"/>
+      <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+      <property name="javax.persistence.jdbc.password" value="123456"/>
+    </properties>
+  </persistence-unit>
+</persistence>
