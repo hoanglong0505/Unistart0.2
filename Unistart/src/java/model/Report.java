@@ -16,14 +16,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Report", catalog = "unistart2", schema = "dbo")
+@Table(name = "Report")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Report.findAll", query = "SELECT r FROM Report r")
@@ -35,15 +37,17 @@ public class Report implements Serializable {
     @EmbeddedId
     protected ReportPK reportPK;
     @Basic(optional = false)
+    @NotNull
     @Lob
-    @Column(name = "RpContent", nullable = false, length = 2147483647)
+    @Size(min = 1, max = 2147483647)
+    @Column(name = "RpContent")
     private String rpContent;
-    @JoinColumn(name = "RateId", referencedColumnName = "RateId", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "RateId", referencedColumnName = "RateId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Rate rate;
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
-    private User user;
+    private Users user;
 
     public Report() {
     }
@@ -85,11 +89,11 @@ public class Report implements Serializable {
         this.rate = rate;
     }
 
-    public User getUser() {
+    public Users getUser() {
         return user;
     }
 
-    public void setUser(User user) {
+    public void setUser(Users user) {
         this.user = user;
     }
 

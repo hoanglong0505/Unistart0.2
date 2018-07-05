@@ -13,14 +13,16 @@ import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Character", catalog = "unistart2", schema = "dbo")
+@Table(name = "Character")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Character.findAll", query = "SELECT c FROM Character c")
@@ -33,16 +35,23 @@ public class Character implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "CharacterId", nullable = false)
+    @NotNull
+    @Column(name = "CharacterId")
     private Integer characterId;
     @Basic(optional = false)
-    @Column(name = "CharacterCode", nullable = false, length = 5)
+    @NotNull
+    @Size(min = 1, max = 5)
+    @Column(name = "CharacterCode")
     private String characterCode;
     @Basic(optional = false)
-    @Column(name = "CharacterContent", nullable = false, length = 1073741823)
+    @NotNull
+    @Size(min = 1, max = 2147483647)
+    @Column(name = "CharacterContent")
     private String characterContent;
     @Basic(optional = false)
-    @Column(name = "CharacterName", nullable = false, length = 500)
+    @NotNull
+    @Size(min = 1, max = 500)
+    @Column(name = "CharacterName")
     private String characterName;
 
     public Character() {

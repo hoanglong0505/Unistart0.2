@@ -15,14 +15,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Article", catalog = "unistart2", schema = "dbo")
+@Table(name = "Article")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Article.findAll", query = "SELECT a FROM Article a")
@@ -34,12 +36,15 @@ public class Article implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "ArticleId", nullable = false)
+    @NotNull
+    @Column(name = "ArticleId")
     private Integer articleId;
-    @Column(name = "Link", length = 500)
+    @Size(max = 500)
+    @Column(name = "Link")
     private String link;
     @Basic(optional = false)
-    @Column(name = "Status", nullable = false)
+    @NotNull
+    @Column(name = "Status")
     private boolean status;
     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne

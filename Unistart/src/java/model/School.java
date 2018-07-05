@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -18,15 +18,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "School", catalog = "unistart2", schema = "dbo")
+@Table(name = "School")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "School.findAll", query = "SELECT s FROM School s")
@@ -36,42 +38,50 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "School.findByWebsite", query = "SELECT s FROM School s WHERE s.website = :website")
     , @NamedQuery(name = "School.findByPhone", query = "SELECT s FROM School s WHERE s.phone = :phone")
     , @NamedQuery(name = "School.findByEmail", query = "SELECT s FROM School s WHERE s.email = :email")
-    , @NamedQuery(name = "School.findByAvatar", query = "SELECT s FROM School s WHERE s.avatar = :avatar")
-    , @NamedQuery(name = "School.findByAddress", query = "SELECT s FROM School s WHERE s.address = :address")})
+    , @NamedQuery(name = "School.findByAvatar", query = "SELECT s FROM School s WHERE s.avatar = :avatar")})
 public class School implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "SchoolId", nullable = false)
+    @NotNull
+    @Column(name = "SchoolId")
     private Integer schoolId;
     @Basic(optional = false)
-    @Column(name = "SchoolName", nullable = false, length = 100)
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Column(name = "SchoolName")
     private String schoolName;
     @Basic(optional = false)
-    @Column(name = "SchoolCode", nullable = false, length = 50)
+    @NotNull
+    @Size(min = 1, max = 50)
+    @Column(name = "SchoolCode")
     private String schoolCode;
-    @Column(name = "Website", length = 500)
+    @Size(max = 500)
+    @Column(name = "Website")
     private String website;
-    @Column(name = "Phone", length = 50)
+    // @Pattern(regexp="^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$", message="Invalid phone/fax format, should be as xxx-xxx-xxxx")//if the field contains phone or fax number consider using this annotation to enforce field validation
+    @Size(max = 50)
+    @Column(name = "Phone")
     private String phone;
-    @Column(name = "Email", length = 100)
+    // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
+    @Size(max = 100)
+    @Column(name = "Email")
     private String email;
-    @Column(name = "Avatar", length = 500)
+    @Size(max = 500)
+    @Column(name = "Avatar")
     private String avatar;
-    @Column(name = "Address", length = 500)
-    private String address;
     @OneToMany(mappedBy = "schoolId")
-    private List<Rate> rateList;
+    private Collection<Rate> rateCollection;
     @OneToMany(mappedBy = "schoolId")
-    private List<Article> articleList;
+    private Collection<Article> articleCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
-    private List<EntranceInfo> entranceInfoList;
+    private Collection<EntranceInfo> entranceInfoCollection;
     @JoinColumn(name = "TypeId", referencedColumnName = "TypeId")
     @ManyToOne
     private Type typeId;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
-    private List<Branch> branchList;
+    private Collection<Branch> branchCollection;
 
     public School() {
     }
@@ -142,39 +152,31 @@ public class School implements Serializable {
         this.avatar = avatar;
     }
 
-    public String getAddress() {
-        return address;
+    @XmlTransient
+    public Collection<Rate> getRateCollection() {
+        return rateCollection;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setRateCollection(Collection<Rate> rateCollection) {
+        this.rateCollection = rateCollection;
     }
 
     @XmlTransient
-    public List<Rate> getRateList() {
-        return rateList;
+    public Collection<Article> getArticleCollection() {
+        return articleCollection;
     }
 
-    public void setRateList(List<Rate> rateList) {
-        this.rateList = rateList;
-    }
-
-    @XmlTransient
-    public List<Article> getArticleList() {
-        return articleList;
-    }
-
-    public void setArticleList(List<Article> articleList) {
-        this.articleList = articleList;
+    public void setArticleCollection(Collection<Article> articleCollection) {
+        this.articleCollection = articleCollection;
     }
 
     @XmlTransient
-    public List<EntranceInfo> getEntranceInfoList() {
-        return entranceInfoList;
+    public Collection<EntranceInfo> getEntranceInfoCollection() {
+        return entranceInfoCollection;
     }
 
-    public void setEntranceInfoList(List<EntranceInfo> entranceInfoList) {
-        this.entranceInfoList = entranceInfoList;
+    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
+        this.entranceInfoCollection = entranceInfoCollection;
     }
 
     public Type getTypeId() {
@@ -186,12 +188,12 @@ public class School implements Serializable {
     }
 
     @XmlTransient
-    public List<Branch> getBranchList() {
-        return branchList;
+    public Collection<Branch> getBranchCollection() {
+        return branchCollection;
     }
 
-    public void setBranchList(List<Branch> branchList) {
-        this.branchList = branchList;
+    public void setBranchCollection(Collection<Branch> branchCollection) {
+        this.branchCollection = branchCollection;
     }
 
     @Override

@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,15 +16,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "RateCriteria", catalog = "unistart2", schema = "dbo")
+@Table(name = "RateCriteria")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "RateCriteria.findAll", query = "SELECT r FROM RateCriteria r")
@@ -36,14 +38,16 @@ public class RateCriteria implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "CriteriaId", nullable = false)
+    @NotNull
+    @Column(name = "CriteriaId")
     private Integer criteriaId;
-    @Column(name = "CriteriaName", length = 255)
+    @Size(max = 255)
+    @Column(name = "CriteriaName")
     private String criteriaName;
     @Column(name = "Status")
     private Boolean status;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rateCriteria")
-    private List<RateDetail> rateDetailList;
+    private Collection<RateDetail> rateDetailCollection;
 
     public RateCriteria() {
     }
@@ -77,12 +81,12 @@ public class RateCriteria implements Serializable {
     }
 
     @XmlTransient
-    public List<RateDetail> getRateDetailList() {
-        return rateDetailList;
+    public Collection<RateDetail> getRateDetailCollection() {
+        return rateDetailCollection;
     }
 
-    public void setRateDetailList(List<RateDetail> rateDetailList) {
-        this.rateDetailList = rateDetailList;
+    public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
+        this.rateDetailCollection = rateDetailCollection;
     }
 
     @Override

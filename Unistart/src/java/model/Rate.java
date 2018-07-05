@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -19,15 +19,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Rate", catalog = "unistart2", schema = "dbo")
+@Table(name = "Rate")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Rate.findAll", query = "SELECT r FROM Rate r")
@@ -42,19 +44,25 @@ public class Rate implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "RateId", nullable = false)
+    @NotNull
+    @Column(name = "RateId")
     private Integer rateId;
     @Basic(optional = false)
-    @Column(name = "Title", nullable = false, length = 255)
+    @NotNull
+    @Size(min = 1, max = 255)
+    @Column(name = "Title")
     private String title;
     @Lob
-    @Column(name = "Pros", length = 2147483647)
+    @Size(max = 2147483647)
+    @Column(name = "Pros")
     private String pros;
     @Lob
-    @Column(name = "Cons", length = 2147483647)
+    @Size(max = 2147483647)
+    @Column(name = "Cons")
     private String cons;
     @Lob
-    @Column(name = "Experience", length = 2147483647)
+    @Size(max = 2147483647)
+    @Column(name = "Experience")
     private String experience;
     @Column(name = "Encourage")
     private Boolean encourage;
@@ -65,15 +73,15 @@ public class Rate implements Serializable {
     @Column(name = "Anonymous")
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private List<Report> reportList;
+    private Collection<Report> reportCollection;
     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne
     private School schoolId;
     @JoinColumn(name = "UserId", referencedColumnName = "UserId")
     @ManyToOne
-    private User userId;
+    private Users userId;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private List<RateDetail> rateDetailList;
+    private Collection<RateDetail> rateDetailCollection;
 
     public Rate() {
     }
@@ -160,12 +168,12 @@ public class Rate implements Serializable {
     }
 
     @XmlTransient
-    public List<Report> getReportList() {
-        return reportList;
+    public Collection<Report> getReportCollection() {
+        return reportCollection;
     }
 
-    public void setReportList(List<Report> reportList) {
-        this.reportList = reportList;
+    public void setReportCollection(Collection<Report> reportCollection) {
+        this.reportCollection = reportCollection;
     }
 
     public School getSchoolId() {
@@ -176,21 +184,21 @@ public class Rate implements Serializable {
         this.schoolId = schoolId;
     }
 
-    public User getUserId() {
+    public Users getUserId() {
         return userId;
     }
 
-    public void setUserId(User userId) {
+    public void setUserId(Users userId) {
         this.userId = userId;
     }
 
     @XmlTransient
-    public List<RateDetail> getRateDetailList() {
-        return rateDetailList;
+    public Collection<RateDetail> getRateDetailCollection() {
+        return rateDetailCollection;
     }
 
-    public void setRateDetailList(List<RateDetail> rateDetailList) {
-        this.rateDetailList = rateDetailList;
+    public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
+        this.rateDetailCollection = rateDetailCollection;
     }
 
     @Override

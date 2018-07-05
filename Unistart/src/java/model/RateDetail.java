@@ -18,10 +18,10 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "RateDetail", catalog = "unistart2", schema = "dbo")
+@Table(name = "RateDetail")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "RateDetail.findAll", query = "SELECT r FROM RateDetail r")
@@ -34,12 +34,12 @@ public class RateDetail implements Serializable {
     @EmbeddedId
     protected RateDetailPK rateDetailPK;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
-    @Column(name = "Value", precision = 53)
+    @Column(name = "Value")
     private Double value;
-    @JoinColumn(name = "RateId", referencedColumnName = "RateId", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "RateId", referencedColumnName = "RateId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Rate rate;
-    @JoinColumn(name = "CriteriaId", referencedColumnName = "CriteriaId", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "CriteriaId", referencedColumnName = "CriteriaId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private RateCriteria rateCriteria;
 

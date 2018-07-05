@@ -15,14 +15,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Answer", catalog = "unistart2", schema = "dbo")
+@Table(name = "Answer")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Answer.findAll", query = "SELECT a FROM Answer a")
@@ -33,15 +35,18 @@ public class Answer implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "AnswerId", nullable = false)
+    @NotNull
+    @Column(name = "AnswerId")
     private Integer answerId;
     @Basic(optional = false)
-    @Column(name = "AnswerDetail", nullable = false, length = 1073741823)
+    @NotNull
+    @Size(min = 1, max = 2147483647)
+    @Column(name = "AnswerDetail")
     private String answerDetail;
-    @JoinColumn(name = "GenititeId", referencedColumnName = "GenitiveId", nullable = false)
+    @JoinColumn(name = "GenititeId", referencedColumnName = "GenitiveId")
     @ManyToOne(optional = false)
     private Genitite genititeId;
-    @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId", nullable = false)
+    @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId")
     @ManyToOne(optional = false)
     private Question questionId;
 

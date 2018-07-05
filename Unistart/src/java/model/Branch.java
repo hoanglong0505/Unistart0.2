@@ -15,14 +15,16 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Branch", catalog = "unistart2", schema = "dbo")
+@Table(name = "Branch")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Branch.findAll", query = "SELECT b FROM Branch b")
@@ -38,18 +40,24 @@ public class Branch implements Serializable {
     @EmbeddedId
     protected BranchPK branchPK;
     @Basic(optional = false)
-    @Column(name = "BranchName", nullable = false, length = 100)
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Column(name = "BranchName")
     private String branchName;
-    @Column(name = "Address", length = 200)
+    @Size(max = 200)
+    @Column(name = "Address")
     private String address;
-    @Column(name = "Phone", length = 20)
+    // @Pattern(regexp="^\\(?(\\d{3})\\)?[- ]?(\\d{3})[- ]?(\\d{4})$", message="Invalid phone/fax format, should be as xxx-xxx-xxxx")//if the field contains phone or fax number consider using this annotation to enforce field validation
+    @Size(max = 20)
+    @Column(name = "Phone")
     private String phone;
-    @Column(name = "Website", length = 500)
+    @Size(max = 500)
+    @Column(name = "Website")
     private String website;
     @JoinColumn(name = "LocationId", referencedColumnName = "LocationId")
     @ManyToOne
     private Location locationId;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId", nullable = false, insertable = false, updatable = false)
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private School school;
 

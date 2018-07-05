@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,15 +17,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Location", catalog = "unistart2", schema = "dbo")
+@Table(name = "Location")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Location.findAll", query = "SELECT l FROM Location l")
@@ -36,12 +38,14 @@ public class Location implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "LocationId", nullable = false)
+    @NotNull
+    @Column(name = "LocationId")
     private Integer locationId;
-    @Column(name = "LocationName", length = 50)
+    @Size(max = 50)
+    @Column(name = "LocationName")
     private String locationName;
     @OneToMany(mappedBy = "locationId")
-    private List<Branch> branchList;
+    private Collection<Branch> branchCollection;
     @JoinColumn(name = "RegionId", referencedColumnName = "RegionId")
     @ManyToOne
     private Region regionId;
@@ -70,12 +74,12 @@ public class Location implements Serializable {
     }
 
     @XmlTransient
-    public List<Branch> getBranchList() {
-        return branchList;
+    public Collection<Branch> getBranchCollection() {
+        return branchCollection;
     }
 
-    public void setBranchList(List<Branch> branchList) {
-        this.branchList = branchList;
+    public void setBranchCollection(Collection<Branch> branchCollection) {
+        this.branchCollection = branchCollection;
     }
 
     public Region getRegionId() {

@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -16,15 +16,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Genitite", catalog = "unistart2", schema = "dbo")
+@Table(name = "Genitite")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Genitite.findAll", query = "SELECT g FROM Genitite g")
@@ -35,13 +37,16 @@ public class Genitite implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "GenitiveId", nullable = false)
+    @NotNull
+    @Column(name = "GenitiveId")
     private Integer genitiveId;
     @Basic(optional = false)
-    @Column(name = "GentiveCode", nullable = false, length = 5)
+    @NotNull
+    @Size(min = 1, max = 5)
+    @Column(name = "GentiveCode")
     private String gentiveCode;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "genititeId")
-    private List<Answer> answerList;
+    private Collection<Answer> answerCollection;
 
     public Genitite() {
     }
@@ -72,12 +77,12 @@ public class Genitite implements Serializable {
     }
 
     @XmlTransient
-    public List<Answer> getAnswerList() {
-        return answerList;
+    public Collection<Answer> getAnswerCollection() {
+        return answerCollection;
     }
 
-    public void setAnswerList(List<Answer> answerList) {
-        this.answerList = answerList;
+    public void setAnswerCollection(Collection<Answer> answerCollection) {
+        this.answerCollection = answerCollection;
     }
 
     @Override

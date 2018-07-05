@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,15 +15,17 @@ import javax.persistence.ManyToMany;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "SubjectCombination", catalog = "unistart2", schema = "dbo")
+@Table(name = "SubjectCombination")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "SubjectCombination.findAll", query = "SELECT s FROM SubjectCombination s")
@@ -34,13 +36,17 @@ public class SubjectCombination implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "SjCombiCode", nullable = false, length = 5)
+    @NotNull
+    @Size(min = 1, max = 5)
+    @Column(name = "SjCombiCode")
     private String sjCombiCode;
     @Basic(optional = false)
-    @Column(name = "SjCombiName", nullable = false, length = 500)
+    @NotNull
+    @Size(min = 1, max = 500)
+    @Column(name = "SjCombiName")
     private String sjCombiName;
-    @ManyToMany(mappedBy = "subjectCombinationList")
-    private List<EntranceInfo> entranceInfoList;
+    @ManyToMany(mappedBy = "subjectCombinationCollection")
+    private Collection<EntranceInfo> entranceInfoCollection;
 
     public SubjectCombination() {
     }
@@ -71,12 +77,12 @@ public class SubjectCombination implements Serializable {
     }
 
     @XmlTransient
-    public List<EntranceInfo> getEntranceInfoList() {
-        return entranceInfoList;
+    public Collection<EntranceInfo> getEntranceInfoCollection() {
+        return entranceInfoCollection;
     }
 
-    public void setEntranceInfoList(List<EntranceInfo> entranceInfoList) {
-        this.entranceInfoList = entranceInfoList;
+    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
+        this.entranceInfoCollection = entranceInfoCollection;
     }
 
     @Override

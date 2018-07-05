@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -15,15 +15,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Type", catalog = "unistart2", schema = "dbo")
+@Table(name = "Type")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Type.findAll", query = "SELECT t FROM Type t")
@@ -34,13 +36,16 @@ public class Type implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "TypeId", nullable = false)
+    @NotNull
+    @Column(name = "TypeId")
     private Integer typeId;
     @Basic(optional = false)
-    @Column(name = "TypeName", nullable = false, length = 100)
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Column(name = "TypeName")
     private String typeName;
     @OneToMany(mappedBy = "typeId")
-    private List<School> schoolList;
+    private Collection<School> schoolCollection;
 
     public Type() {
     }
@@ -71,12 +76,12 @@ public class Type implements Serializable {
     }
 
     @XmlTransient
-    public List<School> getSchoolList() {
-        return schoolList;
+    public Collection<School> getSchoolCollection() {
+        return schoolCollection;
     }
 
-    public void setSchoolList(List<School> schoolList) {
-        this.schoolList = schoolList;
+    public void setSchoolCollection(Collection<School> schoolCollection) {
+        this.schoolCollection = schoolCollection;
     }
 
     @Override

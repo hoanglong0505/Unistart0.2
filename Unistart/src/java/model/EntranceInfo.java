@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,15 +18,17 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "EntranceInfo", catalog = "unistart2", schema = "dbo")
+@Table(name = "EntranceInfo")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "EntranceInfo.findAll", query = "SELECT e FROM EntranceInfo e")
@@ -43,33 +45,38 @@ public class EntranceInfo implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "EntranceId", nullable = false)
+    @NotNull
+    @Column(name = "EntranceId")
     private Integer entranceId;
     @Basic(optional = false)
-    @Column(name = "Year", nullable = false)
+    @NotNull
+    @Column(name = "Year")
     private int year;
-    @Column(name = "SubName", length = 500)
+    @Size(max = 500)
+    @Column(name = "SubName")
     private String subName;
-    @Column(name = "SubCode", length = 50)
+    @Size(max = 50)
+    @Column(name = "SubCode")
     private String subCode;
     @Column(name = "NormalEntranceAmount")
     private Integer normalEntranceAmount;
     @Column(name = "OtherEntranceAmount")
     private Integer otherEntranceAmount;
     // @Max(value=?)  @Min(value=?)//if you know range of your decimal fields consider using these annotations to enforce field validation
-    @Column(name = "MinPoint", precision = 53)
+    @Column(name = "MinPoint")
     private Double minPoint;
-    @Column(name = "Note", length = 1073741823)
+    @Size(max = 2147483647)
+    @Column(name = "Note")
     private String note;
     @JoinTable(name = "EntranceSubject", joinColumns = {
-        @JoinColumn(name = "EntranceId", referencedColumnName = "EntranceId", nullable = false)}, inverseJoinColumns = {
-        @JoinColumn(name = "SjCombiCode", referencedColumnName = "SjCombiCode", nullable = false)})
+        @JoinColumn(name = "EntranceId", referencedColumnName = "EntranceId")}, inverseJoinColumns = {
+        @JoinColumn(name = "SjCombiCode", referencedColumnName = "SjCombiCode")})
     @ManyToMany
-    private List<SubjectCombination> subjectCombinationList;
-    @JoinColumn(name = "FieldId", referencedColumnName = "FieldId", nullable = false)
+    private Collection<SubjectCombination> subjectCombinationCollection;
+    @JoinColumn(name = "FieldId", referencedColumnName = "FieldId")
     @ManyToOne(optional = false)
     private Field fieldId;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId", nullable = false)
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne(optional = false)
     private School schoolId;
 
@@ -150,12 +157,12 @@ public class EntranceInfo implements Serializable {
     }
 
     @XmlTransient
-    public List<SubjectCombination> getSubjectCombinationList() {
-        return subjectCombinationList;
+    public Collection<SubjectCombination> getSubjectCombinationCollection() {
+        return subjectCombinationCollection;
     }
 
-    public void setSubjectCombinationList(List<SubjectCombination> subjectCombinationList) {
-        this.subjectCombinationList = subjectCombinationList;
+    public void setSubjectCombinationCollection(Collection<SubjectCombination> subjectCombinationCollection) {
+        this.subjectCombinationCollection = subjectCombinationCollection;
     }
 
     public Field getFieldId() {

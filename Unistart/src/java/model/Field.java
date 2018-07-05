@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.List;
+import java.util.Collection;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -18,15 +18,17 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
- * @author Admin
+ * @author TNT
  */
 @Entity
-@Table(name = "Field", catalog = "unistart2", schema = "dbo")
+@Table(name = "Field")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Field.findAll", query = "SELECT f FROM Field f")
@@ -38,22 +40,27 @@ public class Field implements Serializable {
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
-    @Column(name = "FieldId", nullable = false)
+    @NotNull
+    @Column(name = "FieldId")
     private Integer fieldId;
     @Basic(optional = false)
-    @Column(name = "FieldCode", nullable = false, length = 20)
+    @NotNull
+    @Size(min = 1, max = 20)
+    @Column(name = "FieldCode")
     private String fieldCode;
     @Basic(optional = false)
-    @Column(name = "FieldName", nullable = false, length = 100)
+    @NotNull
+    @Size(min = 1, max = 100)
+    @Column(name = "FieldName")
     private String fieldName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldId")
-    private List<EntranceInfo> entranceInfoList;
+    private Collection<EntranceInfo> entranceInfoCollection;
     @OneToMany(mappedBy = "preFieldId")
-    private List<Field> fieldList;
+    private Collection<Field> fieldCollection;
     @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
     @ManyToOne
     private Field preFieldId;
-    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId", nullable = false)
+    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
     @ManyToOne(optional = false)
     private FieldType fieldTypeId;
 
@@ -95,21 +102,21 @@ public class Field implements Serializable {
     }
 
     @XmlTransient
-    public List<EntranceInfo> getEntranceInfoList() {
-        return entranceInfoList;
+    public Collection<EntranceInfo> getEntranceInfoCollection() {
+        return entranceInfoCollection;
     }
 
-    public void setEntranceInfoList(List<EntranceInfo> entranceInfoList) {
-        this.entranceInfoList = entranceInfoList;
+    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
+        this.entranceInfoCollection = entranceInfoCollection;
     }
 
     @XmlTransient
-    public List<Field> getFieldList() {
-        return fieldList;
+    public Collection<Field> getFieldCollection() {
+        return fieldCollection;
     }
 
-    public void setFieldList(List<Field> fieldList) {
-        this.fieldList = fieldList;
+    public void setFieldCollection(Collection<Field> fieldCollection) {
+        this.fieldCollection = fieldCollection;
     }
 
     public Field getPreFieldId() {
