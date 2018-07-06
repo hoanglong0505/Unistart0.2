@@ -71,7 +71,7 @@ public class School implements Serializable {
     @Size(max = 500)
     @Column(name = "Avatar")
     private String avatar;
-    @OneToMany(mappedBy = "schoolId")
+    @OneToMany(mappedBy = "school")
     private Collection<Rate> rateCollection;
     @OneToMany(mappedBy = "schoolId")
     private Collection<Article> articleCollection;

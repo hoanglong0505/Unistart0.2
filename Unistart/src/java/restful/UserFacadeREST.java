@@ -5,8 +5,8 @@
  */
 package restful;
 
-import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
-import controller.login.GoogleLogin;
+//import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
+//import controller.login.GoogleLogin;
 import java.io.IOException;
 import java.security.GeneralSecurityException;
 import java.util.List;
@@ -92,23 +92,23 @@ public class UserFacadeREST extends AbstractFacade<Users> {
         return String.valueOf(super.count());
     }
 
-    @POST
-    @Path("get-g-user")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Users getUser(String idToken) throws GeneralSecurityException, IOException {
-        GoogleIdToken.Payload payload = GoogleLogin.verified(idToken);
-        if (payload != null) {
-            Users u = new Users();
-            String name = (String) payload.get("name");
-            String pictureUrl = (String) payload.get("picture");
-            
-            u.setName(name);
-            u.setAvatar(pictureUrl);
-            u.setEmail(payload.getEmail());
-            return u;
-        }
-        return null;
-    }
+//    @POST
+//    @Path("get-g-user")
+//    @Produces(MediaType.APPLICATION_JSON)
+//    public Users getUser(String idToken) throws GeneralSecurityException, IOException {
+//        GoogleIdToken.Payload payload = GoogleLogin.verified(idToken);
+//        if (payload != null) {
+//            Users u = new Users();
+//            String name = (String) payload.get("name");
+//            String pictureUrl = (String) payload.get("picture");
+//            
+//            u.setName(name);
+//            u.setAvatar(pictureUrl);
+//            u.setEmail(payload.getEmail());
+//            return u;
+//        }
+//        return null;
+//    }
 
     @Override
     protected EntityManager getEntityManager() {

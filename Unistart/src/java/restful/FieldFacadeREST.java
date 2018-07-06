@@ -5,6 +5,8 @@
  */
 package restful;
 
+import dao.FieldDAO;
+import dao.SchoolDAO;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
@@ -19,6 +21,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import model.Field;
+import model.School;
 
 /**
  *
@@ -88,5 +91,13 @@ public class FieldFacadeREST extends AbstractFacade<Field> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+    /// Get Field Type
+     @GET
+    @Path("FieldType.{id}")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Field> findFieldType(@PathParam("id") Integer id) {
+         FieldDAO dao = new FieldDAO();
+        List<Field> list =dao.getFieldType(id);
+        return list;
+    }
 }

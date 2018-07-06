@@ -5,6 +5,8 @@
  */
 package model;
 
+import static handle.TransientHandler.GENERATE;
+import static handle.TransientHandler.TRANSIENT;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -16,6 +18,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -45,8 +48,7 @@ public class FieldType implements Serializable {
     @Size(min = 1, max = 50)
     @Column(name = "TypeName")
     private String typeName;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldTypeId")
-    private Collection<Field> fieldCollection;
+    
 
     public FieldType() {
     }
@@ -76,14 +78,7 @@ public class FieldType implements Serializable {
         this.typeName = typeName;
     }
 
-    @XmlTransient
-    public Collection<Field> getFieldCollection() {
-        return fieldCollection;
-    }
-
-    public void setFieldCollection(Collection<Field> fieldCollection) {
-        this.fieldCollection = fieldCollection;
-    }
+   
 
     @Override
     public int hashCode() {
@@ -109,5 +104,26 @@ public class FieldType implements Serializable {
     public String toString() {
         return "model.FieldType[ fieldTypeId=" + fieldTypeId + " ]";
     }
+ //Hanler
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldType")
+    private Collection<Field> fieldCollection;
+    @Transient
+    @XmlTransient
+    public int fieldHandler = GENERATE;
+
+    public Collection<Field> getFieldCollection() {
+        if (fieldHandler == GENERATE) {
+            for (Field u : fieldCollection) {
+                u.fieldTypeHandler = TRANSIENT;
+            }
+            return fieldCollection;
+        }
+        return null;
+    }
+
+    public void setFieldCollection(Collection<Field> fieldCollection) {
+        this.fieldCollection = fieldCollection;
+    }
+  
     
 }

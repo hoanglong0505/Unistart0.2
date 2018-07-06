@@ -5,6 +5,8 @@
  */
 package model;
 
+import static handle.TransientHandler.GENERATE;
+import static handle.TransientHandler.RAW;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -18,6 +20,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -205,5 +208,7 @@ public class EntranceInfo implements Serializable {
     public String toString() {
         return "model.EntranceInfo[ entranceId=" + entranceId + " ]";
     }
-    
+    @Transient
+    @XmlTransient
+    public int entranceInfoHandler = GENERATE;
 }

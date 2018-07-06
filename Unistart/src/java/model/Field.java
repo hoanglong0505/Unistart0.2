@@ -5,6 +5,10 @@
  */
 package model;
 
+import static handle.TransientHandler.GENERATE;
+import static handle.TransientHandler.TRANSIENT;
+import static handle.TransientHandler.RAW;
+
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -18,6 +22,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -55,14 +60,10 @@ public class Field implements Serializable {
     private String fieldName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldId")
     private Collection<EntranceInfo> entranceInfoCollection;
-    @OneToMany(mappedBy = "preFieldId")
+    @OneToMany(mappedBy = "preField")
     private Collection<Field> fieldCollection;
-    @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
-    @ManyToOne
-    private Field preFieldId;
-    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
-    @ManyToOne(optional = false)
-    private FieldType fieldTypeId;
+
+   
 
     public Field() {
     }
@@ -119,22 +120,8 @@ public class Field implements Serializable {
         this.fieldCollection = fieldCollection;
     }
 
-    public Field getPreFieldId() {
-        return preFieldId;
-    }
-
-    public void setPreFieldId(Field preFieldId) {
-        this.preFieldId = preFieldId;
-    }
-
-    public FieldType getFieldTypeId() {
-        return fieldTypeId;
-    }
-
-    public void setFieldTypeId(FieldType fieldTypeId) {
-        this.fieldTypeId = fieldTypeId;
-    }
-
+   
+   
     @Override
     public int hashCode() {
         int hash = 0;
@@ -159,5 +146,65 @@ public class Field implements Serializable {
     public String toString() {
         return "model.Field[ fieldId=" + fieldId + " ]";
     }
+    //Handle===============================
+     @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
+    @ManyToOne
+    private Field preField;
+    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
+    @ManyToOne(optional = false)
+    private FieldType fieldType;
+     @Column(name = "PreFieldId", updatable = false, insertable = false)
+    private Integer preFieldId;
+    @Transient
+    @XmlTransient
+    public int preFieldHandler = RAW;
+
+   
+     public Field getPreField() {
+         if (preFieldHandler == GENERATE) {
+            preField.preFieldHandler = TRANSIENT;
+            return preField;
+        }
+        return null;
+    }
+
+    public void setPreField(Field preField) {
+        this.preField = preField;
+    }
+
+    @Column(name = "FieldTypeId", updatable = false, insertable = false)
+    private Integer fieldTypeId;
+    @Transient
+    @XmlTransient
+    public int fieldTypeHandler = GENERATE;
+    public FieldType getFieldType() {
+        if (fieldTypeHandler == GENERATE) {
+            fieldType.fieldHandler = TRANSIENT;
+            return fieldType;
+        }
+        return null;
+    }
+
+    public void setFieldType(FieldType fieldTypeId) {
+        this.fieldType = fieldTypeId;
+    }
+
+    public Integer getPreFieldId() {
+        return preFieldId;
+    }
+
+    public void setPreFieldId(Integer preFieldId) {
+        this.preFieldId = preFieldId;
+    }
+
+    public Integer getFieldTypeId() {
+        return fieldTypeId;
+    }
+
+    public void setFieldTypeId(Integer fieldTypeId) {
+        this.fieldTypeId = fieldTypeId;
+    }
+
+   
     
 }
