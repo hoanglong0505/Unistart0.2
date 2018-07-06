@@ -96,12 +96,12 @@ public class SchoolDAO {
         Map<String, Integer> map = new HashMap<>();
         String jpql = "Select  DISTINCT S.SchoolCode,S.SchoolName , S.SchoolId \n"
                 + "FROM School S \n"
-                + "Inner JOIN Branch B ON S.SchoolId = B.SchoolId\n"
-                + "Inner JOIN dbo.Location L ON B.LocationId = B.LocationId \n"
-                + "INNER JOIN EntranceInfo E ON E.SchoolId= S.SchoolId\n"
-                + "INNER JOIN EntranceSubject ES ON ES.EntranceId = E.EntranceId \n"
-                + "INNER JOIN Field F ON F.FieldId = E.FieldId\n";
-               
+                + "LEFT JOIN Branch B ON S.SchoolId = B.SchoolId\n"
+                + "LEFT JOIN dbo.Location L ON L.LocationId = B.LocationId \n"
+                + "LEFT JOIN EntranceInfo E ON E.SchoolId= S.SchoolId\n"
+                + "LEFT JOIN EntranceSubject ES ON ES.EntranceId = E.EntranceId \n"
+                + "LEFT JOIN Field F ON F.FieldId = E.FieldId\n";
+
         String str = "Where ";
         int count = 0;
         if (sjCode != null) {
@@ -150,12 +150,12 @@ public class SchoolDAO {
             str += add;
             map.put("location", count);
         }
-       
-         if(count >0){
-           jpql += str; 
+
+        if (count > 0) {
+            jpql += str;
         }
-          jpql +=" ORDER BY S.SchoolCode ";
-          System.out.println(jpql);
+        jpql += " ORDER BY S.SchoolCode ";
+        System.out.println(jpql);
         Query query = em.createNativeQuery(jpql, School.class);
         if (map.get("sjCode") != null) {
             query.setParameter(map.get("sjCode"), sjCode);
@@ -172,11 +172,9 @@ public class SchoolDAO {
         if (map.get("location") != null) {
             query.setParameter(map.get("location"), location);
         }
-        
-       
+
         List result = query.getResultList();
         return result;
     }
 
-    
 }

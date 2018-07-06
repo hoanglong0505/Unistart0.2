@@ -102,7 +102,7 @@ public class AddReviewServlet extends HttpServlet {
 
                 em.getTransaction().commit();
             }
-            response.getWriter().print("/Unistart/index.html");
+            response.getWriter().print("/Unistart/");
 
         } catch (Exception e) {
             e.printStackTrace();

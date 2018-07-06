@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <filter>
+        <filter-name>AuthenFilter</filter-name>
+        <filter-class>controller.filter.AuthenFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>AuthenFilter</filter-name>
+        <url-pattern>/pages/*</url-pattern>
+    </filter-mapping>
     <servlet>
         <servlet-name>ServletAdaptor</servlet-name>
         <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
@@ -7,40 +15,58 @@
             <param-name>javax.ws.rs.Application</param-name>
             <param-value>restful.ApplicationConfig</param-value>
         </init-param>
-        <init-param>  
-            <param-name>jersey.config.server.provider.classnames</param-name>  
+        <init-param>
+            <param-name>jersey.config.server.provider.classnames</param-name>
             <param-value>org.glassfish.jersey.filter.LoggingFilter;  
-                org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>  
+                org.glassfish.jersey.media.multipart.MultiPartFeature</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
+    </servlet>
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controller.servlet.LoginServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>ServletAdaptor</servlet-name>
         <url-pattern>/webresources/*</url-pattern>
     </servlet-mapping>
-    
-<!--    <servlet>
-        <servlet-name>CORS Filter</servlet-name>
-        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-        <init-param>
-            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
-            <param-value>controller.filter.CORSFilter</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CORS Filter</servlet-name>
-        <url-pattern>/webservices/*</url-pattern>
-    </servlet-mapping>
-    <filter>
-        <filter-name>CorsFilter</filter-name>
-        <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>CorsFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
- 
+    <!--TNT-->
+    <!--    <servlet>
+            <servlet-name>CORS Filter</servlet-name>
+            <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+            <init-param>
+                <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
+                <param-value>controller.filter.CORSFilter</param-value>
+            </init-param>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>CORS Filter</servlet-name>
+            <url-pattern>/webservices/*</url-pattern>
+        </servlet-mapping>
+        <filter>
+            <filter-name>CorsFilter</filter-name>
+            <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
+        </filter>
+        <filter-mapping>
+            <filter-name>CorsFilter</filter-name>
+            <url-pattern>/*</url-pattern>
+        </filter-mapping>
+    -->
     <welcome-file-list>
-        <welcome-file>index.html</welcome-file>
-    </welcome-file-list>-->
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+    <ejb-local-ref>
+        <ejb-ref-name>schoolFacadeREST</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <ejb-link>#SchoolFacadeREST</ejb-link>
+    </ejb-local-ref>
+    <ejb-local-ref>
+        <ejb-ref-name>schoolFacadeREST1</ejb-ref-name>
+        <ejb-ref-type>Session</ejb-ref-type>
+        <ejb-link>#SchoolFacadeREST</ejb-link>
+    </ejb-local-ref>
 </web-app>

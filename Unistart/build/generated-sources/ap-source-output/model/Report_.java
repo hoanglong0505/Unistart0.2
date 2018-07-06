@@ -7,7 +7,7 @@ import model.Rate;
 import model.ReportPK;
 import model.Users;
 
-@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-07-06T17:20:42")
+@Generated(value="EclipseLink-2.5.2.v20140319-rNA", date="2018-07-06T20:08:50")
 @StaticMetamodel(Report.class)
 public class Report_ { 
 

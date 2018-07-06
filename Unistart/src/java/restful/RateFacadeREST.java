@@ -70,7 +70,11 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Rate> findAll() {
-        return super.findAll();
+        List<Rate> rList= super.findAll();
+        for (Rate r: rList){
+            r.setUser(null);
+        }
+        return rList;
     }
 
     @GET

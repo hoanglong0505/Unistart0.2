@@ -22,7 +22,7 @@
         <a class="g-signin2" style="display:none;" data-onsuccess="onSignIn"></a>
         <div>TODO write content</div>
         <a href="/Unistart/logout" onclick="signOut();">Sign out</a>
-        <a href="/Unistart/index.html">HOME</a>
+        <a href="/Unistart/">HOME</a>
         <h1>REVIEW OF ${school.schoolName}</h1>
 
         <h1>Hello user: ${user.userId}</h1>
