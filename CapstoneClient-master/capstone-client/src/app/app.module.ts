@@ -5,7 +5,7 @@ import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from '@angular/http';
 import {appRoutes} from './app.routes';
-import {MdRadioModule} from '@angular/material';
+import {MatRadioModule} from '@angular/material';
 import {NgxPaginationModule} from 'ngx-pagination';
 import {ToastModule} from "ng2-toastr/ng2-toastr";
 import {Select2Module} from "ng2-select2";
@@ -122,7 +122,7 @@ const providers = {
     BrowserModule,
     appRoutes,
     FormsModule,
-    MdRadioModule,
+    MatRadioModule,
     MatTooltipModule,
     ReactiveFormsModule,
     HttpModule,
