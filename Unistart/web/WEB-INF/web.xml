@@ -30,6 +30,7 @@
         <servlet-name>ServletAdaptor</servlet-name>
         <url-pattern>/webresources/*</url-pattern>
     </servlet-mapping>
+	<!--TNT-->
     <!--    <servlet>
         <servlet-name>CORS Filter</servlet-name>
         <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
