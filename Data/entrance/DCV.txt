@@ -1,4 +1,4 @@
-DCV
+﻿DCV
 1
 7340301
 Kế toán
@@ -32,7 +32,7 @@ Xét học bạ 18 điểm, không môn nào dưới 6 điểm
 6
 7510401
 Công nghệ kỹ thuật hoá học
-00; A01; A02; B00
+A00; A01; A02; B00
 15.5
 Xét học bạ 18 điểm, không môn nào dưới 6 điểm
 7

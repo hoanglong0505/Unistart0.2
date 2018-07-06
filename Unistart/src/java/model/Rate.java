@@ -27,7 +27,7 @@ import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
 import restful.SchoolFacadeREST;
-import restful.UserFacadeREST;
+import restful.UsersFacadeREST;
 
 /**
  *
@@ -80,9 +80,9 @@ public class Rate implements Serializable {
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<Report> reportCollection;
-   
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private Collection<RateDetail> rateDetailCollection;
+    private Collection<RateDetail> rateDetails;
 
     public Rate() {
     }
@@ -177,17 +177,13 @@ public class Rate implements Serializable {
         this.reportCollection = reportCollection;
     }
 
-    
-
-   
-
     @XmlTransient
-    public Collection<RateDetail> getRateDetailCollection() {
-        return rateDetailCollection;
+    public Collection<RateDetail> getRateDetails() {
+        return rateDetails;
     }
 
-    public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
-        this.rateDetailCollection = rateDetailCollection;
+    public void setRateDetails(Collection<RateDetail> rateDetails) {
+        this.rateDetails = rateDetails;
     }
 
     @Override
@@ -215,25 +211,21 @@ public class Rate implements Serializable {
         return "model.Rate[ rateId=" + rateId + " ]";
     }
     //===============
-     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne
     private School school;
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
-    @ManyToOne
-    private Users user;
-    
 
-    @Column(name="SchoolId",insertable = false , updatable = false)  
+    @Column(name = "SchoolId", insertable = false, updatable = false)
     private Integer schoolId;
-        public School getSchool() {
-            
+
+    public School getSchool() {
+
         return school;
     }
 
     public void setSchool(School school) {
         this.school = school;
-        
-        
+
     }
 
     public Integer getSchoolId() {
@@ -243,9 +235,14 @@ public class Rate implements Serializable {
     public void setSchoolId(Integer schoolId) {
         this.schoolId = schoolId;
     }
-    @Column(name="UserId",insertable = false , updatable = false)
-        private Integer userId;
-     public Users getUser() {
+    
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
+    @ManyToOne
+    private Users user;
+    @Column(name = "UserId", insertable = false, updatable = false)
+    private String userId;
+
+    public Users getUser() {
         return user;
     }
 
@@ -253,21 +250,20 @@ public class Rate implements Serializable {
         this.user = userId;
     }
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
-    
-    //===
-    public void setUpdateInfo(){
-        if(school ==null && user ==null){
-                school = new SchoolFacadeREST().find(schoolId);
-                user = new UserFacadeREST().find(userId);
-            }
+    //========
+    public void setUpdateInfo() {
+        if (school == null && user == null) {
+            school = new SchoolFacadeREST().find(schoolId);
+            user = new UsersFacadeREST().find(userId);
+        }
     }
-    
+
 }

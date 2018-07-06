@@ -1,4 +1,4 @@
-DCT
+﻿DCT
 1
 7220201
 Ngôn ngữ Anh
@@ -104,7 +104,7 @@ A00, A01, B00, D07
 18
 7540204
 Công nghệ dệt, may
-A00, A01, D01, D7
+A00, A01, D01, D07
 20
 21 (Xét theo học bạ)
 19

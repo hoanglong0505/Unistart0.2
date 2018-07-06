@@ -1,10 +1,4 @@
-BKA
-1
-
-Các ngành đào tạo đại học
-
----
-
+﻿BKA
 2
 BF1
 Kỹ thuật Sinh học

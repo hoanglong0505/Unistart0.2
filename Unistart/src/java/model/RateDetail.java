@@ -14,7 +14,9 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -110,5 +112,22 @@ public class RateDetail implements Serializable {
     public String toString() {
         return "model.RateDetail[ rateDetailPK=" + rateDetailPK + " ]";
     }
+    
+    //RELATION SHIP HANDLER
+    
+    @XmlTransient
+    @Column(name = "CriteriaId", insertable = false, updatable = false)
+    private Integer criteriaId;
+
+    public Integer getCriteriaId() {
+        return criteriaId;
+    }
+
+    public void setCriteriaId(Integer criteriaId) {
+        this.criteriaId = criteriaId;
+    }
+    
+    
+    
     
 }
