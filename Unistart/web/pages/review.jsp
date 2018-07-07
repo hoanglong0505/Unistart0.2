@@ -25,7 +25,7 @@
         <a href="/Unistart/">HOME</a>
         <h1>REVIEW OF ${school.schoolName}</h1>
 
-        <h1>Hello user: ${user.userId}</h1>
+        <h1>Hello user: ${user.name}</h1>
         <div>
             REVIEW PAGE
         </div>
@@ -75,11 +75,11 @@
                     ${cr.criteriaName}: <input type="number" name="c${cr.criteriaId}" min="1" max="10"/><br/>
                 </c:forEach>
             </div>
-            
+            <h2>Thông tin đánh giá</h2>
             Nhập tiêu đề <input type="text" name="title"/><br/>
-            Uu điểm<br/> <textarea name="pros" form="reviewform">Enter text here...</textarea><br/>
-            Nhược điểm<br/> <textarea name="cons" form="reviewform">Enter text here...</textarea><br/>
-            Trải nghiệm của bạn<br/> <textarea name="experience" form="reviewform">Enter text here...</textarea><br/>
+            Uu điểm<br/> <textarea name="pros" form="reviewform" placeholder="Enter text here..."></textarea><br/>
+            Nhược điểm<br/> <textarea name="cons" form="reviewform" placeholder="Enter text here..."></textarea><br/>
+            Trải nghiệm của bạn<br/> <textarea name="experience" form="reviewform" placeholder="Enter text here..."></textarea><br/>
             Bạn có khuyến khích học trường này <input type="checkbox" name="encourage"/><br/>
             Ẩn danh <input type="checkbox" name="anonymous"/><br/>
             <br/>
