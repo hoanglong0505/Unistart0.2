@@ -19,6 +19,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -44,8 +45,8 @@ public class Type implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "TypeName")
     private String typeName;
-    @OneToMany(mappedBy = "typeId")
-    private Collection<School> schoolCollection;
+    @OneToMany(mappedBy = "type")
+    private Collection<School> schools;
 
     public Type() {
     }
@@ -76,12 +77,13 @@ public class Type implements Serializable {
     }
 
     @XmlTransient
-    public Collection<School> getSchoolCollection() {
-        return schoolCollection;
+    @JsonIgnore
+    public Collection<School> getSchools() {
+        return schools;
     }
 
-    public void setSchoolCollection(Collection<School> schoolCollection) {
-        this.schoolCollection = schoolCollection;
+    public void setSchools(Collection<School> schools) {
+        this.schools = schools;
     }
 
     @Override

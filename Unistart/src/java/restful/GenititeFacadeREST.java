@@ -6,6 +6,7 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -24,7 +25,7 @@ import model.Genitite;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.genitite")
 public class GenititeFacadeREST extends AbstractFacade<Genitite> {
 

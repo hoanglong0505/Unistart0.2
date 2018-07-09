@@ -48,7 +48,7 @@ public class Article implements Serializable {
     private boolean status;
     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne
-    private School schoolId;
+    private School school;
 
     public Article() {
     }
@@ -86,12 +86,12 @@ public class Article implements Serializable {
         this.status = status;
     }
 
-    public School getSchoolId() {
-        return schoolId;
+    public School getSchool() {
+        return school;
     }
 
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
+    public void setSchool(School school) {
+        this.school = school;
     }
 
     @Override

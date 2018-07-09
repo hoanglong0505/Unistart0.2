@@ -6,6 +6,7 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -24,7 +25,7 @@ import model.Answer;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.answer")
 public class AnswerFacadeREST extends AbstractFacade<Answer> {
 

@@ -5,10 +5,6 @@
  */
 package model;
 
-import static handle.TransientHandler.GENERATE;
-import static handle.TransientHandler.TRANSIENT;
-import static handle.TransientHandler.RAW;
-
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -22,11 +18,11 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -58,12 +54,16 @@ public class Field implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "FieldName")
     private String fieldName;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldId")
-    private Collection<EntranceInfo> entranceInfoCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "field")
+    private Collection<EntranceInfo> entranceInfos;
     @OneToMany(mappedBy = "preField")
-    private Collection<Field> fieldCollection;
-
-   
+    private Collection<Field> fields;
+    @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
+    @ManyToOne
+    private Field preField;
+    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
+    @ManyToOne(optional = false)
+    private FieldType fieldType;
 
     public Field() {
     }
@@ -103,25 +103,41 @@ public class Field implements Serializable {
     }
 
     @XmlTransient
-    public Collection<EntranceInfo> getEntranceInfoCollection() {
-        return entranceInfoCollection;
+    @JsonIgnore
+    public Collection<EntranceInfo> getEntranceInfos() {
+        return entranceInfos;
     }
 
-    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
-        this.entranceInfoCollection = entranceInfoCollection;
+    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
+        this.entranceInfos = entranceInfos;
     }
 
     @XmlTransient
-    public Collection<Field> getFieldCollection() {
-        return fieldCollection;
+    @JsonIgnore
+    public Collection<Field> getFields() {
+        return fields;
     }
 
-    public void setFieldCollection(Collection<Field> fieldCollection) {
-        this.fieldCollection = fieldCollection;
+    public void setFields(Collection<Field> fields) {
+        this.fields = fields;
     }
 
-   
-   
+    public Field getPreField() {
+        return preField;
+    }
+
+    public void setPreField(Field preField) {
+        this.preField = preField;
+    }
+
+    public FieldType getFieldType() {
+        return fieldType;
+    }
+
+    public void setFieldType(FieldType fieldType) {
+        this.fieldType = fieldType;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -146,65 +162,5 @@ public class Field implements Serializable {
     public String toString() {
         return "model.Field[ fieldId=" + fieldId + " ]";
     }
-    //Handle===============================
-     @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
-    @ManyToOne
-    private Field preField;
-    @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
-    @ManyToOne(optional = false)
-    private FieldType fieldType;
-     @Column(name = "PreFieldId", updatable = false, insertable = false)
-    private Integer preFieldId;
-    @Transient
-    @XmlTransient
-    public int preFieldHandler = RAW;
-
-   
-     public Field getPreField() {
-         if (preFieldHandler == GENERATE) {
-            preField.preFieldHandler = TRANSIENT;
-            return preField;
-        }
-        return null;
-    }
-
-    public void setPreField(Field preField) {
-        this.preField = preField;
-    }
-
-    @Column(name = "FieldTypeId", updatable = false, insertable = false)
-    private Integer fieldTypeId;
-    @Transient
-    @XmlTransient
-    public int fieldTypeHandler = GENERATE;
-    public FieldType getFieldType() {
-        if (fieldTypeHandler == GENERATE) {
-            fieldType.fieldHandler = TRANSIENT;
-            return fieldType;
-        }
-        return null;
-    }
-
-    public void setFieldType(FieldType fieldTypeId) {
-        this.fieldType = fieldTypeId;
-    }
-
-    public Integer getPreFieldId() {
-        return preFieldId;
-    }
-
-    public void setPreFieldId(Integer preFieldId) {
-        this.preFieldId = preFieldId;
-    }
-
-    public Integer getFieldTypeId() {
-        return fieldTypeId;
-    }
-
-    public void setFieldTypeId(Integer fieldTypeId) {
-        this.fieldTypeId = fieldTypeId;
-    }
-
-   
     
 }

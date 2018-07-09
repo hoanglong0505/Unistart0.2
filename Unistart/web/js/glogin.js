@@ -29,40 +29,14 @@ function onSignIn(googleUser) {
     xhr.open('POST', 'http://localhost:8084/Unistart/login');
     xhr.setRequestHeader('Content-Type', 'text/plain');
     xhr.onload = function () {
-//        console.log('Signed in as: ' + xhr.responseText);
-    };
-    xhr.send(id_token);
-
-}
-
-function onSignInThenRedirect(googleUser) {
-
-    var id_token = googleUser.getAuthResponse().id_token;
-    console.log('Token: ' + id_token);
-
-    var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:8084/Unistart/login');
-    xhr.setRequestHeader('Content-Type', 'text/plain');
-    xhr.onload = function () {
-        window.location.assign(xhr.responseText);
+        if (xhr.responseText !== "")
+            window.location.assign(xhr.responseText);
     };
     xhr.send(id_token);
 
 }
 
 function signOut() {
-//    var xhr = new XMLHttpRequest();
-//
-//    xhr.open('POST', 'http://localhost:8084/Unistart/logout');
-//    xhr.send("");
-//
-//    xhr.onload = function () {
-//        var auth2 = gapi.auth2.getAuthInstance();
-//        auth2.signOut().then(function () {
-//            console.log('User signed out.');
-//        });
-//        location.reload(true);
-//    }
 
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {

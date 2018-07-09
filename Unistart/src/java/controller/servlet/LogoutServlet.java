@@ -6,7 +6,6 @@
 package controller.servlet;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,7 +19,7 @@ import javax.servlet.http.HttpSession;
  */
 @WebServlet(name = "LogoutServlet", urlPatterns = {"/logout"})
 public class LogoutServlet extends HttpServlet {
-    
+
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -33,7 +32,12 @@ public class LogoutServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        doPost(request, response);
+        HttpSession session = request.getSession(false);
+        if (session != null) {
+            session.removeAttribute("user");
+            session.invalidate();
+        }
+        response.sendRedirect("/Unistart");
     }
 
     /**
@@ -47,13 +51,7 @@ public class LogoutServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpSession session= request.getSession(false);
-        if (session!=null){
-            session.removeAttribute("user");
-            session.invalidate();
-        }
-        System.out.println(session);
-        response.sendRedirect("/Unistart");
+        doGet(request, response);
     }
 
     /**

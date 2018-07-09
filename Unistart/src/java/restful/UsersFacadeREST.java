@@ -5,6 +5,10 @@
  */
 package restful;
 
+import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
+import controller.security.GoogleVerifier;
+import java.io.IOException;
+import java.security.GeneralSecurityException;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -34,7 +38,7 @@ public class UsersFacadeREST extends AbstractFacade<Users> {
 
     public UsersFacadeREST() {
         super(Users.class);
-        em=Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
     }
 
     @POST
@@ -91,5 +95,5 @@ public class UsersFacadeREST extends AbstractFacade<Users> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

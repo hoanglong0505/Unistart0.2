@@ -2,28 +2,36 @@
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="UnistartPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-    <class>model.Report</class>
-    <class>model.School</class>
-    <class>model.RateCriteria</class>
-    <class>model.SubjectCombination</class>
-    <class>model.Article</class>
-    <class>model.Type</class>
-    <class>model.Location</class>
     <class>model.Rate</class>
-    <class>model.FieldType</class>
-    <class>model.Answer</class>
+    <class>model.RateCriteria</class>
+    <class>model.Users</class>
+    <class>model.Level</class>
+    <class>model.Test</class>
+    <class>model.University</class>
+    <class>model.SubLocation</class>
+    <class>model.Location</class>
+    <class>model.Introduce</class>
+    <class>model.RateDetail</class>
+    <class>model.Type</class>
     <class>model.Branch</class>
-    <class>model.EntranceInfo</class>
     <class>model.Field</class>
+    <class>model.FieldType</class>
+    <class>model.School</class>
+    <class>model.SubjectCombination</class>
+    <class>model.EntranceInfo</class>
+    <class>model.Subject</class>
+    <class>model.Answer</class>
+    <class>model.Sysdiagrams</class>
+    <class>model.Article</class>
+    <class>model.Report</class>
     <class>model.Question</class>
     <class>model.Region</class>
     <class>model.Character</class>
     <class>model.Genitite</class>
-    <class>model.RateDetail</class>
-    <class>model.Users</class>
+    <class>model.AverageRate</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=Unistart2"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=unistart2"/>
       <property name="javax.persistence.jdbc.user" value="sa"/>
       <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
       <property name="javax.persistence.jdbc.password" value="123456"/>

@@ -20,6 +20,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -45,8 +46,8 @@ public class Question implements Serializable {
     @Size(min = 1, max = 2147483647)
     @Column(name = "QuestionDetail")
     private String questionDetail;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "questionId")
-    private Collection<Answer> answerCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "question")
+    private Collection<Answer> answers;
 
     public Question() {
     }
@@ -77,12 +78,13 @@ public class Question implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Answer> getAnswerCollection() {
-        return answerCollection;
+    @JsonIgnore
+    public Collection<Answer> getAnswers() {
+        return answers;
     }
 
-    public void setAnswerCollection(Collection<Answer> answerCollection) {
-        this.answerCollection = answerCollection;
+    public void setAnswers(Collection<Answer> answers) {
+        this.answers = answers;
     }
 
     @Override

@@ -6,8 +6,8 @@
 package restful;
 
 import dao.FieldDAO;
-import dao.SchoolDAO;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -21,13 +21,12 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import model.Field;
-import model.School;
 
 /**
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.field")
 public class FieldFacadeREST extends AbstractFacade<Field> {
 
@@ -36,7 +35,7 @@ public class FieldFacadeREST extends AbstractFacade<Field> {
 
     public FieldFacadeREST() {
         super(Field.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
     }
 
     @POST
@@ -87,17 +86,20 @@ public class FieldFacadeREST extends AbstractFacade<Field> {
         return String.valueOf(super.count());
     }
 
+    //custom
+    /// Get Field Type
+    @GET
+    @Path("FieldType.{id}")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Field> findFieldType(@PathParam("id") Integer id) {
+        FieldDAO dao = new FieldDAO();
+        List<Field> list = dao.getFieldType(id, em);
+        return list;
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    /// Get Field Type
-     @GET
-    @Path("FieldType.{id}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Field> findFieldType(@PathParam("id") Integer id) {
-         FieldDAO dao = new FieldDAO();
-        List<Field> list =dao.getFieldType(id);
-        return list;
-    }
+
 }

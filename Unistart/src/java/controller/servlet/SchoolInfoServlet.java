@@ -5,25 +5,22 @@
  */
 package controller.servlet;
 
-import dao.SchoolDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import model.School;
+import restful.SchoolFacadeREST;
 
 /**
  *
  * @author TNT
  */
-@WebServlet(name = "FilterSchoolServlet", urlPatterns = {"/filter-school"})
-public class FilterSchoolServlet extends HttpServlet {
+@WebServlet(name = "SchoolInfoServlet", urlPatterns = {"/public/schoolinfo"})
+public class SchoolInfoServlet extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -37,46 +34,21 @@ public class FilterSchoolServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String schoolName = request.getParameter("schoolName");
-        if (schoolName != null && schoolName.trim().length() == 0) {
-            schoolName = null;
+        Integer schoolId = null;
+        try {
+            schoolId = Integer.parseInt(request.getParameter("schoolId"));
+        } catch (Exception e) {
+            e.printStackTrace();
         }
         
-        Integer locationId = null;
-        try {
-            locationId = Integer.parseInt(request.getParameter("location"));
-        } catch (Exception e) {
+        if (schoolId!=null){
+            School sch= new SchoolFacadeREST().find(schoolId);
+            request.setAttribute("school", sch);
+            request.getRequestDispatcher("schoolinfo.jsp").forward(request, response);
+        } else {
+            response.sendRedirect("/Unistart/");
         }
-
-        String subjectCode = request.getParameter("sjCode");
-        if (subjectCode.equals("all")) {
-            subjectCode = null;
-        }
-
-        Float minPoint = null;
-        try {
-            minPoint = Float.parseFloat(request.getParameter("minPoint"));
-        } catch (Exception e) {
-        };
-
-        Integer typeId = null;
-        try {
-            typeId = Integer.parseInt(request.getParameter("typeId"));
-        } catch (Exception e) {
-        };
-
-        String fieldCode = null;
-        fieldCode = request.getParameter("fieldCode");
-        if (fieldCode.equals("all")) {
-            fieldCode = null;
-        }
-
-        EntityManager em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
-        List<School> schList = new SchoolDAO().getSchoolList(schoolName, subjectCode, minPoint, typeId, fieldCode, locationId, em);
         
-        request.setAttribute("schools", schList);
-
-        request.getRequestDispatcher("home").forward(request, response);
     }
 
     /**

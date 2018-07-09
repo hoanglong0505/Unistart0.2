@@ -5,8 +5,6 @@
  */
 package model;
 
-import static handle.TransientHandler.GENERATE;
-import static handle.TransientHandler.RAW;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -20,11 +18,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -75,13 +73,13 @@ public class EntranceInfo implements Serializable {
         @JoinColumn(name = "EntranceId", referencedColumnName = "EntranceId")}, inverseJoinColumns = {
         @JoinColumn(name = "SjCombiCode", referencedColumnName = "SjCombiCode")})
     @ManyToMany
-    private Collection<SubjectCombination> subjectCombinationCollection;
+    private Collection<SubjectCombination> subjectCombinations;
     @JoinColumn(name = "FieldId", referencedColumnName = "FieldId")
     @ManyToOne(optional = false)
-    private Field fieldId;
+    private Field field;
     @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne(optional = false)
-    private School schoolId;
+    private School school;
 
     public EntranceInfo() {
     }
@@ -160,28 +158,29 @@ public class EntranceInfo implements Serializable {
     }
 
     @XmlTransient
-    public Collection<SubjectCombination> getSubjectCombinationCollection() {
-        return subjectCombinationCollection;
+    @JsonIgnore
+    public Collection<SubjectCombination> getSubjectCombinations() {
+        return subjectCombinations;
     }
 
-    public void setSubjectCombinationCollection(Collection<SubjectCombination> subjectCombinationCollection) {
-        this.subjectCombinationCollection = subjectCombinationCollection;
+    public void setSubjectCombinations(Collection<SubjectCombination> subjectCombinations) {
+        this.subjectCombinations = subjectCombinations;
     }
 
-    public Field getFieldId() {
-        return fieldId;
+    public Field getField() {
+        return field;
     }
 
-    public void setFieldId(Field fieldId) {
-        this.fieldId = fieldId;
+    public void setField(Field field) {
+        this.field = field;
     }
 
-    public School getSchoolId() {
-        return schoolId;
+    public School getSchool() {
+        return school;
     }
 
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
+    public void setSchool(School school) {
+        this.school = school;
     }
 
     @Override
@@ -208,7 +207,5 @@ public class EntranceInfo implements Serializable {
     public String toString() {
         return "model.EntranceInfo[ entranceId=" + entranceId + " ]";
     }
-    @Transient
-    @XmlTransient
-    public int entranceInfoHandler = GENERATE;
+    
 }

@@ -5,8 +5,8 @@
  */
 package restful;
 
-import dao.SubjectCombinationDAO;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -25,7 +25,7 @@ import model.SubjectCombination;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.subjectcombination")
 public class SubjectCombinationFacadeREST extends AbstractFacade<SubjectCombination> {
 
@@ -70,16 +70,7 @@ public class SubjectCombinationFacadeREST extends AbstractFacade<SubjectCombinat
     public List<SubjectCombination> findAll() {
         return super.findAll();
     }
-// Get SubjectCombination
-    @GET
-    @Path("getSjCombi")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<SubjectCombination> findSjCombi() {
-        SubjectCombinationDAO dao = new SubjectCombinationDAO();
-        List<SubjectCombination> list = dao.getSubjectCombination();
-        return list;
-    }
-    //
+
     @GET
     @Path("{from}/{to}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})

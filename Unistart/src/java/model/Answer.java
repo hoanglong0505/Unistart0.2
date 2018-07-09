@@ -45,10 +45,10 @@ public class Answer implements Serializable {
     private String answerDetail;
     @JoinColumn(name = "GenititeId", referencedColumnName = "GenitiveId")
     @ManyToOne(optional = false)
-    private Genitite genititeId;
+    private Genitite gentitle;
     @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId")
     @ManyToOne(optional = false)
-    private Question questionId;
+    private Question question;
 
     public Answer() {
     }
@@ -78,20 +78,20 @@ public class Answer implements Serializable {
         this.answerDetail = answerDetail;
     }
 
-    public Genitite getGenititeId() {
-        return genititeId;
+    public Genitite getGentitle() {
+        return gentitle;
     }
 
-    public void setGenititeId(Genitite genititeId) {
-        this.genititeId = genititeId;
+    public void setGentitle(Genitite gentitle) {
+        this.gentitle = gentitle;
     }
 
-    public Question getQuestionId() {
-        return questionId;
+    public Question getQuestion() {
+        return question;
     }
 
-    public void setQuestionId(Question questionId) {
-        this.questionId = questionId;
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     @Override

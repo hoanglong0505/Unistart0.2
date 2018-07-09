@@ -6,6 +6,7 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -24,7 +25,7 @@ import model.Rate;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.rate")
 public class RateFacadeREST extends AbstractFacade<Rate> {
 
@@ -40,10 +41,7 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Rate entity) {
-        em.getTransaction().begin();
-        entity.setUpdateInfo();
         super.create(entity);
-        em.getTransaction().commit();
     }
 
     @PUT
@@ -70,11 +68,7 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Rate> findAll() {
-        List<Rate> rList= super.findAll();
-        for (Rate r: rList){
-            r.setUser(null);
-        }
-        return rList;
+        return super.findAll();
     }
 
     @GET

@@ -15,19 +15,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
-import restful.SchoolFacadeREST;
-import restful.UsersFacadeREST;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -40,9 +37,10 @@ import restful.UsersFacadeREST;
     @NamedQuery(name = "Rate.findAll", query = "SELECT r FROM Rate r")
     , @NamedQuery(name = "Rate.findByRateId", query = "SELECT r FROM Rate r WHERE r.rateId = :rateId")
     , @NamedQuery(name = "Rate.findByTitle", query = "SELECT r FROM Rate r WHERE r.title = :title")
+    , @NamedQuery(name = "Rate.findByPros", query = "SELECT r FROM Rate r WHERE r.pros = :pros")
+    , @NamedQuery(name = "Rate.findByCons", query = "SELECT r FROM Rate r WHERE r.cons = :cons")
+    , @NamedQuery(name = "Rate.findByExperience", query = "SELECT r FROM Rate r WHERE r.experience = :experience")
     , @NamedQuery(name = "Rate.findByEncourage", query = "SELECT r FROM Rate r WHERE r.encourage = :encourage")
-    , @NamedQuery(name = "Rate.findByUserLike", query = "SELECT r FROM Rate r WHERE r.userLike = :userLike")
-    , @NamedQuery(name = "Rate.findByUserDislike", query = "SELECT r FROM Rate r WHERE r.userDislike = :userDislike")
     , @NamedQuery(name = "Rate.findByAnonymous", query = "SELECT r FROM Rate r WHERE r.anonymous = :anonymous")})
 public class Rate implements Serializable {
 
@@ -58,29 +56,27 @@ public class Rate implements Serializable {
     @Size(min = 1, max = 255)
     @Column(name = "Title")
     private String title;
-    @Lob
-    @Size(max = 2147483647)
+    @Size(max = 500)
     @Column(name = "Pros")
     private String pros;
-    @Lob
-    @Size(max = 2147483647)
+    @Size(max = 500)
     @Column(name = "Cons")
     private String cons;
-    @Lob
-    @Size(max = 2147483647)
+    @Size(max = 500)
     @Column(name = "Experience")
     private String experience;
     @Column(name = "Encourage")
     private Boolean encourage;
-    @Column(name = "UserLike")
-    private Integer userLike;
-    @Column(name = "UserDislike")
-    private Integer userDislike;
     @Column(name = "Anonymous")
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private Collection<Report> reportCollection;
-
+    private Collection<Report> reports;
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @ManyToOne
+    private School school;
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
+    @ManyToOne
+    private Users user;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<RateDetail> rateDetails;
 
@@ -144,22 +140,6 @@ public class Rate implements Serializable {
         this.encourage = encourage;
     }
 
-    public Integer getUserLike() {
-        return userLike;
-    }
-
-    public void setUserLike(Integer userLike) {
-        this.userLike = userLike;
-    }
-
-    public Integer getUserDislike() {
-        return userDislike;
-    }
-
-    public void setUserDislike(Integer userDislike) {
-        this.userDislike = userDislike;
-    }
-
     public Boolean getAnonymous() {
         return anonymous;
     }
@@ -169,15 +149,33 @@ public class Rate implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Report> getReportCollection() {
-        return reportCollection;
+    @JsonIgnore
+    public Collection<Report> getReports() {
+        return reports;
     }
 
-    public void setReportCollection(Collection<Report> reportCollection) {
-        this.reportCollection = reportCollection;
+    public void setReports(Collection<Report> reports) {
+        this.reports = reports;
+    }
+
+    public School getSchool() {
+        return school;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+    public Users getUser() {
+        return user;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
     }
 
     @XmlTransient
+    @JsonIgnore
     public Collection<RateDetail> getRateDetails() {
         return rateDetails;
     }
@@ -209,61 +207,6 @@ public class Rate implements Serializable {
     @Override
     public String toString() {
         return "model.Rate[ rateId=" + rateId + " ]";
-    }
-    //===============
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
-    @ManyToOne
-    private School school;
-
-    @Column(name = "SchoolId", insertable = false, updatable = false)
-    private Integer schoolId;
-
-    public School getSchool() {
-
-        return school;
-    }
-
-    public void setSchool(School school) {
-        this.school = school;
-
-    }
-
-    public Integer getSchoolId() {
-        return schoolId;
-    }
-
-    public void setSchoolId(Integer schoolId) {
-        this.schoolId = schoolId;
-    }
-    
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
-    @ManyToOne
-    private Users user;
-    @Column(name = "UserId", insertable = false, updatable = false)
-    private String userId;
-
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users userId) {
-        this.user = userId;
-    }
-
-    public String getUserId() {
-        return userId;
-    }
-
-    public void setUserId(String userId) {
-        this.userId = userId;
-    }
-
-    //========
-    public void setUpdateInfo() {
-        if (school == null && user == null) {
-            school = new SchoolFacadeREST().find(schoolId);
-            user = new UsersFacadeREST().find(userId);
-        }
     }
 
 }

@@ -5,25 +5,32 @@
  */
 package controller.servlet;
 
-import dao.SchoolDAO;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
-import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import model.Field;
+import model.Location;
 import model.School;
+import model.SubjectCombination;
+import model.Type;
+import restful.FieldFacadeREST;
+import restful.LocationFacadeREST;
+import restful.SchoolFacadeREST;
+import restful.SubjectCombinationFacadeREST;
+import restful.TypeFacadeREST;
 
 /**
  *
  * @author TNT
  */
-@WebServlet(name = "FilterSchoolServlet", urlPatterns = {"/filter-school"})
-public class FilterSchoolServlet extends HttpServlet {
+@WebServlet(name = "HomePageServlet", urlPatterns = {"/home"})
+public class HomePageServlet extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -37,46 +44,34 @@ public class FilterSchoolServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        String schoolName = request.getParameter("schoolName");
-        if (schoolName != null && schoolName.trim().length() == 0) {
-            schoolName = null;
+
+        if (request.getAttribute("sjCodes") == null) {
+            SubjectCombinationFacadeREST sjRest = new SubjectCombinationFacadeREST();
+            TypeFacadeREST tRest = new TypeFacadeREST();
+            FieldFacadeREST fRest = new FieldFacadeREST();
+            LocationFacadeREST lRest = new LocationFacadeREST();
+
+            List<SubjectCombination> sjList = sjRest.findAll();
+            List<Type> tList = tRest.findAll();
+            List<Field> fList = fRest.findFieldType(3);
+            List<Location> lList = lRest.findAll();
+            
+            request.setAttribute("sjCodes", sjList);
+            request.setAttribute("types", tList);
+            request.setAttribute("fields", fList);
+            request.setAttribute("locations", lList);
+
+        }
+
+        if (request.getAttribute("schools") == null) {
+            SchoolFacadeREST schRest = new SchoolFacadeREST();
+            List<School> schList = schRest.findAll();
+            request.setAttribute("schools",schList);
+
         }
         
-        Integer locationId = null;
-        try {
-            locationId = Integer.parseInt(request.getParameter("location"));
-        } catch (Exception e) {
-        }
+        request.getRequestDispatcher("home.jsp").forward(request, response);
 
-        String subjectCode = request.getParameter("sjCode");
-        if (subjectCode.equals("all")) {
-            subjectCode = null;
-        }
-
-        Float minPoint = null;
-        try {
-            minPoint = Float.parseFloat(request.getParameter("minPoint"));
-        } catch (Exception e) {
-        };
-
-        Integer typeId = null;
-        try {
-            typeId = Integer.parseInt(request.getParameter("typeId"));
-        } catch (Exception e) {
-        };
-
-        String fieldCode = null;
-        fieldCode = request.getParameter("fieldCode");
-        if (fieldCode.equals("all")) {
-            fieldCode = null;
-        }
-
-        EntityManager em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
-        List<School> schList = new SchoolDAO().getSchoolList(schoolName, subjectCode, minPoint, typeId, fieldCode, locationId, em);
-        
-        request.setAttribute("schools", schList);
-
-        request.getRequestDispatcher("home").forward(request, response);
     }
 
     /**

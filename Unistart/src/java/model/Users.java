@@ -6,30 +6,35 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Collection;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
  * @author TNT
  */
 @Entity
-@Table(name = "Users", catalog = "unistart2", schema = "dbo")
+@Table(name = "Users")
+@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u")
     , @NamedQuery(name = "Users.findByUserId", query = "SELECT u FROM Users u WHERE u.userId = :userId")
     , @NamedQuery(name = "Users.findByEmail", query = "SELECT u FROM Users u WHERE u.email = :email")
     , @NamedQuery(name = "Users.findByName", query = "SELECT u FROM Users u WHERE u.name = :name")
     , @NamedQuery(name = "Users.findByAvatar", query = "SELECT u FROM Users u WHERE u.avatar = :avatar")})
-@XmlRootElement
 public class Users implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -37,18 +42,22 @@ public class Users implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 50)
-    @Column(name = "UserId", nullable = false, length = 50)
+    @Column(name = "UserId")
     private String userId;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
     @Size(max = 200)
-    @Column(name = "Email", length = 200)
+    @Column(name = "Email")
     private String email;
     @Size(max = 200)
-    @Column(name = "Name", length = 200)
+    @Column(name = "Name")
     private String name;
     @Size(max = 500)
-    @Column(name = "Avatar", length = 500)
+    @Column(name = "Avatar")
     private String avatar;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private Collection<Report> reports;
+    @OneToMany(mappedBy = "user")
+    private Collection<Rate> rates;
 
     public Users() {
     }
@@ -87,6 +96,26 @@ public class Users implements Serializable {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Report> getReports() {
+        return reports;
+    }
+
+    public void setReports(Collection<Report> reports) {
+        this.reports = reports;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Rate> getRates() {
+        return rates;
+    }
+
+    public void setRates(Collection<Rate> rates) {
+        this.rates = rates;
     }
 
     @Override

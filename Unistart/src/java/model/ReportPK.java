@@ -10,6 +10,7 @@ import javax.persistence.Basic;
 import javax.persistence.Column;
 import javax.persistence.Embeddable;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 /**
  *
@@ -24,13 +25,14 @@ public class ReportPK implements Serializable {
     private int rateId;
     @Basic(optional = false)
     @NotNull
+    @Size(min = 1, max = 50)
     @Column(name = "UserId")
-    private int userId;
+    private String userId;
 
     public ReportPK() {
     }
 
-    public ReportPK(int rateId, int userId) {
+    public ReportPK(int rateId, String userId) {
         this.rateId = rateId;
         this.userId = userId;
     }
@@ -43,11 +45,11 @@ public class ReportPK implements Serializable {
         this.rateId = rateId;
     }
 
-    public int getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(int userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -55,7 +57,7 @@ public class ReportPK implements Serializable {
     public int hashCode() {
         int hash = 0;
         hash += (int) rateId;
-        hash += (int) userId;
+        hash += (userId != null ? userId.hashCode() : 0);
         return hash;
     }
 
@@ -69,7 +71,7 @@ public class ReportPK implements Serializable {
         if (this.rateId != other.rateId) {
             return false;
         }
-        if (this.userId != other.userId) {
+        if ((this.userId == null && other.userId != null) || (this.userId != null && !this.userId.equals(other.userId))) {
             return false;
         }
         return true;

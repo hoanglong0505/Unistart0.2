@@ -7,6 +7,7 @@ package restful;
 
 import dao.SchoolDAO;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -26,7 +27,7 @@ import model.School;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.school")
 public class SchoolFacadeREST extends AbstractFacade<School> {
 
@@ -42,14 +43,18 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(School entity) {
+        em.getTransaction().begin();
         super.create(entity);
+        em.getTransaction().commit();
     }
 
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void edit(@PathParam("id") Integer id, School entity) {
+        em.getTransaction().begin();
         super.edit(entity);
+        em.getTransaction().commit();
     }
 
     @DELETE
@@ -72,68 +77,6 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         return super.findAll();
     }
 
-    // Get School by TypeId
-    @GET
-    @Path("schoolType.{typeId}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchoolByTypeId(@PathParam("typeId") Integer id) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolByTypeId(id);
-        return list;
-    }
-
-    // Get School by MinPoint
-    @GET
-    @Path("schoolPoint.{minPoint}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchoolByMinPoint(@PathParam("minPoint") Float point) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolByMinPoint(point);
-        return list;
-    }
-
-    // Get School by FieldCode
-    @GET
-    @Path("schoolFcode.{fieldCode}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchoolByFieldCode(@PathParam("fieldCode") String code) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolByFieldCode(code);
-        return list;
-    }
-
-    // Get School by SjCombiCode
-    @GET
-    @Path("schoolSjcode.{code}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchoolBySjCombiCode(@PathParam("code") String code) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolBySjCombiCode(code);
-        return list;
-    }
-
-    // Get School by Location
-    @GET
-    @Path("schoolLocation.{code}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchoolByLocation(@PathParam("code") int code) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolByLocation(code);
-        return list;
-    }
-
-    // Get School 
-    @GET
-    @Path("filter-school")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<School> findSchool(@QueryParam(value = "sjCode") String sjCode, @QueryParam("minPoint") Float minPoint,
-            @QueryParam("typeId") Integer typeId, @QueryParam("fieldCode") String fieldCode, @QueryParam("location") Integer location) {
-        SchoolDAO dao = new SchoolDAO();
-        List<School> list = dao.getSchoolList(sjCode, minPoint, typeId, fieldCode, location);
-        return list;
-    }
-
-    ///
     @GET
     @Path("{from}/{to}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
@@ -146,6 +89,23 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Produces(MediaType.TEXT_PLAIN)
     public String countREST() {
         return String.valueOf(super.count());
+    }
+
+    //custom
+    // Get School 
+    @GET
+    @Path("filter-school")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<School> findSchool(
+            @QueryParam(value = "schoolName") String schoolName, 
+            @QueryParam(value = "sjCode") String sjCode, 
+            @QueryParam("minPoint") Float minPoint,
+            @QueryParam("typeId") Integer typeId, 
+            @QueryParam("fieldCode") String fieldCode, 
+            @QueryParam("location") Integer location) {
+        SchoolDAO dao = new SchoolDAO();
+        List<School> list = dao.getSchoolList(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
+        return list;
     }
 
     @Override

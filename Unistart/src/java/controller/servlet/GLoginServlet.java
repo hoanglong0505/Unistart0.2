@@ -14,6 +14,7 @@ import java.security.GeneralSecurityException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -25,7 +26,8 @@ import restful.UsersFacadeREST;
  *
  * @author TNT
  */
-public class LoginServlet extends HttpServlet {
+@WebServlet(name = "GLoginServlet", urlPatterns = {"/login"})
+public class GLoginServlet extends HttpServlet {
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -57,9 +59,10 @@ public class LoginServlet extends HttpServlet {
             BufferedReader inp = request.getReader();
             String idToken = inp.readLine();
 
-            GoogleIdToken.Payload payload = GoogleVerifier.verify(idToken);
-            String userId = payload.getSubject();
-            if (payload != null) {
+            if (idToken != null) {
+                GoogleIdToken.Payload payload = GoogleVerifier.verify(idToken);
+                String userId = payload.getSubject();
+
                 UsersFacadeREST uRest = new UsersFacadeREST();
                 Users u = uRest.find(userId);
                 if (u == null) {
@@ -80,10 +83,13 @@ public class LoginServlet extends HttpServlet {
                     response.getWriter().print(nextPage);
                     session.removeAttribute("nextPage");
                 }
+                return;
             }
         } catch (GeneralSecurityException ex) {
-            Logger.getLogger(LoginServlet.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(GLoginServlet.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+        request.getRequestDispatcher("login.jsp").forward(request, response);
     }
 
     /**

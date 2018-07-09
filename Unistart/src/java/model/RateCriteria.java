@@ -20,6 +20,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -47,7 +48,9 @@ public class RateCriteria implements Serializable {
     @Column(name = "Status")
     private Boolean status;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rateCriteria")
-    private Collection<RateDetail> rateDetailCollection;
+    private Collection<RateDetail> rateDetails;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "rateCriteria")
+    private Collection<AverageRate> averageRates;
 
     public RateCriteria() {
     }
@@ -81,12 +84,23 @@ public class RateCriteria implements Serializable {
     }
 
     @XmlTransient
-    public Collection<RateDetail> getRateDetailCollection() {
-        return rateDetailCollection;
+    @JsonIgnore
+    public Collection<RateDetail> getRateDetails() {
+        return rateDetails;
     }
 
-    public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
-        this.rateDetailCollection = rateDetailCollection;
+    public void setRateDetails(Collection<RateDetail> rateDetails) {
+        this.rateDetails = rateDetails;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<AverageRate> getAverageRates() {
+        return averageRates;
+    }
+
+    public void setAverageRates(Collection<AverageRate> averageRates) {
+        this.averageRates = averageRates;
     }
 
     @Override

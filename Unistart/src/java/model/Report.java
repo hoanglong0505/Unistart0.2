@@ -61,7 +61,7 @@ public class Report implements Serializable {
         this.rpContent = rpContent;
     }
 
-    public Report(int rateId, int userId) {
+    public Report(int rateId, String userId) {
         this.reportPK = new ReportPK(rateId, userId);
     }
 

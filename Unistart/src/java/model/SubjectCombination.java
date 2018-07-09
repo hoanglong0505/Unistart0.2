@@ -19,6 +19,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -45,8 +46,8 @@ public class SubjectCombination implements Serializable {
     @Size(min = 1, max = 500)
     @Column(name = "SjCombiName")
     private String sjCombiName;
-    @ManyToMany(mappedBy = "subjectCombinationCollection")
-    private Collection<EntranceInfo> entranceInfoCollection;
+    @ManyToMany(mappedBy = "subjectCombinations")
+    private Collection<EntranceInfo> entranceInfos;
 
     public SubjectCombination() {
     }
@@ -77,12 +78,13 @@ public class SubjectCombination implements Serializable {
     }
 
     @XmlTransient
-    public Collection<EntranceInfo> getEntranceInfoCollection() {
-        return entranceInfoCollection;
+    @JsonIgnore
+    public Collection<EntranceInfo> getEntranceInfos() {
+        return entranceInfos;
     }
 
-    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
-        this.entranceInfoCollection = entranceInfoCollection;
+    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
+        this.entranceInfos = entranceInfos;
     }
 
     @Override

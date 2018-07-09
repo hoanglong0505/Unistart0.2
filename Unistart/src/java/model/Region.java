@@ -19,6 +19,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -42,8 +43,8 @@ public class Region implements Serializable {
     @Size(max = 50)
     @Column(name = "RegionName")
     private String regionName;
-    @OneToMany(mappedBy = "regionId")
-    private Collection<Location> locationCollection;
+    @OneToMany(mappedBy = "region")
+    private Collection<Location> locations;
 
     public Region() {
     }
@@ -69,12 +70,13 @@ public class Region implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Location> getLocationCollection() {
-        return locationCollection;
+    @JsonIgnore
+    public Collection<Location> getLocations() {
+        return locations;
     }
 
-    public void setLocationCollection(Collection<Location> locationCollection) {
-        this.locationCollection = locationCollection;
+    public void setLocations(Collection<Location> locations) {
+        this.locations = locations;
     }
 
     @Override

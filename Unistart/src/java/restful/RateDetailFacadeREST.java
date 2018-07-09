@@ -6,6 +6,7 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
@@ -26,7 +27,7 @@ import model.RateDetailPK;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.ratedetail")
 public class RateDetailFacadeREST extends AbstractFacade<RateDetail> {
 

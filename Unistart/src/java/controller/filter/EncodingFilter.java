@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.io.StringWriter;
-import java.util.Enumeration;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
@@ -17,59 +16,30 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 /**
  *
  * @author TNT
  */
-@WebFilter(filterName = "AuthenFilter", urlPatterns = {"/secured/*"})
-public class AuthenFilter implements Filter {
-
+@WebFilter(filterName = "EncodingFilter", urlPatterns = {"/*"})
+public class EncodingFilter implements Filter {
+    
     private static final boolean debug = true;
 
     // The filter configuration object we are associated with.  If
     // this value is null, this filter instance is not currently
     // configured. 
     private FilterConfig filterConfig = null;
-    private HttpServletRequest req;
-    private HttpServletResponse res;
-
-    public AuthenFilter() {
-    }
-
+    
+    public EncodingFilter() {
+    }    
+    
     private void doBeforeProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
-        req = (HttpServletRequest) request;
-        res = (HttpServletResponse) response;
-        HttpSession session = req.getSession(true);
-        if (session.getAttribute("user") == null) {
-            StringBuilder nextPage = new StringBuilder(req.getRequestURI());
-            if (!nextPage.toString().matches("^.*/login.*$")) {
-                nextPage = new StringBuilder(req.getRequestURI());
-
-                Enumeration<String> paraNames = req.getParameterNames();
-                if (paraNames.hasMoreElements()) {
-                    nextPage.append('?');
-                }
-                while (paraNames.hasMoreElements()) {
-                    String name = paraNames.nextElement();
-                    String value = req.getParameter(name);
-                    nextPage.append(name + "=" + value + "&");
-                }
-                nextPage.deleteCharAt(nextPage.length() - 1);
-
-                session.setAttribute("nextPage", nextPage.toString());
-            }
-            res.sendRedirect("/Unistart/login");
-        }
-    }
-
+    }    
+    
     private void doAfterProcessing(ServletRequest request, ServletResponse response)
             throws IOException, ServletException {
-
     }
 
     /**
@@ -84,15 +54,15 @@ public class AuthenFilter implements Filter {
     public void doFilter(ServletRequest request, ServletResponse response,
             FilterChain chain)
             throws IOException, ServletException {
-
+        
         doBeforeProcessing(request, response);
-
-        if (!res.isCommitted()) {
-            chain.doFilter(request, response);
-
-            doAfterProcessing(request, response);
-        }
-
+        
+        request.setCharacterEncoding("utf-8");
+        response.setCharacterEncoding("utf-8");
+        
+        chain.doFilter(request, response);
+        
+        doAfterProcessing(request, response);
     }
 
     /**
@@ -114,17 +84,17 @@ public class AuthenFilter implements Filter {
     /**
      * Destroy method for this filter
      */
-    public void destroy() {
+    public void destroy() {        
     }
 
     /**
      * Init method for this filter
      */
-    public void init(FilterConfig filterConfig) {
+    public void init(FilterConfig filterConfig) {        
         this.filterConfig = filterConfig;
         if (filterConfig != null) {
-            if (debug) {
-                log("AuthenFilter:Initializing filter");
+            if (debug) {                
+                log("EncodingFilter:Initializing filter");
             }
         }
     }
@@ -135,27 +105,27 @@ public class AuthenFilter implements Filter {
     @Override
     public String toString() {
         if (filterConfig == null) {
-            return ("AuthenFilter()");
+            return ("EncodingFilter()");
         }
-        StringBuffer sb = new StringBuffer("AuthenFilter(");
+        StringBuffer sb = new StringBuffer("EncodingFilter(");
         sb.append(filterConfig);
         sb.append(")");
         return (sb.toString());
     }
-
+    
     private void sendProcessingError(Throwable t, ServletResponse response) {
-        String stackTrace = getStackTrace(t);
-
+        String stackTrace = getStackTrace(t);        
+        
         if (stackTrace != null && !stackTrace.equals("")) {
             try {
                 response.setContentType("text/html");
                 PrintStream ps = new PrintStream(response.getOutputStream());
-                PrintWriter pw = new PrintWriter(ps);
+                PrintWriter pw = new PrintWriter(ps);                
                 pw.print("<html>\n<head>\n<title>Error</title>\n</head>\n<body>\n"); //NOI18N
 
                 // PENDING! Localize this for next official release
-                pw.print("<h1>The resource did not process correctly</h1>\n<pre>\n");
-                pw.print(stackTrace);
+                pw.print("<h1>The resource did not process correctly</h1>\n<pre>\n");                
+                pw.print(stackTrace);                
                 pw.print("</pre></body>\n</html>"); //NOI18N
                 pw.close();
                 ps.close();
@@ -172,7 +142,7 @@ public class AuthenFilter implements Filter {
             }
         }
     }
-
+    
     public static String getStackTrace(Throwable t) {
         String stackTrace = null;
         try {
@@ -186,9 +156,9 @@ public class AuthenFilter implements Filter {
         }
         return stackTrace;
     }
-
+    
     public void log(String msg) {
-        filterConfig.getServletContext().log(msg);
+        filterConfig.getServletContext().log(msg);        
     }
-
+    
 }

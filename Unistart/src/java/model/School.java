@@ -22,6 +22,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -72,16 +73,18 @@ public class School implements Serializable {
     @Column(name = "Avatar")
     private String avatar;
     @OneToMany(mappedBy = "school")
-    private Collection<Rate> rateCollection;
-    @OneToMany(mappedBy = "schoolId")
-    private Collection<Article> articleCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
-    private Collection<EntranceInfo> entranceInfoCollection;
+    private Collection<Rate> rates;
+    @OneToMany(mappedBy = "school")
+    private Collection<Article> articles;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
+    private Collection<EntranceInfo> entranceInfos;
     @JoinColumn(name = "TypeId", referencedColumnName = "TypeId")
     @ManyToOne
-    private Type typeId;
+    private Type type;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
-    private Collection<Branch> branchCollection;
+    private Collection<Branch> branchs;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
+    private Collection<AverageRate> averageRates;
 
     public School() {
     }
@@ -153,47 +156,61 @@ public class School implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Rate> getRateCollection() {
-        return rateCollection;
+    @JsonIgnore
+    public Collection<Rate> getRates() {
+        return rates;
     }
 
-    public void setRateCollection(Collection<Rate> rateCollection) {
-        this.rateCollection = rateCollection;
-    }
-
-    @XmlTransient
-    public Collection<Article> getArticleCollection() {
-        return articleCollection;
-    }
-
-    public void setArticleCollection(Collection<Article> articleCollection) {
-        this.articleCollection = articleCollection;
+    public void setRates(Collection<Rate> rates) {
+        this.rates = rates;
     }
 
     @XmlTransient
-    public Collection<EntranceInfo> getEntranceInfoCollection() {
-        return entranceInfoCollection;
+    @JsonIgnore
+    public Collection<Article> getArticles() {
+        return articles;
     }
 
-    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
-        this.entranceInfoCollection = entranceInfoCollection;
-    }
-
-    public Type getTypeId() {
-        return typeId;
-    }
-
-    public void setTypeId(Type typeId) {
-        this.typeId = typeId;
+    public void setArticles(Collection<Article> articles) {
+        this.articles = articles;
     }
 
     @XmlTransient
-    public Collection<Branch> getBranchCollection() {
-        return branchCollection;
+    @JsonIgnore
+    public Collection<EntranceInfo> getEntranceInfos() {
+        return entranceInfos;
     }
 
-    public void setBranchCollection(Collection<Branch> branchCollection) {
-        this.branchCollection = branchCollection;
+    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
+        this.entranceInfos = entranceInfos;
+    }
+
+    public Type getType() {
+        return type;
+    }
+
+    public void setType(Type type) {
+        this.type = type;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<Branch> getBranchs() {
+        return branchs;
+    }
+
+    public void setBranchs(Collection<Branch> branchs) {
+        this.branchs = branchs;
+    }
+
+    @XmlTransient
+    @JsonIgnore
+    public Collection<AverageRate> getAverageRates() {
+        return averageRates;
+    }
+
+    public void setAverageRates(Collection<AverageRate> averageRates) {
+        this.averageRates = averageRates;
     }
 
     @Override
