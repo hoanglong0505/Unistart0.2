@@ -21,7 +21,7 @@ export class HeaderComponent implements OnInit {
   private stompClient;
   constructor(private router: Router, private uniService: UniversityService,
               private loginService: LoginService,
-              private auth: AuthService,private cdRef:ChangeDetectorRef) {
+              private auth: AuthService, private cdRef:ChangeDetectorRef) {
     router.events.subscribe((data:any) => { this.url = data.url; });
   }
 
@@ -39,7 +39,7 @@ export class HeaderComponent implements OnInit {
     if(this.user){
       this.uniService.getQuestionByUser(this.user.id).subscribe(res=>{
         if(res){
-          for(let i = 0; i<res.length; i++){
+          for(let i = 0; i < res.length; i++){
             this.count = this.count + res[i].count;
           }
         }
@@ -55,10 +55,10 @@ export class HeaderComponent implements OnInit {
       if(that.user){
         that.stompClient.subscribe("/notify/" + that.user.id, (message) => {
           if(message.body) {
-            var answer = JSON.parse(message.body);
-            var str = '/question-detail/' + answer.parentId;
+            const answer = JSON.parse(message.body);
+            const str = '/question-detail/' + answer.parentId;
             console.log(str);
-            if(that.url != str){
+            if (that.url !== str){
               that.count = that.count + 1;
               that.cdRef.detectChanges();
             }
@@ -77,13 +77,13 @@ export class HeaderComponent implements OnInit {
   }
 
   public getCount(): void {
-    this.uniService.title.subscribe(value=>{
+    this.uniService.title.subscribe(value => {
       this.count = value;
       this.cdRef.markForCheck();
-    })
+    });
   }
   public logout(value) {
-    if(value){
+    if (value){
       this.auth.logout().subscribe(
         (data) => {
           this.user = null;

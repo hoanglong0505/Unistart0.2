@@ -7,11 +7,11 @@ import { HttpModule } from '@angular/http';
 import {appRoutes} from './app.routes';
 import {MatRadioModule} from '@angular/material';
 import {NgxPaginationModule} from 'ngx-pagination';
-import {ToastModule} from "ng2-toastr/ng2-toastr";
-import {Select2Module} from "ng2-select2";
-import {RatingModule} from "ngx-bootstrap";
+import {ToastModule} from 'ng2-toastr/ng2-toastr';
+import {Select2Module} from 'ng2-select2';
+import {RatingModule} from 'ngx-bootstrap';
 import {NgbModule, NgbRatingConfig} from '@ng-bootstrap/ng-bootstrap';
-import {MatTooltipModule} from '@angular/material'
+import {MatTooltipModule} from '@angular/material';
 
 // Component
 import { AppComponent } from './app.component';
@@ -36,26 +36,26 @@ import { ViewMajorUnversityComponent } from './component/search/view-major-unver
 // Service
 import {LoginService} from './service/login/login.service';
 import {BaseService} from './service/base-service/base.service';
-import {SearchService} from "./service/base-service/search.service";
-import {MbtiService} from "./service/mbti/mbti.service";
-import {ReviewService} from "./service/review/review.service";
-import {UniversityService} from "./service/university/university.service";
+import {SearchService} from './service/base-service/search.service';
+import {MbtiService} from './service/mbti/mbti.service';
+import {ReviewService} from './service/review/review.service';
+import {UniversityService} from './service/university/university.service';
 
 // Guard
 import {CheckLoginGuard} from './guard/check-login/check-login.guard';
-import {CheckAdminGuard, CheckRoleGuard} from "./guard/check-role/check-role.guard";
+import {CheckAdminGuard, CheckRoleGuard} from './guard/check-role/check-role.guard';
 
 import { EqualValidatorDirective } from './directive/equal-validatior/equal-validator.directive';
-import {Constants} from "./constants";
+import {Constants} from './constants';
 import {OrderByPipe, GroupByPipe, SafeHtmlPipe} from './pipes/order-by.pipe';
 import { EditMajorComponent } from './component/admin/edit-major/edit-major.component';
-import {DecimalPipe} from "@angular/common";
+import {DecimalPipe} from '@angular/common';
 import { MajorDetailComponent } from './component/major-detail/major-detail.component';
 import { QuestionComponent } from './component/question-anwser/question/question.component';
 import { QuestionDetailComponent } from './component/question-anwser/question-detail/question-detail.component';
 import { NewQuestionComponent } from './component/question-anwser/new-question/new-question.component';
 import { YourQuestionComponent } from './component/question-anwser/your-question/your-question.component';
-//import { StompService } from 'ng2-stomp-service';
+// import { StompService } from 'ng2-stomp-service';
 import { AddArticleComponent } from './component/admin/add-article/add-article.component';
 import { ListArticleComponent } from './component/admin/list-article/list-article.component';
 import { ArticleComponent } from './component/article/article.component';
@@ -98,7 +98,7 @@ const providers = {
     EditUniversityComponent,
     ViewMajorUnversityComponent,
     ApproveReivewComponent,
-    OrderByPipe,GroupByPipe,SafeHtmlPipe,
+    OrderByPipe, GroupByPipe, SafeHtmlPipe,
     EditMajorComponent,
     MajorDetailComponent,
     QuestionComponent,
@@ -135,8 +135,8 @@ const providers = {
     TagInputModule,
   ],
   providers: [LoginService, BaseService, CheckLoginGuard,
-    CheckRoleGuard, SearchService,Constants, CheckAdminGuard,
-    UniversityService, MbtiService, ReviewService,NgbRatingConfig,DecimalPipe],
+    CheckRoleGuard, SearchService, Constants, CheckAdminGuard,
+    UniversityService, MbtiService, ReviewService, NgbRatingConfig, DecimalPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

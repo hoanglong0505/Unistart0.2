@@ -3,39 +3,39 @@ import {ReviewRatingComponent} from './component/review-rating/review-rating.com
 import {CompanyDetailComponent} from './component/university-detail/company-detail.component';
 import {CheckLoginGuard} from './guard/check-login/check-login.guard';
 import { MbtiTestComponent } from './component/mbti-test/mbti-test.component';
-import {HomeComponent} from "./component/home/home.component";
-import {SearchComponent} from "./component/search/search.component";
-import {UserDetailComponent} from './component/user-detail/user-detail.component'
-import {HeaderComponent} from "./component/header/header.component";
-import {AdminComponent} from "./component/admin/admin.component";
-import {ListuniversityComponent} from "./component/admin/listuniversity/listuniversity.component";
-import {AdduniversityComponent} from "./component/admin/adduniversity/adduniversity.component";
-import {NewReviewComponent} from "./component/new-review/new-review.component";
-import {EditUniversityComponent} from "./component/admin/edit-university/edit-university.component";
-import {ViewMajorUnversityComponent} from "./component/search/view-major-unversity/view-major-university.component";
-import {EditScoreComponent} from "./component/admin/edit-major-detail/edit-score.component";
-import {CheckAdminGuard, CheckRoleGuard} from "./guard/check-role/check-role.guard";
-import {ApproveReivewComponent} from "./component/admin/approve-reivew/approve-reivew.component";
-import {EditMajorComponent} from "./component/admin/edit-major/edit-major.component";
-import {MajorDetailComponent} from "./component/major-detail/major-detail.component";
-import {QuestionComponent} from "./component/question-anwser/question/question.component";
-import {QuestionDetailComponent} from "./component/question-anwser/question-detail/question-detail.component";
-import {NewQuestionComponent} from "./component/question-anwser/new-question/new-question.component";
-import {YourQuestionComponent} from "./component/question-anwser/your-question/your-question.component";
-import {AddArticleComponent} from "./component/admin/add-article/add-article.component";
-import {ListArticleComponent} from "./component/admin/list-article/list-article.component";
-import {ArticleComponent} from "./component/article/article.component";
-import {EditArticleComponent} from "./component/admin/edit-article/edit-article.component";
-import {ArticleDetailComponent} from "./component/article-detail/article-detail.component";
-import {EditQuestionComponent} from "./component/question-anwser/edit-question/edit-question.component";
-import {UserFavoriteComponent} from "./component/user-favorite/user-favorite.component";
-import {ApproveQuestionComponent} from "./component/admin/approve-question/approve-question.component";
-import {ListReportComponent} from "./component/admin/list-report/list-report.component";
-import {UniArticleComponent} from "./component/uni-article/uni-article.component";
+import {HomeComponent} from './component/home/home.component';
+import {SearchComponent} from './component/search/search.component';
+import {UserDetailComponent} from './component/user-detail/user-detail.component';
+import {HeaderComponent} from './component/header/header.component';
+import {AdminComponent} from './component/admin/admin.component';
+import {ListuniversityComponent} from './component/admin/listuniversity/listuniversity.component';
+import {AdduniversityComponent} from './component/admin/adduniversity/adduniversity.component';
+import {NewReviewComponent} from './component/new-review/new-review.component';
+import {EditUniversityComponent} from './component/admin/edit-university/edit-university.component';
+import {ViewMajorUnversityComponent} from './component/search/view-major-unversity/view-major-university.component';
+import {EditScoreComponent} from './component/admin/edit-major-detail/edit-score.component';
+import {CheckAdminGuard, CheckRoleGuard} from './guard/check-role/check-role.guard';
+import {ApproveReivewComponent} from './component/admin/approve-reivew/approve-reivew.component';
+import {EditMajorComponent} from './component/admin/edit-major/edit-major.component';
+import {MajorDetailComponent} from './component/major-detail/major-detail.component';
+import {QuestionComponent} from './component/question-anwser/question/question.component';
+import {QuestionDetailComponent} from './component/question-anwser/question-detail/question-detail.component';
+import {NewQuestionComponent} from './component/question-anwser/new-question/new-question.component';
+import {YourQuestionComponent} from './component/question-anwser/your-question/your-question.component';
+import {AddArticleComponent} from './component/admin/add-article/add-article.component';
+import {ListArticleComponent} from './component/admin/list-article/list-article.component';
+import {ArticleComponent} from './component/article/article.component';
+import {EditArticleComponent} from './component/admin/edit-article/edit-article.component';
+import {ArticleDetailComponent} from './component/article-detail/article-detail.component';
+import {EditQuestionComponent} from './component/question-anwser/edit-question/edit-question.component';
+import {UserFavoriteComponent} from './component/user-favorite/user-favorite.component';
+import {ApproveQuestionComponent} from './component/admin/approve-question/approve-question.component';
+import {ListReportComponent} from './component/admin/list-report/list-report.component';
+import {UniArticleComponent} from './component/uni-article/uni-article.component';
 
 const routing: Routes = [
   {path: '', component: HeaderComponent,
-    children:[
+    children: [
       {path: 'home', component: HomeComponent},
       {path: 'university/:id', component: CompanyDetailComponent},
       {path: 'new-review', component: NewReviewComponent},
@@ -44,7 +44,7 @@ const routing: Routes = [
       {path: 'review-rating/:id', component: ReviewRatingComponent},
       {path: 'new-review/:id', component: NewReviewComponent, canActivate: [CheckLoginGuard, CheckRoleGuard]},
       {path: 'major-detail/:id', component: MajorDetailComponent},
-      {path: 'mbti-test', component: MbtiTestComponent,canActivate: [CheckLoginGuard, CheckRoleGuard]},
+      {path: 'mbti-test', component: MbtiTestComponent, canActivate: [CheckLoginGuard, CheckRoleGuard]},
       {path: 'profile', component: UserDetailComponent, canActivate: [CheckLoginGuard]},
       {path: 'question', component: QuestionComponent},
       {path: 'favorite', component: UserFavoriteComponent},
@@ -57,7 +57,7 @@ const routing: Routes = [
       {path: 'uni-article/:id', component: UniArticleComponent},
 
     ]},
-  {path: 'admin', component: AdminComponent,canActivate: [CheckLoginGuard, CheckAdminGuard],
+  {path: 'admin', component: AdminComponent, canActivate: [CheckLoginGuard, CheckAdminGuard],
     children: [
       {path: 'list-university', component: ListuniversityComponent},
       {path: 'add-university', component: AdduniversityComponent},
