@@ -4,10 +4,9 @@
 }
 .item-card {
     text-align: center;
-    max-width: 20%;
-    margin: 20px;
-    display: inline-block;
-  }
+    max-width: 100%;
+    margin: 20px;}
+
   .card{
       height: 300px;
       padding: 10px;

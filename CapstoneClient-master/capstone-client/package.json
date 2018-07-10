@@ -23,7 +23,7 @@
     "@angular/platform-browser": "^4.2.4",
     "@angular/platform-browser-dynamic": "^4.2.4",
     "@angular/router": "^4.2.4",
-    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.4",
+    "@ng-bootstrap/ng-bootstrap": "^1.1.2",
     "angular2-notifications": "^0.7.7",
     "angular2-social-login": "^3.0.1",
     "bootstrap-imageupload": "^1.1.3",

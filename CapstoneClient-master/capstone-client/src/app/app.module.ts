@@ -131,7 +131,6 @@ const providers = {
     RatingModule,
     ToastModule.forRoot(),
     NgbModule,
-    MatTooltipModule,
     TagInputModule,
   ],
   providers: [LoginService, BaseService, CheckLoginGuard,

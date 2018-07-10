@@ -29,12 +29,12 @@ export class AppComponent implements OnInit, OnDestroy {
     this.toastr.setRootViewContainerRef(vcr);
   }
   ngOnInit() {
-      this.user = JSON.parse(localStorage.getItem('currentUser'));
-      if(this.user){
-        this.loginService.setRole(this.user.role.id);
-        this.baseService.setUser(this.user,this.user.providerName);
-        this.loginService.setLogin(true);
-      }
+      // this.user = JSON.parse(localStorage.getItem('currentUser'));
+      // if(this.user){
+      //   this.loginService.setRole(this.user.role.id);
+      //   this.baseService.setUser(this.user,this.user.providerName);
+      //   this.loginService.setLogin(true);
+      // }
   }
   public login(provider) {
     this.sub = this.auth.login(provider).subscribe(
