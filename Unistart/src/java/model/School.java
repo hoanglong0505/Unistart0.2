@@ -72,16 +72,18 @@ public class School implements Serializable {
     @Column(name = "Avatar")
     private String avatar;
     @OneToMany(mappedBy = "schoolId")
-    private Collection<Rate> rateCollection;
+    private Collection<Rate> rates;
     @OneToMany(mappedBy = "schoolId")
     private Collection<Article> articleCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
-    private Collection<EntranceInfo> entranceInfoCollection;
+    private Collection<EntranceInfo> entranceInfos;
     @JoinColumn(name = "TypeId", referencedColumnName = "TypeId")
     @ManyToOne
-    private Type typeId;
+    private Type type;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
+    private Collection<Branch> branchs;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
-    private Collection<Branch> branchCollection;
+    private Collection<AverageRate> averageRateCollection;
 
     public School() {
     }
@@ -153,12 +155,12 @@ public class School implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Rate> getRateCollection() {
-        return rateCollection;
+    public Collection<Rate> getRates() {
+        return rates;
     }
 
-    public void setRateCollection(Collection<Rate> rateCollection) {
-        this.rateCollection = rateCollection;
+    public void setRates(Collection<Rate> rates) {
+        this.rates = rates;
     }
 
     @XmlTransient
@@ -171,29 +173,38 @@ public class School implements Serializable {
     }
 
     @XmlTransient
-    public Collection<EntranceInfo> getEntranceInfoCollection() {
-        return entranceInfoCollection;
+    public Collection<EntranceInfo> getEntranceInfos() {
+        return entranceInfos;
     }
 
-    public void setEntranceInfoCollection(Collection<EntranceInfo> entranceInfoCollection) {
-        this.entranceInfoCollection = entranceInfoCollection;
+    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
+        this.entranceInfos = entranceInfos;
     }
 
-    public Type getTypeId() {
-        return typeId;
+    public Type getType() {
+        return type;
     }
 
-    public void setTypeId(Type typeId) {
-        this.typeId = typeId;
+    public void setType(Type type) {
+        this.type = type;
     }
 
     @XmlTransient
-    public Collection<Branch> getBranchCollection() {
-        return branchCollection;
+    public Collection<Branch> getBranchs() {
+        return branchs;
     }
 
-    public void setBranchCollection(Collection<Branch> branchCollection) {
-        this.branchCollection = branchCollection;
+    public void setBranchs(Collection<Branch> branchs) {
+        this.branchs = branchs;
+    }
+
+    @XmlTransient
+    public Collection<AverageRate> getAverageRateCollection() {
+        return averageRateCollection;
+    }
+
+    public void setAverageRateCollection(Collection<AverageRate> averageRateCollection) {
+        this.averageRateCollection = averageRateCollection;
     }
 
     @Override

@@ -6,17 +6,20 @@
 package model;
 
 import java.io.Serializable;
+import java.util.Collection;
 import javax.persistence.Basic;
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -24,6 +27,7 @@ import javax.validation.constraints.Size;
  */
 @Entity
 @Table(name = "Users")
+@XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Users.findAll", query = "SELECT u FROM Users u")
     , @NamedQuery(name = "Users.findByUserId", query = "SELECT u FROM Users u WHERE u.userId = :userId")
@@ -36,32 +40,36 @@ public class Users implements Serializable {
     @Id
     @Basic(optional = false)
     @NotNull
-    @Column(name = "UserId", nullable = false)
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer userId;
+    @Size(min = 1, max = 50)
+    @Column(name = "UserId")
+    private String userId;
     // @Pattern(regexp="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?", message="Invalid email")//if the field contains email address consider using this annotation to enforce field validation
     @Size(max = 200)
-    @Column(name = "Email", length = 200)
+    @Column(name = "Email")
     private String email;
     @Size(max = 200)
-    @Column(name = "Name", length = 200)
+    @Column(name = "Name")
     private String name;
     @Size(max = 500)
-    @Column(name = "Avatar", length = 500)
+    @Column(name = "Avatar")
     private String avatar;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "users")
+    private Collection<Report> reportCollection;
+    @OneToMany(mappedBy = "userId")
+    private Collection<Rate> rateCollection;
 
     public Users() {
     }
 
-    public Users(Integer userId) {
+    public Users(String userId) {
         this.userId = userId;
     }
 
-    public Integer getUserId() {
+    public String getUserId() {
         return userId;
     }
 
-    public void setUserId(Integer userId) {
+    public void setUserId(String userId) {
         this.userId = userId;
     }
 
@@ -89,6 +97,24 @@ public class Users implements Serializable {
         this.avatar = avatar;
     }
 
+    @XmlTransient
+    public Collection<Report> getReportCollection() {
+        return reportCollection;
+    }
+
+    public void setReportCollection(Collection<Report> reportCollection) {
+        this.reportCollection = reportCollection;
+    }
+
+    @XmlTransient
+    public Collection<Rate> getRateCollection() {
+        return rateCollection;
+    }
+
+    public void setRateCollection(Collection<Rate> rateCollection) {
+        this.rateCollection = rateCollection;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -109,11 +135,9 @@ public class Users implements Serializable {
         return true;
     }
 
-
-
     @Override
     public String toString() {
-        return "Users{" + "userId=" + userId + ", email=" + email + ", name=" + name + ", avatar=" + avatar + '}';
+        return "model.Users[ userId=" + userId + " ]";
     }
- 
+    
 }

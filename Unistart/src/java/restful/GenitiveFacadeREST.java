@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -18,35 +18,35 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import model.Genitite;
+import model.Genitive;
 
 /**
  *
  * @author TNT
  */
-@javax.ejb.Stateless
-@Path("model.genitite")
-public class GenititeFacadeREST extends AbstractFacade<Genitite> {
+@Stateless
+@Path("model.genitive")
+public class GenitiveFacadeREST extends AbstractFacade<Genitive> {
 
     @PersistenceContext(unitName = "UnistartPU")
     private EntityManager em;
 
-    public GenititeFacadeREST() {
-        super(Genitite.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+    public GenitiveFacadeREST() {
+        super(Genitive.class);
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void create(Genitite entity) {
+    public void create(Genitive entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Integer id, Genitite entity) {
+    public void edit(@PathParam("id") Integer id, Genitive entity) {
         super.edit(entity);
     }
 
@@ -59,21 +59,21 @@ public class GenititeFacadeREST extends AbstractFacade<Genitite> {
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Genitite find(@PathParam("id") Integer id) {
+    public Genitive find(@PathParam("id") Integer id) {
         return super.find(id);
     }
 
     @GET
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Genitite> findAll() {
+    public List<Genitive> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Genitite> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
+    public List<Genitive> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
 

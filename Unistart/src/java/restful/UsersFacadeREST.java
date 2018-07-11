@@ -5,14 +5,9 @@
  */
 package restful;
 
-import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
-import controller.login.GoogleLogin;
-import java.io.IOException;
-import java.security.GeneralSecurityException;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.FlushModeType;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -29,49 +24,42 @@ import model.Users;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.users")
-public class UserFacadeREST extends AbstractFacade<Users> {
+public class UsersFacadeREST extends AbstractFacade<Users> {
 
     @PersistenceContext(unitName = "UnistartPU")
     private EntityManager em;
 
-    public UserFacadeREST() {
+    public UsersFacadeREST() {
         super(Users.class);
-        em = Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST
     @Override
-    @Path("add-user")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Users entity) {
-<<<<<<< HEAD
-        System.out.println(entity.toString());
-=======
->>>>>>> 41b24756cc7f821ee777a6ef3583b43150fcd482
-        em.getTransaction().begin();
         super.create(entity);
-        em.getTransaction().commit();
     }
 
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Integer id, Users entity) {
+    public void edit(@PathParam("id") String id, Users entity) {
         super.edit(entity);
     }
 
     @DELETE
     @Path("{id}")
-    public void remove(@PathParam("id") Integer id) {
+    public void remove(@PathParam("id") String id) {
         super.remove(super.find(id));
     }
 
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Users find(@PathParam("id") Integer id) {
+    public Users find(@PathParam("id") String id) {
         return super.find(id);
     }
 
@@ -96,27 +84,9 @@ public class UserFacadeREST extends AbstractFacade<Users> {
         return String.valueOf(super.count());
     }
 
-    @POST
-    @Path("get-g-user")
-    @Produces(MediaType.APPLICATION_JSON)
-    public Users getUser(String idToken) throws GeneralSecurityException, IOException {
-        GoogleIdToken.Payload payload = GoogleLogin.verified(idToken);
-        if (payload != null) {
-            Users u = new Users();
-            String name = (String) payload.get("name");
-            String pictureUrl = (String) payload.get("picture");
-            
-            u.setName(name);
-            u.setAvatar(pictureUrl);
-            u.setEmail(payload.getEmail());
-            return u;
-        }
-        return null;
-    }
-
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-
+    
 }

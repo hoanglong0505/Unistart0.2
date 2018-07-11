@@ -31,12 +31,13 @@ public class ApplicationConfig extends Application {
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(restful.AnswerFacadeREST.class);
         resources.add(restful.ArticleFacadeREST.class);
+        resources.add(restful.AverageRateFacadeREST.class);
         resources.add(restful.BranchFacadeREST.class);
         resources.add(restful.CharacterFacadeREST.class);
         resources.add(restful.EntranceInfoFacadeREST.class);
         resources.add(restful.FieldFacadeREST.class);
         resources.add(restful.FieldTypeFacadeREST.class);
-        resources.add(restful.GenititeFacadeREST.class);
+        resources.add(restful.GenitiveFacadeREST.class);
         resources.add(restful.LocationFacadeREST.class);
         resources.add(restful.QuestionFacadeREST.class);
         resources.add(restful.RateCriteriaFacadeREST.class);
@@ -47,8 +48,7 @@ public class ApplicationConfig extends Application {
         resources.add(restful.SchoolFacadeREST.class);
         resources.add(restful.SubjectCombinationFacadeREST.class);
         resources.add(restful.TypeFacadeREST.class);
-        resources.add(restful.UserFacadeREST.class);
-        resources.add(restful.UsersResource.class);
+        resources.add(restful.UsersFacadeREST.class);
     }
     
 }

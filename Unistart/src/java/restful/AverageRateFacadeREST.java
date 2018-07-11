@@ -19,33 +19,33 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.PathSegment;
-import model.RateDetail;
-import model.RateDetailPK;
+import model.AverageRate;
+import model.AverageRatePK;
 
 /**
  *
  * @author TNT
  */
 @Stateless
-@Path("model.ratedetail")
-public class RateDetailFacadeREST extends AbstractFacade<RateDetail> {
+@Path("model.averagerate")
+public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
 
     @PersistenceContext(unitName = "UnistartPU")
     private EntityManager em;
 
-    private RateDetailPK getPrimaryKey(PathSegment pathSegment) {
+    private AverageRatePK getPrimaryKey(PathSegment pathSegment) {
         /*
          * pathSemgent represents a URI path segment and any associated matrix parameters.
-         * URI path part is supposed to be in form of 'somePath;rateId=rateIdValue;criteriaId=criteriaIdValue'.
+         * URI path part is supposed to be in form of 'somePath;schoolId=schoolIdValue;criteriaId=criteriaIdValue'.
          * Here 'somePath' is a result of getPath() method invocation and
          * it is ignored in the following code.
          * Matrix parameters are used as field names to build a primary key instance.
          */
-        model.RateDetailPK key = new model.RateDetailPK();
+        model.AverageRatePK key = new model.AverageRatePK();
         javax.ws.rs.core.MultivaluedMap<String, String> map = pathSegment.getMatrixParameters();
-        java.util.List<String> rateId = map.get("rateId");
-        if (rateId != null && !rateId.isEmpty()) {
-            key.setRateId(new java.lang.Integer(rateId.get(0)));
+        java.util.List<String> schoolId = map.get("schoolId");
+        if (schoolId != null && !schoolId.isEmpty()) {
+            key.setSchoolId(new java.lang.Integer(schoolId.get(0)));
         }
         java.util.List<String> criteriaId = map.get("criteriaId");
         if (criteriaId != null && !criteriaId.isEmpty()) {
@@ -54,51 +54,51 @@ public class RateDetailFacadeREST extends AbstractFacade<RateDetail> {
         return key;
     }
 
-    public RateDetailFacadeREST() {
-        super(RateDetail.class);
+    public AverageRateFacadeREST() {
+        super(AverageRate.class);
         em = PersistenceUtils.getEntityManger();
     }
 
     @POST
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void create(RateDetail entity) {
+    public void create(AverageRate entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") PathSegment id, RateDetail entity) {
+    public void edit(@PathParam("id") PathSegment id, AverageRate entity) {
         super.edit(entity);
     }
 
     @DELETE
     @Path("{id}")
     public void remove(@PathParam("id") PathSegment id) {
-        model.RateDetailPK key = getPrimaryKey(id);
+        model.AverageRatePK key = getPrimaryKey(id);
         super.remove(super.find(key));
     }
 
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public RateDetail find(@PathParam("id") PathSegment id) {
-        model.RateDetailPK key = getPrimaryKey(id);
+    public AverageRate find(@PathParam("id") PathSegment id) {
+        model.AverageRatePK key = getPrimaryKey(id);
         return super.find(key);
     }
 
     @GET
     @Override
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<RateDetail> findAll() {
+    public List<AverageRate> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<RateDetail> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
+    public List<AverageRate> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
 

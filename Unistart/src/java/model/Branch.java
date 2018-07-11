@@ -8,8 +8,8 @@ package model;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
-import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
+import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
@@ -28,8 +28,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Branch.findAll", query = "SELECT b FROM Branch b")
-    , @NamedQuery(name = "Branch.findBySchoolId", query = "SELECT b FROM Branch b WHERE b.branchPK.schoolId = :schoolId")
-    , @NamedQuery(name = "Branch.findByBranchNo", query = "SELECT b FROM Branch b WHERE b.branchPK.branchNo = :branchNo")
+    , @NamedQuery(name = "Branch.findByBranchId", query = "SELECT b FROM Branch b WHERE b.branchId = :branchId")
     , @NamedQuery(name = "Branch.findByBranchName", query = "SELECT b FROM Branch b WHERE b.branchName = :branchName")
     , @NamedQuery(name = "Branch.findByAddress", query = "SELECT b FROM Branch b WHERE b.address = :address")
     , @NamedQuery(name = "Branch.findByPhone", query = "SELECT b FROM Branch b WHERE b.phone = :phone")
@@ -37,8 +36,11 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Branch implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @EmbeddedId
-    protected BranchPK branchPK;
+    @Id
+    @Basic(optional = false)
+    @NotNull
+    @Column(name = "BranchId")
+    private Integer branchId;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 100)
@@ -57,32 +59,28 @@ public class Branch implements Serializable {
     @JoinColumn(name = "LocationId", referencedColumnName = "LocationId")
     @ManyToOne
     private Location locationId;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId", insertable = false, updatable = false)
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
     @ManyToOne(optional = false)
-    private School school;
+    private School schoolId;
 
     public Branch() {
     }
 
-    public Branch(BranchPK branchPK) {
-        this.branchPK = branchPK;
+    public Branch(Integer branchId) {
+        this.branchId = branchId;
     }
 
-    public Branch(BranchPK branchPK, String branchName) {
-        this.branchPK = branchPK;
+    public Branch(Integer branchId, String branchName) {
+        this.branchId = branchId;
         this.branchName = branchName;
     }
 
-    public Branch(int schoolId, int branchNo) {
-        this.branchPK = new BranchPK(schoolId, branchNo);
+    public Integer getBranchId() {
+        return branchId;
     }
 
-    public BranchPK getBranchPK() {
-        return branchPK;
-    }
-
-    public void setBranchPK(BranchPK branchPK) {
-        this.branchPK = branchPK;
+    public void setBranchId(Integer branchId) {
+        this.branchId = branchId;
     }
 
     public String getBranchName() {
@@ -125,18 +123,18 @@ public class Branch implements Serializable {
         this.locationId = locationId;
     }
 
-    public School getSchool() {
-        return school;
+    public School getSchoolId() {
+        return schoolId;
     }
 
-    public void setSchool(School school) {
-        this.school = school;
+    public void setSchoolId(School schoolId) {
+        this.schoolId = schoolId;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (branchPK != null ? branchPK.hashCode() : 0);
+        hash += (branchId != null ? branchId.hashCode() : 0);
         return hash;
     }
 
@@ -147,7 +145,7 @@ public class Branch implements Serializable {
             return false;
         }
         Branch other = (Branch) object;
-        if ((this.branchPK == null && other.branchPK != null) || (this.branchPK != null && !this.branchPK.equals(other.branchPK))) {
+        if ((this.branchId == null && other.branchId != null) || (this.branchId != null && !this.branchId.equals(other.branchId))) {
             return false;
         }
         return true;
@@ -155,7 +153,7 @@ public class Branch implements Serializable {
 
     @Override
     public String toString() {
-        return "model.Branch[ branchPK=" + branchPK + " ]";
+        return "model.Branch[ branchId=" + branchId + " ]";
     }
     
 }

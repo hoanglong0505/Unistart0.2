@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -18,45 +18,22 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.PathSegment;
 import model.Branch;
-import model.BranchPK;
 
 /**
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.branch")
 public class BranchFacadeREST extends AbstractFacade<Branch> {
 
     @PersistenceContext(unitName = "UnistartPU")
     private EntityManager em;
 
-    private BranchPK getPrimaryKey(PathSegment pathSegment) {
-        /*
-         * pathSemgent represents a URI path segment and any associated matrix parameters.
-         * URI path part is supposed to be in form of 'somePath;schoolId=schoolIdValue;branchNo=branchNoValue'.
-         * Here 'somePath' is a result of getPath() method invocation and
-         * it is ignored in the following code.
-         * Matrix parameters are used as field names to build a primary key instance.
-         */
-        model.BranchPK key = new model.BranchPK();
-        javax.ws.rs.core.MultivaluedMap<String, String> map = pathSegment.getMatrixParameters();
-        java.util.List<String> schoolId = map.get("schoolId");
-        if (schoolId != null && !schoolId.isEmpty()) {
-            key.setSchoolId(new java.lang.Integer(schoolId.get(0)));
-        }
-        java.util.List<String> branchNo = map.get("branchNo");
-        if (branchNo != null && !branchNo.isEmpty()) {
-            key.setBranchNo(new java.lang.Integer(branchNo.get(0)));
-        }
-        return key;
-    }
-
     public BranchFacadeREST() {
         super(Branch.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST
@@ -69,23 +46,21 @@ public class BranchFacadeREST extends AbstractFacade<Branch> {
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") PathSegment id, Branch entity) {
+    public void edit(@PathParam("id") Integer id, Branch entity) {
         super.edit(entity);
     }
 
     @DELETE
     @Path("{id}")
-    public void remove(@PathParam("id") PathSegment id) {
-        model.BranchPK key = getPrimaryKey(id);
-        super.remove(super.find(key));
+    public void remove(@PathParam("id") Integer id) {
+        super.remove(super.find(id));
     }
 
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Branch find(@PathParam("id") PathSegment id) {
-        model.BranchPK key = getPrimaryKey(id);
-        return super.find(key);
+    public Branch find(@PathParam("id") Integer id) {
+        return super.find(id);
     }
 
     @GET

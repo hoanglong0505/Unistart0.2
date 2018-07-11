@@ -48,6 +48,8 @@ public class RateCriteria implements Serializable {
     private Boolean status;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rateCriteria")
     private Collection<RateDetail> rateDetailCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "rateCriteria")
+    private Collection<AverageRate> averageRateCollection;
 
     public RateCriteria() {
     }
@@ -87,6 +89,15 @@ public class RateCriteria implements Serializable {
 
     public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
         this.rateDetailCollection = rateDetailCollection;
+    }
+
+    @XmlTransient
+    public Collection<AverageRate> getAverageRateCollection() {
+        return averageRateCollection;
+    }
+
+    public void setAverageRateCollection(Collection<AverageRate> averageRateCollection) {
+        this.averageRateCollection = averageRateCollection;
     }
 
     @Override

@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -24,7 +24,7 @@ import model.Character;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.character")
 public class CharacterFacadeREST extends AbstractFacade<Character> {
 
@@ -33,7 +33,7 @@ public class CharacterFacadeREST extends AbstractFacade<Character> {
 
     public CharacterFacadeREST() {
         super(Character.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST

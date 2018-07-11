@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -26,7 +26,7 @@ import model.ReportPK;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.report")
 public class ReportFacadeREST extends AbstractFacade<Report> {
 
@@ -49,14 +49,14 @@ public class ReportFacadeREST extends AbstractFacade<Report> {
         }
         java.util.List<String> userId = map.get("userId");
         if (userId != null && !userId.isEmpty()) {
-            key.setUserId(new java.lang.Integer(userId.get(0)));
+            key.setUserId(userId.get(0));
         }
         return key;
     }
 
     public ReportFacadeREST() {
         super(Report.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST

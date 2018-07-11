@@ -44,7 +44,7 @@ public class Type implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "TypeName")
     private String typeName;
-    @OneToMany(mappedBy = "typeId")
+    @OneToMany(mappedBy = "type")
     private Collection<School> schoolCollection;
 
     public Type() {

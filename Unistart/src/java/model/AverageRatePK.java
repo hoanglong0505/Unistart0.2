@@ -16,7 +16,7 @@ import javax.validation.constraints.NotNull;
  * @author TNT
  */
 @Embeddable
-public class BranchPK implements Serializable {
+public class AverageRatePK implements Serializable {
 
     @Basic(optional = false)
     @NotNull
@@ -24,15 +24,15 @@ public class BranchPK implements Serializable {
     private int schoolId;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "BranchNo")
-    private int branchNo;
+    @Column(name = "CriteriaId")
+    private int criteriaId;
 
-    public BranchPK() {
+    public AverageRatePK() {
     }
 
-    public BranchPK(int schoolId, int branchNo) {
+    public AverageRatePK(int schoolId, int criteriaId) {
         this.schoolId = schoolId;
-        this.branchNo = branchNo;
+        this.criteriaId = criteriaId;
     }
 
     public int getSchoolId() {
@@ -43,33 +43,33 @@ public class BranchPK implements Serializable {
         this.schoolId = schoolId;
     }
 
-    public int getBranchNo() {
-        return branchNo;
+    public int getCriteriaId() {
+        return criteriaId;
     }
 
-    public void setBranchNo(int branchNo) {
-        this.branchNo = branchNo;
+    public void setCriteriaId(int criteriaId) {
+        this.criteriaId = criteriaId;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
         hash += (int) schoolId;
-        hash += (int) branchNo;
+        hash += (int) criteriaId;
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof BranchPK)) {
+        if (!(object instanceof AverageRatePK)) {
             return false;
         }
-        BranchPK other = (BranchPK) object;
+        AverageRatePK other = (AverageRatePK) object;
         if (this.schoolId != other.schoolId) {
             return false;
         }
-        if (this.branchNo != other.branchNo) {
+        if (this.criteriaId != other.criteriaId) {
             return false;
         }
         return true;
@@ -77,7 +77,7 @@ public class BranchPK implements Serializable {
 
     @Override
     public String toString() {
-        return "model.BranchPK[ schoolId=" + schoolId + ", branchNo=" + branchNo + " ]";
+        return "model.AverageRatePK[ schoolId=" + schoolId + ", criteriaId=" + criteriaId + " ]";
     }
     
 }

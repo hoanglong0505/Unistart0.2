@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -24,7 +24,7 @@ import model.Location;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.location")
 public class LocationFacadeREST extends AbstractFacade<Location> {
 
@@ -33,7 +33,7 @@ public class LocationFacadeREST extends AbstractFacade<Location> {
 
     public LocationFacadeREST() {
         super(Location.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST

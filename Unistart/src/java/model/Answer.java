@@ -43,9 +43,9 @@ public class Answer implements Serializable {
     @Size(min = 1, max = 2147483647)
     @Column(name = "AnswerDetail")
     private String answerDetail;
-    @JoinColumn(name = "GenititeId", referencedColumnName = "GenitiveId")
+    @JoinColumn(name = "GenitiveId", referencedColumnName = "GenitiveId")
     @ManyToOne(optional = false)
-    private Genitite genititeId;
+    private Genitive genitiveId;
     @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId")
     @ManyToOne(optional = false)
     private Question questionId;
@@ -78,12 +78,12 @@ public class Answer implements Serializable {
         this.answerDetail = answerDetail;
     }
 
-    public Genitite getGenititeId() {
-        return genititeId;
+    public Genitive getGenitiveId() {
+        return genitiveId;
     }
 
-    public void setGenititeId(Genitite genititeId) {
-        this.genititeId = genititeId;
+    public void setGenitiveId(Genitive genitiveId) {
+        this.genitiveId = genitiveId;
     }
 
     public Question getQuestionId() {

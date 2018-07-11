@@ -47,7 +47,7 @@ public class Report implements Serializable {
     private Rate rate;
     @JoinColumn(name = "UserId", referencedColumnName = "UserId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
-    private Users user;
+    private Users users;
 
     public Report() {
     }
@@ -61,7 +61,7 @@ public class Report implements Serializable {
         this.rpContent = rpContent;
     }
 
-    public Report(int rateId, int userId) {
+    public Report(int rateId, String userId) {
         this.reportPK = new ReportPK(rateId, userId);
     }
 
@@ -89,12 +89,12 @@ public class Report implements Serializable {
         this.rate = rate;
     }
 
-    public Users getUser() {
-        return user;
+    public Users getUsers() {
+        return users;
     }
 
-    public void setUser(Users user) {
-        this.user = user;
+    public void setUsers(Users users) {
+        this.users = users;
     }
 
     @Override

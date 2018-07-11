@@ -6,8 +6,8 @@
 package restful;
 
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -24,7 +24,7 @@ import model.Article;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.article")
 public class ArticleFacadeREST extends AbstractFacade<Article> {
 
@@ -33,7 +33,7 @@ public class ArticleFacadeREST extends AbstractFacade<Article> {
 
     public ArticleFacadeREST() {
         super(Article.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST
@@ -88,5 +88,5 @@ public class ArticleFacadeREST extends AbstractFacade<Article> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

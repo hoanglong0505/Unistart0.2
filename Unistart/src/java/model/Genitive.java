@@ -26,13 +26,13 @@ import javax.xml.bind.annotation.XmlTransient;
  * @author TNT
  */
 @Entity
-@Table(name = "Genitite")
+@Table(name = "Genitive")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Genitite.findAll", query = "SELECT g FROM Genitite g")
-    , @NamedQuery(name = "Genitite.findByGenitiveId", query = "SELECT g FROM Genitite g WHERE g.genitiveId = :genitiveId")
-    , @NamedQuery(name = "Genitite.findByGentiveCode", query = "SELECT g FROM Genitite g WHERE g.gentiveCode = :gentiveCode")})
-public class Genitite implements Serializable {
+    @NamedQuery(name = "Genitive.findAll", query = "SELECT g FROM Genitive g")
+    , @NamedQuery(name = "Genitive.findByGenitiveId", query = "SELECT g FROM Genitive g WHERE g.genitiveId = :genitiveId")
+    , @NamedQuery(name = "Genitive.findByGenitiveCode", query = "SELECT g FROM Genitive g WHERE g.genitiveCode = :genitiveCode")})
+public class Genitive implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -43,21 +43,21 @@ public class Genitite implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 5)
-    @Column(name = "GentiveCode")
-    private String gentiveCode;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genititeId")
+    @Column(name = "GenitiveCode")
+    private String genitiveCode;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genitiveId")
     private Collection<Answer> answerCollection;
 
-    public Genitite() {
+    public Genitive() {
     }
 
-    public Genitite(Integer genitiveId) {
+    public Genitive(Integer genitiveId) {
         this.genitiveId = genitiveId;
     }
 
-    public Genitite(Integer genitiveId, String gentiveCode) {
+    public Genitive(Integer genitiveId, String genitiveCode) {
         this.genitiveId = genitiveId;
-        this.gentiveCode = gentiveCode;
+        this.genitiveCode = genitiveCode;
     }
 
     public Integer getGenitiveId() {
@@ -68,12 +68,12 @@ public class Genitite implements Serializable {
         this.genitiveId = genitiveId;
     }
 
-    public String getGentiveCode() {
-        return gentiveCode;
+    public String getGenitiveCode() {
+        return genitiveCode;
     }
 
-    public void setGentiveCode(String gentiveCode) {
-        this.gentiveCode = gentiveCode;
+    public void setGenitiveCode(String genitiveCode) {
+        this.genitiveCode = genitiveCode;
     }
 
     @XmlTransient
@@ -95,10 +95,10 @@ public class Genitite implements Serializable {
     @Override
     public boolean equals(Object object) {
         // TODO: Warning - this method won't work in the case the id fields are not set
-        if (!(object instanceof Genitite)) {
+        if (!(object instanceof Genitive)) {
             return false;
         }
-        Genitite other = (Genitite) object;
+        Genitive other = (Genitive) object;
         if ((this.genitiveId == null && other.genitiveId != null) || (this.genitiveId != null && !this.genitiveId.equals(other.genitiveId))) {
             return false;
         }
@@ -107,7 +107,7 @@ public class Genitite implements Serializable {
 
     @Override
     public String toString() {
-        return "model.Genitite[ genitiveId=" + genitiveId + " ]";
+        return "model.Genitive[ genitiveId=" + genitiveId + " ]";
     }
     
 }

@@ -19,18 +19,6 @@
         <url-pattern>/webresources/*</url-pattern>
     </servlet-mapping>
     
-<!--    <servlet>
-        <servlet-name>CORS Filter</servlet-name>
-        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
-        <init-param>
-            <param-name>com.sun.jersey.spi.container.ContainerResponseFilters</param-name>
-            <param-value>controller.filter.CORSFilter</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>CORS Filter</servlet-name>
-        <url-pattern>/webservices/*</url-pattern>
-    </servlet-mapping>
     <filter>
         <filter-name>CorsFilter</filter-name>
         <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
@@ -42,5 +30,5 @@
  
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>
-    </welcome-file-list>-->
+    </welcome-file-list>
 </web-app>

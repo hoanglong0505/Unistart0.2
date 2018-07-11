@@ -5,9 +5,10 @@
  */
 package restful;
 
+import dao.SchoolDAO;
 import java.util.List;
+import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
-import javax.persistence.Persistence;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
@@ -17,6 +18,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import model.School;
 
@@ -24,7 +26,7 @@ import model.School;
  *
  * @author TNT
  */
-@javax.ejb.Stateless
+@Stateless
 @Path("model.school")
 public class SchoolFacadeREST extends AbstractFacade<School> {
 
@@ -33,7 +35,7 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
 
     public SchoolFacadeREST() {
         super(School.class);
-        em= Persistence.createEntityManagerFactory("UnistartPU").createEntityManager();
+        em = PersistenceUtils.getEntityManger();
     }
 
     @POST
@@ -82,6 +84,23 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Produces(MediaType.TEXT_PLAIN)
     public String countREST() {
         return String.valueOf(super.count());
+    }
+    
+    //CUSTOM
+    //FILTER SCHOOL
+    @GET
+    @Path("filter-school")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<School> findSchool(
+            @QueryParam(value = "schoolName") String schoolName, 
+            @QueryParam(value = "sjCode") String sjCode, 
+            @QueryParam("minPoint") Float minPoint,
+            @QueryParam("typeId") Integer typeId, 
+            @QueryParam("fieldCode") String fieldCode, 
+            @QueryParam("location") Integer location) {
+        SchoolDAO dao = new SchoolDAO();
+        List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
+        return list;
     }
 
     @Override
