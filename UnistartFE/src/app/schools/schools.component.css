@@ -1,0 +1,19 @@
+#school-container .school-card {
+  display: inline-block;
+  width: 40%;
+  margin: 20px;
+}
+
+#school-container .school-header-image {
+  background-image: url('images/icon.png');
+  background-size: cover;
+}
+
+mat-card-title {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+mat-form-field {
+  width:50px;
+}

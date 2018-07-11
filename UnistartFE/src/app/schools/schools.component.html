@@ -1,0 +1,29 @@
+<section>
+  <app-filter-school [schoolsComponent]="this" ></app-filter-school>
+  <div id="school-container">
+    <h1>DANH SÁCH TRƯỜNG</h1>
+    <mat-card class="school-card" *ngFor="let sch of 
+    schools.slice(pages*maxItemsPerPage - maxItemsPerPage,pages*maxItemsPerPage)">
+      <mat-card-header>
+        <div mat-card-avatar class="school-header-image"></div>
+        <mat-card-title>{{sch.schoolName}}</mat-card-title>
+        <mat-card-subtitle>{{sch.schoolCode}}</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image [src]="AVATAR" alt="{{sch.avatar}}">
+      <mat-card-content>
+        <p>
+          Thông tin trường
+        </p>
+      </mat-card-content>
+      <!-- <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions> -->
+    </mat-card>
+    <button (click)="previousPage()" mat-button>Back</button>
+    <mat-form-field>
+      <input matInput type="number" min="1" [max]="lastPages" [(ngModel)]="pages">
+    </mat-form-field>
+    <button (click)="nextPage()" mat-button>Next</button>
+  </div>
+</section>

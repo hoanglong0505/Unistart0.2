@@ -1,0 +1,40 @@
+<div id="filter-school-container">
+  <h1>LỌC TRƯỜNG</h1>
+  <form #f id="filter-form" action="filter-school" method="GET">
+    <div class="field-container">
+      <div class="field-name">TÊN TRƯỜNG</div>
+      <input class="text" type="text" name="schoolName" />
+      <br/>
+    </div>
+    <div class="field-container">
+      <div class="field-name">TỈNH/ THÀNH</div>
+      <select class="combobox" name="location">
+        <option value="all">Tất cả</option>
+      </select>
+    </div>
+    <div class="field-container">
+      <div class="field-name">TỔ HỢP MÔN</div>
+      <select class="combobox" name="sjCode">
+        <option value="all">Tất cả</option>
+      </select>
+    </div>
+    <div class="field-container">
+      <div class="field-name">NGÀNH/ NGHỀ ĐÀO TẠO</div>
+      <select class="combobox" name="fieldCode">
+        <option value="all">Tất cả</option>
+      </select>
+    </div>
+    <div class="field-container">
+      <div class="field-name">HỆ TRƯỜNG</div>
+      <select class="combobox" name="typeId">
+        <option value="all">Tất cả</option>
+      </select>
+    </div>
+    <div class="field-container">
+      <div class="field-name">MỨC ĐIỂM SÀN TỐI ĐA</div>
+      <input class="text" name="minPoint" type="number" min="1" max="30" value="30" />
+    </div>
+    <br/>
+    <button (click)="log(f)" mat-button>TÌM KIẾM</button>
+  </form>
+</div>

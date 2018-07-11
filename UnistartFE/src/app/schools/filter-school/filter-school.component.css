@@ -1,0 +1,18 @@
+ #filter-form .field-container {
+   margin: 10px 0;
+ }
+
+ #filter-form .field-name {
+   margin: 0 20px;
+   display: inline-block;
+ }
+
+ #filter-form .text {
+   height: 25px;
+   border-radius: 10px;
+ }
+
+ #filter-form .combobox {
+   height: 25px;
+   border-radius: 10px;
+ }

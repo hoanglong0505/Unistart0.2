@@ -1,0 +1,10 @@
+nav {
+    background: black;
+}
+nav a {
+    padding: 10px 50px;
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    background: black;
+}
