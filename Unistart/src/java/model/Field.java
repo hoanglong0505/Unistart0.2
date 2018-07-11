@@ -55,11 +55,11 @@ public class Field implements Serializable {
     private String fieldName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldId")
     private Collection<EntranceInfo> entranceInfoCollection;
-    @OneToMany(mappedBy = "preFieldId")
+    @OneToMany(mappedBy = "preField")
     private Collection<Field> fieldCollection;
     @JoinColumn(name = "PreFieldId", referencedColumnName = "FieldId")
     @ManyToOne
-    private Field preFieldId;
+    private Field preField;
     @JoinColumn(name = "FieldTypeId", referencedColumnName = "FieldTypeId")
     @ManyToOne(optional = false)
     private FieldType fieldTypeId;
@@ -119,12 +119,12 @@ public class Field implements Serializable {
         this.fieldCollection = fieldCollection;
     }
 
-    public Field getPreFieldId() {
-        return preFieldId;
+    public Field getPreField() {
+        return preField;
     }
 
-    public void setPreFieldId(Field preFieldId) {
-        this.preFieldId = preFieldId;
+    public void setPreField(Field preField) {
+        this.preField = preField;
     }
 
     public FieldType getFieldTypeId() {

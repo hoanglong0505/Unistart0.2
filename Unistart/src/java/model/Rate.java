@@ -5,6 +5,7 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -18,6 +19,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -67,9 +69,7 @@ public class Rate implements Serializable {
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<Report> reportCollection;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
-    @ManyToOne
-    private School schoolId;
+
     @JoinColumn(name = "UserId", referencedColumnName = "UserId")
     @ManyToOne
     private Users userId;
@@ -153,14 +153,6 @@ public class Rate implements Serializable {
         this.reportCollection = reportCollection;
     }
 
-    public School getSchoolId() {
-        return schoolId;
-    }
-
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
-    }
-
     public Users getUserId() {
         return userId;
     }
@@ -202,5 +194,32 @@ public class Rate implements Serializable {
     public String toString() {
         return "model.Rate[ rateId=" + rateId + " ]";
     }
-    
+
+    //=============== RELATIONSHIP HANDLER ===============
+    //SCHOOL
+    @XmlTransient
+    @Transient
+    public int schoolHandler = Constants.GENERATE;
+
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @ManyToOne
+    private School school;
+
+    public School getSchool() {
+        if (schoolHandler == Constants.GENERATE) {
+            setSchoolBiDir(Constants.TRANSIENT);
+            return school;
+        }
+        return null;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+    public void setSchoolBiDir(int MODE) {
+        school.ratesHandler = MODE;
+    }
+
+    //----------------------------------
 }

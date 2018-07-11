@@ -10,10 +10,9 @@ import { SchoolService } from '../services/school.service';
 export class SchoolsComponent implements OnInit {
 
   schools: School[] = [];
-  private AVATAR = (require("./images/school.jpg"));
   //page area
   pages: number = 1;
-  private maxItemsPerPage: number = 10;
+  maxItemsPerPage: number = 48;
   firstItem: number = this.pages * this.maxItemsPerPage - this.maxItemsPerPage;;
   lastItem: number = this.pages * this.maxItemsPerPage;
   lastPages: number = 1;

@@ -5,6 +5,7 @@
  */
 package restful;
 
+import dao.FieldDAO;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -84,9 +85,20 @@ public class FieldFacadeREST extends AbstractFacade<Field> {
         return String.valueOf(super.count());
     }
 
+    //CUSTOM
+    //GET FIELD TYPE :?
+    @GET
+    @Path("field-type/{id}")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Field> findFieldType(@PathParam("id") Integer id) {
+        FieldDAO dao = new FieldDAO();
+        List<Field> list = dao.getFieldType(id, em);
+        return list;
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

@@ -66,7 +66,41 @@ public class SchoolDAO {
 //        return result;
 //    }
 
-    public List<School> filterSchool(String schoolName, String sjCode, Float minPoint, Integer typeID, String fieldCode, Integer location, EntityManager em) {
+    public List<School> filterSchool(String schoolName, String sjCode, 
+            String _minPoint, String _typeID, String fieldCode, String _location, EntityManager em) {
+        
+        //======PROCESS PARAMETER==============
+        if (schoolName != null && schoolName.trim().length() == 0) {
+            schoolName = null;
+        }
+        Integer locationId =null;
+        try {
+            locationId = Integer.parseInt(_location);
+        } catch (Exception e) {
+        }
+
+        if (sjCode!=null && sjCode.equals("all")) {
+            sjCode = null;
+        }
+
+        Float minPoint = null;
+        try {
+            minPoint = Float.parseFloat(_minPoint);
+        } catch (Exception e) {
+        }
+
+        Integer typeId = null;
+        try {
+            typeId = Integer.parseInt(_typeID);
+        } catch (Exception e) {
+        }
+
+        if (fieldCode!=null && fieldCode.equals("all")) {
+            fieldCode = null;
+        }
+        //===================================
+        
+        //============SQL====================
         Map<String, Integer> map = new HashMap<>();
         StringBuilder sql = new StringBuilder("Select  DISTINCT S.SchoolCode,S.SchoolName , S.SchoolId \n"
                 + "FROM School S \n"
@@ -87,7 +121,7 @@ public class SchoolDAO {
             if (count > 0) {
                 condition.append(" AND ");
             }
-            condition.append(" S.SchoolName LIKE ? \n ");
+            condition.append(" S.SchoolName LIKE ? COLLATE Latin1_general_CI_AI \n ");
             count++;
             map.put("schoolName", count);
         }
@@ -99,7 +133,7 @@ public class SchoolDAO {
             count++;
             map.put("minPoint", count);
         }
-        if (typeID != null) {
+        if (typeId != null) {
             if (count > 0) {
                 condition.append(" AND ");
             }
@@ -115,7 +149,7 @@ public class SchoolDAO {
             count++;
             map.put("fieldCode", count);
         }
-        if (location != null) {
+        if (locationId != null) {
             if (count > 0) {
                 condition.append(" AND ");
             }
@@ -140,13 +174,13 @@ public class SchoolDAO {
             query.setParameter(map.get("minPoint"), minPoint);
         }
         if (map.get("typeId") != null) {
-            query.setParameter(map.get("typeId"), typeID);
+            query.setParameter(map.get("typeId"), typeId);
         }
         if (map.get("fieldCode") != null) {
             query.setParameter(map.get("fieldCode"), fieldCode);
         }
         if (map.get("location") != null) {
-            query.setParameter(map.get("location"), location);
+            query.setParameter(map.get("location"), locationId);
         }
 
         List result = query.getResultList();

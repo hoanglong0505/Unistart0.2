@@ -5,6 +5,7 @@
  */
 package restful;
 
+import app.Constants;
 import dao.SchoolDAO;
 import java.util.List;
 import javax.ejb.Stateless;
@@ -62,7 +63,9 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public School find(@PathParam("id") Integer id) {
-        return super.find(id);
+        School sch = super.find(id);
+        sch.ratesHandler = Constants.GENERATE;
+        return sch;
     }
 
     @GET
@@ -85,19 +88,19 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     public String countREST() {
         return String.valueOf(super.count());
     }
-    
+
     //CUSTOM
     //FILTER SCHOOL
     @GET
     @Path("filter-school")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<School> findSchool(
-            @QueryParam(value = "schoolName") String schoolName, 
-            @QueryParam(value = "sjCode") String sjCode, 
-            @QueryParam("minPoint") Float minPoint,
-            @QueryParam("typeId") Integer typeId, 
-            @QueryParam("fieldCode") String fieldCode, 
-            @QueryParam("location") Integer location) {
+            @QueryParam("schoolName") String schoolName,
+            @QueryParam("sjCode") String sjCode,
+            @QueryParam("minPoint") String minPoint,
+            @QueryParam("typeId") String typeId,
+            @QueryParam("fieldCode") String fieldCode,
+            @QueryParam("location") String location) {
         SchoolDAO dao = new SchoolDAO();
         List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
         return list;
@@ -107,5 +110,5 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

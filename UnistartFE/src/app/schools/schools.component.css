@@ -1,7 +1,11 @@
+#school-container {
+  text-align: center;
+}
+
 #school-container .school-card {
   display: inline-block;
-  width: 40%;
-  margin: 20px;
+  width: 25%;
+  margin: 10px;
 }
 
 #school-container .school-header-image {
@@ -15,5 +19,5 @@ mat-card-title {
 }
 
 mat-form-field {
-  width:50px;
+  width: 50px;
 }

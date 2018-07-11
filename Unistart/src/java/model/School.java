@@ -5,6 +5,7 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -18,6 +19,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -71,8 +73,7 @@ public class School implements Serializable {
     @Size(max = 500)
     @Column(name = "Avatar")
     private String avatar;
-    @OneToMany(mappedBy = "schoolId")
-    private Collection<Rate> rates;
+
     @OneToMany(mappedBy = "schoolId")
     private Collection<Article> articleCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
@@ -155,15 +156,6 @@ public class School implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Rate> getRates() {
-        return rates;
-    }
-
-    public void setRates(Collection<Rate> rates) {
-        this.rates = rates;
-    }
-
-    @XmlTransient
     public Collection<Article> getArticleCollection() {
         return articleCollection;
     }
@@ -231,5 +223,34 @@ public class School implements Serializable {
     public String toString() {
         return "model.School[ schoolId=" + schoolId + " ]";
     }
+
+    //============== RELATIONSHIP HANDLER ===============
+    //RATES
+    @XmlTransient
+    @Transient
+    public int ratesHandler = Constants.TRANSIENT;
+
+    @OneToMany(mappedBy = "school")
+    private Collection<Rate> rates;
+
     
+    public Collection<Rate> getRates() {
+        if (ratesHandler == Constants.GENERATE) {
+            setRatesBiDir(Constants.TRANSIENT);
+            return rates;
+        }
+        return null;
+    }
+
+    public void setRates(Collection<Rate> rates) {
+        this.rates = rates;
+    }
+
+    public void setRatesBiDir(int MODE) {
+        for (Rate r : rates) {
+            r.schoolHandler = MODE;
+        }
+    }
+
+    //---------------------------------
 }

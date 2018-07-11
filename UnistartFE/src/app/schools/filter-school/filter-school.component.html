@@ -1,40 +1,46 @@
 <div id="filter-school-container">
   <h1>LỌC TRƯỜNG</h1>
-  <form #f id="filter-form" action="filter-school" method="GET">
+  <form #filterForm="ngForm" id="filter-form" action="filter-school" method="GET">
     <div class="field-container">
       <div class="field-name">TÊN TRƯỜNG</div>
-      <input class="text" type="text" name="schoolName" />
+      <input class="text" type="text" name="schoolName" ngModel />
       <br/>
     </div>
     <div class="field-container">
       <div class="field-name">TỈNH/ THÀNH</div>
-      <select class="combobox" name="location">
-        <option value="all">Tất cả</option>
+      <select class="combobox" name="location" ngModel="all">
+        <option value="all" >Tất cả</option>
+        <option *ngFor="let l of locations" [value]="l.locationId">{{l.locationName}}</option>
       </select>
     </div>
     <div class="field-container">
       <div class="field-name">TỔ HỢP MÔN</div>
-      <select class="combobox" name="sjCode">
+      <select class="combobox" name="sjCode" ngModel="all">
         <option value="all">Tất cả</option>
+        <option *ngFor="let sj of sjCombinations" [value]="sj.sjCombiCode">
+          {{sj.sjCombiCode}} - {{sj.sjCombiName}}
+        </option>
       </select>
     </div>
     <div class="field-container">
       <div class="field-name">NGÀNH/ NGHỀ ĐÀO TẠO</div>
-      <select class="combobox" name="fieldCode">
+      <select class="combobox" name="fieldCode" ngModel="all">
         <option value="all">Tất cả</option>
+        <option *ngFor="let f of fields" [value]="f.fieldCode">{{f.fieldName}}</option>
       </select>
     </div>
     <div class="field-container">
       <div class="field-name">HỆ TRƯỜNG</div>
-      <select class="combobox" name="typeId">
+      <select class="combobox" name="typeId" ngModel="all">
         <option value="all">Tất cả</option>
+        <option *ngFor="let t of types" [value]="t.typeId">{{t.typeName}}</option>
       </select>
     </div>
     <div class="field-container">
       <div class="field-name">MỨC ĐIỂM SÀN TỐI ĐA</div>
-      <input class="text" name="minPoint" type="number" min="1" max="30" value="30" />
+      <input class="text" name="minPoint" type="number" min="1" max="30" ngModel="30"/>
     </div>
     <br/>
-    <button (click)="log(f)" mat-button>TÌM KIẾM</button>
+    <button (click)="filterSchool(filterForm)" mat-button>TÌM KIẾM</button>
   </form>
 </div>

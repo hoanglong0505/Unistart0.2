@@ -18,6 +18,17 @@ export class SchoolService {
     );
   }
 
+  filterSchool(schoolName: string, sjCode: string, minPoint: number,
+    typeId: number, fieldCode: string, location: number): Observable<School[]> {
+      const url=`http://localhost:8084/Unistart/webresources/model.school/filter-school?`+
+      `schoolName=${schoolName}&sjCode=${sjCode}&minPoint=${minPoint}`+
+      `&typeId=${typeId}&fieldCode=${fieldCode}&location=${location}`;
+
+      return this.http.get<School[]>(url).pipe(
+        catchError(this.handleError<School[]>('filterSchool',[]))
+      );
+  }
+
   private handleError<T> (operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
    
