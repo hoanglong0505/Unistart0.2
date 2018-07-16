@@ -1,6 +1,5 @@
 nav {
     background: black;
-    height: 50px;
 }
 nav a {
     padding: 10px 50px;
@@ -8,8 +7,4 @@ nav a {
     color:white;
     text-decoration: none;
     background: black;
-}
-app-sign-in {
-   float: right;
-   padding: 10px;
 }

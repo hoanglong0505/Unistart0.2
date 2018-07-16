@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Rate } from '../../../model/rate';
-import { Report } from '../../../model/report';
-import { ReportPK } from '../../../model/reportPK';
-import { Users } from '../../../model/users';
+import { Rate } from '../../../../model/rate';
+import { Report } from '../../../../model/report';
+import { ReportPK } from '../../../../model/reportPK';
+import { Users } from '../../../../model/users';
 import { InfoComponent } from '../info.component';
 import { WaitingBoxComponent } from '../../../waiting-box/waiting-box.component';
-import { ReportService } from '../../../services/report.service';
+import { ReportService } from '../../../../services/report.service';
 
 @Component({
   selector: 'app-report',

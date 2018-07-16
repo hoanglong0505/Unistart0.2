@@ -10,17 +10,17 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
-import { NavMenuComponent } from './nav-menu/nav-menu.component';
+import { NavMenuComponent } from './modules/nav-menu/nav-menu.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SchoolsComponent } from './schools/schools.component';
-import { FilterSchoolComponent } from './schools/filter-school/filter-school.component';
-import { SchoolDetailComponent } from './school-detail/school-detail.component';
-import { InfoComponent } from './school-detail/info/info.component';
-import { ReviewComponent } from './school-detail/review/review.component';
-import { SignInComponent } from './sign-in/sign-in.component';
-import { WaitingBoxComponent } from './waiting-box/waiting-box.component';
-import { DynamicTemplateComponent } from './dynamic-template/dynamic-template.component';
-import { ReportComponent } from './school-detail/info/report/report.component';
+import { SchoolsComponent } from './modules/schools/schools.component';
+import { FilterSchoolComponent } from './modules/schools/filter-school/filter-school.component';
+import { SchoolDetailComponent } from './modules/school-detail/school-detail.component';
+import { InfoComponent } from './modules/school-detail/info/info.component';
+import { ReviewComponent } from './modules/school-detail/review/review.component';
+import { SignInComponent } from './modules/sign-in/sign-in.component';
+import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component';
+import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
+import { ReportComponent } from './modules/school-detail/info/report/report.component';
 import { Constants } from './constanst';
 
 @NgModule({

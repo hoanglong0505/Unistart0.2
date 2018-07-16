@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { SchoolService } from '../services/school.service'
-import { School } from '../model/school';
+import { SchoolService } from '../../services/school.service'
+import { School } from '../../model/school';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
 
 @Component({

@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WaitingBoxComponent implements OnInit {
 
-  static time: number;
+  static time: number = -1;
   static interval: any;
   staticRef = WaitingBoxComponent;
 
@@ -17,8 +17,10 @@ export class WaitingBoxComponent implements OnInit {
   }
 
   static start() {
-    WaitingBoxComponent.time = 0;
-    WaitingBoxComponent.interval = setInterval(WaitingBoxComponent.increase, 1000);
+    if (WaitingBoxComponent.time == -1) {
+      WaitingBoxComponent.time = 0;
+      WaitingBoxComponent.interval = setInterval(WaitingBoxComponent.increase, 1000);
+    }
   }
 
   static increase() {

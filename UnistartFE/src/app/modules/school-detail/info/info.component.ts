@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { School } from '../../model/school';
+import { School } from '../../../model/school';
 import { SchoolDetailComponent } from '../school-detail.component';
 import { ReportComponent } from './report/report.component';
-import { Rate } from '../../model/rate';
+import { Rate } from '../../../model/rate';
 
 @Component({
   selector: 'app-info',
