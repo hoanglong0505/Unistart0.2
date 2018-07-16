@@ -121,7 +121,7 @@ public class SchoolDAO {
             if (count > 0) {
                 condition.append(" AND ");
             }
-            condition.append(" S.SchoolName LIKE ? COLLATE Latin1_general_CI_AI \n ");
+            condition.append(" S.SchoolName+' '+S.SchoolCode LIKE ? COLLATE Latin1_general_CI_AI \n ");
             count++;
             map.put("schoolName", count);
         }
@@ -129,7 +129,7 @@ public class SchoolDAO {
             if (count > 0) {
                 condition.append(" AND ");
             }
-            condition.append(" E.MinPoint <= ? \n ");
+            condition.append(" NOT(E.MinPoint > ?) \n ");
             count++;
             map.put("minPoint", count);
         }
@@ -145,7 +145,7 @@ public class SchoolDAO {
             if (count > 0) {
                 condition.append(" AND ");
             }
-            condition.append(" F.PreFieldId In (Select FieldId From Field Where FieldCode=?)\n ");
+            condition.append(" F.PreFieldId In (Select FieldId From Field where SUBSTRING(FieldCode,2,4)=?)\n ");
             count++;
             map.put("fieldCode", count);
         }
@@ -178,6 +178,7 @@ public class SchoolDAO {
         }
         if (map.get("fieldCode") != null) {
             query.setParameter(map.get("fieldCode"), fieldCode);
+            System.out.println("codeeeeee "+fieldCode);
         }
         if (map.get("location") != null) {
             query.setParameter(map.get("location"), locationId);

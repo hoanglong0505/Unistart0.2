@@ -17,9 +17,9 @@ import model.Field;
 public class FieldDAO {
     
     public List<Field> getFieldType(Integer FieldId, EntityManager em){
-        String sql="Select *\n" +
-                        "From Field F\n" +
-                        "Where F.FieldTypeId=?";
+        String sql="Select MAX(FieldId) AS FieldId,MAX(FieldName) AS FieldName,\n" +
+"SUBSTRING(FieldCode,2,4) as FieldCode from Field where   FieldTypeId=? and NOT(SUBSTRING(FieldCode,4,2)=90)\n" +
+" GROUP BY (SUBSTRING(FieldCode,2,4))";
         Query query=em.createNativeQuery(sql,Field.class);
         query.setParameter(1, FieldId);
         List result= query.getResultList();  
