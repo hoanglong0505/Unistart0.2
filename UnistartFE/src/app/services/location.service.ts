@@ -3,16 +3,17 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Location  } from '../model/location';
 import { catchError } from 'rxjs/operators';
+import { Constants } from '../constans';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LocationService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private contant: Constants) { }
 
   getLocations(): Observable<Location[]> {
-    const url='http://localhost:8084/Unistart/webresources/model.location';
+    const url= this.contant.LOCATION;
     return this.http.get<Location[]>(url).pipe(
       catchError(this.handleError<Location[]>('getLocations',[]))
     );
