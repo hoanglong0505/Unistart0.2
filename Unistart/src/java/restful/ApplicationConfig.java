@@ -29,7 +29,6 @@ public class ApplicationConfig extends Application {
      * If required, comment out calling this method in getClasses().
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
-        resources.add(restful.AnswerFacadeREST.class);
         resources.add(restful.ArticleFacadeREST.class);
         resources.add(restful.AverageRateFacadeREST.class);
         resources.add(restful.BranchFacadeREST.class);
@@ -37,9 +36,7 @@ public class ApplicationConfig extends Application {
         resources.add(restful.EntranceInfoFacadeREST.class);
         resources.add(restful.FieldFacadeREST.class);
         resources.add(restful.FieldTypeFacadeREST.class);
-        resources.add(restful.GenitiveFacadeREST.class);
         resources.add(restful.LocationFacadeREST.class);
-        resources.add(restful.QuestionFacadeREST.class);
         resources.add(restful.RateCriteriaFacadeREST.class);
         resources.add(restful.RateDetailFacadeREST.class);
         resources.add(restful.RateFacadeREST.class);

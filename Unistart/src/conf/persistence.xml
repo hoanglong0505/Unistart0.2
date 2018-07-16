@@ -15,7 +15,6 @@
     <class>model.Branch</class>
     <class>model.EntranceInfo</class>
     <class>model.Field</class>
-    <class>model.Question</class>
     <class>model.Region</class>
     <class>model.Character</class>
     <class>model.Genitite</class>
