@@ -1,0 +1,21 @@
+#reviewForm .field {
+  margin: 10px 0;
+}
+
+#reviewForm textarea {
+  resize: none;
+  width: 500px;
+  height: 100px;
+  font-family: arial;
+  border-radius: 10px;
+}
+
+#reviewForm .text {
+  height: 25px;
+  border-radius: 10px;
+}
+
+#reviewForm .button {
+  border-radius: 10px;
+  height: 25px;
+}

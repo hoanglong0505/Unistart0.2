@@ -1,0 +1,15 @@
+.title {
+  color: dodgerblue;
+}
+
+a {
+  cursor: pointer;
+  color: blue;
+}
+a:hover {
+  color: red;
+}
+
+#report {
+  display: inline-block;
+}

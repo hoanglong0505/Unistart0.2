@@ -3,17 +3,17 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Location  } from '../model/location';
 import { catchError } from 'rxjs/operators';
-import { Constants } from '../constans';
+import { Constants } from '../constanst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LocationService {
 
-  constructor(private http: HttpClient, private contant: Constants) { }
+  constructor(private http: HttpClient, private constant: Constants) { }
 
   getLocations(): Observable<Location[]> {
-    const url= this.contant.LOCATION;
+    const url=this.constant.GET_LOCATIONS;
     return this.http.get<Location[]>(url).pipe(
       catchError(this.handleError<Location[]>('getLocations',[]))
     );

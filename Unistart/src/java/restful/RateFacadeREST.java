@@ -36,22 +36,26 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
         em = PersistenceUtils.getEntityManger();
     }
 
-    @POST
+//    @POST
     @Override
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+//    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Rate entity) {
+        em.getTransaction().begin();
         super.create(entity);
+        em.getTransaction().commit();
     }
 
-    @PUT
-    @Path("{id}")
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Integer id, Rate entity) {
+//    @PUT
+//    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Override
+    public void edit(Rate entity) {
+        em.getTransaction().begin();
         super.edit(entity);
+        em.getTransaction().commit();
     }
 
-    @DELETE
-    @Path("{id}")
+//    @DELETE
+//    @Path("{id}")
     public void remove(@PathParam("id") Integer id) {
         super.remove(super.find(id));
     }

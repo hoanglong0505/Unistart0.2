@@ -50,7 +50,9 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void edit(@PathParam("id") Integer id, School entity) {
+        em.getTransaction().begin();
         super.edit(entity);
+        em.getTransaction().commit();
     }
 
     @DELETE
@@ -64,7 +66,11 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public School find(@PathParam("id") Integer id) {
         School sch = super.find(id);
-        sch.ratesHandler = Constants.GENERATE;
+        if (sch != null) {
+            sch.ratesHandler = Constants.GENERATE;
+            sch.eInfosHandler = Constants.GENERATE;
+            sch.branchsHandler = Constants.GENERATE;
+        }
         return sch;
     }
 
@@ -106,6 +112,10 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         return list;
     }
 
+    public void refresh(School school){
+        em.refresh(school);
+    }
+    
     @Override
     protected EntityManager getEntityManager() {
         return em;

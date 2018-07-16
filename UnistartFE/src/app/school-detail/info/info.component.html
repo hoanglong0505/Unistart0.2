@@ -1,0 +1,78 @@
+<a (click)="schoolDetail.mode=schoolDetail.REVIEW">ĐÁNH GIÁ TRƯỜNG NÀY</a>
+<br/>
+<a (click)="schoolDetail.mode=schoolDetail.ABOUT">BÀI VIẾT GIỚI THIỆU</a>
+
+<hr/>
+<h2 class="title">Các chi nhánh</h2>
+<div *ngFor="let b of school.branchs">
+  <b>Tên: </b> {{b.branchName}}
+  <br/>
+  <b>Địa chỉ: </b> {{b.address}}
+  <br/>
+  <b>SĐT: </b> {{b.phone}}
+  <br/>
+  <b>Website: </b>
+  <a href="{{b.website}}">{{b.website}}</a>
+  <br/> ---------------------------------------------------
+</div>
+
+<h2 class="title">Thông tin tuyển sinh</h2>
+<table width="100%" border="1">
+  <tr>
+    <th width="30%">Ngành</th>
+    <th width="20%">Tổ hợp môn</th>
+    <th width="10%">Chỉ tiêu tuyển sinh</th>
+    <th width="10%">Điểm sàn</th>
+    <th width="30%">Chú thích</th>
+  </tr>
+  <tr *ngFor="let eI of school.entranceInfos">
+    <td>{{eI.subName}}</td>
+    <td>
+      <span *ngFor="let sjC of eI.subjectCombinations">{{sjC.sjCombiCode}}, </span>
+    </td>
+    <td>{{eI.normalEntranceAmount}}</td>
+    <td>{{eI.minPoint}}</td>
+    <td>{{eI.note}}</td>
+  </tr>
+
+</table>
+
+<h2 class="title">Các đánh giá</h2>
+
+<div *ngFor="let r of school.rates">
+  <h3 style="color: blueviolet" [ngSwitch]="r.anonymous">
+    <span *ngSwitchCase="false">{{r.user.name}}</span>
+    <span *ngSwitchCase="true">Thành viên ẩn danh</span>
+  </h3>
+  <div class="field" style="color:grey;">
+    <i>Ngày: {{r.submitDateStr}}</i>
+  </div>
+
+  <div class="field" style="color:brown;">
+    <b>{{r.title}}</b>
+  </div>
+  <div class="field">
+    <b>Ưu điểm</b>
+    <br/> {{r.pros}}
+  </div>
+  <div class="field">
+    <b>Nhược điểm</b>
+    <br/> {{r.cons}}
+  </div>
+  <div class="field">
+    <b>Trải nghiệm</b>
+    <br/> {{r.experience}}
+  </div>
+
+  <div [ngSwitch]="r.encourage">
+    <span *ngSwitchCase="true" style="color:green;">Khuyến khích học</span>
+    <span *ngSwitchCase="false" style="color:red;">Không khuyến khích học</span>
+  </div>
+  
+  <div id="report" style="color:grey;cursor:pointer;" (click)="turnOnReport(r)">
+    <span>{{r.reports.length}} báo cáo</span> --- <i>BÁO CÁO BÀI ĐÁNH GIÁ</i>
+  </div>
+  <div>-----------------------------------------</div>
+</div>
+
+<app-report [infoComp]="this"></app-report>

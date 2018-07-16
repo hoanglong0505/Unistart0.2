@@ -1,0 +1,23 @@
+#background {
+  background: rgba(0, 0, 0, 0.7);
+  width: 2000px;
+  height: 1000px;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#report-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: lightblue;
+}
+
+#report-container textarea {
+  resize: none;
+  width: 500px;
+  height: 300px;
+  margin: 20px;
+}

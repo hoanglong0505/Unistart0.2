@@ -5,6 +5,7 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
 import java.util.Collection;
 import javax.persistence.Basic;
@@ -18,6 +19,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -68,18 +70,11 @@ public class EntranceInfo implements Serializable {
     @Size(max = 2147483647)
     @Column(name = "Note")
     private String note;
-    @JoinTable(name = "EntranceSubject", joinColumns = {
-        @JoinColumn(name = "EntranceId", referencedColumnName = "EntranceId")}, inverseJoinColumns = {
-        @JoinColumn(name = "SjCombiCode", referencedColumnName = "SjCombiCode")})
-    @ManyToMany
-    private Collection<SubjectCombination> subjectCombinationCollection;
+    
     @JoinColumn(name = "FieldId", referencedColumnName = "FieldId")
     @ManyToOne(optional = false)
-    private Field fieldId;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
-    @ManyToOne(optional = false)
-    private School schoolId;
-
+    private Field field;
+    
     public EntranceInfo() {
     }
 
@@ -156,29 +151,12 @@ public class EntranceInfo implements Serializable {
         this.note = note;
     }
 
-    @XmlTransient
-    public Collection<SubjectCombination> getSubjectCombinationCollection() {
-        return subjectCombinationCollection;
+    public Field getField() {
+        return field;
     }
 
-    public void setSubjectCombinationCollection(Collection<SubjectCombination> subjectCombinationCollection) {
-        this.subjectCombinationCollection = subjectCombinationCollection;
-    }
-
-    public Field getFieldId() {
-        return fieldId;
-    }
-
-    public void setFieldId(Field fieldId) {
-        this.fieldId = fieldId;
-    }
-
-    public School getSchoolId() {
-        return schoolId;
-    }
-
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
+    public void setField(Field field) {
+        this.field = field;
     }
 
     @Override
@@ -205,5 +183,45 @@ public class EntranceInfo implements Serializable {
     public String toString() {
         return "model.EntranceInfo[ entranceId=" + entranceId + " ]";
     }
+
+    //============= RELATIONSHIP HANDLER ======================
+    //SCHOOL
+    @XmlTransient
+    @Transient
+    public int schoolHandler = Constants.TRANSIENT;
+
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @ManyToOne(optional = false)
+    private School school;
+
+    public School getSchool() {
+        if (schoolHandler == Constants.GENERATE) {
+            school.eInfosHandler=Constants.TRANSIENT;
+            return school;
+        }
+        return null;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+    //---------------------------------
+
+    //SUBJECT COMBINATIONS
+    @JoinTable(name = "EntranceSubject", joinColumns = {
+        @JoinColumn(name = "EntranceId", referencedColumnName = "EntranceId")}, inverseJoinColumns = {
+        @JoinColumn(name = "SjCombiCode", referencedColumnName = "SjCombiCode")})
+    @ManyToMany
+    private Collection<SubjectCombination> subjectCombinations;
+    
+    public Collection<SubjectCombination> getSubjectCombinations() {
+        return subjectCombinations;
+    }
+
+    public void setSubjectCombinations(Collection<SubjectCombination> subjectCombinations) {
+        this.subjectCombinations = subjectCombinations;
+    }
+    
+    //---------------------------------
     
 }

@@ -3,16 +3,17 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Type } from '../model/type';
 import { catchError } from 'rxjs/operators';
+import { Constants } from '../constanst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class TypeService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private constant: Constants) { }
 
   getTypes(): Observable<Type[]> {
-    const url = 'http://localhost:8084/Unistart/webresources/model.type';
+    const url = this.constant.GET_TYPES;
     return this.http.get<Type[]>(url).pipe(
       catchError(this.handleError<Type[]>('getTypes', []))
     );

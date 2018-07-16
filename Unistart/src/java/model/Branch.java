@@ -5,6 +5,7 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -15,9 +16,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -58,10 +61,7 @@ public class Branch implements Serializable {
     private String website;
     @JoinColumn(name = "LocationId", referencedColumnName = "LocationId")
     @ManyToOne
-    private Location locationId;
-    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
-    @ManyToOne(optional = false)
-    private School schoolId;
+    private Location location;
 
     public Branch() {
     }
@@ -115,20 +115,12 @@ public class Branch implements Serializable {
         this.website = website;
     }
 
-    public Location getLocationId() {
-        return locationId;
+    public Location getLocation() {
+        return location;
     }
 
-    public void setLocationId(Location locationId) {
-        this.locationId = locationId;
-    }
-
-    public School getSchoolId() {
-        return schoolId;
-    }
-
-    public void setSchoolId(School schoolId) {
-        this.schoolId = schoolId;
+    public void setLocation(Location location) {
+        this.location = location;
     }
 
     @Override
@@ -155,5 +147,28 @@ public class Branch implements Serializable {
     public String toString() {
         return "model.Branch[ branchId=" + branchId + " ]";
     }
-    
+
+    //=================== RELATIONSHIP HANDLER ============
+    //SCHOOL 
+    @XmlTransient
+    @Transient
+    public int schoolHandler = Constants.TRANSIENT;
+
+    @JoinColumn(name = "SchoolId", referencedColumnName = "SchoolId")
+    @ManyToOne(optional = false)
+    private School school;
+
+    public School getSchool() {
+        if (schoolHandler == Constants.GENERATE) {
+            school.branchsHandler = Constants.TRANSIENT;
+            return school;
+        }
+        return null;
+    }
+
+    public void setSchool(School school) {
+        this.school = school;
+    }
+
+    //-------------------------
 }

@@ -1,0 +1,30 @@
+<section>
+
+  <div id="school-container" *ngIf="school">
+    <h1 class="title">{{school.schoolName | uppercase}}</h1>
+    <img mat-card-image src="/assets/school.txt" alt="{{school.avatar}}" />
+    <div>
+      <b>Mã trường</b>: {{school.schoolCode}}
+    </div>
+    <div>
+      <b>Website</b>: {{school.website}}
+    </div>
+    <div>
+      <b>Số điện thoại</b>: {{school.phone}}
+    </div>
+    <div>
+      <b>Email</b>: {{school.email}}
+    </div>
+
+    <app-info [school]="school" [schoolDetail]="this" *ngIf="mode==INFO">
+    </app-info>
+    <app-review [school]="school" [schoolDetail]="this" *ngIf="mode==REVIEW">
+    </app-review>
+    <app-dynamic-template id="dynamic-template" 
+      [url]="'/assets/pages/'+school.schoolCode+'.html'" 
+      *ngIf="mode==ABOUT">
+    </app-dynamic-template>
+
+  </div>
+
+</section>

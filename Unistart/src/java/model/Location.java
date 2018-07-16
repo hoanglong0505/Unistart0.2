@@ -44,7 +44,7 @@ public class Location implements Serializable {
     @Size(max = 50)
     @Column(name = "LocationName")
     private String locationName;
-    @OneToMany(mappedBy = "locationId")
+    @OneToMany(mappedBy = "location")
     private Collection<Branch> branchCollection;
     @JoinColumn(name = "RegionId", referencedColumnName = "RegionId")
     @ManyToOne

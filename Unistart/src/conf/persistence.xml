@@ -11,15 +11,18 @@
     <class>model.Location</class>
     <class>model.Rate</class>
     <class>model.FieldType</class>
+    <class>model.Answer</class>
     <class>model.Branch</class>
     <class>model.EntranceInfo</class>
     <class>model.Field</class>
+    <class>model.Question</class>
     <class>model.Region</class>
     <class>model.Character</class>
     <class>model.Genitite</class>
     <class>model.RateDetail</class>
     <class>model.Users</class>
     <class>model.AverageRate</class>
+    <class>model.Genitive</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=unistart2"/>

@@ -47,7 +47,7 @@ public class Report implements Serializable {
     private Rate rate;
     @JoinColumn(name = "UserId", referencedColumnName = "UserId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
-    private Users users;
+    private Users user;
 
     public Report() {
     }
@@ -82,19 +82,20 @@ public class Report implements Serializable {
     }
 
     public Rate getRate() {
-        return rate;
+        return null;
+//        return rate;
     }
 
     public void setRate(Rate rate) {
         this.rate = rate;
     }
 
-    public Users getUsers() {
-        return users;
+    public Users getUser() {
+        return user;
     }
 
-    public void setUsers(Users users) {
-        this.users = users;
+    public void setUser(Users user) {
+        this.user = user;
     }
 
     @Override
