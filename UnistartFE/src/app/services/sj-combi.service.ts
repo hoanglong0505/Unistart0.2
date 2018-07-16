@@ -3,16 +3,17 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { SubjectCombination } from '../model/subjectCombination';
 import { catchError } from 'rxjs/operators';
+import { Constants } from '../constanst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SjCombiService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private constant: Constants) { }
 
   getSjCombinations(): Observable<SubjectCombination[]> {
-    const url = 'http://localhost:8084/Unistart/webresources/model.subjectcombination';
+    const url = this.constant.GET_SJ_COMBINATIONS;
     return this.http.get<SubjectCombination[]>(url).pipe(
       catchError(this.handleError<SubjectCombination[]>('getSubjectCombinations', []))
     );

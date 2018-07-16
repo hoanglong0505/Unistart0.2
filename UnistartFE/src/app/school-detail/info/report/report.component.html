@@ -1,0 +1,9 @@
+<div id="background" *ngIf="rpRate">
+  <div id="report-container">
+    Trình bày nội dung báo cáo
+    <br/>
+    <textarea [(ngModel)]="rpContent"></textarea>
+    <div style="color:red;cursor:pointer;" (click)="close()">Đóng</div>
+    <div style="color:green;cursor:pointer;" (click)="send()">Gửi báo cáo</div>
+  </div>
+</div>

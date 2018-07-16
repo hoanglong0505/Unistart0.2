@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { School } from '../model/school';
 import { SchoolService } from '../services/school.service';
+import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
 
 @Component({
   selector: 'app-schools',
@@ -21,6 +22,7 @@ export class SchoolsComponent implements OnInit {
   constructor(private schoolService: SchoolService) { }
 
   ngOnInit() {
+    WaitingBoxComponent.start();
     this.getSchools();
   }
 
@@ -30,6 +32,8 @@ export class SchoolsComponent implements OnInit {
         this.schools = schools
         this.lastPages = Math.ceil(this.schools.length / this.maxItemsPerPage);
         console.log(this.lastPages);
+        WaitingBoxComponent.stop();            
+        
       }
     );
   }

@@ -3,16 +3,17 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Field } from '../model/field';
 import { catchError } from 'rxjs/operators';
+import { Constants } from '../constanst';
 
 @Injectable({
   providedIn: 'root'
 })
 export class FieldService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http: HttpClient, private constant:Constants) { }
 
   getFields(): Observable<Field[]> {
-    const url = 'http://localhost:8084/Unistart/webresources/model.field/field-type/3';
+    const url = this.constant.GET_FIELD_3;
     return this.http.get<Field[]>(url).pipe(
       catchError(this.handleError<Field[]>('getFields', []))
     );

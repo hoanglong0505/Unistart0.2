@@ -71,7 +71,8 @@ public class RateDetail implements Serializable {
     }
 
     public Rate getRate() {
-        return rate;
+        return null;
+//        return rate;
     }
 
     public void setRate(Rate rate) {
@@ -79,7 +80,8 @@ public class RateDetail implements Serializable {
     }
 
     public RateCriteria getRateCriteria() {
-        return rateCriteria;
+        return null;
+//        return rateCriteria;
     }
 
     public void setRateCriteria(RateCriteria rateCriteria) {

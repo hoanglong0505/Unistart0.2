@@ -7,11 +7,18 @@ package model;
 
 import app.Constants;
 import java.io.Serializable;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -19,6 +26,8 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -48,6 +57,7 @@ public class Rate implements Serializable {
     @Basic(optional = false)
     @NotNull
     @Column(name = "RateId")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer rateId;
     @Basic(optional = false)
     @NotNull
@@ -68,13 +78,13 @@ public class Rate implements Serializable {
     @Column(name = "Anonymous")
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private Collection<Report> reportCollection;
+    private Collection<Report> reports;
 
     @JoinColumn(name = "UserId", referencedColumnName = "UserId")
     @ManyToOne
-    private Users userId;
+    private Users user;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
-    private Collection<RateDetail> rateDetailCollection;
+    private Collection<RateDetail> rateDetails;
 
     public Rate() {
     }
@@ -145,29 +155,56 @@ public class Rate implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Report> getReportCollection() {
-        return reportCollection;
+    @Column(name = "SubmitDate")
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date submitDate;
+
+    public void setSubmitDate(Date submitDate) {
+        this.submitDate = submitDate;
     }
 
-    public void setReportCollection(Collection<Report> reportCollection) {
-        this.reportCollection = reportCollection;
+    public Date getSubmitDate() {
+        return submitDate;
     }
 
-    public Users getUserId() {
-        return userId;
+    @Transient
+    private String submitDateStr;
+
+    public void setSubmitDateStr(String submitDateStr) {
+        this.submitDateStr = submitDateStr;
     }
 
-    public void setUserId(Users userId) {
-        this.userId = userId;
+    public String getSubmitDateStr() {
+        if (submitDate != null) {
+            submitDateStr = new SimpleDateFormat("dd/MM/yyyy").format(submitDate);
+            return submitDateStr;
+        }
+        return null;
+    }
+
+    public Collection<Report> getReports() {
+        return reports;
+    }
+
+    public void setReports(Collection<Report> reports) {
+        this.reports = reports;
+    }
+
+    public Users getUser() {
+        return user;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
     }
 
     @XmlTransient
-    public Collection<RateDetail> getRateDetailCollection() {
-        return rateDetailCollection;
+    public Collection<RateDetail> getRateDetails() {
+        return rateDetails;
     }
 
-    public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
-        this.rateDetailCollection = rateDetailCollection;
+    public void setRateDetails(Collection<RateDetail> rateDetails) {
+        this.rateDetails = rateDetails;
     }
 
     @Override

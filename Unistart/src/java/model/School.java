@@ -7,7 +7,12 @@ package model;
 
 import app.Constants;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -76,13 +81,11 @@ public class School implements Serializable {
 
     @OneToMany(mappedBy = "schoolId")
     private Collection<Article> articleCollection;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
-    private Collection<EntranceInfo> entranceInfos;
+
     @JoinColumn(name = "TypeId", referencedColumnName = "TypeId")
     @ManyToOne
     private Type type;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "schoolId")
-    private Collection<Branch> branchs;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
     private Collection<AverageRate> averageRateCollection;
 
@@ -164,30 +167,12 @@ public class School implements Serializable {
         this.articleCollection = articleCollection;
     }
 
-    @XmlTransient
-    public Collection<EntranceInfo> getEntranceInfos() {
-        return entranceInfos;
-    }
-
-    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
-        this.entranceInfos = entranceInfos;
-    }
-
     public Type getType() {
         return type;
     }
 
     public void setType(Type type) {
         this.type = type;
-    }
-
-    @XmlTransient
-    public Collection<Branch> getBranchs() {
-        return branchs;
-    }
-
-    public void setBranchs(Collection<Branch> branchs) {
-        this.branchs = branchs;
     }
 
     @XmlTransient
@@ -233,11 +218,30 @@ public class School implements Serializable {
     @OneToMany(mappedBy = "school")
     private Collection<Rate> rates;
 
-    
     public Collection<Rate> getRates() {
         if (ratesHandler == Constants.GENERATE) {
             setRatesBiDir(Constants.TRANSIENT);
-            return rates;
+            List<Rate> orderRates = new ArrayList(rates);
+            Collections.sort(orderRates, new Comparator<Rate>() {
+                @Override
+                public int compare(Rate o2, Rate o1) {
+                    Date o1d = o1.getSubmitDate();
+                    Date o2d = o2.getSubmitDate();
+
+                    if (o1d == null || o2d == null) {
+                        if (o1d == null && o2d != null) {
+                            return -1;
+                        }
+                        if (o1d != null && o2d == null) {
+                            return 1;
+                        }
+                        return 0;
+                    }
+
+                    return o1d.compareTo(o2d);
+                }
+            });
+            return orderRates;
         }
         return null;
     }
@@ -249,6 +253,60 @@ public class School implements Serializable {
     public void setRatesBiDir(int MODE) {
         for (Rate r : rates) {
             r.schoolHandler = MODE;
+        }
+    }
+
+    //---------------------------------
+    //ENTRANCE INFOS
+    @XmlTransient
+    @Transient
+    public int eInfosHandler = Constants.TRANSIENT;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
+    private Collection<EntranceInfo> entranceInfos;
+
+    public Collection<EntranceInfo> getEntranceInfos() {
+        if (eInfosHandler == Constants.GENERATE) {
+            setEInfosBiDir(Constants.TRANSIENT);
+            return entranceInfos;
+        }
+        return null;
+    }
+
+    public void setEntranceInfos(Collection<EntranceInfo> entranceInfos) {
+        this.entranceInfos = entranceInfos;
+    }
+
+    public void setEInfosBiDir(int MODE) {
+        for (EntranceInfo eI : entranceInfos) {
+            eI.schoolHandler = MODE;
+        }
+    }
+
+    //---------------------------------
+    //BRANCHS
+    @XmlTransient
+    @Transient
+    public int branchsHandler = Constants.TRANSIENT;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
+    private Collection<Branch> branchs;
+
+    public Collection<Branch> getBranchs() {
+        if (branchsHandler == Constants.GENERATE) {
+            setBranchsBiDir(Constants.TRANSIENT);
+            return branchs;
+        }
+        return null;
+    }
+
+    public void setBranchs(Collection<Branch> branchs) {
+        this.branchs = branchs;
+    }
+
+    public void setBranchsBiDir(int MODE) {
+        for (Branch b : branchs) {
+            b.schoolHandler = MODE;
         }
     }
 

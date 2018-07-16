@@ -16,6 +16,7 @@ import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -53,9 +54,9 @@ public class Users implements Serializable {
     @Size(max = 500)
     @Column(name = "Avatar")
     private String avatar;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "users")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
     private Collection<Report> reportCollection;
-    @OneToMany(mappedBy = "userId")
+    @OneToMany(mappedBy = "user")
     private Collection<Rate> rateCollection;
 
     public Users() {
@@ -115,6 +116,18 @@ public class Users implements Serializable {
         this.rateCollection = rateCollection;
     }
 
+    @XmlTransient
+    @Transient
+    private String idToken;
+
+    public void setIdToken(String idToken) {
+        this.idToken = idToken;
+    }
+
+    public String getIdToken() {
+        return idToken;
+    }
+
     @Override
     public int hashCode() {
         int hash = 0;
@@ -139,5 +152,5 @@ public class Users implements Serializable {
     public String toString() {
         return "model.Users[ userId=" + userId + " ]";
     }
-    
+
 }

@@ -10,7 +10,7 @@ package app;
  * @author TNT
  */
 public class Constants {
-    public final static String G_CLIENT_ID="1087289067680-tt2uveimjqg0t9cu46pmalum1kpsiblu.apps.googleusercontent.com";
+    public final static String G_CLIENT_ID="535611105634-ee6ri4c5b06tho1liv8pu6eanerbiijt.apps.googleusercontent.com";
     public final static int RAW=1;
     public final static int TRANSIENT=2;
     public final static int GENERATE=3;

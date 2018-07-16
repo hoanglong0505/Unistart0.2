@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+#school-container .school-card a {
+  text-decoration: none;
+  color: inherit;
+}
+
 #school-container .school-card {
   display: inline-block;
   width: 25%;

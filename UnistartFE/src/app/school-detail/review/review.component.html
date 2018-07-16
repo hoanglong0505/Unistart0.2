@@ -1,0 +1,47 @@
+<h1 style="color:red;">ĐÁNH GIÁ</h1>
+<div id="reviewForm" *ngIf="userRate">
+  <h3>Mức độ hài lòng</h3>
+  <div id="crit-container">
+      <div class="field" *ngFor="let rd of rateDetails">
+        {{rd.rateCriteria.criteriaName}}:
+        <input class="text" type="number" min="1" max="10" [(ngModel)]="rd.value"/>
+        <br/>
+      </div>
+  </div>
+  <h3>Thông tin đánh giá</h3>
+  <div class="field">
+    Nhập tiêu đề
+    <input class="text" type="text" [(ngModel)]="userRate.title" />
+    <br/>
+  </div>
+  <div class="field">
+    Uu điểm
+    <br/>
+    <textarea name="pros" placeholder="Enter text here..." [(ngModel)]="userRate.pros"></textarea>
+    <br/>
+  </div>
+  <div class="field">
+    Nhược điểm
+    <br/>
+    <textarea name="cons" placeholder="Enter text here..." [(ngModel)]="userRate.cons"></textarea>
+    <br/>
+  </div>
+  <div class="field">
+    Trải nghiệm của bạn
+    <br/>
+    <textarea name="experience" placeholder="Enter text here..." [(ngModel)]="userRate.experience"></textarea>
+    <br/>
+  </div>
+  <div class="field">
+    Bạn có khuyến khích học trường này
+    <input type="checkbox" name="encourage" [(ngModel)]="userRate.encourage"/>
+    <br/>
+  </div>
+  <div class="field">
+    Ẩn danh
+    <input type="checkbox" name="anonymous" [(ngModel)]="userRate.anonymous"/>
+    <br/>
+  </div>
+  <br/>
+  <input class="button" (click)="sendReview()" type="button" value="XÁC NHẬN" />
+</div>

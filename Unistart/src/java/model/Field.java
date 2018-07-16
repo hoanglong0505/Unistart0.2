@@ -53,7 +53,7 @@ public class Field implements Serializable {
     @Size(min = 1, max = 100)
     @Column(name = "FieldName")
     private String fieldName;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "fieldId")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "field")
     private Collection<EntranceInfo> entranceInfoCollection;
     @OneToMany(mappedBy = "preField")
     private Collection<Field> fieldCollection;
@@ -120,7 +120,8 @@ public class Field implements Serializable {
     }
 
     public Field getPreField() {
-        return preField;
+//        return preField;
+        return null;
     }
 
     public void setPreField(Field preField) {
