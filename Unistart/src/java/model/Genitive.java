@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Collection;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -20,33 +20,38 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Entity
-@Table(name = "Genitive")
+@Table(name = "Genitive", catalog = "unistart2", schema = "dbo")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Genitive.findAll", query = "SELECT g FROM Genitive g")
     , @NamedQuery(name = "Genitive.findByGenitiveId", query = "SELECT g FROM Genitive g WHERE g.genitiveId = :genitiveId")
-    , @NamedQuery(name = "Genitive.findByGenitiveCode", query = "SELECT g FROM Genitive g WHERE g.genitiveCode = :genitiveCode")})
+    , @NamedQuery(name = "Genitive.findByGentiveCode", query = "SELECT g FROM Genitive g WHERE g.gentiveCode = :gentiveCode")
+    , @NamedQuery(name = "Genitive.findByGentiveName", query = "SELECT g FROM Genitive g WHERE g.gentiveName = :gentiveName")})
 public class Genitive implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
     @NotNull
-    @Column(name = "GenitiveId")
+    @Column(name = "GenitiveId", nullable = false)
     private Integer genitiveId;
     @Basic(optional = false)
     @NotNull
     @Size(min = 1, max = 5)
-    @Column(name = "GenitiveCode")
-    private String genitiveCode;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genitiveId")
-    private Collection<Answer> answerCollection;
+    @Column(name = "GentiveCode", nullable = false, length = 5)
+    private String gentiveCode;
+    @Size(max = 50)
+    @Column(name = "GentiveName", length = 50)
+    private String gentiveName;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "genitive")
+    private List<Answer> answerList;
 
     public Genitive() {
     }
@@ -55,9 +60,9 @@ public class Genitive implements Serializable {
         this.genitiveId = genitiveId;
     }
 
-    public Genitive(Integer genitiveId, String genitiveCode) {
+    public Genitive(Integer genitiveId, String gentiveCode) {
         this.genitiveId = genitiveId;
-        this.genitiveCode = genitiveCode;
+        this.gentiveCode = gentiveCode;
     }
 
     public Integer getGenitiveId() {
@@ -68,21 +73,30 @@ public class Genitive implements Serializable {
         this.genitiveId = genitiveId;
     }
 
-    public String getGenitiveCode() {
-        return genitiveCode;
+    public String getGentiveCode() {
+        return gentiveCode;
     }
 
-    public void setGenitiveCode(String genitiveCode) {
-        this.genitiveCode = genitiveCode;
+    public void setGentiveCode(String gentiveCode) {
+        this.gentiveCode = gentiveCode;
+    }
+
+    public String getGentiveName() {
+        return gentiveName;
+    }
+
+    public void setGentiveName(String gentiveName) {
+        this.gentiveName = gentiveName;
     }
 
     @XmlTransient
-    public Collection<Answer> getAnswerCollection() {
-        return answerCollection;
+    @JsonIgnore
+    public List<Answer> getAnswerList() {
+        return answerList;
     }
 
-    public void setAnswerCollection(Collection<Answer> answerCollection) {
-        this.answerCollection = answerCollection;
+    public void setAnswerList(List<Answer> answerList) {
+        this.answerList = answerList;
     }
 
     @Override

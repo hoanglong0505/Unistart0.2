@@ -1,15 +1,15 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { School } from '../../model/school';
+import { School } from '../../../model/school';
 import { SchoolDetailComponent } from '../school-detail.component';
-import { RateCriteria } from '../../model/rateCriteria';
-import { Rate } from '../../model/rate';
-import { RCriteriaService } from '../../services/r-criteria.service';
-import { RateService } from '../../services/rate.service';
-import { RateDetail } from '../../model/rateDetail';
-import { RateDetailPK } from '../../model/rateDetailPK';
-import { Users } from '../../model/users';
+import { RateCriteria } from '../../../model/rateCriteria';
+import { Rate } from '../../../model/rate';
+import { RCriteriaService } from '../../../services/r-criteria.service';
+import { RateService } from '../../../services/rate.service';
+import { RateDetail } from '../../../model/rateDetail';
+import { RateDetailPK } from '../../../model/rateDetailPK';
+import { Users } from '../../../model/users';
 import { WaitingBoxComponent } from '../../waiting-box/waiting-box.component';
-import { CookieManager } from '../../server/cookie-manager';
+import { CookieManager } from '../../../server/cookie-manager';
 
 @Component({
   selector: 'app-review',

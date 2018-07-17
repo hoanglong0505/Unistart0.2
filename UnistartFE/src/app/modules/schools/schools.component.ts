@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { School } from '../model/school';
-import { SchoolService } from '../services/school.service';
+import { School } from '../../model/school';
+import { SchoolService } from '../../services/school.service';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
 
 @Component({

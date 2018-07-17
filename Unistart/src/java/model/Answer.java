@@ -8,8 +8,8 @@ package model;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
+import javax.persistence.EmbeddedId;
 import javax.persistence.Entity;
-import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
@@ -21,53 +21,55 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Entity
-@Table(name = "Answer")
+@Table(name = "Answer", catalog = "unistart2", schema = "dbo")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Answer.findAll", query = "SELECT a FROM Answer a")
-    , @NamedQuery(name = "Answer.findByAnswerId", query = "SELECT a FROM Answer a WHERE a.answerId = :answerId")
-    , @NamedQuery(name = "Answer.findByAnswerDetail", query = "SELECT a FROM Answer a WHERE a.answerDetail = :answerDetail")})
+    , @NamedQuery(name = "Answer.findByAnswerDetail", query = "SELECT a FROM Answer a WHERE a.answerDetail = :answerDetail")
+    , @NamedQuery(name = "Answer.findByGenititeId", query = "SELECT a FROM Answer a WHERE a.answerPK.genititeId = :genititeId")
+    , @NamedQuery(name = "Answer.findByQuestionId", query = "SELECT a FROM Answer a WHERE a.answerPK.questionId = :questionId")})
 public class Answer implements Serializable {
 
     private static final long serialVersionUID = 1L;
-    @Id
+    @EmbeddedId
+    protected AnswerPK answerPK;
     @Basic(optional = false)
     @NotNull
-    @Column(name = "AnswerId")
-    private Integer answerId;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 2147483647)
-    @Column(name = "AnswerDetail")
+    @Size(min = 1, max = 1073741823)
+    @Column(name = "AnswerDetail", nullable = false, length = 1073741823)
     private String answerDetail;
-    @JoinColumn(name = "GenitiveId", referencedColumnName = "GenitiveId")
+    @JoinColumn(name = "GenititeId", referencedColumnName = "GenitiveId", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
-    private Genitive genitiveId;
-    @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId")
+    private Genitive genitive;
+    @JoinColumn(name = "QuestionId", referencedColumnName = "QuestionId", nullable = false, insertable = false, updatable = false)
     @ManyToOne(optional = false)
-    private Question questionId;
+    private Question question;
 
     public Answer() {
     }
 
-    public Answer(Integer answerId) {
-        this.answerId = answerId;
+    public Answer(AnswerPK answerPK) {
+        this.answerPK = answerPK;
     }
 
-    public Answer(Integer answerId, String answerDetail) {
-        this.answerId = answerId;
+    public Answer(AnswerPK answerPK, String answerDetail) {
+        this.answerPK = answerPK;
         this.answerDetail = answerDetail;
     }
 
-    public Integer getAnswerId() {
-        return answerId;
+    public Answer(int genititeId, int questionId) {
+        this.answerPK = new AnswerPK(genititeId, questionId);
     }
 
-    public void setAnswerId(Integer answerId) {
-        this.answerId = answerId;
+    public AnswerPK getAnswerPK() {
+        return answerPK;
+    }
+
+    public void setAnswerPK(AnswerPK answerPK) {
+        this.answerPK = answerPK;
     }
 
     public String getAnswerDetail() {
@@ -78,26 +80,26 @@ public class Answer implements Serializable {
         this.answerDetail = answerDetail;
     }
 
-    public Genitive getGenitiveId() {
-        return genitiveId;
+    public Genitive getGenitive() {
+        return genitive;
     }
 
-    public void setGenitiveId(Genitive genitiveId) {
-        this.genitiveId = genitiveId;
+    public void setGenitive(Genitive genitive) {
+        this.genitive = genitive;
     }
 
-    public Question getQuestionId() {
-        return questionId;
+    public Question getQuestion() {
+        return question;
     }
 
-    public void setQuestionId(Question questionId) {
-        this.questionId = questionId;
+    public void setQuestion(Question question) {
+        this.question = question;
     }
 
     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (answerId != null ? answerId.hashCode() : 0);
+        hash += (answerPK != null ? answerPK.hashCode() : 0);
         return hash;
     }
 
@@ -108,7 +110,7 @@ public class Answer implements Serializable {
             return false;
         }
         Answer other = (Answer) object;
-        if ((this.answerId == null && other.answerId != null) || (this.answerId != null && !this.answerId.equals(other.answerId))) {
+        if ((this.answerPK == null && other.answerPK != null) || (this.answerPK != null && !this.answerPK.equals(other.answerPK))) {
             return false;
         }
         return true;
@@ -116,7 +118,7 @@ public class Answer implements Serializable {
 
     @Override
     public String toString() {
-        return "model.Answer[ answerId=" + answerId + " ]";
+        return "model.Answer[ answerPK=" + answerPK + " ]";
     }
     
 }

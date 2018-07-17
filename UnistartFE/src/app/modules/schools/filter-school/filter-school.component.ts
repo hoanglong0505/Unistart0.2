@@ -1,16 +1,16 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { SchoolsComponent } from '../schools.component';
-import { School } from '../../model/school';
-import { SchoolService } from '../../services/school.service';
-import { FieldService } from '../../services/field.service';
-import { LocationService } from '../../services/location.service';
-import { SjCombiService } from '../../services/sj-combi.service';
-import { TypeService } from '../../services/type.service';
+import { School } from '../../../model/school';
+import { SchoolService } from '../../../services/school.service';
+import { FieldService } from '../../../services/field.service';
+import { LocationService } from '../../../services/location.service';
+import { SjCombiService } from '../../../services/sj-combi.service';
+import { TypeService } from '../../../services/type.service';
 import { NgForm } from '@angular/forms'
-import { Field } from '../../model/field';
-import { Location } from '../../model/location';
-import { SubjectCombination } from '../../model/subjectCombination';
-import { Type } from '../../model/type';
+import { Field } from '../../../model/field';
+import { Location } from '../../../model/location';
+import { SubjectCombination } from '../../../model/subjectCombination';
+import { Type } from '../../../model/type';
 
 @Component({
   selector: 'app-filter-school',

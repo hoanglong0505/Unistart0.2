@@ -27,7 +27,7 @@ function onSignIn(googleUser) {
   token = googleUser.getAuthResponse().id_token;
   console.log('Token: ' + token);
   var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost:8084/Unistart/login');
+  xhr.open('POST', 'http://192.168.1.9:8084/Unistart/login');
   xhr.send(token);
 
 }
