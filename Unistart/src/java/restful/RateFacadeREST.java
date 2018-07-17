@@ -5,20 +5,23 @@
  */
 package restful;
 
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
-import javax.ws.rs.POST;
-import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import model.Rate;
+import model.business.JDBCConnector;
 
 /**
  *
@@ -88,9 +91,46 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
         return String.valueOf(super.count());
     }
 
+    //custom
+    public void setRateAverageValue(Rate r) {
+        String sql = "SELECT AVG (rd.Value) as averageValue FROM Rate r\n"
+                + "INNER JOIN RateDetail rd ON r.RateId = rd.RateId\n"
+                + "WHERE r.RateId = ?\n"
+                + "GROUP BY r.RateId";
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        try (Connection c = JDBCConnector.connect()) {
+            ps = c.prepareStatement(sql);
+
+            ps.setInt(1, r.getRateId());
+
+            rs = ps.executeQuery();
+            if (rs.next()) {
+                r.setAverageValue(rs.getDouble(1));
+            }
+
+        } catch (SQLException ex) {
+            Logger.getLogger(RateFacadeREST.class.getName()).log(Level.SEVERE, null, ex);
+        } finally {
+
+            try {
+                if (ps != null) {
+                    ps.close();
+                }
+                if (rs != null) {
+                    rs.close();
+                }
+            } catch (SQLException ex) {
+                Logger.getLogger(RateFacadeREST.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

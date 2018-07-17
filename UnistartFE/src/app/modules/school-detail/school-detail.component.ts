@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { SchoolService } from '../../services/school.service'
 import { School } from '../../model/school';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
+import { AverageRateService } from '../../services/average-rate.service';
 
 @Component({
   selector: 'app-school-detail',
@@ -21,7 +22,7 @@ export class SchoolDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private schoolService: SchoolService
+    private schoolService: SchoolService,
   ) { }
 
   ngOnInit() {
@@ -34,8 +35,8 @@ export class SchoolDetailComponent implements OnInit {
     this.schoolService.getSchool(id)
       .subscribe(school => {
         this.school = school;
-        WaitingBoxComponent.stop();    
-        
+        WaitingBoxComponent.stop();
+
       });
   }
 

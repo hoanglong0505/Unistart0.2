@@ -5,7 +5,14 @@
  */
 package restful;
 
+import controller.servlet.SendReviewServlet;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -21,6 +28,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.PathSegment;
 import model.AverageRate;
 import model.AverageRatePK;
+import model.School;
+import model.business.JDBCConnector;
 
 /**
  *
@@ -57,6 +66,14 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
     public AverageRateFacadeREST() {
         super(AverageRate.class);
         em = PersistenceUtils.getEntityManger();
+    }
+
+    public void beginTransaction() {
+        em.getTransaction().begin();
+    }
+
+    public void commitTransaction() {
+        em.getTransaction().commit();
     }
 
     @POST
@@ -109,9 +126,43 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
         return String.valueOf(super.count());
     }
 
+    //custom
+    //update average rate
+    public void updateAverageRate(School sch) {
+        String sql = "SELECT rd.CriteriaId,AVG(rd.Value) FROM RateDetail rd \n"
+                + "INNER JOIN Rate r ON r.RateId = rd.RateId\n"
+                + "INNER JOIN School s ON r.SchoolId = s.SchoolId\n"
+                + "WHERE s.SchoolId=?\n"
+                + "GROUP BY rd.CriteriaId;";
+        try (Connection c = JDBCConnector.connect();
+                PreparedStatement ps = c.prepareStatement(sql);) {
+            ps.setInt(1, sch.getSchoolId());
+            ResultSet rs = ps.executeQuery();
+            beginTransaction();
+            while (rs.next()) {
+                AverageRatePK avgPK = new AverageRatePK(sch.getSchoolId(), rs.getInt(1));
+                AverageRate avg = find(avgPK);
+                if (avg == null) {
+                    avg = new AverageRate();
+                    avg.setAverageRatePK(avgPK);
+                    avg.setAvgValue(rs.getDouble(2));
+                    create(avg);
+                } else {
+                    avg.setAvgValue(rs.getDouble(2));
+                    edit(avg);
+                }
+            }
+            commitTransaction();
+
+        } catch (SQLException ex) {
+            Logger.getLogger(SendReviewServlet.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

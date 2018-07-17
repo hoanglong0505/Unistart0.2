@@ -22,6 +22,7 @@ import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component
 import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
 import { ReportComponent } from './modules/school-detail/info/report/report.component';
 import { Constants } from './constanst';
+import { BarRatingModule } from "ngx-bar-rating";
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { Constants } from './constanst';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    BarRatingModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]

@@ -16,6 +16,7 @@ export class Rate {
     rateDetails: RateDetail[];
     submitDateStr: string;
     reports: Report[] = new Array();
+    averageValue: number;
 
     constructor() { }
 

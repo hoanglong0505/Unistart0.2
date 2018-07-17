@@ -3,5 +3,14 @@
 }
 
 #school-container img {
-    width: 500px;
+  width: 400px;
+}
+
+#avg-rate-container {
+  width: 60%;
+}
+
+#avg-rate-container .field {
+  display: inline-block;
+  margin: 0 10px;
 }
