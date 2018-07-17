@@ -6,7 +6,7 @@
 package model;
 
 import java.io.Serializable;
-import java.util.Collection;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -20,13 +20,14 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Entity
-@Table(name = "Question")
+@Table(name = "Question", catalog = "unistart2", schema = "dbo")
 @XmlRootElement
 @NamedQueries({
     @NamedQuery(name = "Question.findAll", query = "SELECT q FROM Question q")
@@ -38,26 +39,19 @@ public class Question implements Serializable {
     @Id
     @Basic(optional = false)
     @NotNull
-    @Column(name = "QuestionId")
+    @Column(name = "QuestionId", nullable = false)
     private Integer questionId;
-    @Basic(optional = false)
-    @NotNull
-    @Size(min = 1, max = 2147483647)
-    @Column(name = "QuestionDetail")
+    @Size(max = 1073741823)
+    @Column(name = "QuestionDetail", length = 1073741823)
     private String questionDetail;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "questionId")
-    private Collection<Answer> answerCollection;
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "question")
+    private List<Answer> answerList;
 
     public Question() {
     }
 
     public Question(Integer questionId) {
         this.questionId = questionId;
-    }
-
-    public Question(Integer questionId, String questionDetail) {
-        this.questionId = questionId;
-        this.questionDetail = questionDetail;
     }
 
     public Integer getQuestionId() {
@@ -77,12 +71,13 @@ public class Question implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Answer> getAnswerCollection() {
-        return answerCollection;
+    @JsonIgnore
+    public List<Answer> getAnswerList() {
+        return answerList;
     }
 
-    public void setAnswerCollection(Collection<Answer> answerCollection) {
-        this.answerCollection = answerCollection;
+    public void setAnswerList(List<Answer> answerList) {
+        this.answerList = answerList;
     }
 
     @Override

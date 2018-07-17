@@ -6,6 +6,8 @@
 package restful;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -22,7 +24,7 @@ import model.Character;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Stateless
 @Path("model.character")
@@ -87,6 +89,19 @@ public class CharacterFacadeREST extends AbstractFacade<Character> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+
+    public void persist(Object object) {
+        try {
+            em.getTransaction().begin();
+            em.persist(object);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", e);
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
     }
     
 }

@@ -5,7 +5,12 @@
  */
 package restful;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import dao.FieldDAO;
+import dao.MBTIDAO;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -18,11 +23,13 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+import model.Answer;
+import model.Field;
 import model.Question;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Stateless
 @Path("model.question")
@@ -33,7 +40,7 @@ public class QuestionFacadeREST extends AbstractFacade<Question> {
 
     public QuestionFacadeREST() {
         super(Question.class);
-        em = PersistenceUtils.getEntityManger();
+          em = PersistenceUtils.getEntityManger();
     }
 
     @POST
@@ -88,5 +95,27 @@ public class QuestionFacadeREST extends AbstractFacade<Question> {
     protected EntityManager getEntityManager() {
         return em;
     }
+
+    public void persist(Object object) {
+        try {
+            em.getTransaction().begin();
+            em.persist(object);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", e);
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
+    }
+     @GET
+    @Path("getAll")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Question> getAll() throws JsonProcessingException {
+            MBTIDAO dao = new MBTIDAO();
+        List<Question> list = dao.getQuestions(em);
+        return list;
+    }
+  
     
 }

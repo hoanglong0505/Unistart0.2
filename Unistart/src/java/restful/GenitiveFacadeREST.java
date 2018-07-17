@@ -6,6 +6,8 @@
 package restful;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -22,7 +24,7 @@ import model.Genitive;
 
 /**
  *
- * @author TNT
+ * @author Admin
  */
 @Stateless
 @Path("model.genitive")
@@ -33,7 +35,7 @@ public class GenitiveFacadeREST extends AbstractFacade<Genitive> {
 
     public GenitiveFacadeREST() {
         super(Genitive.class);
-        em = PersistenceUtils.getEntityManger();
+          em = PersistenceUtils.getEntityManger();
     }
 
     @POST
@@ -87,6 +89,19 @@ public class GenitiveFacadeREST extends AbstractFacade<Genitive> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+
+    public void persist(Object object) {
+        try {
+            em.getTransaction().begin();
+            em.persist(object);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", e);
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
     }
     
 }
