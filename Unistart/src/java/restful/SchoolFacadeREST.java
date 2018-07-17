@@ -7,6 +7,7 @@ package restful;
 
 import app.Constants;
 import dao.SchoolDAO;
+import java.util.Arrays;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,6 +22,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import model.FilterSchool;
 import model.School;
 
 /**
@@ -110,6 +112,45 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         SchoolDAO dao = new SchoolDAO();
         List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
         return list;
+    }
+     @POST
+    @Path("filter-school2")
+    @Consumes( MediaType.APPLICATION_JSON)
+    public String findSchool2(String[] school){
+         System.out.println("name : " + school);
+         System.out.println("length"+school.length);
+        return school[0];
+    }
+    @POST
+    @Path("filter-school2a")
+    @Consumes( MediaType.APPLICATION_JSON)
+    public String findSchool2a(FilterSchool entity){
+         System.out.println("name : " + entity.getSchoolName());
+         for(String location : entity.getLocation()){
+             System.out.println("location " + location);
+         }
+          for(String field : entity.getField()){
+             System.out.println("field " + field);
+         }
+           for(String sjcombi : entity.getSjCombi()){
+             System.out.println("sjcombi " + sjcombi);
+         }
+            for(String type : entity.getTypeSchool()){
+             System.out.println("type " + type);
+         }
+            System.out.println("point" + entity.getMinPoint());
+        return entity.getSchoolName();
+    }
+     @GET
+    @Path("filter-school3")
+    @Produces( MediaType.APPLICATION_JSON)
+    public String findSchool3( @QueryParam("schoolName") String schoolName){
+       String[] name= schoolName.split(",");
+       for(int i=0;i<name.length;i++){
+           System.out.println("1 : "+name[i]);
+       }
+         System.out.println("name : " + schoolName);
+        return schoolName;
     }
 
     public void refresh(School school){
