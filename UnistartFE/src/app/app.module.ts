@@ -25,7 +25,11 @@ import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component
 import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
 import { ReportComponent } from './modules/school-detail/info/report/report.component';
 import { Constants } from './constanst';
+<<<<<<< HEAD
 import { MbtiComponent } from './modules/mbti/mbti.component';
+=======
+import { BarRatingModule } from "ngx-bar-rating";
+>>>>>>> 36e53d0e139c62e0c88018f2ce90cb2ffce77342
 
 @NgModule({
   declarations: [
@@ -53,9 +57,13 @@ import { MbtiComponent } from './modules/mbti/mbti.component';
     MatInputModule,
     MatFormFieldModule,
     FormsModule,
+<<<<<<< HEAD
     MatStepperModule,
     MatListModule,
     MatCheckboxModule
+=======
+    BarRatingModule
+>>>>>>> 36e53d0e139c62e0c88018f2ce90cb2ffce77342
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]

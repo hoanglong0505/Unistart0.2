@@ -52,6 +52,11 @@ import javax.xml.bind.annotation.XmlTransient;
     , @NamedQuery(name = "Rate.findByAnonymous", query = "SELECT r FROM Rate r WHERE r.anonymous = :anonymous")})
 public class Rate implements Serializable {
 
+    @Column(name = "SubmitTime")
+    @Temporal(TemporalType.TIME)
+    @NotNull
+    private Date submitTime;
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -85,6 +90,23 @@ public class Rate implements Serializable {
     private Users user;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<RateDetail> rateDetails;
+
+    @XmlTransient
+    @Column(name = "SubmitDate")
+    @Temporal(TemporalType.TIMESTAMP)
+    @NotNull
+    private Date submitDate;
+
+    @Transient
+    private Double averageValue;
+
+    public Double getAverageValue() {
+        return averageValue;
+    }
+
+    public void setAverageValue(Double averageValue) {
+        this.averageValue = averageValue;
+    }
 
     public Rate() {
     }
@@ -153,11 +175,6 @@ public class Rate implements Serializable {
     public void setAnonymous(Boolean anonymous) {
         this.anonymous = anonymous;
     }
-
-    @XmlTransient
-    @Column(name = "SubmitDate")
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date submitDate;
 
     public void setSubmitDate(Date submitDate) {
         this.submitDate = submitDate;
@@ -259,4 +276,11 @@ public class Rate implements Serializable {
     }
 
     //----------------------------------
+    public Date getSubmitTime() {
+        return submitTime;
+    }
+
+    public void setSubmitTime(Date submitTime) {
+        this.submitTime = submitTime;
+    }
 }

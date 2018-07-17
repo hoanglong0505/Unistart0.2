@@ -70,6 +70,7 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
             sch.ratesHandler = Constants.GENERATE;
             sch.eInfosHandler = Constants.GENERATE;
             sch.branchsHandler = Constants.GENERATE;
+            sch.setRatesAverageValue();
         }
         return sch;
     }

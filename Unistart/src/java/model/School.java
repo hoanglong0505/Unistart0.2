@@ -29,6 +29,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import restful.RateFacadeREST;
 
 /**
  *
@@ -87,7 +88,7 @@ public class School implements Serializable {
     private Type type;
 
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "school")
-    private Collection<AverageRate> averageRateCollection;
+    private Collection<AverageRate> averageRates;
 
     public School() {
     }
@@ -175,13 +176,12 @@ public class School implements Serializable {
         this.type = type;
     }
 
-    @XmlTransient
-    public Collection<AverageRate> getAverageRateCollection() {
-        return averageRateCollection;
+    public Collection<AverageRate> getAverageRates() {
+        return averageRates;
     }
 
-    public void setAverageRateCollection(Collection<AverageRate> averageRateCollection) {
-        this.averageRateCollection = averageRateCollection;
+    public void setAverageRates(Collection<AverageRate> averageRates) {
+        this.averageRates = averageRates;
     }
 
     @Override
@@ -224,21 +224,15 @@ public class School implements Serializable {
             List<Rate> orderRates = new ArrayList(rates);
             Collections.sort(orderRates, new Comparator<Rate>() {
                 @Override
-                public int compare(Rate o2, Rate o1) {
+                public int compare(Rate o1, Rate o2) {
                     Date o1d = o1.getSubmitDate();
                     Date o2d = o2.getSubmitDate();
 
-                    if (o1d == null || o2d == null) {
-                        if (o1d == null && o2d != null) {
-                            return -1;
-                        }
-                        if (o1d != null && o2d == null) {
-                            return 1;
-                        }
-                        return 0;
+                    int result = o2d.compareTo(o1d);
+                    if (result == 0) {
+                        return o2.getSubmitTime().compareTo(o1.getSubmitTime());
                     }
-
-                    return o1d.compareTo(o2d);
+                    return result;
                 }
             });
             return orderRates;
@@ -311,4 +305,10 @@ public class School implements Serializable {
     }
 
     //---------------------------------
+    public void setRatesAverageValue() {
+        RateFacadeREST rRest = new RateFacadeREST();
+        for (Rate r : rates) {
+            rRest.setRateAverageValue(r);
+        }
+    }
 }

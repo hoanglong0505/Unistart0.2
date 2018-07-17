@@ -6,6 +6,7 @@ import { catchError } from 'rxjs/operators';
 import { HttpResponse } from '../server/httpResponse';
 import { CookieManager } from '../server/cookie-manager';
 import { Constants } from '../constanst';
+import { School } from '../model/school';
 
 const httpOptions = {
   headers: new HttpHeaders({
@@ -23,7 +24,9 @@ export class RateService {
   addRate(rate: Rate): Observable<HttpResponse> {
     const url = this.constant.SEND_REVIEW;
 
-    rate.school.rates = null;
+    var school = new School();
+    school.schoolId = rate.school.schoolId;
+    rate.school = school;
     console.log(rate);
 
     return this.http.post<HttpResponse>(url, rate, httpOptions).pipe(

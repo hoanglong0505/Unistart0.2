@@ -41,7 +41,6 @@ export class ReviewComponent implements OnInit {
             var rd = new RateDetail();
             rd.rateDetailPK = new RateDetailPK();
             rd.rateDetailPK.criteriaId = cr.criteriaId;
-            rd.value = 10;
             rd.rateCriteria = cr;
             this.rateDetails.push(rd);
           }

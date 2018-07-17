@@ -40,7 +40,8 @@
 <h2 class="title">Các đánh giá</h2>
 
 <div *ngFor="let r of school.rates">
-  <h3 style="color: blueviolet" [ngSwitch]="r.anonymous">
+  <img style="width:40px;height:40px;vertical-align: middle; margin-right: 10px;" [src] ="r.user.avatar" [alt]="r.user.avatar"/>
+  <h3 style="color: blueviolet; display: inline-block;" [ngSwitch]="r.anonymous">
     <span *ngSwitchCase="false">{{r.user.name}}</span>
     <span *ngSwitchCase="true">Thành viên ẩn danh</span>
   </h3>
@@ -68,9 +69,15 @@
     <span *ngSwitchCase="true" style="color:green;">Khuyến khích học</span>
     <span *ngSwitchCase="false" style="color:red;">Không khuyến khích học</span>
   </div>
-  
+  <div>
+    Tổng thể:
+    <bar-rating [(rate)]="r.averageValue" [max]="10" 
+      [theme]="'stars'" [readOnly]="true">
+    </bar-rating>
+  </div>
   <div id="report" style="color:grey;cursor:pointer;" (click)="turnOnReport(r)">
-    <span>{{r.reports.length}} báo cáo</span> --- <i>BÁO CÁO BÀI ĐÁNH GIÁ</i>
+    <span>{{r.reports.length}} báo cáo</span> ---
+    <i>BÁO CÁO BÀI ĐÁNH GIÁ</i>
   </div>
   <div>-----------------------------------------</div>
 </div>

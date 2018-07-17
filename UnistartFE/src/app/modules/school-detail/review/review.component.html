@@ -4,7 +4,7 @@
   <div id="crit-container">
       <div class="field" *ngFor="let rd of rateDetails">
         {{rd.rateCriteria.criteriaName}}:
-        <input class="text" type="number" min="1" max="10" [(ngModel)]="rd.value"/>
+        <bar-rating [(rate)]="rd.value" [max]="10" [theme]="'stars'"></bar-rating>        
         <br/>
       </div>
   </div>

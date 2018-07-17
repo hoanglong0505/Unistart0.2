@@ -2,7 +2,17 @@
 
   <div id="school-container" *ngIf="school">
     <h1 class="title">{{school.schoolName | uppercase}}</h1>
-    <img mat-card-image src="/assets/school.txt" alt="{{school.avatar}}" />
+    <img mat-card-image src="/assets/images/school.txt" alt="{{school.avatar}}" />
+    <div style="color:red;">{{school.rates.length}} đánh giá</div>    
+    <div id="avg-rate-container" *ngIf="mode==INFO">
+      <div class="field" *ngFor="let avg of school.averageRates">
+        {{avg.rateCriteria.criteriaName}}:
+        <bar-rating [(rate)]="avg.avgValue" [max]="10"
+          [theme]="'stars'" [readOnly]="true">
+        </bar-rating>
+      </div>
+    </div>
+    <hr/>
     <div>
       <b>Mã trường</b>: {{school.schoolCode}}
     </div>
@@ -20,9 +30,7 @@
     </app-info>
     <app-review [school]="school" [schoolDetail]="this" *ngIf="mode==REVIEW">
     </app-review>
-    <app-dynamic-template id="dynamic-template" 
-      [url]="'/assets/pages/'+school.schoolCode+'.html'" 
-      *ngIf="mode==ABOUT">
+    <app-dynamic-template id="dynamic-template" [url]="'/assets/pages/'+school.schoolCode+'.html'" *ngIf="mode==ABOUT">
     </app-dynamic-template>
 
   </div>
