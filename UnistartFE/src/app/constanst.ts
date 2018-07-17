@@ -46,4 +46,13 @@ export class Constants {
   private TYPE = this.SERVICE_PATH + 'model.type';
   public GET_TYPES = this.TYPE;
 
+  //question
+  private QUESTION = this.SERVICE_PATH + 'model.question';
+  public GET_QUESTIONS = this.QUESTION;
+
+    //answer
+    private ANSWER = this.SERVICE_PATH + 'model.answer';
+    public GET_ANSWERS = this.ANSWER;
+    public GET_ANSWERS_BY_QUESTION = this.GET_ANSWERS + '/question/';
+
 }

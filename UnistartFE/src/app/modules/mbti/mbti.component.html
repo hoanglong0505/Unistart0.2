@@ -1,0 +1,14 @@
+<div class="body col-sm-9">
+    <button mat-raised-button color="accent" (click)="load()" >Load question</button>
+    <mat-list *ngFor="let q of quests" >
+        <h3 mat-subheader>Question {{q.questionDetail}}:</h3>
+        <mat-list-item *ngFor="let answer of q.listAnswer" 
+        [ngStyle]="{'background-color':((q.select !== undefined)&&(q.select !== '')) ? '' : 'aliceblue' }">
+            <mat-checkbox class="example-margin" [(ngModel)]=answer.check  (change)="check(q,answer.genitive.gentiveCode,answer.check)" [checked]="(answer.genitive.gentiveCode===q.select)">
+              {{answer.answerDetail}} </mat-checkbox>         
+        </mat-list-item>
+        <mat-divider></mat-divider>
+    </mat-list>
+    <button mat-raised-button color="accent" *ngIf="finish" (click)="finish()" >Finish</button>
+</div>
+<div class="character col-sm-3"></div>

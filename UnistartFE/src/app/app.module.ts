@@ -7,6 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 import { AppComponent } from './app.component';
@@ -22,6 +25,7 @@ import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component
 import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
 import { ReportComponent } from './modules/school-detail/info/report/report.component';
 import { Constants } from './constanst';
+import { MbtiComponent } from './modules/mbti/mbti.component';
 
 @NgModule({
   declarations: [
@@ -36,6 +40,7 @@ import { Constants } from './constanst';
     WaitingBoxComponent,
     DynamicTemplateComponent,
     ReportComponent,
+    MbtiComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,7 +52,10 @@ import { Constants } from './constanst';
     MatButtonModule,
     MatInputModule,
     MatFormFieldModule,
-    FormsModule
+    FormsModule,
+    MatStepperModule,
+    MatListModule,
+    MatCheckboxModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]
