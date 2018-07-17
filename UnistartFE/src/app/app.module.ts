@@ -28,6 +28,7 @@ import { Constants } from './constanst';
 import { MbtiComponent } from './modules/mbti/mbti.component';
 
 import { BarRatingModule } from 'ngx-bar-rating';
+import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +44,7 @@ import { BarRatingModule } from 'ngx-bar-rating';
     DynamicTemplateComponent,
     ReportComponent,
     MbtiComponent,
+    MbtiDetailComponent,
   ],
   imports: [
     BrowserModule,
