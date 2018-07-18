@@ -1,5 +1,12 @@
-<div>
-  <div class="g-signin2" data-onsuccess="onSignIn">
-  </div><span id="glogin-button"></span>
-  <button id="glogout-button" onclick="signOut()">Sign out</button>
+<div id="sign-container">
+  <div id="glogin-button" class="g-signin2" data-onsuccess="onSignIn">
+  </div>
+  <div id="account">
+    <button id="user-menu" (click)="showDropDown()" ></button>
+    <div id="drop-down">
+      <a onclick="location.reload()" routerLink="/user-profile/{{getUserId()}}">Trang cá nhân</a>
+      <a onclick="signOut()">Đăng xuất</a>
+    </div>
+    <img id="user-img" />
+  </div>
 </div>

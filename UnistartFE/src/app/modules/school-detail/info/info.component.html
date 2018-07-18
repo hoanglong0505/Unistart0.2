@@ -40,7 +40,11 @@
 <h2 class="title">Các đánh giá</h2>
 
 <div *ngFor="let r of school.rates">
-  <img style="width:40px;height:40px;vertical-align: middle; margin-right: 10px;" [src] ="r.user.avatar" [alt]="r.user.avatar"/>
+  <img *ngIf="!r.anonymous" style="width:40px;height:40px;vertical-align: middle; margin-right: 10px;" 
+    [src] ="r.user.avatar" [alt]="r.user.avatar"/>
+  <img *ngIf="r.anonymous" style="width:40px;height:40px;vertical-align: middle; margin-right: 10px;" 
+    src ="/assets/images/anonymous.png" alt="anonymous"/>
+  
   <h3 style="color: blueviolet; display: inline-block;" [ngSwitch]="r.anonymous">
     <a routerLink="/user-profile/{{r.user.userId}}" *ngSwitchCase="false">{{r.user.name}}</a>
     <span *ngSwitchCase="true">Thành viên ẩn danh</span>

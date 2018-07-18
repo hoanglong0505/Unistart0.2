@@ -7,10 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import {MatStepperModule} from '@angular/material/stepper';
-import {MatListModule} from '@angular/material/list';
-import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatStepperModule } from '@angular/material/stepper';
+import { MatListModule } from '@angular/material/list';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './modules/nav-menu/nav-menu.component';
@@ -62,8 +63,7 @@ import { UserProfileComponent } from './modules/user-profile/user-profile.compon
     MatStepperModule,
     MatListModule,
     MatCheckboxModule,
-    BarRatingModule
-
+    BarRatingModule,
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]

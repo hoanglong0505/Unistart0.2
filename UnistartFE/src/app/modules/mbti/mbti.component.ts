@@ -32,7 +32,6 @@ export class MbtiComponent implements OnInit {
       );
     });
     this.quests = this.questions;
-    console.log(this.quests);
   }
   load() {
     this.loadQuestion();

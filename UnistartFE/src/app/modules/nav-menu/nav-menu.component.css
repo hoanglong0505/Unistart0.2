@@ -1,10 +1,17 @@
 nav {
     background: black;
+    position: relative;
 }
 nav a {
-    padding: 10px 50px;
+    padding: 15px 50px;
     display: inline-block;
     color:white;
     text-decoration: none;
     background: black;
+}
+
+#sign-in {
+    position: absolute;
+    right:5px;
+    top:5px;
 }

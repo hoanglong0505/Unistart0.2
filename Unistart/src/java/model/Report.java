@@ -5,6 +5,7 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
 import javax.persistence.Basic;
 import javax.persistence.Column;
@@ -16,9 +17,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 
 /**
  *
@@ -45,9 +48,6 @@ public class Report implements Serializable {
     @JoinColumn(name = "RateId", referencedColumnName = "RateId", insertable = false, updatable = false)
     @ManyToOne(optional = false)
     private Rate rate;
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId", insertable = false, updatable = false)
-    @ManyToOne(optional = false)
-    private Users user;
 
     public Report() {
     }
@@ -90,15 +90,6 @@ public class Report implements Serializable {
         this.rate = rate;
     }
 
-    public Users getUser() {
-//        return user;
-        return null;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
-    }
-
     @Override
     public int hashCode() {
         int hash = 0;
@@ -123,5 +114,31 @@ public class Report implements Serializable {
     public String toString() {
         return "model.Report[ reportPK=" + reportPK + " ]";
     }
-    
+
+    //============= RELATION SHIP HANDLER=============
+    //user
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId", insertable = false, updatable = false)
+    @ManyToOne(optional = false)
+    private Users user;
+
+    @XmlTransient
+    @Transient
+    public int userHandler = Constants.TRANSIENT;
+
+    public Users getUser() {
+        if (userHandler == Constants.GENERATE) {
+            setUserBiDir(Constants.TRANSIENT);
+            return user;
+        }
+        return null;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
+    }
+
+    public void setUserBiDir(int MODE) {
+        user.reportsHandler = MODE;
+    }
+
 }

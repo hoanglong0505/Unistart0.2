@@ -58,6 +58,6 @@ export class Constants {
 
   //user
   private USER = this.SERVICE_PATH + 'model.users/';
-  public GET_USER_BY_ID = this.USER;
+  public GET_USER_INFO = this.USER + 'get-user';
 
 }

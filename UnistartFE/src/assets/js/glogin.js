@@ -1,52 +1,52 @@
-sessionStorage.setItem('reload', 'false');
-
-function setCookie(cname, cvalue, exdays) {
-  var d = new Date();
-  d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-  var expires = "expires=" + d.toUTCString();
-  document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-}
-
-function getCookie(cname) {
-  var name = cname + "=";
-  var ca = document.cookie.split(';');
-  for (var i = 0; i < ca.length; i++) {
-    var c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
 function onSignIn(googleUser) {
-  // var profile = googleUser.getBasicProfile();
-  sessionStorage.setItem('gId', googleUser.getId());
-  // console.log(gId);
+  var profile = googleUser.getBasicProfile();
   var tempToken = googleUser.getAuthResponse().id_token;
-  if (sessionStorage.getItem('gToken') != tempToken) {
+  var tempId = profile.getId();
+  if (!sessionStorage.getItem('gId') || sessionStorage.getItem('gId') != tempId) {
     sessionStorage.setItem('gToken', tempToken);
-    reload = true;
+    sessionStorage.setItem('gId', tempId);
+    console.log(tempId);
+
     var xhr = new XMLHttpRequest();
     xhr.open('POST', 'http://localhost:8084/Unistart/login');
     xhr.send(tempToken);
     if (sessionStorage.getItem('reload') == 'true')
       window.location.reload();
   }
+
+  userLogin(profile);
+
   // console.log('Token: ' + token);
 
 }
 
-function signOut() {
-  var auth2 = gapi.auth2.getAuthInstance();
-  auth2.signOut().then(function () {
-    sessionStorage.removeItem('gId');
-    sessionStorage.removeItem('gToken');
-    if (sessionStorage.getItem('reload') == 'true')
-      window.location.reload();
-  });
 
+function signOut() {
+  var confirm = window.confirm('Xác nhận đăng xuất?');
+  if (confirm) {
+    var auth2 = gapi.auth2.getAuthInstance();
+    auth2.signOut().then(function () {
+      sessionStorage.removeItem('gId');
+      sessionStorage.removeItem('gToken');
+      if (sessionStorage.getItem('reload') == 'true')
+        window.location.reload();
+    });
+    userLogout();
+  }
+}
+
+function userLogin(profile) {
+  ele('glogin-button').style.display = 'none';
+  ele('account').style.display = 'inline-block';
+  ele('user-img').src = profile.getImageUrl();
+  ele('user-menu').innerHTML = profile.getName();
+}
+
+function userLogout() {
+  ele('glogin-button').style.display = 'inline-block';
+  ele('account').style.display = 'none';
+}
+
+function ele(id) {
+  return document.getElementById(id);
 }

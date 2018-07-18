@@ -35,11 +35,10 @@ export class ReportComponent implements OnInit {
       if (this.rpRate) {
         WaitingBoxComponent.start();
         var rp = new Report();
-        var token = (window as any).token;
 
         rp.rpContent = this.rpContent;
         rp.user = new Users();
-        rp.user.idToken = token;
+        rp.user.idToken = sessionStorage.getItem('gToken');
         rp.rate = this.rpRate;
         console.log(rp);
 

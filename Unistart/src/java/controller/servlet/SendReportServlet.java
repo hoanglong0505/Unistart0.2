@@ -74,6 +74,9 @@ public class SendReportServlet extends HttpServlet {
             content = "Nội dung phải ít nhất 50 kí tự";
             return false;
         }
+        if (rp.getUser() == null) {
+            return false;
+        }
         return true;
     }
 
@@ -93,6 +96,8 @@ public class SendReportServlet extends HttpServlet {
             System.out.println(reportJson);
             Gson gson = new Gson();
             Report rp = gson.fromJson(reportJson, Report.class);
+            rp.userHandler = Constants.GENERATE;
+            
             if (checkValid(rp)) {
                 Users u = rp.getUser();
                 String idToken = u.getIdToken();

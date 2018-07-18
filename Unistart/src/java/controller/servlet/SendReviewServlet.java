@@ -67,13 +67,16 @@ public class SendReviewServlet extends HttpServlet {
     }
 
     private boolean checkTodayReview(Users u, School sch) {
-        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
+//        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
+        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SchoolId = ?";
         Query q = em.createNativeQuery(sql);
         q.setParameter(1, u.getUserId());
+        q.setParameter(2, sch.getSchoolId());
+
         List res = q.getResultList();
         if (res.size() > 0) {
             status = 409;
-            content = "Chỉ được review 1 lần 1 ngày";
+            content = "Bạn đã đánh giá trường này";
             return false;
         }
         return true;

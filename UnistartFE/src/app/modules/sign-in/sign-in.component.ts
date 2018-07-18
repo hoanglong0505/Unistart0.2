@@ -10,6 +10,25 @@ export class SignInComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
   }
 
+  getUserId(){
+    return sessionStorage.getItem('gId');
+  }
+
+  ele(id): HTMLElement {
+    return document.getElementById(id);
+  }
+
+  display: boolean = false;
+  showDropDown() {
+    if (!this.display) {
+      this.ele('drop-down').style.display = 'block';
+      this.display = true;
+    } else {
+      this.ele('drop-down').style.display = 'none';
+      this.display = false;
+    }
+  }
 }

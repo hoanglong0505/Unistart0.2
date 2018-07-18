@@ -61,8 +61,6 @@ public class Users implements Serializable {
     @Size(max = 500)
     @Column(name = "Avatar")
     private String avatar;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private Collection<Report> reports;
 
     public Users() {
     }
@@ -101,15 +99,6 @@ public class Users implements Serializable {
 
     public void setAvatar(String avatar) {
         this.avatar = avatar;
-    }
-
-    @XmlTransient
-    public Collection<Report> getReports() {
-        return reports;
-    }
-
-    public void setReports(Collection<Report> reports) {
-        this.reports = reports;
     }
 
     @XmlTransient
@@ -155,6 +144,10 @@ public class Users implements Serializable {
     @Transient
     public int ratesHandler = Constants.TRANSIENT;
 
+    @XmlTransient
+    @Transient
+    public boolean hideRate = false;
+
     @OneToMany(mappedBy = "user")
     private Collection<Rate> rates;
 
@@ -162,6 +155,9 @@ public class Users implements Serializable {
         if (ratesHandler == Constants.GENERATE) {
             setRatesBiDir(Constants.TRANSIENT);
             setRatesAverageValue();
+            if (hideRate) {
+                rates = hideAnonymousRates();
+            }
             List<Rate> orderRates = new ArrayList(rates);
             Collections.sort(orderRates, new Comparator<Rate>() {
                 @Override
@@ -193,13 +189,50 @@ public class Users implements Serializable {
             r.getSchool().branchsHandler = MODE;
         }
     }
-    
+
     //---------------------------------
+    //Reports
+    @XmlTransient
+    @Transient
+    public int reportsHandler = Constants.TRANSIENT;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private Collection<Report> reports;
+
+    public Collection<Report> getReports() {
+        if (ratesHandler == Constants.GENERATE) {
+            setReportsBiDir(Constants.TRANSIENT);
+            return reports;
+        }
+        return null;
+    }
+
+    public void setReports(Collection<Report> reports) {
+        this.reports = reports;
+    }
+
+    public void setReportsBiDir(int MODE) {
+        for (Report rp : reports) {
+            rp.userHandler = MODE;
+        }
+    }
+
+    //-----------------------------------
     public void setRatesAverageValue() {
         RateFacadeREST rRest = new RateFacadeREST();
         for (Rate r : rates) {
             rRest.setRateAverageValue(r);
         }
+    }
+
+    public List<Rate> hideAnonymousRates() {
+        List<Rate> filterRates = new ArrayList();
+        for (Rate r : rates) {
+            if (!r.getAnonymous()) {
+                filterRates.add(r);
+            }
+        }
+        return filterRates;
     }
 
 }
