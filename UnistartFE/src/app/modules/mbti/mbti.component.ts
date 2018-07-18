@@ -16,11 +16,7 @@ export class MbtiComponent implements OnInit {
   constructor(private mbtiService: MbtiService, private router: Router) { }
 
   ngOnInit() {
-<<<<<<< HEAD
     sessionStorage.setItem('reload', 'false');
-=======
-
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
     this.loadQuestion();
   }
   loadQuestion() {
@@ -28,7 +24,6 @@ export class MbtiComponent implements OnInit {
       res => this.questions = res
     );
     this.loadAnswer();
-<<<<<<< HEAD
   }
   loadAnswer() {
     this.questions.forEach(q => {
@@ -42,21 +37,6 @@ export class MbtiComponent implements OnInit {
     this.loadQuestion();
     this.quests = this.questions;
   }
-=======
-  }
-  loadAnswer() {
-    this.questions.forEach(q => {
-      this.mbtiService.getAnserByQuestion(q.questionId).subscribe(
-        res => q.listAnswer = res
-      );
-    });
-    this.quests = this.questions;
-  }
-  load() {
-    this.loadQuestion();
-    this.quests = this.questions;
-  }
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
   check(question, code, check) {
     if (check) {
     question.select = code;
@@ -71,12 +51,10 @@ export class MbtiComponent implements OnInit {
 
     });
     this.finish = (s.length === this.quests.length);
-<<<<<<< HEAD
-    this.getcode(s);
+
+
   }
-  getcode(code) {
-=======
-  }
+
   getcode() {
     let code = '';
     this.quests.forEach(element => {
@@ -85,7 +63,6 @@ export class MbtiComponent implements OnInit {
       }
 
     });
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
     console.log(code);
     let E = 0;
     let S = 0;
@@ -134,9 +111,6 @@ export class MbtiComponent implements OnInit {
       JP = 'J';
     }
     console.log(EI + SN + TF + JP);
-<<<<<<< HEAD
-=======
     this.router.navigate(['/mbti-detail/' + EI + SN + TF + JP]);
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
   }
 }

@@ -26,13 +26,10 @@ import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-tem
 import { ReportComponent } from './modules/school-detail/info/report/report.component';
 import { Constants } from './constanst';
 import { MbtiComponent } from './modules/mbti/mbti.component';
+import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';
 
 import { BarRatingModule } from 'ngx-bar-rating';
-<<<<<<< HEAD
 import { UserProfileComponent } from './modules/user-profile/user-profile.component';
-=======
-import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
 
 @NgModule({
   declarations: [
@@ -48,11 +45,8 @@ import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component
     DynamicTemplateComponent,
     ReportComponent,
     MbtiComponent,
-<<<<<<< HEAD
     UserProfileComponent,
-=======
-    MbtiDetailComponent,
->>>>>>> c706fe57067f70be1fb89408b6214fb9c05b71e0
+    MbtiDetailComponent
   ],
   imports: [
     BrowserModule,
