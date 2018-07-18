@@ -136,7 +136,7 @@ public class AnswerFacadeREST extends AbstractFacade<Answer> {
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public List<Answer> findbyQuestion(@PathParam("id") Integer id) {
             MBTIDAO dao = new MBTIDAO();
-        List<Answer> list = dao.getAnswerByQuestion(em, id);
+        List<Answer> list = dao.getAnswerByQuestion(em, 7);
         return list;
     }
 

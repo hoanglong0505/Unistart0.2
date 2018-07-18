@@ -91,7 +91,8 @@ public class Report implements Serializable {
     }
 
     public Users getUser() {
-        return user;
+//        return user;
+        return null;
     }
 
     public void setUser(Users user) {

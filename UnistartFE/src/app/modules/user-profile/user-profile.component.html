@@ -1,0 +1,48 @@
+<div *ngIf="user" id="profile-container">
+  <img [src]="user.avatar" />
+  <h2>{{user.name}}</h2>
+  <h4>
+    <i>{{user.email}}</i>
+  </h4>
+</div>
+
+<div id="rate-container" *ngIf="user">
+  <h1 style="color:purple;">CÁC BÀI ĐÁNH GIÁ</h1>
+
+  <div class="rate" *ngFor="let r of user.rates">
+    <h2>Nhận xét:
+      <span style="color:red;">{{r.school.schoolName}}</span>
+      <div *ngIf="authorUser" (click)="deleteRate(r);" class="del-button">X</div>
+    </h2>
+    <div class="field" style="color:grey;">
+      <i>Ngày: {{r.submitDateStr}}</i>
+    </div>
+
+    <div class="field" style="color:brown;">
+      <b>{{r.title}}</b>
+    </div>
+    <div class="field">
+      <b>Ưu điểm</b>
+      <br/> {{r.pros}}
+    </div>
+    <div class="field">
+      <b>Nhược điểm</b>
+      <br/> {{r.cons}}
+    </div>
+    <div class="field">
+      <b>Trải nghiệm</b>
+      <br/> {{r.experience}}
+    </div>
+
+    <div [ngSwitch]="r.encourage">
+      <span *ngSwitchCase="true" style="color:green;">Khuyến khích học</span>
+      <span *ngSwitchCase="false" style="color:red;">Không khuyến khích học</span>
+    </div>
+    <div>
+      Tổng thể:
+      <bar-rating [(rate)]="r.averageValue" [max]="10" [theme]="'stars'" [readOnly]="true">
+      </bar-rating>
+    </div>
+    <div>-----------------------------------------</div>
+  </div>
+</div>

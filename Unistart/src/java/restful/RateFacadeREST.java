@@ -60,7 +60,9 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
 //    @DELETE
 //    @Path("{id}")
     public void remove(@PathParam("id") Integer id) {
+        em.getTransaction().begin();
         super.remove(super.find(id));
+        em.getTransaction().commit();
     }
 
     @GET

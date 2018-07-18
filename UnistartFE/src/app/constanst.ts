@@ -27,6 +27,7 @@ export class Constants {
   //rate
   private RATE = this.SERVICE_PATH + 'model.rate';
   public SEND_REVIEW = this.SERVER_URL + 'send-review';
+  public DELETE_REVIEW = this.SERVER_URL + 'delete-review';
 
   //report
   private REPORT = this.SERVICE_PATH + 'model.report';
@@ -36,7 +37,7 @@ export class Constants {
   private SCHOOL = this.SERVICE_PATH + 'model.school';
   public GET_SCHOOLS = this.SCHOOL;
   public GET_SCHOOL_BY_ID = this.SCHOOL + '/';
-  public FILTER_SCHOOL = this.SCHOOL+ '/filter-school?';
+  public FILTER_SCHOOL = this.SCHOOL + '/filter-school?';
 
   //subject combination
   private SUBJECT_COMBINATION = this.SERVICE_PATH + 'model.subjectcombination';
@@ -50,9 +51,13 @@ export class Constants {
   private QUESTION = this.SERVICE_PATH + 'model.question';
   public GET_QUESTIONS = this.QUESTION;
 
-    //answer
-    private ANSWER = this.SERVICE_PATH + 'model.answer';
-    public GET_ANSWERS = this.ANSWER;
-    public GET_ANSWERS_BY_QUESTION = this.GET_ANSWERS + '/question/';
+  //answer
+  private ANSWER = this.SERVICE_PATH + 'model.answer';
+  public GET_ANSWERS = this.ANSWER;
+  public GET_ANSWERS_BY_QUESTION = this.GET_ANSWERS + '/question/';
+
+  //user
+  private USER = this.SERVICE_PATH + 'model.users/';
+  public GET_USER_BY_ID = this.USER;
 
 }

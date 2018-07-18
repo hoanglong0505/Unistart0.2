@@ -5,38 +5,28 @@
  */
 package controller.servlet;
 
-import network.HttpResponse;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.gson.Gson;
 import controller.security.GoogleVerifier;
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.security.GeneralSecurityException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManager;
-import javax.persistence.Query;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import model.AverageRate;
-import model.AverageRatePK;
-import model.business.JDBCConnector;
 import model.Rate;
-import model.RateDetail;
 import model.School;
 import model.Users;
+import network.HttpResponse;
 import restful.AverageRateFacadeREST;
 import restful.PersistenceUtils;
+import restful.RateFacadeREST;
 import restful.SchoolFacadeREST;
 import restful.UsersFacadeREST;
 
@@ -44,8 +34,8 @@ import restful.UsersFacadeREST;
  *
  * @author TNT
  */
-@WebServlet(name = "SendReviewServlet", urlPatterns = {"/send-review"})
-public class SendReviewServlet extends HttpServlet {
+@WebServlet(name = "DeleteReviewServlet", urlPatterns = {"/delete-review"})
+public class DeleteReviewServlet extends HttpServlet {
 
     private EntityManager em = PersistenceUtils.getEntityManger();
     private String content;
@@ -66,30 +56,6 @@ public class SendReviewServlet extends HttpServlet {
         doPost(request, response);
     }
 
-    private boolean checkTodayReview(Users u, School sch) {
-        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
-        Query q = em.createNativeQuery(sql);
-        q.setParameter(1, u.getUserId());
-        List res = q.getResultList();
-        if (res.size() > 0) {
-            status = 409;
-            content = "Chỉ được review 1 lần 1 ngày";
-            return false;
-        }
-        return true;
-    }
-
-    private boolean checkValid(Rate r) {
-
-        if (r.getTitle() == null || r.getTitle().length() == 0) {
-            status = 409;
-            content = "Không được để trống tựa đề";
-            return false;
-        }
-
-        return true;
-    }
-
     /**
      * Handles the HTTP <code>POST</code> method.
      *
@@ -107,7 +73,6 @@ public class SendReviewServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         status = 403;
-
         try {
             BufferedReader inp = request.getReader();
             String rateJson = inp.readLine();
@@ -124,48 +89,23 @@ public class SendReviewServlet extends HttpServlet {
                     UsersFacadeREST uRest = new UsersFacadeREST();
                     SchoolFacadeREST schRest = new SchoolFacadeREST();
                     u = uRest.find(userId);
-                    if (u != null && checkTodayReview(u, rate.getSchool()) && checkValid(rate)) {
-//                        if (true) {
-                        //------
-                        rate.setUser(u);
-                        Date today = new Date();
-                        rate.setSubmitDate(today);
-                        rate.setSubmitTime(today);
-                        //------
-
-                        em.getTransaction().begin();
-                        Collection<RateDetail> rds = rate.getRateDetails();
-                        rate.setRateDetails(null);
-                        em.persist(rate);
-                        em.flush();
-                        for (RateDetail rd : rds) {
-                            rd.getRateDetailPK().setRateId(rate.getRateId());
+                    if (u != null) {
+                        RateFacadeREST rRest = new RateFacadeREST();
+                        rate = rRest.find(rate.getRateId());
+                        if (u.getUserId().equals(rate.getUser().getUserId())) {
+                            School sch = rate.getSchool();
+                            rRest.remove(rate.getRateId());
+                            uRest.refresh(u);
+                            AverageRateFacadeREST avgRest = new AverageRateFacadeREST();
+                            avgRest.updateAverageRate(sch);
+                            schRest.refresh(schRest.find(sch.getSchoolId()));
+                            status = 200;
                         }
-                        rate.setRateDetails(rds);
-                        School school = schRest.find(rate.getSchool().getSchoolId());
-                        school.getRates().add(rate);
-                        rate.setSchool(school);
-                        em.merge(rate);
-                        em.merge(school);
-                        em.flush();
-                        em.getTransaction().commit();
-
-                        schRest.refresh(school);
-                        AverageRateFacadeREST avgRest = new AverageRateFacadeREST();
-                        avgRest.updateAverageRate(school);
-                        schRest.refresh(school);
-                        uRest.refresh(u);
-
-                        status = 200;
                     }
                 }
-
             }
-
         } catch (GeneralSecurityException ex) {
-            Logger.getLogger(SendReviewServlet.class
-                    .getName()).log(Level.SEVERE, null, ex);
-
+            ex.printStackTrace();
         } catch (Exception e) {
             Logger.getLogger(SendReviewServlet.class
                     .getName()).log(Level.SEVERE, null, e);
@@ -175,10 +115,7 @@ public class SendReviewServlet extends HttpServlet {
         res.setStatus(status);
         switch (status) {
             case 403:
-                res.setContent("Hãy đăng nhập để tiếp tục");
-                break;
-            case 409:
-                res.setContent(content);
+                res.setContent("Bạn không có quyền này");
                 break;
             case -1:
                 res.setContent("Lỗi không xác định");

@@ -42,7 +42,7 @@
 <div *ngFor="let r of school.rates">
   <img style="width:40px;height:40px;vertical-align: middle; margin-right: 10px;" [src] ="r.user.avatar" [alt]="r.user.avatar"/>
   <h3 style="color: blueviolet; display: inline-block;" [ngSwitch]="r.anonymous">
-    <span *ngSwitchCase="false">{{r.user.name}}</span>
+    <a routerLink="/user-profile/{{r.user.userId}}" *ngSwitchCase="false">{{r.user.name}}</a>
     <span *ngSwitchCase="true">Thành viên ẩn danh</span>
   </h3>
   <div class="field" style="color:grey;">

@@ -22,6 +22,7 @@ export class SchoolsComponent implements OnInit {
   constructor(private schoolService: SchoolService) { }
 
   ngOnInit() {
+    sessionStorage.setItem('reload','false');
     WaitingBoxComponent.start();
     this.getSchools();
   }

@@ -26,6 +26,7 @@ export class SchoolDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    sessionStorage.setItem('reload','false');
     WaitingBoxComponent.start();
     this.getSchool();
   }

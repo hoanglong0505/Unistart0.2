@@ -34,6 +34,14 @@ export class RateService {
     );
   }
 
+  deleteRate(rate: Rate): Observable<HttpResponse> {
+    const url = this.constant.DELETE_REVIEW;
+
+    return this.http.post<HttpResponse>(url, rate, httpOptions).pipe(
+      catchError(this.handleError<HttpResponse>('deleteRate', null))
+    );
+  }
+
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
 

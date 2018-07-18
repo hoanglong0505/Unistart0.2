@@ -5,6 +5,7 @@
  */
 package restful;
 
+import app.Constants;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -62,7 +63,9 @@ public class UsersFacadeREST extends AbstractFacade<Users> {
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public Users find(@PathParam("id") String id) {
-        return super.find(id);
+        Users u = super.find(id);
+        u.ratesHandler = Constants.GENERATE;
+        return u;
     }
 
     @GET
@@ -86,9 +89,13 @@ public class UsersFacadeREST extends AbstractFacade<Users> {
         return String.valueOf(super.count());
     }
 
+    public void refresh(Users u) {
+        em.refresh(u);
+    }
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+
 }

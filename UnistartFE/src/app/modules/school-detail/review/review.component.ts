@@ -62,7 +62,7 @@ export class ReviewComponent implements OnInit {
     if (WaitingBoxComponent.time == -1)
       if (this.userRate) {
         WaitingBoxComponent.start();
-        var token = (window as any).token;
+        var token = sessionStorage.getItem('gToken');
 
         this.userRate.user = new Users();
         this.userRate.user.idToken = token;

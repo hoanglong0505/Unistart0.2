@@ -84,10 +84,6 @@ public class Rate implements Serializable {
     private Boolean anonymous;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<Report> reports;
-
-    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
-    @ManyToOne
-    private Users user;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "rate")
     private Collection<RateDetail> rateDetails;
 
@@ -207,14 +203,6 @@ public class Rate implements Serializable {
         this.reports = reports;
     }
 
-    public Users getUser() {
-        return user;
-    }
-
-    public void setUser(Users user) {
-        this.user = user;
-    }
-
     @XmlTransient
     public Collection<RateDetail> getRateDetails() {
         return rateDetails;
@@ -275,6 +263,32 @@ public class Rate implements Serializable {
         school.ratesHandler = MODE;
     }
 
+    //----------------------------------
+    //user
+    @XmlTransient
+    @Transient
+    public int userHandler = Constants.GENERATE;
+    
+    @JoinColumn(name = "UserId", referencedColumnName = "UserId")
+    @ManyToOne
+    private Users user;
+
+    public Users getUser() {
+        if (userHandler == Constants.GENERATE) {
+            setUserBiDir(Constants.TRANSIENT);
+            return user;
+        }
+        return null;
+    }
+
+    public void setUser(Users user) {
+        this.user = user;
+    }
+    
+    public void setUserBiDir(int MODE) {
+        user.ratesHandler = MODE;
+    }
+    
     //----------------------------------
     public Date getSubmitTime() {
         return submitTime;

@@ -1,8 +1,12 @@
+import { Rate } from '../model/rate';
+
 export class Users {
-    userId: number;
+    userId: string;
     name: string;
     email: string;
     avatar: string;
     idToken: string;
+    rates: Rate;
+    
     constructor() { }
 }

@@ -1,3 +1,5 @@
+sessionStorage.setItem('reload', 'false');
+
 function setCookie(cname, cvalue, exdays) {
   var d = new Date();
   d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
@@ -20,22 +22,31 @@ function getCookie(cname) {
   return "";
 }
 
-var token;
-
 function onSignIn(googleUser) {
-
-  token = googleUser.getAuthResponse().id_token;
+  // var profile = googleUser.getBasicProfile();
+  sessionStorage.setItem('gId', googleUser.getId());
+  // console.log(gId);
+  var tempToken = googleUser.getAuthResponse().id_token;
+  if (sessionStorage.getItem('gToken') != tempToken) {
+    sessionStorage.setItem('gToken', tempToken);
+    reload = true;
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'http://localhost:8084/Unistart/login');
+    xhr.send(tempToken);
+    if (sessionStorage.getItem('reload') == 'true')
+      window.location.reload();
+  }
   // console.log('Token: ' + token);
-  var xhr = new XMLHttpRequest();
-  xhr.open('POST', 'http://localhost:8084/Unistart/login');
-  xhr.send(token);
 
 }
 
 function signOut() {
   var auth2 = gapi.auth2.getAuthInstance();
   auth2.signOut().then(function () {
-    token = undefined;
+    sessionStorage.removeItem('gId');
+    sessionStorage.removeItem('gToken');
+    if (sessionStorage.getItem('reload') == 'true')
+      window.location.reload();
   });
 
 }

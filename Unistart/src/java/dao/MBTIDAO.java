@@ -9,12 +9,10 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import java.util.List;
-import javax.json.Json;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
 import model.Answer;
 import model.Question;
-import netscape.javascript.JSObject;
 
 
 /**
@@ -27,11 +25,10 @@ public class MBTIDAO {
         Query query=em.createNativeQuery(sql,Question.class);
         List<Question> result= query.getResultList();  
          
-        result.forEach((re) -> {
+        for(Question re: result){
             List<Answer> list=getAnswerByQuestion(em,re.getQuestionId());
             re.setAnswerList(list);
-            });
-            
+        }
         return result;
     }
         public List<Answer> getAnswerByQuestion(EntityManager em, int id){

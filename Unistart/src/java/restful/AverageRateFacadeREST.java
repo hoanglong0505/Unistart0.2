@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
@@ -139,7 +140,9 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
             ps.setInt(1, sch.getSchoolId());
             ResultSet rs = ps.executeQuery();
             beginTransaction();
+            boolean hasReview = false;
             while (rs.next()) {
+                hasReview = true;
                 AverageRatePK avgPK = new AverageRatePK(sch.getSchoolId(), rs.getInt(1));
                 AverageRate avg = find(avgPK);
                 if (avg == null) {
@@ -151,6 +154,12 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
                     avg.setAvgValue(rs.getDouble(2));
                     edit(avg);
                 }
+            }
+            if (!hasReview) {
+                sql = "DELETE FROM AverageRate WHERE SchoolId= ? ";
+                Query q = em.createNativeQuery(sql);
+                q.setParameter(1, sch.getSchoolId());
+                q.executeUpdate();
             }
             commitTransaction();
 
