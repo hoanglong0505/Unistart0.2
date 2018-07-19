@@ -6,13 +6,14 @@ import { ActivatedRoute } from '@angular/router';
 import { Rate } from '../../model/rate';
 import { RateService } from '../../services/rate.service';
 import { HttpRequest, Session } from '../../server/http';
+import { ReportableComponent } from '../../model/reportable';
 
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
   styleUrls: ['./user-profile.component.css']
 })
-export class UserProfileComponent implements OnInit {
+export class UserProfileComponent extends ReportableComponent implements OnInit {
 
   user: Users;
   authorUser: boolean;
@@ -22,12 +23,14 @@ export class UserProfileComponent implements OnInit {
     private route: ActivatedRoute,
     private userService: UserService,
     private rateService: RateService
-  ) { }
+  ) {
+    super();
+  }
 
   ngOnInit() {
     this.request = new HttpRequest();
     var session = this.request.getSession(true);
-    session.set('reload',true);
+    session.set('reload', true);
     WaitingBoxComponent.start();
     this.getUser();
   }

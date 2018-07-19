@@ -1,12 +1,12 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Rate } from '../../../../model/rate';
-import { Report } from '../../../../model/report';
-import { ReportPK } from '../../../../model/reportPK';
-import { Users } from '../../../../model/users';
-import { InfoComponent } from '../info.component';
-import { WaitingBoxComponent } from '../../../waiting-box/waiting-box.component';
-import { ReportService } from '../../../../services/report.service';
-import { HttpRequest, Session } from '../../../../server/http';
+import { Rate } from '../../model/rate';
+import { Report } from '../../model/report';
+import { ReportPK } from '../../model/reportPK';
+import { Users } from '../../model/users';
+import { ReportableComponent } from '../../model/reportable';
+import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
+import { ReportService } from '../../services/report.service';
+import { HttpRequest, Session } from '../../server/http';
 
 @Component({
   selector: 'app-report',
@@ -15,14 +15,14 @@ import { HttpRequest, Session } from '../../../../server/http';
 })
 export class ReportComponent implements OnInit {
 
-  @Input() infoComp: InfoComponent;
+  @Input() reportableComp: ReportableComponent;
   rpContent: string;
   rpRate: Rate;
 
   constructor(private rpService: ReportService) { }
 
   ngOnInit() {
-    this.infoComp.reportComp = this;
+    this.reportableComp.reportComp = this;
   }
 
   close() {

@@ -38,7 +38,7 @@ export class Session {
     }
 
     remove(key: string) {
-        this.uniSession[key] = null;
+        delete this.uniSession[key];
         this.pushToCookie();
     }
 

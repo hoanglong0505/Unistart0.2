@@ -59,7 +59,7 @@ function setSessionItem(key, value) {
 
 function removeSessionItem(key) {
   var uniSession = getSession(true);
-  uniSession[key] = null;
+  delete uniSession[key];
   pushToCookie(uniSession);
 }
 
