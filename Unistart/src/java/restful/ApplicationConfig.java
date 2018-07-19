@@ -49,6 +49,7 @@ public class ApplicationConfig extends Application {
         resources.add(restful.SubjectCombinationFacadeREST.class);
         resources.add(restful.TypeFacadeREST.class);
         resources.add(restful.UsersFacadeREST.class);
+        resources.add(restful.ImageSchoolFacadeREST.class);
     }
     
 }

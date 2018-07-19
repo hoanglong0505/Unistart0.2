@@ -1,6 +1,7 @@
 <section>
 
   <div id="school-container" *ngIf="school">
+    <div class="school_content">
     <h1 class="title">{{school.schoolName | uppercase}}</h1>
     <img mat-card-image src="/assets/images/school.txt" alt="{{school.avatar}}" />
     <div style="color:red;">{{school.rates.length}} đánh giá</div>    
@@ -25,7 +26,18 @@
     <div>
       <b>Email</b>: {{school.email}}
     </div>
-
+  </div>
+  <div class="school_Image" *ngIf="imageSources.length>0">
+      <slideshow [height]="height"
+      [minHeight]="'350px'"
+      [autoPlay]="true"
+      [showArrows]="true"
+      [imageUrls]="imageSources"
+      [stopAutoPlayOnSlide]="false"
+      [lazyLoad]="imageSources?.length > 1"
+      [autoPlayWaitForLazyLoad]="true">
+</slideshow>
+  </div>
     <app-info [school]="school" [schoolDetail]="this" *ngIf="mode==INFO">
     </app-info>
     <app-review [school]="school" [schoolDetail]="this" *ngIf="mode==REVIEW">

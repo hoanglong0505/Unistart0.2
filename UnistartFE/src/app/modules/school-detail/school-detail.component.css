@@ -14,3 +14,17 @@
   display: inline-block;
   margin: 0 10px;
 }
+.school_content{
+  display: inline-block;
+  width: 35%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.school_Image{
+  display: inline-block;
+  width: 45%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  vertical-align: top;
+}

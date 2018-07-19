@@ -8,8 +8,13 @@ package dao;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
 import javax.persistence.Query;
+import model.ImageSchool;
 import model.School;
 
 /**
@@ -17,6 +22,8 @@ import model.School;
  * @author QuyPC
  */
 public class SchoolDAO {
+
+    EntityManagerFactory emf = Persistence.createEntityManagerFactory("UnistartPU");
 
 //    public List<School> getSchoolByTypeId(Integer typeID, EntityManager em) {
 //        String sql = "Select * From School where TypeId = ?";
@@ -187,5 +194,46 @@ public class SchoolDAO {
         List result = query.getResultList();
         return result;
     }
-
+public List<ImageSchool> getImageByCode(String Code ){
+     EntityManager em = emf.createEntityManager();
+        String sql="SELECT s.* FROM ImageSchool s WHERE s.schoolCode ='"+Code+"'";
+        Query query=em.createNativeQuery(sql,ImageSchool.class);
+        List result=  query.getResultList();  
+        return result;
+    }
+public void clearImage(){
+     EntityManager em = emf.createEntityManager();
+        String sql="DELETE  FROM ImageSchool  ";
+        Query query=em.createQuery(sql,ImageSchool.class);
+     
+         em.getTransaction().begin();
+        query.executeUpdate();
+           em.getTransaction().commit();   
+    }
+public void createImage(String code, String link){
+     EntityManager em = emf.createEntityManager();
+//        String sql="INSERT INTO ImageSchool( Link , SchoolCode ) VALUES ('"+link+"','"+code+"')";
+//        System.out.println(sql);
+        ImageSchool ima= new ImageSchool();
+        ima.setLink(link);
+        ima.setSchoolCode(code);
+//        Query query=em.createQuery(sql);  
+         em.getTransaction().begin();
+        em.persist(ima);
+           em.getTransaction().commit();   
+}
+    public void persist(Object object) {
+        EntityManager em = emf.createEntityManager();
+        try {
+            em.getTransaction().begin();
+            em.persist(object);
+            em.getTransaction().commit();
+        } catch (Exception e) {
+            Logger.getLogger(getClass().getName()).log(Level.SEVERE, "exception caught", e);
+            em.getTransaction().rollback();
+        } finally {
+            em.close();
+        }
+    }
+    
 }

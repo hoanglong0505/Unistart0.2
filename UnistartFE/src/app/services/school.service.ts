@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
-import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { School } from '../model/school';
 import { catchError } from 'rxjs/operators';
 import { Constants } from '../constanst';
@@ -23,6 +23,12 @@ export class SchoolService {
     const url = this.constant.GET_SCHOOL_BY_ID + id;
     return this.http.get<School>(url).pipe(
       catchError(this.handleError<School>('getSchool', null))
+    );
+  }
+  getImage(code): Observable<any[]> {
+    const url = this.constant.GET_IMAGE_BY_SCHOOL + code;
+    return this.http.get<any[]>(url).pipe(
+      catchError(this.handleError<any[]>('getImage', null))
     );
   }
 

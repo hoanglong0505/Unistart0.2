@@ -10,6 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import {SlideshowModule} from 'ng-simple-slideshow';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 
@@ -64,6 +65,7 @@ import { UserProfileComponent } from './modules/user-profile/user-profile.compon
     MatListModule,
     MatCheckboxModule,
     BarRatingModule,
+    SlideshowModule,
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]

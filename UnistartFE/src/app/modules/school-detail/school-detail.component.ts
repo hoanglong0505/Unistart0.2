@@ -12,7 +12,7 @@ import { AverageRateService } from '../../services/average-rate.service';
   styleUrls: ['./school-detail.component.css']
 })
 export class SchoolDetailComponent implements OnInit {
-
+  imageSources = ['a'];
   school: School;
   INFO: number = 1;
   REVIEW: number = 2;
@@ -37,7 +37,18 @@ export class SchoolDetailComponent implements OnInit {
       .subscribe(school => {
         this.school = school;
         WaitingBoxComponent.stop();
-
+        this.getImage(school.schoolCode);
+      });
+  }
+  getImage(code) {
+    this.schoolService.getImage(code)
+      .subscribe(images => {
+        this.imageSources.splice(0, 1);
+        images.forEach(element => {
+         this.imageSources.push('assets/School/img/' + code + '/' + element.link);
+        });
+        WaitingBoxComponent.stop();
+        console.log(this.imageSources);
       });
   }
 
