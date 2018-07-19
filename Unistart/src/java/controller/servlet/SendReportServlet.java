@@ -46,23 +46,15 @@ public class SendReportServlet extends HttpServlet {
 
     private EntityManager em = PersistenceUtils.getEntityManger();
     private String content;
+    private int status;
 
-    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
-    /**
-     * Handles the HTTP <code>GET</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doPost(request, response);
     }
 
-    private int checkUserReport(Users u, Integer rateId) {
+    private boolean checkUserReport(Users u, Integer rateId) {
         String sql = "SELECT UserId FROM Report WHERE UserId=? AND RateId= ?";
         Query q = em.createNativeQuery(sql);
         q.setParameter(1, u.getUserId());
@@ -70,19 +62,24 @@ public class SendReportServlet extends HttpServlet {
         List res = q.getResultList();
         if (res.size() > 0) {
             content = "Bạn đã đánh giá bài viết này";
-            return 409;
+            status = 409;
+            return false;
         }
-        return 403;
+        return true;
     }
 
-    /**
-     * Handles the HTTP <code>POST</code> method.
-     *
-     * @param request servlet request
-     * @param response servlet response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an I/O error occurs
-     */
+    private boolean checkValid(Report rp) {
+        if (rp.getRpContent() == null || rp.getRpContent().length() < 50) {
+            status = 409;
+            content = "Nội dung phải ít nhất 50 kí tự";
+            return false;
+        }
+        if (rp.getUser() == null) {
+            return false;
+        }
+        return true;
+    }
+
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
@@ -91,7 +88,7 @@ public class SendReportServlet extends HttpServlet {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
-        int status = 403;
+        status = 403;
 
         try {
             BufferedReader inp = request.getReader();
@@ -99,10 +96,9 @@ public class SendReportServlet extends HttpServlet {
             System.out.println(reportJson);
             Gson gson = new Gson();
             Report rp = gson.fromJson(reportJson, Report.class);
-            if (rp.getRpContent() == null || rp.getRpContent().length() == 0) {
-                content = "Không được để trống nội dung";
-                status = 409;
-            } else {
+            rp.userHandler = Constants.GENERATE;
+            
+            if (checkValid(rp)) {
                 Users u = rp.getUser();
                 String idToken = u.getIdToken();
                 if (idToken != null) {
@@ -115,7 +111,7 @@ public class SendReportServlet extends HttpServlet {
                         u = uRest.find(userId);
                         if (u != null) {
                             Integer rateId = rp.getReportPK().getRateId();
-                            if ((status = checkUserReport(u, rateId)) != 409) {
+                            if (checkUserReport(u, rateId)) {
                                 rp.getReportPK().setUserId(u.getUserId());
                                 em.getTransaction().begin();
                                 Rate r = rRest.find(rateId);

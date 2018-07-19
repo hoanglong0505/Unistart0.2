@@ -79,7 +79,8 @@ public class AverageRate implements Serializable {
     }
 
     public School getSchool() {
-        return school;
+        return null;
+//        return school;
     }
 
     public void setSchool(School school) {

@@ -41,7 +41,6 @@ export class ReviewComponent implements OnInit {
             var rd = new RateDetail();
             rd.rateDetailPK = new RateDetailPK();
             rd.rateDetailPK.criteriaId = cr.criteriaId;
-            rd.value = 10;
             rd.rateCriteria = cr;
             this.rateDetails.push(rd);
           }
@@ -63,7 +62,7 @@ export class ReviewComponent implements OnInit {
     if (WaitingBoxComponent.time == -1)
       if (this.userRate) {
         WaitingBoxComponent.start();
-        var token = (window as any).token;
+        var token = sessionStorage.getItem('gToken');
 
         this.userRate.user = new Users();
         this.userRate.user.idToken = token;

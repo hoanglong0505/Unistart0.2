@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { SchoolService } from '../../services/school.service'
 import { School } from '../../model/school';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
+import { AverageRateService } from '../../services/average-rate.service';
 
 @Component({
   selector: 'app-school-detail',
@@ -11,7 +12,7 @@ import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
   styleUrls: ['./school-detail.component.css']
 })
 export class SchoolDetailComponent implements OnInit {
-
+  imageSources = ['a'];
   school: School;
   INFO: number = 1;
   REVIEW: number = 2;
@@ -21,10 +22,11 @@ export class SchoolDetailComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location,
-    private schoolService: SchoolService
+    private schoolService: SchoolService,
   ) { }
 
   ngOnInit() {
+    sessionStorage.setItem('reload','false');
     WaitingBoxComponent.start();
     this.getSchool();
   }
@@ -34,8 +36,19 @@ export class SchoolDetailComponent implements OnInit {
     this.schoolService.getSchool(id)
       .subscribe(school => {
         this.school = school;
-        WaitingBoxComponent.stop();    
-        
+        WaitingBoxComponent.stop();
+        this.getImage(school.schoolCode);
+      });
+  }
+  getImage(code) {
+    this.schoolService.getImage(code)
+      .subscribe(images => {
+        this.imageSources.splice(0, 1);
+        images.forEach(element => {
+         this.imageSources.push('assets/School/img/' + code + '/' + element.link);
+        });
+        WaitingBoxComponent.stop();
+        console.log(this.imageSources);
       });
   }
 

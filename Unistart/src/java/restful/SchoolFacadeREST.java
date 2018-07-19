@@ -7,7 +7,6 @@ package restful;
 
 import app.Constants;
 import dao.SchoolDAO;
-import java.util.Arrays;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -22,7 +21,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
-import model.FilterSchool;
+import model.Rate;
 import model.School;
 
 /**
@@ -72,6 +71,12 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
             sch.ratesHandler = Constants.GENERATE;
             sch.eInfosHandler = Constants.GENERATE;
             sch.branchsHandler = Constants.GENERATE;
+            sch.setRatesAverageValue();
+            for (Rate r : sch.getRates()) {
+                if (r.getAnonymous()) {
+                    r.userHandler = Constants.TRANSIENT;
+                }
+            }
         }
         return sch;
     }
@@ -113,6 +118,7 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
         return list;
     }
+<<<<<<< HEAD
 
     
     
@@ -124,6 +130,8 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         List<School> list = dao.filterSchoolMultiple(entity.getSchoolName(), entity.getSjCombi(), entity.getMinPoint(), entity.getTypeSchool(), entity.getField(), entity.getLocation(), em);
         return list;
     }
+=======
+>>>>>>> 8e9ebad156f0de2a15fafca017443d077e415b7d
 
     public void refresh(School school) {
         em.refresh(school);

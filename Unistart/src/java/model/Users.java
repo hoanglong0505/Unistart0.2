@@ -5,8 +5,14 @@
  */
 package model;
 
+import app.Constants;
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Collection;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Date;
+import java.util.List;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -21,6 +27,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlTransient;
+import restful.RateFacadeREST;
 
 /**
  *
@@ -54,10 +61,6 @@ public class Users implements Serializable {
     @Size(max = 500)
     @Column(name = "Avatar")
     private String avatar;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
-    private Collection<Report> reportCollection;
-    @OneToMany(mappedBy = "user")
-    private Collection<Rate> rateCollection;
 
     public Users() {
     }
@@ -99,24 +102,6 @@ public class Users implements Serializable {
     }
 
     @XmlTransient
-    public Collection<Report> getReportCollection() {
-        return reportCollection;
-    }
-
-    public void setReportCollection(Collection<Report> reportCollection) {
-        this.reportCollection = reportCollection;
-    }
-
-    @XmlTransient
-    public Collection<Rate> getRateCollection() {
-        return rateCollection;
-    }
-
-    public void setRateCollection(Collection<Rate> rateCollection) {
-        this.rateCollection = rateCollection;
-    }
-
-    @XmlTransient
     @Transient
     private String idToken;
 
@@ -151,6 +136,103 @@ public class Users implements Serializable {
     @Override
     public String toString() {
         return "model.Users[ userId=" + userId + " ]";
+    }
+
+    //================= RELATIONSHIP HANDLER ===============
+    //Rates
+    @XmlTransient
+    @Transient
+    public int ratesHandler = Constants.TRANSIENT;
+
+    @XmlTransient
+    @Transient
+    public boolean hideRate = false;
+
+    @OneToMany(mappedBy = "user")
+    private Collection<Rate> rates;
+
+    public Collection<Rate> getRates() {
+        if (ratesHandler == Constants.GENERATE) {
+            setRatesBiDir(Constants.TRANSIENT);
+            setRatesAverageValue();
+            if (hideRate) {
+                rates = hideAnonymousRates();
+            }
+            List<Rate> orderRates = new ArrayList(rates);
+            Collections.sort(orderRates, new Comparator<Rate>() {
+                @Override
+                public int compare(Rate o1, Rate o2) {
+                    Date o1d = o1.getSubmitDate();
+                    Date o2d = o2.getSubmitDate();
+
+                    int result = o2d.compareTo(o1d);
+                    if (result == 0) {
+                        return o2.getSubmitTime().compareTo(o1.getSubmitTime());
+                    }
+                    return result;
+                }
+            });
+            return orderRates;
+        }
+        return null;
+    }
+
+    public void setRates(Collection<Rate> rates) {
+        this.rates = rates;
+    }
+
+    public void setRatesBiDir(int MODE) {
+        for (Rate r : rates) {
+            r.userHandler = MODE;
+            r.setSchoolBiDir(MODE);
+            r.getSchool().eInfosHandler = MODE;
+            r.getSchool().branchsHandler = MODE;
+        }
+    }
+
+    //---------------------------------
+    //Reports
+    @XmlTransient
+    @Transient
+    public int reportsHandler = Constants.TRANSIENT;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "user")
+    private Collection<Report> reports;
+
+    public Collection<Report> getReports() {
+        if (ratesHandler == Constants.GENERATE) {
+            setReportsBiDir(Constants.TRANSIENT);
+            return reports;
+        }
+        return null;
+    }
+
+    public void setReports(Collection<Report> reports) {
+        this.reports = reports;
+    }
+
+    public void setReportsBiDir(int MODE) {
+        for (Report rp : reports) {
+            rp.userHandler = MODE;
+        }
+    }
+
+    //-----------------------------------
+    public void setRatesAverageValue() {
+        RateFacadeREST rRest = new RateFacadeREST();
+        for (Rate r : rates) {
+            rRest.setRateAverageValue(r);
+        }
+    }
+
+    public List<Rate> hideAnonymousRates() {
+        List<Rate> filterRates = new ArrayList();
+        for (Rate r : rates) {
+            if (!r.getAnonymous()) {
+                filterRates.add(r);
+            }
+        }
+        return filterRates;
     }
 
 }

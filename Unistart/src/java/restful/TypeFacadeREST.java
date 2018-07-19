@@ -40,7 +40,9 @@ public class TypeFacadeREST extends AbstractFacade<Type> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Type entity) {
+        em.getTransaction().begin();
         super.create(entity);
+        em.getTransaction().commit();
     }
 
     @PUT

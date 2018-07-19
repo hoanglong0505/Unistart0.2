@@ -5,17 +5,17 @@
  */
 package controller.servlet;
 
-import app.Constants;
 import network.HttpResponse;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.gson.Gson;
 import controller.security.GoogleVerifier;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.security.GeneralSecurityException;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
@@ -23,17 +23,19 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
-import javax.persistence.TemporalType;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
+import model.AverageRate;
+import model.AverageRatePK;
+import model.business.JDBCConnector;
 import model.Rate;
 import model.RateDetail;
 import model.School;
 import model.Users;
+import restful.AverageRateFacadeREST;
 import restful.PersistenceUtils;
 import restful.SchoolFacadeREST;
 import restful.UsersFacadeREST;
@@ -46,6 +48,8 @@ import restful.UsersFacadeREST;
 public class SendReviewServlet extends HttpServlet {
 
     private EntityManager em = PersistenceUtils.getEntityManger();
+    private String content;
+    private int status;
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -62,16 +66,31 @@ public class SendReviewServlet extends HttpServlet {
         doPost(request, response);
     }
 
-    private int checkTodayReview(Users u, School sch) {
-        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate= ?";
+    private boolean checkTodayReview(Users u, School sch) {
+//        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
+        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SchoolId = ?";
         Query q = em.createNativeQuery(sql);
         q.setParameter(1, u.getUserId());
-        q.setParameter(2, new Date(), TemporalType.TIMESTAMP);
+        q.setParameter(2, sch.getSchoolId());
+
         List res = q.getResultList();
         if (res.size() > 0) {
-            return 409;
+            status = 409;
+            content = "Bạn đã đánh giá trường này";
+            return false;
         }
-        return 403;
+        return true;
+    }
+
+    private boolean checkValid(Rate r) {
+
+        if (r.getTitle() == null || r.getTitle().length() == 0) {
+            status = 409;
+            content = "Không được để trống tựa đề";
+            return false;
+        }
+
+        return true;
     }
 
     /**
@@ -90,7 +109,7 @@ public class SendReviewServlet extends HttpServlet {
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
 
-        int status = 403;
+        status = 403;
 
         try {
             BufferedReader inp = request.getReader();
@@ -108,33 +127,39 @@ public class SendReviewServlet extends HttpServlet {
                     UsersFacadeREST uRest = new UsersFacadeREST();
                     SchoolFacadeREST schRest = new SchoolFacadeREST();
                     u = uRest.find(userId);
-                    if (u != null) {
-//                        if ((status = checkTodayReview(u, rate.getSchool())) != 409) {
-                        if (true) {
-                            rate.setUser(u);
-                            rate.setSubmitDate(new Date());
+                    if (u != null && checkTodayReview(u, rate.getSchool()) && checkValid(rate)) {
+//                        if (true) {
+                        //------
+                        rate.setUser(u);
+                        Date today = new Date();
+                        rate.setSubmitDate(today);
+                        rate.setSubmitTime(today);
+                        //------
 
-                            em.getTransaction().begin();
-                            Collection<RateDetail> rds = rate.getRateDetails();
-                            rate.setRateDetails(null);
-                            em.persist(rate);
-                            em.flush();
-                            for (RateDetail rd : rds) {
-                                rd.getRateDetailPK().setRateId(rate.getRateId());
-                            }
-                            rate.setRateDetails(rds);
-                            School school = schRest.find(rate.getSchool().getSchoolId());
-                            school.getRates().add(rate);
-                            rate.setSchool(school);
-                            em.merge(rate);
-                            em.merge(school);
-                            em.flush();
-                            em.getTransaction().commit();
-                            
-                            schRest.refresh(school);
-                            
-                            status = 200;
+                        em.getTransaction().begin();
+                        Collection<RateDetail> rds = rate.getRateDetails();
+                        rate.setRateDetails(null);
+                        em.persist(rate);
+                        em.flush();
+                        for (RateDetail rd : rds) {
+                            rd.getRateDetailPK().setRateId(rate.getRateId());
                         }
+                        rate.setRateDetails(rds);
+                        School school = schRest.find(rate.getSchool().getSchoolId());
+                        school.getRates().add(rate);
+                        rate.setSchool(school);
+                        em.merge(rate);
+                        em.merge(school);
+                        em.flush();
+                        em.getTransaction().commit();
+
+                        schRest.refresh(school);
+                        AverageRateFacadeREST avgRest = new AverageRateFacadeREST();
+                        avgRest.updateAverageRate(school);
+                        schRest.refresh(school);
+                        uRest.refresh(u);
+
+                        status = 200;
                     }
                 }
 
@@ -156,14 +181,16 @@ public class SendReviewServlet extends HttpServlet {
                 res.setContent("Hãy đăng nhập để tiếp tục");
                 break;
             case 409:
-                res.setContent("Chỉ được Review 1 lần 1 ngày");
+                res.setContent(content);
                 break;
             case -1:
                 res.setContent("Lỗi không xác định");
                 break;
         }
         Gson gson = new Gson();
-        response.getWriter().write(gson.toJson(res));
+
+        response.getWriter()
+                .write(gson.toJson(res));
 
     }
 

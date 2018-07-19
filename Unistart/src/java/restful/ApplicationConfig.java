@@ -38,6 +38,7 @@ public class ApplicationConfig extends Application {
         resources.add(restful.FieldFacadeREST.class);
         resources.add(restful.FieldTypeFacadeREST.class);
         resources.add(restful.GenitiveFacadeREST.class);
+        resources.add(restful.ImageSchoolFacadeREST.class);
         resources.add(restful.LocationFacadeREST.class);
         resources.add(restful.QuestionFacadeREST.class);
         resources.add(restful.RateCriteriaFacadeREST.class);
