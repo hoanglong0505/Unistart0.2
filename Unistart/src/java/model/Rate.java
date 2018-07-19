@@ -265,8 +265,6 @@ public class Rate implements Serializable {
     private Users user;
 
     public Users getUser() {
-        if (anonymous)
-            return null;
         if (userHandler == Constants.GENERATE) {
             setUserBiDir(Constants.TRANSIENT);
             return user;

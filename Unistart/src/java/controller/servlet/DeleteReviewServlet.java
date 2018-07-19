@@ -85,13 +85,15 @@ public class DeleteReviewServlet extends HttpServlet {
                 GoogleIdToken.Payload payload = GoogleVerifier.verify(idToken);
                 if (payload != null) {
                     String userId = payload.getSubject();
-
+                    System.out.println(userId);
                     UsersFacadeREST uRest = new UsersFacadeREST();
                     SchoolFacadeREST schRest = new SchoolFacadeREST();
                     u = uRest.find(userId);
                     if (u != null) {
                         RateFacadeREST rRest = new RateFacadeREST();
                         rate = rRest.find(rate.getRateId());
+                        System.out.println(userId + " - " + rate.getUser().getUserId());
+
                         if (u.getUserId().equals(rate.getUser().getUserId())) {
                             School sch = rate.getSchool();
                             rRest.remove(rate.getRateId());

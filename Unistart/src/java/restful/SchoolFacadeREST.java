@@ -21,6 +21,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import model.Rate;
 import model.School;
 
 /**
@@ -71,6 +72,11 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
             sch.eInfosHandler = Constants.GENERATE;
             sch.branchsHandler = Constants.GENERATE;
             sch.setRatesAverageValue();
+            for (Rate r : sch.getRates()) {
+                if (r.getAnonymous()) {
+                    r.userHandler = Constants.TRANSIENT;
+                }
+            }
         }
         return sch;
     }
@@ -113,10 +119,10 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         return list;
     }
 
-    public void refresh(School school){
+    public void refresh(School school) {
         em.refresh(school);
     }
-    
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
