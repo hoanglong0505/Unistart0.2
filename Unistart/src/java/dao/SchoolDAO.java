@@ -5,11 +5,13 @@
  */
 package dao;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import javax.persistence.EntityManager;
 import javax.persistence.Query;
+import model.FilterSchool;
 import model.School;
 
 /**
@@ -65,21 +67,20 @@ public class SchoolDAO {
 //        List result = query.getResultList();
 //        return result;
 //    }
-
-    public List<School> filterSchool(String schoolName, String sjCode, 
+    public List<School> filterSchool(String schoolName, String sjCode,
             String _minPoint, String _typeID, String fieldCode, String _location, EntityManager em) {
-        
+
         //======PROCESS PARAMETER==============
         if (schoolName != null && schoolName.trim().length() == 0) {
             schoolName = null;
         }
-        Integer locationId =null;
+        Integer locationId = null;
         try {
             locationId = Integer.parseInt(_location);
         } catch (Exception e) {
         }
 
-        if (sjCode!=null && sjCode.equals("all")) {
+        if (sjCode != null && sjCode.equals("all")) {
             sjCode = null;
         }
 
@@ -95,11 +96,11 @@ public class SchoolDAO {
         } catch (Exception e) {
         }
 
-        if (fieldCode!=null && fieldCode.equals("all")) {
+        if (fieldCode != null && fieldCode.equals("all")) {
             fieldCode = null;
         }
         //===================================
-        
+
         //============SQL====================
         Map<String, Integer> map = new HashMap<>();
         StringBuilder sql = new StringBuilder("Select  DISTINCT S.SchoolCode,S.SchoolName , S.SchoolId \n"
@@ -117,7 +118,7 @@ public class SchoolDAO {
             count++;
             map.put("sjCode", count);
         }
-        if (schoolName != null && schoolName.trim().length()>0) {
+        if (schoolName != null && schoolName.trim().length() > 0) {
             if (count > 0) {
                 condition.append(" AND ");
             }
@@ -178,7 +179,7 @@ public class SchoolDAO {
         }
         if (map.get("fieldCode") != null) {
             query.setParameter(map.get("fieldCode"), fieldCode);
-            System.out.println("codeeeeee "+fieldCode);
+            System.out.println("codeeeeee " + fieldCode);
         }
         if (map.get("location") != null) {
             query.setParameter(map.get("location"), locationId);
@@ -188,4 +189,202 @@ public class SchoolDAO {
         return result;
     }
 
+    
+    
+    public List<School> filterSchoolMultiple(String schoolName, String[] sjCode,
+            String _minPoint, String[] _typeID, String[] _fieldCode, String[] _location, EntityManager em) {
+
+        //======PROCESS PARAMETER==============
+        if (schoolName != null && schoolName.trim().length() == 0) {
+            schoolName = null;
+        }
+        
+        // convert locationId form String to Integer and add into List
+        ArrayList<Integer> locationId = new ArrayList<>();
+        try {
+            for (int i = 0; i < _location.length; i++) {
+                int id = Integer.parseInt(_location[i]);
+                locationId.add(id);
+            }
+        } catch (Exception e) {
+        }
+        // check sjCode 
+        if (sjCode != null && sjCode.equals("all")) {
+            sjCode = null;
+        }
+        
+        // convert minPoint form String to Float 
+        Float minPoint = null;
+        try {
+            minPoint = Float.parseFloat(_minPoint);
+        } catch (Exception e) {
+        }
+        
+        //Convert typeId form String to Integer and add to List
+        ArrayList<Integer> typeId = new ArrayList<>();
+        try {
+            for (int i = 0; i < _typeID.length; i++) {
+                typeId.add(Integer.parseInt(_typeID[i]));
+            }
+        } catch (Exception e) {
+        }
+        
+        //convert fieldCode from String to Int and add to List
+        ArrayList<Integer> fieldCode = new ArrayList<>();
+        try {
+            for (int i = 0; i < _fieldCode.length; i++) {
+                fieldCode.add(Integer.parseInt(_fieldCode[i]));
+            }
+        } catch (Exception e) {
+        }
+        //===================================
+
+        //============SQL====================
+        // call Map to save the position to do query 
+        Map<String, Integer> map = new HashMap<>();
+        StringBuilder sql = new StringBuilder("Select  DISTINCT S.SchoolCode,S.SchoolName , S.SchoolId \n"
+                + "FROM School S \n"
+                + "LEFT JOIN Branch B ON S.SchoolId = B.SchoolId\n"
+                + "LEFT JOIN Location L ON L.LocationId = B.LocationId \n"
+                + "LEFT JOIN EntranceInfo E ON E.SchoolId= S.SchoolId\n"
+                + "LEFT JOIN EntranceSubject ES ON ES.EntranceId = E.EntranceId \n"
+                + "LEFT JOIN Field F ON F.FieldId = E.FieldId\n");
+      
+        StringBuilder condition = new StringBuilder("Where ");
+        int count = 0;
+        // check sjCode and append Condition.use map save postion to do query
+        if (sjCode != null) {
+            if (sjCode.length > 0) {
+                for (int i = 0; i < sjCode.length; i++) {
+                    condition.append(" ES.SjCombiCode=?  \n");
+                    count++;
+                    String key = "sjCode" + i;
+                    map.put(key, count);
+                    if (i < sjCode.length - 1) {
+                        condition.append(" OR ");
+                    }
+                }
+            }
+        }
+        if (schoolName != null && schoolName.trim().length() > 0) {
+            if (count > 0) {
+                condition.append(" AND ");
+            }
+            condition.append(" S.SchoolName+' '+S.SchoolCode LIKE ? COLLATE Latin1_general_CI_AI \n ");
+            count++;
+            map.put("schoolName", count);
+        }
+        if (minPoint != null) {
+            if (count > 0) {
+                condition.append(" AND ");
+            }
+            condition.append(" NOT(E.MinPoint > ?) \n ");
+            count++;
+            map.put("minPoint", count);
+        }
+        if (!typeId.isEmpty()) {
+            if (count > 0) {
+                condition.append(" AND ");
+            }
+            if (typeId.size() > 0) {
+                for (int i = 0; i < typeId.size(); i++) {
+                    condition.append(" S.TypeId=? \n ");
+                    count++;
+                    map.put("typeId" + i, count);
+                    if (i < typeId.size() - 1) {
+                        condition.append(" OR ");
+                    }
+                }
+            }
+        }
+        if (!fieldCode.isEmpty()) {
+            if (count > 0) {
+                condition.append(" AND ");
+            }
+            if (fieldCode.size() > 0) {
+                for (int i = 0; i < fieldCode.size(); i++) {
+                    condition.append(" F.PreFieldId In (Select FieldId From Field where SUBSTRING(FieldCode,2,4)=?)\n ");
+                    count++;
+                    map.put("fieldCode" + i, count);
+                    if (i < fieldCode.size() - 1) {
+                        condition.append(" OR ");
+                    }
+                }
+            }
+        }
+        if (!locationId.isEmpty()) {
+            if (count > 0) {
+                condition.append(" AND ");
+            }
+            if (locationId.size() > 0) {
+                for (int i = 0; i < locationId.size(); i++) {
+                    condition.append(" L.LocationId = ? \n ");
+                    count++;
+                    map.put("location" + i, count);
+                    if (i < locationId.size() - 1) {
+                        condition.append(" OR ");
+                    }
+                }
+            }
+        }
+
+        if (count > 0) {
+            sql.append(condition);
+        }
+        sql.append(" ORDER BY S.SchoolCode ");
+        System.out.println(sql.toString());
+        Query query = em.createNativeQuery(sql.toString(), School.class);
+        String key;
+        
+        // check length of List and get map<key> to get position to add value into query
+        if (sjCode != null) {
+            for (int i = 0; i < sjCode.length; i++) {
+                key = "sjCode" + i;
+                if (map.get(key) != null) {
+                    System.out.println("sjCode " + sjCode[i]);
+                    query.setParameter(map.get(key), sjCode[i]);
+                }
+            }
+        }
+        // check map<key> isExist or not to do query
+        if (map.get("schoolName") != null) {
+            query.setParameter(map.get("schoolName"), ("%" + schoolName + "%"));
+        }
+        // check map<key> isExist or not to do query
+        if (map.get("minPoint") != null) {
+            query.setParameter(map.get("minPoint"), minPoint);
+        }
+        // check length of List and get map<key> to get position to add value into query
+        if (!typeId.isEmpty()) {
+            for (int i = 0; i < typeId.size(); i++) {
+                key = "typeId" + i;
+                if (map.get(key) != null) {
+                    System.out.println("type " + typeId.get(i));
+                    query.setParameter(map.get(key), typeId.get(i));
+                }
+            }
+        }
+        // check length of List and get map<key> to get position to add value into query
+        if (!fieldCode.isEmpty()) {
+            for (int i = 0; i < fieldCode.size(); i++) {
+                key = "fieldCode" + i;
+                if (map.get(key) != null) {
+                    System.out.println("field " + fieldCode.get(i));
+                    query.setParameter(map.get(key), fieldCode.get(i));
+                }
+            }
+        }
+        // check length of List and get map<key> to get position to add value into query
+        if (!locationId.isEmpty()) {
+            for (int i = 0; i < locationId.size(); i++) {
+                key = "location" + i;
+                if (map.get(key) != null) {
+                    System.out.println("location " + locationId.get(i).toString());
+                    query.setParameter(map.get(key), locationId.get(i));
+                }
+            }
+        }
+        List result = query.getResultList();
+        return result;
+    }
 }

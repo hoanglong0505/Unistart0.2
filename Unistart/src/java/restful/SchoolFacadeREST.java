@@ -113,50 +113,22 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
         return list;
     }
-     @POST
-    @Path("filter-school2")
-    @Consumes( MediaType.APPLICATION_JSON)
-    public String findSchool2(String[] school){
-         System.out.println("name : " + school);
-         System.out.println("length"+school.length);
-        return school[0];
-    }
+
+    
+    
     @POST
-    @Path("filter-school2a")
-    @Consumes( MediaType.APPLICATION_JSON)
-    public String findSchool2a(FilterSchool entity){
-         System.out.println("name : " + entity.getSchoolName());
-         for(String location : entity.getLocation()){
-             System.out.println("location " + location);
-         }
-          for(String field : entity.getField()){
-             System.out.println("field " + field);
-         }
-           for(String sjcombi : entity.getSjCombi()){
-             System.out.println("sjcombi " + sjcombi);
-         }
-            for(String type : entity.getTypeSchool()){
-             System.out.println("type " + type);
-         }
-            System.out.println("point" + entity.getMinPoint());
-        return entity.getSchoolName();
-    }
-     @GET
-    @Path("filter-school3")
-    @Produces( MediaType.APPLICATION_JSON)
-    public String findSchool3( @QueryParam("schoolName") String schoolName){
-       String[] name= schoolName.split(",");
-       for(int i=0;i<name.length;i++){
-           System.out.println("1 : "+name[i]);
-       }
-         System.out.println("name : " + schoolName);
-        return schoolName;
+    @Path("filter-school-multiple")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public List<School> findSchool2a(FilterSchool entity) {
+        SchoolDAO dao = new SchoolDAO();
+        List<School> list = dao.filterSchoolMultiple(entity.getSchoolName(), entity.getSjCombi(), entity.getMinPoint(), entity.getTypeSchool(), entity.getField(), entity.getLocation(), em);
+        return list;
     }
 
-    public void refresh(School school){
+    public void refresh(School school) {
         em.refresh(school);
     }
-    
+
     @Override
     protected EntityManager getEntityManager() {
         return em;
