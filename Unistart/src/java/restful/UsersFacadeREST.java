@@ -81,18 +81,26 @@ public class UsersFacadeREST extends AbstractFacade<Users> {
 
         UsersFacadeREST uRest = new UsersFacadeREST();
         Users resUser = uRest.find(responseUserId);
-        if (requestUserToken != null) {
-            GoogleIdToken.Payload payload = GoogleVerifier.verify(requestUserToken);
-            if (payload != null) {
-                String userId = payload.getSubject();
-                user = uRest.find(userId);
-                if (user != null) {
-                    if (!resUser.getUserId().equals(userId)) {
-                        resUser.hideRate = true;
+        try {
+            if (requestUserToken != null) {
+                GoogleIdToken.Payload payload = GoogleVerifier.verify(requestUserToken);
+                if (payload != null) {
+                    String userId = payload.getSubject();
+                    user = uRest.find(userId);
+                    if (user != null) {
+                        if (!resUser.getUserId().equals(userId)) {
+                            resUser.hideRate = true;
+                        }
                     }
                 }
+            } else {
+                resUser.hideRate = true;
             }
-        } else {
+        } catch (IllegalArgumentException e1) {
+            System.out.println("User arent logged in");
+            resUser.hideRate = true;
+        } catch (Exception e) {
+            e.printStackTrace();
             resUser.hideRate = true;
         }
         resUser.ratesHandler = Constants.GENERATE;

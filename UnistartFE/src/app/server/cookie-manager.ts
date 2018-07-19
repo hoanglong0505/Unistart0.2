@@ -18,14 +18,16 @@ export class CookieManager {
         return "";
     }
 
-    static setCookie(cookie:string, exdays?: number) {
+    static setCookie(cookie: string, exdays?: number) {
         if (exdays) {
             var d = new Date();
             d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
             var expires = "expires=" + d.toUTCString();
             cookie += (";" + expires + ";path=/");
+            document.cookie = cookie;
+            return;
         }
-        document.cookie=cookie;
+        document.cookie = cookie + ";path=/";
     }
 
 }

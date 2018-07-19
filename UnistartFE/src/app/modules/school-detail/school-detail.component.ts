@@ -5,6 +5,7 @@ import { SchoolService } from '../../services/school.service'
 import { School } from '../../model/school';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
 import { AverageRateService } from '../../services/average-rate.service';
+import { HttpRequest, Session } from '../../server/http';
 
 @Component({
   selector: 'app-school-detail',
@@ -26,7 +27,7 @@ export class SchoolDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    sessionStorage.setItem('reload','false');
+    new HttpRequest().getSession(true).set('reload',false);
     WaitingBoxComponent.start();
     this.getSchool();
   }

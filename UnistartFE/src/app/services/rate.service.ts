@@ -3,8 +3,7 @@ import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
 import { Rate } from '../model/rate';
 import { catchError } from 'rxjs/operators';
-import { HttpResponse } from '../server/httpResponse';
-import { CookieManager } from '../server/cookie-manager';
+import { HttpResponse } from '../server/http';
 import { Constants } from '../constanst';
 import { School } from '../model/school';
 

@@ -6,6 +6,7 @@ import { Users } from '../../../../model/users';
 import { InfoComponent } from '../info.component';
 import { WaitingBoxComponent } from '../../../waiting-box/waiting-box.component';
 import { ReportService } from '../../../../services/report.service';
+import { HttpRequest, Session } from '../../../../server/http';
 
 @Component({
   selector: 'app-report',
@@ -38,7 +39,7 @@ export class ReportComponent implements OnInit {
 
         rp.rpContent = this.rpContent;
         rp.user = new Users();
-        rp.user.idToken = sessionStorage.getItem('gToken');
+        rp.user.idToken = new HttpRequest().getSession(true).get('gToken');
         rp.rate = this.rpRate;
         console.log(rp);
 
