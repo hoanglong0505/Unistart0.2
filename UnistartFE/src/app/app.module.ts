@@ -33,6 +33,10 @@ import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component
 import { BarRatingModule } from 'ngx-bar-rating';
 import { UserProfileComponent } from './modules/user-profile/user-profile.component';
 
+// 19/7/2018 Quy
+import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
+import { ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -66,6 +70,8 @@ import { UserProfileComponent } from './modules/user-profile/user-profile.compon
     MatCheckboxModule,
     BarRatingModule,
     SlideshowModule,
+    AngularMultiSelectModule,
+    ReactiveFormsModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent]
