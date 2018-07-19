@@ -42,6 +42,10 @@ export class SchoolService {
       catchError(this.handleError<School[]>('filterSchool', []))
     );
   }
+  filterSchoolPost(schoolFilter): Observable<School[]>{
+    const url=`http://localhost:8084/Unistart/webresources/model.school/filter-school-multiple`
+    return this.http.post<School[]>(url,schoolFilter);
+  }
 
   private handleError<T>(operation = 'operation', result?: T) {
     return (error: any): Observable<T> => {
