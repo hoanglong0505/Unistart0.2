@@ -1,116 +1,116 @@
 <div id="filter-school-container">
 
-  <h1>LỌC TRƯỜNG</h1>
-  <form [formGroup]="filterForm" novalidate>
-    <table>
-      <tr>
-        <td>
-          <label class="label-filter" for="school-name">TÊN TRƯỜNG</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <div class="multiple-search">
-              <input mdInput class="text filter-input location-search" placeholder="Tên Trường" type="text" name="schoolName" formControlName="school"
-                [(ngModel)]="schoolName" />
+    <h1>LỌC TRƯỜNG</h1>
+    <form [formGroup]="filterForm" novalidate>
+      <table>
+        <tr>
+          <td>
+            <label class="label-filter" for="school-name">TÊN TRƯỜNG</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="multiple-search">
+                <input mdInput class="text filter-input location-search" placeholder="Tên Trường" type="text" name="schoolName" formControlName="school"
+                  [(ngModel)]="schoolName" />
+              </div>
             </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label class="label-filter" for="location-name">TỈNH/ THÀNH</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <div class="location-search">
-              <angular2-multiselect [data]="dropDownList.locationList" [(ngModel)]="selectedItems.selectedLocationItems" [settings]="dropdownSettings"
-                formControlName="location">
-                <c-item>
-                  <ng-template let-item="item">
-                    <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
-                  </ng-template>
-                </c-item>
-              </angular2-multiselect>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>
+            <label class="label-filter" for="location-name">TỈNH/ THÀNH</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="location-search">
+                <angular2-multiselect [data]="dropDownList.locationList" [(ngModel)]="selectedItems.selectedLocationItems" [settings]="dropdownSettings"
+                  formControlName="location">
+                  <c-item>
+                    <ng-template let-item="item">
+                      <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
+                    </ng-template>
+                  </c-item>
+                </angular2-multiselect>
+              </div>
             </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label class="label-filter" for="field-name">NGÀNH/ NGHỀ ĐÀO TẠO</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <div class="location-search">
-              <angular2-multiselect [data]="dropDownList.fieldList" [(ngModel)]="selectedItems.selectedFieldItems" [settings]="dropdownSearchSettings"
-                formControlName="field">
-                <c-item>
-                  <ng-template let-item="item">
-                    <label style="color: #333;min-width: 300px;">{{item.itemCode}}--{{item.itemName}}</label>
-                  </ng-template>
-                </c-item>
-              </angular2-multiselect>
+          </td>
+        </tr> -->
+        <tr>
+          <td>
+            <label class="label-filter" for="field-name">NGÀNH/ NGHỀ ĐÀO TẠO</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="location-search">
+                <angular2-multiselect [data]="dropDownList.fieldList" [(ngModel)]="selectedItems.selectedFieldItems" [settings]="dropdownSearchSettings"
+                  formControlName="field">
+                  <c-item>
+                    <ng-template let-item="item">
+                      <label style="color: #333;min-width: 300px;">{{item.itemCode}}--{{item.itemName}}</label>
+                    </ng-template>
+                  </c-item>
+                </angular2-multiselect>
+              </div>
             </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label class="label-filter" for="sjcombi-name">TỔ HỢP MÔN</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <div class="location-search">
-              <angular2-multiselect [data]="dropDownList.sjCombiList" [(ngModel)]="selectedItems.selectedSjCombiItems" this.dropdownSearchSettings={
-                [settings]="dropdownSearchSettings" formControlName="sjcombi">
-                <c-item>
-                  <ng-template let-item="item">
-                    <label style="color: #333;min-width: 150px;">{{item.itemName}}--{{item.id}}</label>
-                  </ng-template>
-                </c-item>
-              </angular2-multiselect>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label class="label-filter" for="sjcombi-name">TỔ HỢP MÔN</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="location-search">
+                <angular2-multiselect [data]="dropDownList.sjCombiList" [(ngModel)]="selectedItems.selectedSjCombiItems" this.dropdownSearchSettings={
+                  [settings]="dropdownSearchSettings" formControlName="sjcombi">
+                  <c-item>
+                    <ng-template let-item="item">
+                      <label style="color: #333;min-width: 150px;">{{item.itemName}}--{{item.id}}</label>
+                    </ng-template>
+                  </c-item>
+                </angular2-multiselect>
+              </div>
             </div>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <label class="label-filter" for="type-name">HỆ TRƯỜNG</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <div class="location-search">
-              <angular2-multiselect [data]="dropDownList.typeList" [(ngModel)]="selectedItems.selectedTypeItems" this.dropdownSearchSettings={
-                [settings]="dropdownSettings" formControlName="type">
-                <c-item>
-                  <ng-template let-item="item">
-                    <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
-                  </ng-template>
-                </c-item>
-              </angular2-multiselect>
+          </td>
+        </tr>
+        <!-- <tr>
+          <td>
+            <label class="label-filter" for="type-name">HỆ TRƯỜNG</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <div class="location-search">
+                <angular2-multiselect [data]="dropDownList.typeList" [(ngModel)]="selectedItems.selectedTypeItems" this.dropdownSearchSettings={
+                  [settings]="dropdownSettings" formControlName="type">
+                  <c-item>
+                    <ng-template let-item="item">
+                      <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
+                    </ng-template>
+                  </c-item>
+                </angular2-multiselect>
+              </div>
             </div>
-          </div>
-        </td>
+          </td>
+        </tr> -->
+        <tr>
+          <td>
+            <label class="label-filter" for="min-point">MỨC ĐIỂM SÀN TỐI ĐA</label>
+          </td>
+          <td>
+            <div class="form-group">
+              <input mdInput class="text filter-input" (keydown)="onKeydown($event)" name="minPoint" [(ngModel)]="minPoint" type="text" formControlName="minPoint"
+              />
+              <span>Điểm Tối Thiểu : 0 - Điểm Tối Đa : 30</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="text-align: center">
+        <button class="btn btn-success btn-block" (click)="submitForm()" [disabled]="!filterForm.valid" placeholder="Điểm">TÌM KIẾM</button>
+        <button class="btn btn-danger" (click)="resetValue()">Reset</button>
+      </td>
       </tr>
-      <tr>
-        <td>
-          <label class="label-filter" for="min-point">MỨC ĐIỂM SÀN TỐI ĐA</label>
-        </td>
-        <td>
-          <div class="form-group">
-            <input mdInput class="text filter-input" (keydown)="onKeydown($event)" name="minPoint" [(ngModel)]="minPoint" type="text" formControlName="minPoint"
-            />
-            <span>Điểm Tối Thiểu : 0 - Điểm Tối Đa : 30</span>
-          </div>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2" style="text-align: center">
-      <button class="btn btn-success btn-block" (click)="submitForm()" [disabled]="!filterForm.valid" placeholder="Điểm">TÌM KIẾM</button>
-      <button class="btn btn-danger" (click)="resetValue()">Reset</button>
-    </td>
-    </tr>
-    </table>
-  </form>
-</div>
+      </table>
+    </form>
+  </div>
 

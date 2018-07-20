@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input , Output,EventEmitter } from '@angular/core';
 import { SchoolsComponent } from '../schools.component';
 import { School } from '../../../model/school';
 import { SchoolService } from '../../../services/school.service';
@@ -24,18 +24,17 @@ export class FilterSchoolComponent implements OnInit {
   locations: Location[];
   sjCombinations: SubjectCombination[];
   types: Type[];
-
+  schoolFilter:any=[];
   // Selected Item in multiple-selected
   selectedItems: any = {
-    "selectedLocationItems": [],
     "selectedFieldItems": [],
     "selectedSjCombiItems": [],
-    "selectedTypeItems": [],
   }
 
   // Setting for multiple selected
   dropdownSearchSettings = {};
   dropdownSettings = {};
+
   schoolName: string;
   minPoint: any = 0;
   //object contain the value selected
@@ -107,15 +106,14 @@ export class FilterSchoolComponent implements OnInit {
       limitSelection: 4,
       disable: false
     }
+
   }
   // get selected value from the filterFrom
   createForm() {
     this.filterForm = this.fb.group({
       school: '',
-      location: [],
       field: [],
       sjcombi: [],
-      type: [],
       minPoint: ''
     })
   }
@@ -136,17 +134,22 @@ export class FilterSchoolComponent implements OnInit {
   }
  //do submit form get filter-school with value get from filterForm
  submitForm() {
-  let schoolFilter = {
-    "schoolName": this.filterForm.value.school,
-    "location": this.filterForm.value.location.map(e => (e.id)),
-    "field": this.filterForm.value.field.map(e => (e.itemCode)),
-    "typeSchool": this.filterForm.value.type.map(e => (e.id)),
-    "sjCombi": this.filterForm.value.sjcombi.map(e => (e.itemName)),
-    "minPoint": this.filterForm.value.minPoint,
+   var point;
+  if(this.filterForm.value.minPoint =="0" || this.filterForm.value.minPoint==""){
+    point = undefined
   }
-  console.log(schoolFilter);
+  console.log(this.schoolsComponent)
+  this.schoolFilter = {
+    "schoolName": this.filterForm.value.school,
+    "location": this.schoolsComponent.locationSelected.map(e=>(e.id)), // get value location form school components
+    "field": this.filterForm.value.field.map(e => (e.itemCode)),
+    "typeSchool": this.schoolsComponent.typeSchoolSelected.map(e => (e.id)), // get type location form school components
+    "sjCombi": this.filterForm.value.sjcombi.map(e => (e.itemName)),
+    "minPoint": point,
+  }
+  console.log(this.schoolFilter);
   // call schoolService to do filter
-  this.schoolService.filterSchoolPost(schoolFilter).subscribe(schools => {
+  this.schoolService.filterSchoolPost(this.schoolFilter).subscribe(schools => {
     this.schoolsComponent.schools = schools;
     this.schoolsComponent.lastPages = Math.ceil(schools.length / this.schoolsComponent.maxItemsPerPage);
     this.schoolsComponent.pages = 1;
@@ -155,15 +158,16 @@ export class FilterSchoolComponent implements OnInit {
 }
 // reset all value input
 resetValue() {
+  console.log(this.schoolsComponent.locationSelected);
   console.log(this.dropDownList);
   this.minPoint = 0;
   this.schoolName = "";
   this.selectedItems = {
-    "selectedLocationItems": [],
     "selectedFieldItems": [],
     "selectedSjCombiItems": [],
-    "selectedTypeItems": [],
   }
+  this.schoolsComponent.locationSelected=[];
+  this.schoolsComponent.typeSchoolSelected=[];
 }
 
 // check input Number change

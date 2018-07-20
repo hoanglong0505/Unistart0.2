@@ -1,35 +1,60 @@
 <section>
-  <app-filter-school [schoolsComponent]="this"></app-filter-school>
-  <div id="school-container">
-    <h1>DANH SÁCH TRƯỜNG</h1>
-    <mat-card class="school-card" *ngFor="let sch of 
-    schools.slice(pages*maxItemsPerPage - maxItemsPerPage,pages*maxItemsPerPage)">
-      <a routerLink="/school-detail/{{sch.schoolId}}">
+    <app-filter-school [schoolsComponent]="this" #filterSchool></app-filter-school>
+    <div id="school-container">
+      <h1>DANH SÁCH TRƯỜNG</h1>
 
-        <mat-card-header>
-          <div mat-card-avatar class="school-header-image"></div>
-          <mat-card-title>{{sch.schoolName}}</mat-card-title>
-          <mat-card-subtitle>{{sch.schoolCode}}</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="/assets/images/school.txt" alt="{{sch.avatar}}" />
-        <mat-card-content>
-          <p>
-            Thông tin trường
-          </p>
-        </mat-card-content>
-        <!-- <mat-card-actions>
-            <button mat-button>LIKE</button>
-            <button mat-button>SHARE</button>
-        </mat-card-actions> -->
-      </a>
-
-    </mat-card>
-    <div id="paginator">
-      <button (click)="previousPage()" mat-button>Back</button>
-      <mat-form-field>
-        <input matInput type="number" min="1" [max]="lastPages" [(ngModel)]="pages">
-      </mat-form-field>
-      <button (click)="nextPage()" mat-button>Next</button>
+      <!-- Quy 20/7 - do filter location and typeschool -->
+      <div class="filter-school">
+  <div class="location-search">
+      <angular2-multiselect [data]="dropDownLocationList" [(ngModel)]="locationSelected" [settings]="dropdownLocationSettings"
+      (onSelect)="filterSchool.submitForm()" (onDeSelect)="filterSchool.submitForm()">
+        <c-item>
+          <ng-template let-item="item">
+            <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
+          </ng-template>
+        </c-item>
+      </angular2-multiselect>
     </div>
-  </div>
-</section>
+    <div class="type-search">
+        <angular2-multiselect [data]="dropDownTypeList" [(ngModel)]="typeSchoolSelected" this.dropdownSearchSettings={
+          [settings]="dropdownTypeSettings" (onSelect)="filterSchool.submitForm()" (onDeSelect)="filterSchool.submitForm()">
+          <c-item>
+            <ng-template let-item="item">
+              <label style="color: #333;min-width: 150px;">{{item.itemName}}</label>
+            </ng-template>
+          </c-item>
+        </angular2-multiselect>
+      </div>
+      </div>
+      <!-- ================== -->
+      <mat-card class="school-card" *ngFor="let sch of
+      schools.slice(pages*maxItemsPerPage - maxItemsPerPage,pages*maxItemsPerPage)">
+        <a routerLink="/school-detail/{{sch.schoolId}}">
+          <mat-card-header>
+            <div mat-card-avatar class="school-header-image"></div>
+            <mat-card-title>{{sch.schoolName}}</mat-card-title>
+            <mat-card-subtitle>{{sch.schoolCode}}</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="/assets/images/school.txt" alt="{{sch.avatar}}" />
+          <mat-card-content>
+            <p>
+              Thông tin trường
+            </p>
+          </mat-card-content>
+          <!-- <mat-card-actions>
+              <button mat-button>LIKE</button>
+              <button mat-button>SHARE</button>
+          </mat-card-actions> -->
+        </a>
+
+      </mat-card>
+      <div id="paginator">
+        <button (click)="previousPage()" mat-button>Back</button>
+        <mat-form-field>
+          <input matInput type="number" min="1" [max]="lastPages" [(ngModel)]="pages">
+        </mat-form-field>
+        <span class="lastPages">/{{lastPages}}</span>
+        <button (click)="nextPage()" mat-button>Next</button>
+      </div>
+    </div>
+  </section>

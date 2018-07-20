@@ -26,3 +26,28 @@ mat-card-title {
 mat-form-field {
   width: 50px;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.lastPages{
+  display: inline-block;
+  font-weight: bold;
+}
+.filter-school .location-search{
+width: 200px;
+margin-left: auto;
+margin-right: 100px;
+display: inline-block;
+}
+.filter-school .type-search{
+  width: 200px;
+margin-left: auto;
+display: inline-block;
+}
+.filter-school{
+  position: sticky;
+  top: 55px;
+  z-index: 9999999;
+}
