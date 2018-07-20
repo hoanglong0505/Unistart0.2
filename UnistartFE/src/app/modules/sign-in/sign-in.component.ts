@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { HttpRequest, Session } from '../../server/http';
 @Component({
   selector: 'app-sign-in',
   templateUrl: './sign-in.component.html',
@@ -13,8 +13,8 @@ export class SignInComponent implements OnInit {
 
   }
 
-  getUserId(){
-    return sessionStorage.getItem('gId');
+  getUserId() {
+    return new HttpRequest().getSession(true).get('gId');
   }
 
   ele(id): HTMLElement {

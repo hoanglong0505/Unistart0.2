@@ -39,10 +39,10 @@ export class Constants {
   public GET_SCHOOL_BY_ID = this.SCHOOL + '/';
   public FILTER_SCHOOL = this.SCHOOL + '/filter-school?';
 
-//image
-private IMAGE = this.SERVICE_PATH + 'model.imageschool';
-public GET_IMAGE = this.IMAGE;
-public GET_IMAGE_BY_SCHOOL = this.IMAGE + '/school/';
+  //image
+  private IMAGE = this.SERVICE_PATH + 'model.imageschool';
+  public GET_IMAGE = this.IMAGE;
+  public GET_IMAGE_BY_SCHOOL = this.IMAGE + '/school/';
 
   //subject combination
   private SUBJECT_COMBINATION = this.SERVICE_PATH + 'model.subjectcombination';

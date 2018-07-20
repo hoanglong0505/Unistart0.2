@@ -43,6 +43,12 @@
       <bar-rating [(rate)]="r.averageValue" [max]="10" [theme]="'stars'" [readOnly]="true">
       </bar-rating>
     </div>
+    <div id="report" style="color:grey;cursor:pointer;" (click)="turnOnReport(r)">
+      <span>{{r.reports.length}} báo cáo</span> ---
+      <i>BÁO CÁO BÀI ĐÁNH GIÁ</i>
+    </div>
     <div>-----------------------------------------</div>
   </div>
 </div>
+
+<app-report [reportableComp]="this"></app-report>

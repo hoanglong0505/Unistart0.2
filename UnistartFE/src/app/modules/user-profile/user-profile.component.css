@@ -1,40 +1,47 @@
 #profile-container {
-    margin-top:20px;
+  margin-top: 20px;
 }
 
 #profile-container img {
-    margin-right: 10px;
-    float:left;
-    width:100px;height: 100px;
+  margin-right: 10px;
+  float: left;
+  width: 100px;
+  height: 100px;
 }
 
-#profile-container h2,h4 {
-    margin: 0 0 0 10px;
+#profile-container h2,
+h4 {
+  margin: 0 0 0 10px;
 }
 
-#rate-container{
-    clear:left;
+#rate-container {
+  clear: left;
 }
 
 #rate-container h2 {
-    margin: 0;
+  margin: 0;
 }
 
-.rate{
-    position: relative;
+.rate {
+  position: relative;
 }
+
 .rate .del-button {
-    border: 2px solid black;
-    color:red;
-    width:30px;
-    font-size: 70%;
-    margin-left:10px;
-    padding: 3px 0;
-    text-align: center;
-    display: inline-block;
+  border: 2px solid black;
+  color: red;
+  width: 30px;
+  font-size: 70%;
+  margin-left: 10px;
+  padding: 3px 0;
+  text-align: center;
+  display: inline-block;
 }
 
 .rate .del-button:hover {
-    background: pink;
-    cursor: pointer;
+  background: pink;
+  cursor: pointer;
+}
+
+#report {
+  display: inline-block;
 }

@@ -4,7 +4,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Users } from '../model/users';
 import { catchError } from 'rxjs/operators';
 import { Constants } from '../constanst';
-
+import { HttpRequest, Session } from '../server/http';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'
@@ -23,7 +23,9 @@ export class UserService {
 
     var user = new Users();
     user.userId = id;
-    user.idToken = sessionStorage.getItem('gToken');
+    var request: HttpRequest = new HttpRequest();
+    var session: Session = request.getSession(true);
+    user.idToken = session.get('gToken');
 
     return this.http.post<Users>(url, user, httpOptions).pipe(
       catchError(this.handleError<Users>('getUserInfo', null))

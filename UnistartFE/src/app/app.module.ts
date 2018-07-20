@@ -25,7 +25,7 @@ import { ReviewComponent } from './modules/school-detail/review/review.component
 import { SignInComponent } from './modules/sign-in/sign-in.component';
 import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component';
 import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
-import { ReportComponent } from './modules/school-detail/info/report/report.component';
+import { ReportComponent } from './modules/report/report.component';
 import { Constants } from './constanst';
 import { MbtiComponent } from './modules/mbti/mbti.component';
 import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';

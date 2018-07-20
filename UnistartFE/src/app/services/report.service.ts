@@ -5,7 +5,7 @@ import { Report } from '../model/report';
 import { ReportPK } from '../model/reportPK';
 import { Rate } from '../model/rate';
 import { catchError } from 'rxjs/operators';
-import { HttpResponse } from '../server/httpResponse';
+import { HttpResponse } from '../server/http';
 import { Constants } from '../constanst';
 
 const httpOptions = {

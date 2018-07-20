@@ -121,8 +121,6 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
     }
 
 
-    
-    
     @POST
     @Path("filter-school-multiple")
     @Consumes(MediaType.APPLICATION_JSON)
