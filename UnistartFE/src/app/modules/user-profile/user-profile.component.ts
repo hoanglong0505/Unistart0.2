@@ -17,8 +17,8 @@ export class UserProfileComponent extends ReportableComponent implements OnInit 
 
   user: Users;
   authorUser: boolean;
-  private interval: any;
   private request: HttpRequest;
+
   constructor(
     private route: ActivatedRoute,
     private userService: UserService,
@@ -39,15 +39,11 @@ export class UserProfileComponent extends ReportableComponent implements OnInit 
     // console.log(this.user);
     var comp: UserProfileComponent = this;
     var session = this.request.getSession(true);
-
-    this.interval = setInterval(function () {
-      if (session.get('gId')) {
-        if (session.get('gId') == comp.user.userId)
-          comp.authorUser = true;
-        else comp.authorUser = false;
-        clearInterval(comp.interval);
-      }
-    }, 500);
+    if (session.get('gId')) {
+      if (session.get('gId') == comp.user.userId)
+        comp.authorUser = true;
+      else comp.authorUser = false;
+    }
   }
 
   getUser() {

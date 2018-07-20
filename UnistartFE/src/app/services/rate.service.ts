@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http'
+import { HttpRequest, HttpResponse } from '../server/http';
 import { Rate } from '../model/rate';
 import { catchError } from 'rxjs/operators';
-import { HttpResponse } from '../server/http';
 import { Constants } from '../constanst';
 import { School } from '../model/school';
 
@@ -19,6 +19,11 @@ const httpOptions = {
 export class RateService {
 
   constructor(private http: HttpClient, private constant: Constants) { }
+
+  getRate(req: HttpRequest): Observable<HttpResponse> {
+    //todo
+    return null;
+  }
 
   addRate(rate: Rate): Observable<HttpResponse> {
     const url = this.constant.SEND_REVIEW;

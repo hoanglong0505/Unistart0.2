@@ -1,12 +1,22 @@
 import { CookieManager } from './cookie-manager';
 
 export class HttpRequest {
+
+    private uniSession: Session;
+    content: Object;
+
+    constructor() {
+    }
+
     getSession(create: boolean): Session {
         var uniSession = new Session();
-        if (uniSession.isActive())
+        if (uniSession.isActive()) {
+            this.uniSession = uniSession
             return uniSession;
+        }
         if (create) {
             uniSession.createSession();
+            this.uniSession = uniSession
             return uniSession;
         }
         return null;
@@ -16,16 +26,17 @@ export class HttpRequest {
 
 export class Session {
     private uniSession: Object;
+    isChanged: boolean = false;
 
     constructor() {
         var uniCookie = CookieManager.getCookie('UNISESSION');
         if (uniCookie)
-            this.uniSession = JSON.parse(uniCookie);
+            this.uniSession = JSON.parse(uniCookie)['uniSession'];
     }
 
     createSession(): void {
         this.uniSession = new Object();
-        CookieManager.setCookie('UNISESSION=' + JSON.stringify(this.uniSession));
+        this.pushToCookie();
     }
 
     get(key: string) {
@@ -42,8 +53,8 @@ export class Session {
         this.pushToCookie();
     }
 
-    private pushToCookie() {
-        CookieManager.setCookie('UNISESSION=' + JSON.stringify(this.uniSession));
+    pushToCookie() {
+        CookieManager.setCookie('UNISESSION=' + JSON.stringify(this));
     }
 
     isActive(): boolean {
@@ -57,7 +68,7 @@ export class Session {
 export class HttpResponse {
     status: number;
     redirectTo: string;
-    content: string;
-    cookies: string[];
+    content: Object;
+    metas: Map<String, Object>;
     constructor() { }
 }

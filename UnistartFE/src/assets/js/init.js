@@ -43,28 +43,32 @@ function getSession(create) {
 
 function createSession() {
   var uniSession = new Object();
-  setCookie('UNISESSION=' + JSON.stringify(uniSession));
-  return uniSession;
+  var UNISESSION = new Object();
+  UNISESSION['uniSession'] = uniSession;
+  setCookie('UNISESSION=' + JSON.stringify(UNISESSION));
+  return UNISESSION;
 }
 
 function getSessionItem(key) {
-  return getSession(true)[key];
+  return getSession(true)['uniSession'][key];
 }
 
 function setSessionItem(key, value) {
-  var uniSession = getSession(true);
+  var uniSession = getSession(true)['uniSession'];
   uniSession[key] = value;
   pushToCookie(uniSession);
 }
 
 function removeSessionItem(key) {
-  var uniSession = getSession(true);
+  var uniSession = getSession(true)['uniSession'];
   delete uniSession[key];
   pushToCookie(uniSession);
 }
 
 function pushToCookie(uniSession) {
-  setCookie('UNISESSION=' + JSON.stringify(uniSession));
+  var UNISESSION = new Object();
+  UNISESSION['uniSession'] = uniSession;
+  setCookie('UNISESSION=' + JSON.stringify(UNISESSION));
 }
 //------------------- LOGIN ---------------------
 
