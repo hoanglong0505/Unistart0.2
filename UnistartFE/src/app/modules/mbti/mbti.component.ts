@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MbtiService } from '../../services/mbti.service';
 import { Question } from '../../model/question';
-import { Router } from '../../../../node_modules/@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mbti',

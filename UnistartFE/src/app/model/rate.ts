@@ -1,6 +1,6 @@
-import { Users } from '../model/users';
-import { School } from '../model/school';
-import { RateDetail } from '../model/rateDetail';
+import { Users } from './users';
+import { School } from './school';
+import { RateDetail } from './rateDetail';
 import { Report } from './report';
 
 export class Rate {

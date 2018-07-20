@@ -1,6 +1,6 @@
-import { Branch } from '../model/branch';
-import { EntranceInfo } from '../model/entranceInfo';
-import { Rate } from '../model/rate';
+import { Branch } from './branch';
+import { EntranceInfo } from './entranceInfo';
+import { Rate } from './rate';
 
 export class School {
     schoolId: number;

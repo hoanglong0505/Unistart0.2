@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Constants } from '../constanst';
-import { HttpClient } from '../../../node_modules/@angular/common/http';
-import { Observable } from '../../../node_modules/rxjs';
-import { catchError } from '../../../node_modules/rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { catchError } from 'rxjs/operators';
 import { Question } from '../model/question';
 
 @Injectable({

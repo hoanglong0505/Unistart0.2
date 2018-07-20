@@ -1,4 +1,4 @@
-import { Rate } from '../model/rate';
+import { Rate } from './rate';
 
 export class Users {
     userId: string;

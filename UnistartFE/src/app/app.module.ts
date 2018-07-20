@@ -36,7 +36,15 @@ import { UserProfileComponent } from './modules/user-profile/user-profile.compon
 // 19/7/2018 Quy
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
 import { ReactiveFormsModule } from '@angular/forms';
-import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component'; // <-- NgModel lives here
+import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component';
+import { ScheduleComponent } from './modules/schedule/schedule.component'; // <-- NgModel lives here
+
+// 20/7/2018 Long
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatDialogModule} from '@angular/material/dialog';
+import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/schedule-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -54,7 +62,9 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
     MbtiComponent,
     UserProfileComponent,
     MbtiDetailComponent,
-    EditReviewComponent
+    EditReviewComponent,
+    ScheduleComponent,
+    ScheduleDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -73,9 +83,13 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
     BarRatingModule,
     SlideshowModule,
     AngularMultiSelectModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatGridListModule,
+    MatExpansionModule,
+    MatDialogModule
   ],
   providers: [WaitingBoxComponent, Constants],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ScheduleDialogComponent]
 })
 export class AppModule { }

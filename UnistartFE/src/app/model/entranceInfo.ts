@@ -1,5 +1,5 @@
-import { Field } from '../model/field';
-import { SubjectCombination } from '../model/subjectCombination';
+import { Field } from './field';
+import { SubjectCombination } from './subjectCombination';
 
 export class EntranceInfo {
     entranceId: number;

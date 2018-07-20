@@ -1,0 +1,35 @@
+
+  mat-card.body {
+    display: inline-block;
+   width: 95%;
+   text-align: center;
+  }
+  .ca{
+      width: 100%;
+  }
+ 
+  .ca mat-expansion-panel {
+      margin-left: 2%;
+      vertical-align: top;
+    width: 45%;
+    display: inline-block;
+}
+
+
+
+.example-full-width{
+    width: 100%;
+}
+mat-grid-tile{
+    background-color: lightblue;
+    display: block;
+}
+mat-grid-tile.morning{
+    background-color: lightgreen;
+}
+mat-grid-tile.noon{
+    background-color: lightsalmon;
+}
+mat-grid-list.schedule {
+    margin: 5px;
+}
