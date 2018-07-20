@@ -134,18 +134,6 @@ export class FilterSchoolComponent implements OnInit {
   onDeSelectAll(items: any) {
     console.log(items);
   }
-
-  // filterSchool(form: NgForm) {
-  //   var f = form.value;
-  //   this.schoolService.
-  //     filterSchool(f.schoolName, f.sjCode, f.minPoint, f.typeId, f.fieldCode, f.location).
-  //     subscribe(schools => {
-  //       this.schoolsComponent.schools = schools;
-  //       this.schoolsComponent.lastPages = Math.ceil(schools.length / this.schoolsComponent.maxItemsPerPage);
-  //       this.schoolsComponent.pages = 1;
-  //       console.log(this.schoolsComponent.lastPages);
-  //     });
-  // }
  //do submit form get filter-school with value get from filterForm
  submitForm() {
   let schoolFilter = {
@@ -193,15 +181,17 @@ onKeydown(event) {
       event.preventDefault();
       if (parseFloat(this.minPoint) >= 30) {
         this.minPoint = "30";
+      }else if(this.minPoint==""){
+        this.minPoint ="0";
       } else {
         this.minPoint = parseFloat(this.minPoint) + 1 + "";
       }
     }
     else if (event.key === '-') {
       event.preventDefault();
-      if (this.minPoint !== "0") {
+      if (this.minPoint !== "0" && this.minPoint != "" ) {
         this.minPoint = parseFloat(this.minPoint) - 1 + "";
-      } else {
+      } else if (this.minPoint == "" || this.minPoint =="0"){
         this.minPoint = "0";
       }
     }
