@@ -5,26 +5,27 @@
  */
 package network;
 
-import java.util.List;
+import java.util.HashMap;
 
 /**
  *
  * @author TNT
  */
 public class HttpResponse {
+
     private Integer status;
     private String redirectTo;
-    private String content;
-    private List<String> cookies;
+    private Object content;
+    private HashMap<String, Object> metas;
 
-    public HttpResponse(Integer status, String redirectTo, String content, List<String> cookies) {
+    public HttpResponse() {
+    }
+
+    public HttpResponse(Integer status, String redirectTo, Object content, HashMap<String, Object> metas) {
         this.status = status;
         this.redirectTo = redirectTo;
         this.content = content;
-        this.cookies = cookies;
-    }
-
-    public HttpResponse() {
+        this.metas = metas;
     }
 
     public Integer getStatus() {
@@ -43,22 +44,20 @@ public class HttpResponse {
         this.redirectTo = redirectTo;
     }
 
-    public String getContent() {
+    public Object getContent() {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(Object content) {
         this.content = content;
     }
 
-    public List<String> getCookies() {
-        return cookies;
+    public HashMap<String, Object> getMetas() {
+        return metas;
     }
 
-    public void setCookies(List<String> cookies) {
-        this.cookies = cookies;
+    public void setMetas(HashMap<String, Object> metas) {
+        this.metas = metas;
     }
-    
-    
-    
+
 }

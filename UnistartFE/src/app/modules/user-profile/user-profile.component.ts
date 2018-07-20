@@ -5,26 +5,32 @@ import { UserService } from '../../services/user.service';
 import { ActivatedRoute } from '@angular/router';
 import { Rate } from '../../model/rate';
 import { RateService } from '../../services/rate.service';
+import { HttpRequest, Session } from '../../server/http';
+import { ReportableComponent } from '../../model/reportable';
 
 @Component({
   selector: 'app-user-profile',
   templateUrl: './user-profile.component.html',
   styleUrls: ['./user-profile.component.css']
 })
-export class UserProfileComponent implements OnInit {
+export class UserProfileComponent extends ReportableComponent implements OnInit {
 
   user: Users;
   authorUser: boolean;
-  private interval: any;
+  private request: HttpRequest;
 
   constructor(
     private route: ActivatedRoute,
     private userService: UserService,
     private rateService: RateService
-  ) { }
+  ) {
+    super();
+  }
 
   ngOnInit() {
-    sessionStorage.setItem('reload','true');
+    this.request = new HttpRequest();
+    var session = this.request.getSession(true);
+    session.set('reload', true);
     WaitingBoxComponent.start();
     this.getUser();
   }
@@ -32,14 +38,12 @@ export class UserProfileComponent implements OnInit {
   checkUser() {
     // console.log(this.user);
     var comp: UserProfileComponent = this;
-    this.interval = setInterval(function () {
-      if (sessionStorage.getItem('gId')) {
-        if (sessionStorage.getItem('gId') == comp.user.userId)
-          comp.authorUser = true;
-        else comp.authorUser = false;
-        clearInterval(comp.interval);
-      }
-    }, 500);
+    var session = this.request.getSession(true);
+    if (session.get('gId')) {
+      if (session.get('gId') == comp.user.userId)
+        comp.authorUser = true;
+      else comp.authorUser = false;
+    }
   }
 
   getUser() {
@@ -56,11 +60,14 @@ export class UserProfileComponent implements OnInit {
   deleteRate(r: Rate) {
     var confirm: boolean = window.confirm('Bạn chắc chắn muốn xóa đánh giá này?');
     if (confirm) {
+      var session = this.request.getSession(true);
       WaitingBoxComponent.start();
       var rate: Rate = new Rate();
       rate.rateId = r.rateId;
       rate.user = new Users();
-      rate.user.idToken = sessionStorage.getItem('gToken');
+      rate.user.idToken = session.get('gToken');
+
+      console.log(rate.user.idToken);
 
       this.rateService.deleteRate(rate).subscribe(
         res => {

@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { School } from '../../../model/school';
 import { SchoolDetailComponent } from '../school-detail.component';
-import { ReportComponent } from './report/report.component';
+import { ReportableComponent } from '../../../model/reportable';
 import { Rate } from '../../../model/rate';
 
 @Component({
@@ -9,19 +9,16 @@ import { Rate } from '../../../model/rate';
   templateUrl: './info.component.html',
   styleUrls: ['./info.component.css']
 })
-export class InfoComponent implements OnInit {
+export class InfoComponent extends ReportableComponent implements OnInit {
 
   @Input() school: School;
   @Input() schoolDetail: SchoolDetailComponent;
-  reportComp: ReportComponent;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor() {
+    super();
   }
 
-  turnOnReport(rate: Rate) {
-    this.reportComp.rpRate = rate;
+  ngOnInit() {
   }
 
 }

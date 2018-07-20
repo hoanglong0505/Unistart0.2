@@ -25,7 +25,7 @@ import { ReviewComponent } from './modules/school-detail/review/review.component
 import { SignInComponent } from './modules/sign-in/sign-in.component';
 import { WaitingBoxComponent } from './modules/waiting-box/waiting-box.component';
 import { DynamicTemplateComponent } from './modules/dynamic-template/dynamic-template.component';
-import { ReportComponent } from './modules/school-detail/info/report/report.component';
+import { ReportComponent } from './modules/report/report.component';
 import { Constants } from './constanst';
 import { MbtiComponent } from './modules/mbti/mbti.component';
 import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';
@@ -35,7 +35,8 @@ import { UserProfileComponent } from './modules/user-profile/user-profile.compon
 
 // 19/7/2018 Quy
 import { AngularMultiSelectModule } from 'angular2-multiselect-dropdown/angular2-multiselect-dropdown';
-import { ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { ReactiveFormsModule } from '@angular/forms';
+import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
     ReportComponent,
     MbtiComponent,
     UserProfileComponent,
-    MbtiDetailComponent
+    MbtiDetailComponent,
+    EditReviewComponent
   ],
   imports: [
     BrowserModule,

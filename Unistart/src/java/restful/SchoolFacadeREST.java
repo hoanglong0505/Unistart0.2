@@ -21,6 +21,7 @@ import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
+import model.FilterSchool;
 import model.Rate;
 import model.School;
 
@@ -118,10 +119,8 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         List<School> list = dao.filterSchool(schoolName, sjCode, minPoint, typeId, fieldCode, location, em);
         return list;
     }
-<<<<<<< HEAD
 
-    
-    
+
     @POST
     @Path("filter-school-multiple")
     @Consumes(MediaType.APPLICATION_JSON)
@@ -130,8 +129,7 @@ public class SchoolFacadeREST extends AbstractFacade<School> {
         List<School> list = dao.filterSchoolMultiple(entity.getSchoolName(), entity.getSjCombi(), entity.getMinPoint(), entity.getTypeSchool(), entity.getField(), entity.getLocation(), em);
         return list;
     }
-=======
->>>>>>> 8e9ebad156f0de2a15fafca017443d077e415b7d
+
 
     public void refresh(School school) {
         em.refresh(school);
