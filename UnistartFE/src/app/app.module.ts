@@ -44,7 +44,7 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatDialogModule} from '@angular/material/dialog';
 import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/schedule-dialog.component';
-
+import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -62,7 +62,6 @@ import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/sche
     MbtiComponent,
     UserProfileComponent,
     MbtiDetailComponent,
-    EditReviewComponent,
 	EditReviewComponent,
     ScheduleComponent,
     ScheduleDialogComponent,
