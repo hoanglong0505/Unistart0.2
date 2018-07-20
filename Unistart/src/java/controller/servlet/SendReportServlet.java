@@ -83,7 +83,7 @@ public class SendReportServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpResponse res = new HttpResponse();
+        HttpResponse<String> res = new HttpResponse();
         response.addHeader("Content-Type", "application/json");
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");

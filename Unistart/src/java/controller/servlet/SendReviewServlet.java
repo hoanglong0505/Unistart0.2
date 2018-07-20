@@ -5,9 +5,11 @@
  */
 package controller.servlet;
 
+import app.Constants;
 import network.HttpResponse;
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
 import com.google.gson.Gson;
+import com.microsoft.sqlserver.jdbc.SQLServerException;
 import controller.security.GoogleVerifier;
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -37,6 +39,7 @@ import model.School;
 import model.Users;
 import restful.AverageRateFacadeREST;
 import restful.PersistenceUtils;
+import restful.RateFacadeREST;
 import restful.SchoolFacadeREST;
 import restful.UsersFacadeREST;
 
@@ -50,6 +53,7 @@ public class SendReviewServlet extends HttpServlet {
     private EntityManager em = PersistenceUtils.getEntityManger();
     private String content;
     private int status;
+    private boolean create = true;
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -66,19 +70,44 @@ public class SendReviewServlet extends HttpServlet {
         doPost(request, response);
     }
 
-    private boolean checkTodayReview(Users u, School sch) {
-//        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
-        String sql = "SELECT RateId FROM Rate WHERE UserId=? AND SchoolId = ?";
-        Query q = em.createNativeQuery(sql);
+    private boolean checkTodayReview(Users u, School sch, Rate r) {
+        String sql;
+        Query q;
+        List res;
+        if (r.getRateId() != null) {
+            sql = "SELECT * FROM Rate WHERE RateId = ?";
+            q = em.createNativeQuery(sql);
+            q.setParameter(1, r.getRateId());
+
+            res = q.getResultList();
+            if (res.size() > 0) {
+                create = false;
+                return true;
+            }
+            status = -1;
+            return false;
+        }
+        sql = "SELECT RateId FROM Rate WHERE UserId=? AND SchoolId = ?";
+        q = em.createNativeQuery(sql);
         q.setParameter(1, u.getUserId());
         q.setParameter(2, sch.getSchoolId());
 
-        List res = q.getResultList();
+        res = q.getResultList();
         if (res.size() > 0) {
             status = 409;
             content = "Bạn đã đánh giá trường này";
             return false;
         }
+        sql = "SELECT RateId FROM Rate WHERE UserId=? AND SubmitDate = CONVERT(Date,GETDATE())";
+        q = em.createNativeQuery(sql);
+        q.setParameter(1, u.getUserId());
+        res = q.getResultList();
+        if (res.size() > 0) {
+            status = 409;
+            content = "Chỉ được review 1 lần mỗi ngày";
+            return false;
+        }
+
         return true;
     }
 
@@ -104,7 +133,7 @@ public class SendReviewServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        HttpResponse res = new HttpResponse();
+        HttpResponse<String> res = new HttpResponse();
         response.addHeader("Content-Type", "application/json");
         response.setContentType("application/json");
         response.setCharacterEncoding("UTF-8");
@@ -127,7 +156,7 @@ public class SendReviewServlet extends HttpServlet {
                     UsersFacadeREST uRest = new UsersFacadeREST();
                     SchoolFacadeREST schRest = new SchoolFacadeREST();
                     u = uRest.find(userId);
-                    if (u != null && checkTodayReview(u, rate.getSchool()) && checkValid(rate)) {
+                    if (u != null && checkTodayReview(u, rate.getSchool(), rate) && checkValid(rate)) {
 //                        if (true) {
                         //------
                         rate.setUser(u);
@@ -135,25 +164,32 @@ public class SendReviewServlet extends HttpServlet {
                         rate.setSubmitDate(today);
                         rate.setSubmitTime(today);
                         //------
-
-                        em.getTransaction().begin();
+                        RateFacadeREST rRest = new RateFacadeREST();
+                        rate.rdHandler = Constants.GENERATE;
                         Collection<RateDetail> rds = rate.getRateDetails();
                         rate.setRateDetails(null);
-                        em.persist(rate);
-                        em.flush();
+                        if (create) {
+                            rRest.create(rate);
+                        } else {
+                            rRest.edit(rate);
+                        }
+
                         for (RateDetail rd : rds) {
+                            if (rd.getValue() > 5) {
+                                rd.setValue(5.0);
+                            } else if (rd.getValue() < 0) {
+                                rd.setValue(0.0);
+                            }
                             rd.getRateDetailPK().setRateId(rate.getRateId());
                         }
                         rate.setRateDetails(rds);
                         School school = schRest.find(rate.getSchool().getSchoolId());
                         school.getRates().add(rate);
                         rate.setSchool(school);
-                        em.merge(rate);
-                        em.merge(school);
-                        em.flush();
-                        em.getTransaction().commit();
-
+                        rRest.edit(rate);
+                        schRest.edit(school);
                         schRest.refresh(school);
+                        
                         AverageRateFacadeREST avgRest = new AverageRateFacadeREST();
                         avgRest.updateAverageRate(school);
                         schRest.refresh(school);
@@ -172,7 +208,12 @@ public class SendReviewServlet extends HttpServlet {
         } catch (Exception e) {
             Logger.getLogger(SendReviewServlet.class
                     .getName()).log(Level.SEVERE, null, e);
-            status = -1;
+            if (e instanceof SQLServerException) {
+                status = 409;
+                content = "Chỉ được review 1 ngày 1 lần";
+            } else {
+                status = -1;
+            }
         }
 
         res.setStatus(status);

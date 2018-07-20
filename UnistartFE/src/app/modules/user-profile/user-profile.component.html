@@ -40,13 +40,14 @@
     </div>
     <div>
       Tổng thể:
-      <bar-rating [(rate)]="r.averageValue" [max]="10" [theme]="'stars'" [readOnly]="true">
+      <bar-rating [(rate)]="r.averageValue" [max]="5" [theme]="'stars'" [readOnly]="true">
       </bar-rating>
     </div>
     <div id="report" style="color:grey;cursor:pointer;" (click)="turnOnReport(r)">
       <span>{{r.reports.length}} báo cáo</span> ---
       <i>BÁO CÁO BÀI ĐÁNH GIÁ</i>
-    </div>
+    </div><br/>
+    <a *ngIf="authorUser" (click)="setEditRateId(r)" routerLink="/edit-review">CHỈNH SỬA BÀI VIẾT</a>
     <div>-----------------------------------------</div>
   </div>
 </div>

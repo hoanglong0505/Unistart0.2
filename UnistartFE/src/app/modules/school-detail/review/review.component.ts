@@ -61,12 +61,12 @@ export class ReviewComponent implements OnInit {
     if (WaitingBoxComponent.time == -1)
       if (this.userRate) {
         WaitingBoxComponent.start();
-        var token = new HttpRequest().getSession(true).get('gToken');
+        var token = new HttpRequest().getSession(true).getItem('gToken');
 
         this.userRate.user = new Users();
         this.userRate.user.idToken = token;
 
-        this.rateService.addRate(this.userRate).subscribe(
+        this.rateService.sendRate(this.userRate).subscribe(
           res => {
             switch (res.status) {
               case 200:

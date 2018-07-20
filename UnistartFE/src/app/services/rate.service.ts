@@ -21,11 +21,15 @@ export class RateService {
   constructor(private http: HttpClient, private constant: Constants) { }
 
   getRate(req: HttpRequest): Observable<HttpResponse> {
-    //todo
-    return null;
+    const url = this.constant.EDIT_RATE;
+
+    return this.http.post<HttpResponse>(url, req, httpOptions).pipe(
+      catchError(this.handleError<HttpResponse>('getRate', null))
+    );
+
   }
 
-  addRate(rate: Rate): Observable<HttpResponse> {
+  sendRate(rate: Rate): Observable<HttpResponse> {
     const url = this.constant.SEND_REVIEW;
 
     var school = new School();
@@ -34,7 +38,7 @@ export class RateService {
     console.log(rate);
 
     return this.http.post<HttpResponse>(url, rate, httpOptions).pipe(
-      catchError(this.handleError<HttpResponse>('addRate', null))
+      catchError(this.handleError<HttpResponse>('sendRate', null))
     );
   }
 

@@ -8,7 +8,7 @@
     <div id="avg-rate-container" *ngIf="mode==INFO">
       <div class="field" *ngFor="let avg of school.averageRates">
         {{avg.rateCriteria.criteriaName}}:
-        <bar-rating [(rate)]="avg.avgValue" [max]="10"
+        <bar-rating [(rate)]="avg.avgValue" [max]="5"
           [theme]="'stars'" [readOnly]="true">
         </bar-rating>
       </div>

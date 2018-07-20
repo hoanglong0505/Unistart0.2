@@ -4,6 +4,8 @@ import { SchoolService } from '../../services/school.service';
 import { WaitingBoxComponent } from '../waiting-box/waiting-box.component';
 import { LocationService } from '../../services/location.service';
 import { TypeService } from '../../services/type.service';
+import { HttpRequest, HttpResponse } from '../../server/http';
+
 @Component({
   selector: 'app-schools',
   templateUrl: './schools.component.html',
@@ -20,10 +22,8 @@ export class SchoolsComponent implements OnInit {
   // Array lists value of locations and typeschools
   dropDownLocationList = [];
   dropDownTypeList = [];
-
-  //======>>>>>>>
+  
   schools: School[] = [];
-
   //page area
   pages: number = 1;
   maxItemsPerPage: number = 48;
@@ -36,12 +36,13 @@ export class SchoolsComponent implements OnInit {
     private locationService: LocationService,
     private typeService: TypeService
   ) { }
-
   ngOnInit() {
-    sessionStorage.setItem('reload', 'false');
+    new HttpRequest().getSession(true).setItem('reload',false);
     WaitingBoxComponent.start();
     this.getSchools();
-    // Quy 20/7 filter location & typeschool
+  }
+
+  // Quy 20/7 filter location & typeschool
     this.dropdownLocationSettings = {
       singleSelection: true,
       text: "Thành Phố",
@@ -88,8 +89,7 @@ export class SchoolsComponent implements OnInit {
   onDeSelectAll(items: any) {
     console.log(items);
   }
-  //===>>>>>
-
+  
   getSchools() {
     this.schoolService.getSchools().subscribe(
       schools => {

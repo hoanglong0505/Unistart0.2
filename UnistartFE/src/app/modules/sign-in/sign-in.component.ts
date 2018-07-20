@@ -14,7 +14,8 @@ export class SignInComponent implements OnInit {
   }
 
   getUserId() {
-    return new HttpRequest().getSession(true).get('gId');
+    var gId: string = new HttpRequest().getSession(true).getItem('gId');
+    return gId;
   }
 
   ele(id): HTMLElement {

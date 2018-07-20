@@ -27,7 +27,7 @@ export class SchoolDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    new HttpRequest().getSession(true).set('reload',false);
+    new HttpRequest().getSession(true).setItem('reload',false);
     WaitingBoxComponent.start();
     this.getSchool();
   }
@@ -37,6 +37,7 @@ export class SchoolDetailComponent implements OnInit {
     this.schoolService.getSchool(id)
       .subscribe(school => {
         this.school = school;
+        console.log(school);
         WaitingBoxComponent.stop();
         this.getImage(school.schoolCode);
       });

@@ -84,7 +84,8 @@ public class RateCriteria implements Serializable {
 
     @XmlTransient
     public Collection<RateDetail> getRateDetailCollection() {
-        return rateDetailCollection;
+        return null;
+//        return rateDetailCollection;
     }
 
     public void setRateDetailCollection(Collection<RateDetail> rateDetailCollection) {
@@ -93,7 +94,8 @@ public class RateCriteria implements Serializable {
 
     @XmlTransient
     public Collection<AverageRate> getAverageRateCollection() {
-        return averageRateCollection;
+        return null;
+//        return averageRateCollection;
     }
 
     public void setAverageRateCollection(Collection<AverageRate> averageRateCollection) {

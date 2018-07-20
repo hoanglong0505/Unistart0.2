@@ -161,6 +161,8 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
                 q.setParameter(1, sch.getSchoolId());
                 q.executeUpdate();
             }
+            
+            System.out.println("has review: "+hasReview);
             commitTransaction();
 
         } catch (SQLException ex) {

@@ -63,6 +63,7 @@ import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/sche
     UserProfileComponent,
     MbtiDetailComponent,
     EditReviewComponent,
+	EditReviewComponent,
     ScheduleComponent,
     ScheduleDialogComponent,
   ],
@@ -83,10 +84,11 @@ import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/sche
     BarRatingModule,
     SlideshowModule,
     AngularMultiSelectModule,
-    ReactiveFormsModule,
+	ReactiveFormsModule,
     MatGridListModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+    ReactiveFormsModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent],

@@ -9,39 +9,37 @@ package network;
  *
  * @author TNT
  */
-public class HttpRequest {
+public class HttpRequest<E> {
 
-    private UniSession uniSession;
-    private Object content;
+    private Session uniSession;
+    private E content;
 
     public HttpRequest() {
     }
 
-    public HttpRequest(UniSession uniSession, Object content) {
+    public HttpRequest(Session uniSession, E content) {
         this.uniSession = uniSession;
         this.content = content;
     }
 
-//    public void setUniSession(UniSession uniSession) {
-//        this.uniSession = uniSession;
-//    }
-    public Object getContent() {
+    public void setUniSession(Session uniSession) {
+        this.uniSession = uniSession;
+    }
+
+    public E getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(E content) {
         this.content = content;
     }
 
-    public UniSession getSession(boolean create) {
-        UniSession tempUni = new UniSession();
+    public Session getSession(boolean create) {
         if (uniSession.isActive()) {
-            this.uniSession = tempUni;
             return uniSession;
         }
         if (create) {
             uniSession.createSession();
-            this.uniSession = tempUni;
             return uniSession;
         }
         return null;

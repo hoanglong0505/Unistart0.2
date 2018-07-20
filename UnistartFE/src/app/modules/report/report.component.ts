@@ -39,7 +39,7 @@ export class ReportComponent implements OnInit {
 
         rp.rpContent = this.rpContent;
         rp.user = new Users();
-        rp.user.idToken = new HttpRequest().getSession(true).get('gToken');
+        rp.user.idToken = new HttpRequest().getSession(true).getItem('gToken');
         rp.rate = this.rpRate;
         console.log(rp);
 

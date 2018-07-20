@@ -25,7 +25,7 @@ export class UserService {
     user.userId = id;
     var request: HttpRequest = new HttpRequest();
     var session: Session = request.getSession(true);
-    user.idToken = session.get('gToken');
+    user.idToken = session.getItem('gToken');
 
     return this.http.post<Users>(url, user, httpOptions).pipe(
       catchError(this.handleError<Users>('getUserInfo', null))

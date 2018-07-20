@@ -4,7 +4,8 @@
   <div id="account">
     <button id="user-menu" (click)="showDropDown()" ></button>
     <div id="drop-down">
-      <a onclick="location.reload()" routerLink="/user-profile/{{getUserId()}}">Trang cá nhân</a>
+      <a href="/user-profile/{{getUserId()}}">Trang cá nhân</a>
+      <!-- <a routerLink="/user-profile/{{getUserId()}}">Trang cá nhân</a>       -->
       <a onclick="signOut()">Đăng xuất</a>
     </div>
     <img id="user-img" />

@@ -30,17 +30,22 @@ export class UserProfileComponent extends ReportableComponent implements OnInit 
   ngOnInit() {
     this.request = new HttpRequest();
     var session = this.request.getSession(true);
-    session.set('reload', true);
+    session.setItem('reload', true);
     WaitingBoxComponent.start();
     this.getUser();
+  }
+
+  setEditRateId(rate: Rate) {
+    var session = this.request.getSession(true);
+    session.setItem('rateId', rate.rateId);
   }
 
   checkUser() {
     // console.log(this.user);
     var comp: UserProfileComponent = this;
     var session = this.request.getSession(true);
-    if (session.get('gId')) {
-      if (session.get('gId') == comp.user.userId)
+    if (session.getItem('gId')) {
+      if (session.getItem('gId') == comp.user.userId)
         comp.authorUser = true;
       else comp.authorUser = false;
     }
@@ -65,7 +70,7 @@ export class UserProfileComponent extends ReportableComponent implements OnInit 
       var rate: Rate = new Rate();
       rate.rateId = r.rateId;
       rate.user = new Users();
-      rate.user.idToken = session.get('gToken');
+      rate.user.idToken = session.getItem('gToken');
 
       console.log(rate.user.idToken);
 

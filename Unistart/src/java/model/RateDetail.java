@@ -80,8 +80,8 @@ public class RateDetail implements Serializable {
     }
 
     public RateCriteria getRateCriteria() {
-        return null;
-//        return rateCriteria;
+//        return null;
+        return rateCriteria;
     }
 
     public void setRateCriteria(RateCriteria rateCriteria) {

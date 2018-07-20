@@ -1,3 +1,68 @@
-<p>
-  edit-review works!
-</p>
+<div *ngIf="userRate">
+  <div id="school-container" *ngIf="school">
+    <div class="school_content">
+      <h1 class="title">{{school.schoolName | uppercase}}</h1>
+      <img mat-card-image src="/assets/images/school.txt" alt="{{school.avatar}}" />
+      <hr/>
+      <div>
+        <b>Mã trường</b>: {{school.schoolCode}}
+      </div>
+      <div>
+        <b>Website</b>: {{school.website}}
+      </div>
+      <div>
+        <b>Số điện thoại</b>: {{school.phone}}
+      </div>
+      <div>
+        <b>Email</b>: {{school.email}}
+      </div>
+    </div>
+    <h1 style="color:red;">CHỈNH SỬA ĐÁNH GIÁ</h1>
+    <div id="reviewForm">
+      <h3>Mức độ hài lòng</h3>
+      <div id="crit-container">
+        <div class="field" *ngFor="let rd of userRate.rateDetails">
+          {{rd.rateCriteria.criteriaName}}:
+          <bar-rating [(rate)]="rd.value" [max]="5" [theme]="'stars'"></bar-rating>
+          <br/>
+        </div>
+      </div>
+      <h3>Thông tin đánh giá</h3>
+      <div class="field">
+        Nhập tiêu đề
+        <input class="text" type="text" [(ngModel)]="userRate.title" />
+        <br/>
+      </div>
+      <div class="field">
+        Uu điểm
+        <br/>
+        <textarea name="pros" placeholder="Enter text here..." [(ngModel)]="userRate.pros"></textarea>
+        <br/>
+      </div>
+      <div class="field">
+        Nhược điểm
+        <br/>
+        <textarea name="cons" placeholder="Enter text here..." [(ngModel)]="userRate.cons"></textarea>
+        <br/>
+      </div>
+      <div class="field">
+        Trải nghiệm của bạn
+        <br/>
+        <textarea name="experience" placeholder="Enter text here..." [(ngModel)]="userRate.experience"></textarea>
+        <br/>
+      </div>
+      <div class="field">
+        Bạn có khuyến khích học trường này
+        <input type="checkbox" name="encourage" [(ngModel)]="userRate.encourage" />
+        <br/>
+      </div>
+      <div class="field">
+        Ẩn danh
+        <input type="checkbox" name="anonymous" [(ngModel)]="userRate.anonymous" />
+        <br/>
+      </div>
+      <br/>
+      <input class="button" (click)="editReview()" type="button" value="GỬI CHỈNH SỬA" />
+    </div>
+  </div>
+</div>

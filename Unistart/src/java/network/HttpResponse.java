@@ -5,23 +5,24 @@
  */
 package network;
 
+import com.google.gson.JsonElement;
 import java.util.HashMap;
 
 /**
  *
  * @author TNT
  */
-public class HttpResponse {
+public class HttpResponse<E> {
 
     private Integer status;
     private String redirectTo;
-    private Object content;
-    private HashMap<String, Object> metas;
+    private E content;
+    private HashMap<String, JsonElement> metas;
 
     public HttpResponse() {
     }
 
-    public HttpResponse(Integer status, String redirectTo, Object content, HashMap<String, Object> metas) {
+    public HttpResponse(Integer status, String redirectTo, E content, HashMap<String, JsonElement> metas) {
         this.status = status;
         this.redirectTo = redirectTo;
         this.content = content;
@@ -44,19 +45,19 @@ public class HttpResponse {
         this.redirectTo = redirectTo;
     }
 
-    public Object getContent() {
+    public E getContent() {
         return content;
     }
 
-    public void setContent(Object content) {
+    public void setContent(E content) {
         this.content = content;
     }
 
-    public HashMap<String, Object> getMetas() {
+    public HashMap<String, JsonElement> getMetas() {
         return metas;
     }
 
-    public void setMetas(HashMap<String, Object> metas) {
+    public void setMetas(HashMap<String, JsonElement> metas) {
         this.metas = metas;
     }
 

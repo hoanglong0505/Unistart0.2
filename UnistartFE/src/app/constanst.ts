@@ -28,6 +28,7 @@ export class Constants {
   private RATE = this.SERVICE_PATH + 'model.rate';
   public SEND_REVIEW = this.SERVER_URL + 'send-review';
   public DELETE_REVIEW = this.SERVER_URL + 'delete-review';
+  public EDIT_RATE = this.RATE +'/edit-rate';
 
   //report
   private REPORT = this.SERVICE_PATH + 'model.report';

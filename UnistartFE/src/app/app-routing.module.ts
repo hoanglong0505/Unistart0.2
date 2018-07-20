@@ -6,6 +6,7 @@ import { MbtiComponent } from './modules/mbti/mbti.component';
 import { UserProfileComponent } from './modules/user-profile/user-profile.component';
 import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component';
 import { ScheduleComponent } from './modules/schedule/schedule.component';
+import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component';
 
 const routes: Routes = [
   { path: 'schools', component: SchoolsComponent },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'user-profile/:id', component: UserProfileComponent },
   { path: 'mbti', component: MbtiComponent },
   { path: 'mbti-detail/:code', component: MbtiDetailComponent },
-  { path: 'schedule', component: ScheduleComponent },
+  { path: 'edit-review', component: EditReviewComponent },
+  { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 
 @NgModule({

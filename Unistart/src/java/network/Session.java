@@ -5,36 +5,41 @@
  */
 package network;
 
+import com.google.gson.JsonElement;
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  *
  * @author TNT
  */
-public class UniSession {
+public class Session {
 
-    private HashMap<String, Object> uniSession;
+    private Map<String, JsonElement> uniSession;
     private boolean isChanged = false;
 
-    public UniSession() {
+    public Session() {
+        this.uniSession = new HashMap();
+        isChanged = true;
     }
 
-    public UniSession(HashMap<String, Object> uniSession) {
+    public Session(Map<String, JsonElement> uniSession) {
         this.uniSession = uniSession;
     }
 
-//    public HashMap<String, Object> getUniSession() {
-//        return uniSession;
-//    }
-    public void setUniSession(HashMap<String, Object> uniSession) {
+    public Map<String, JsonElement> getSession() {
+        return uniSession;
+    }
+
+    public void setSession(Map<String, JsonElement> uniSession) {
         this.uniSession = uniSession;
     }
 
-    public Object get(String key) {
+    public JsonElement get(String key) {
         return uniSession.get(key);
     }
 
-    public void set(String key, Object value) {
+    public void set(String key, JsonElement value) {
         uniSession.put(key, value);
         isChanged = true;
     }
@@ -49,14 +54,11 @@ public class UniSession {
     }
 
     public boolean isActive() {
-        if (uniSession != null) {
-            return true;
-        }
-        return false;
+        return uniSession != null;
     }
 
     public void createSession() {
-        this.uniSession = new HashMap<>();
+        this.uniSession = new HashMap();
         isChanged = true;
     }
 

@@ -5,10 +5,17 @@
  */
 package restful;
 
+import app.Constants;
+import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken;
+import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import controller.security.GoogleVerifier;
+import java.security.GeneralSecurityException;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -16,12 +23,21 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.GET;
+import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import model.Rate;
+import model.RateCriteria;
+import model.RateDetail;
+import model.Report;
+import model.School;
+import model.Users;
 import model.business.JDBCConnector;
+import network.HttpRequest;
+import network.HttpResponse;
+import network.Session;
 
 /**
  *
@@ -128,6 +144,76 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
 
         }
 
+    }
+
+    @POST
+    @Path("edit-rate")
+    @Produces(MediaType.APPLICATION_JSON)
+    public HttpResponse editRate(String reqJson) {
+        Gson gs = new Gson();
+
+        HttpRequest<Double> req = gs.fromJson(reqJson, HttpRequest.class);
+        HttpResponse<String> res = new HttpResponse();
+        int status = 403;
+        Rate rate = null;
+
+        try {
+            Integer rateId = (int) Math.round(req.getContent());
+            Session session = req.getSession(false);
+
+            if (session != null) {
+                String gToken = session.get("gToken").getAsString();
+                GoogleIdToken.Payload payload = GoogleVerifier.verify(gToken);
+
+                if (payload != null) {
+                    String userId = payload.getSubject();
+                    UsersFacadeREST uRest = new UsersFacadeREST();
+
+                    Users u = uRest.find(userId);
+
+                    Rate r = find(rateId);
+                    if (u != null && r != null) {
+                        if (u.getUserId().equals(r.getUser().getUserId())) {
+                            status = 200;
+                            rate = r;
+                        }
+                    }
+
+                }
+            }
+        } catch (GeneralSecurityException e1) {
+            System.out.println("User isn't logged in");
+        } catch (Exception e) {
+            e.printStackTrace();
+            status = -1;
+        }
+
+        res.setStatus(status);
+
+        if (rate != null) {
+            School sch = new School();
+            School rSch = rate.getSchool();
+            sch.setSchoolId(rSch.getSchoolId());
+            sch.setSchoolCode(rSch.getSchoolCode());
+            sch.setSchoolName(rSch.getSchoolName());
+            rate.setSchool(sch);
+            rate.setReports(null);
+            rate.setUser(null);
+            rate.setSubmitDate(null);
+            rate.setSubmitTime(null);
+            rate.rdHandler = Constants.GENERATE;
+            for (RateDetail rd : rate.getRateDetails()) {
+                rd.setRate(null);
+                RateCriteria rc =rd.getRateCriteria();
+                rc.setAverageRateCollection(null);
+                rc.setRateDetailCollection(null);
+            }
+
+            res.setContent(gs.toJson(rate));
+        } else {
+            res.setContent(null);
+        }
+        return res;
     }
 
     @Override
