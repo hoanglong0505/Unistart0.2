@@ -13,11 +13,6 @@ export class SignInComponent implements OnInit {
 
   }
 
-  getUserId() {
-    var gId: string = new HttpRequest().getSession(true).getItem('gId');
-    return gId;
-  }
-
   ele(id): HTMLElement {
     return document.getElementById(id);
   }
@@ -32,4 +27,10 @@ export class SignInComponent implements OnInit {
       this.display = false;
     }
   }
+
+  goToProfile() {
+    var gId: string = new HttpRequest().getSession(true).getItem('gId');
+    window.location.replace('/personal/user-profile/' + gId);
+  }
+
 }

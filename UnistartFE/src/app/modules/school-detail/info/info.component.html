@@ -46,7 +46,7 @@
     src ="/assets/images/anonymous.png" alt="anonymous"/>
   
   <h3 style="color: blueviolet; display: inline-block;" [ngSwitch]="r.anonymous">
-    <a routerLink="/user-profile/{{r.user.userId}}" *ngSwitchCase="false">{{r.user.name}}</a>
+    <a routerLink="/personal/user-profile/{{r.user.userId}}" *ngSwitchCase="false">{{r.user.name}}</a>
     <span *ngSwitchCase="true">Thành viên ẩn danh</span>
   </h3>
   <div class="field" style="color:grey;">

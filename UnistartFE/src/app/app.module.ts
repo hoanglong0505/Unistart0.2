@@ -10,7 +10,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatStepperModule } from '@angular/material/stepper';
 import { MatListModule } from '@angular/material/list';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowModule } from 'ng-simple-slideshow';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
 
 
@@ -40,11 +40,10 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
 import { ScheduleComponent } from './modules/schedule/schedule.component'; // <-- NgModel lives here
 
 // 20/7/2018 Long
-import {MatGridListModule} from '@angular/material/grid-list';
-import {MatExpansionModule} from '@angular/material/expansion';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatDialogModule } from '@angular/material/dialog';
 import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/schedule-dialog.component';
-import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component'; // <-- NgModel lives here
 
 @NgModule({
   declarations: [
@@ -62,7 +61,7 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
     MbtiComponent,
     UserProfileComponent,
     MbtiDetailComponent,
-	EditReviewComponent,
+    EditReviewComponent,
     ScheduleComponent,
     ScheduleDialogComponent,
   ],
@@ -83,7 +82,7 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
     BarRatingModule,
     SlideshowModule,
     AngularMultiSelectModule,
-	ReactiveFormsModule,
+    ReactiveFormsModule,
     MatGridListModule,
     MatExpansionModule,
     MatDialogModule,

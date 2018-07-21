@@ -11,10 +11,10 @@ import { EditReviewComponent } from './modules/user-profile/edit-review/edit-rev
 const routes: Routes = [
   { path: 'schools', component: SchoolsComponent },
   { path: 'school-detail/:id', component: SchoolDetailComponent },
-  { path: 'user-profile/:id', component: UserProfileComponent },
+  { path: 'personal/user-profile/:id', component: UserProfileComponent },
   { path: 'mbti', component: MbtiComponent },
   { path: 'mbti-detail/:code', component: MbtiDetailComponent },
-  { path: 'edit-review', component: EditReviewComponent },
+  { path: 'personal/edit-review', component: EditReviewComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 

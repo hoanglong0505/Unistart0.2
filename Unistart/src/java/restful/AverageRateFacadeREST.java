@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -140,6 +141,7 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
             ps.setInt(1, sch.getSchoolId());
             ResultSet rs = ps.executeQuery();
             beginTransaction();
+            sch.setAverageRates(new ArrayList<>());
             boolean hasReview = false;
             while (rs.next()) {
                 hasReview = true;
@@ -154,6 +156,9 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
                     avg.setAvgValue(rs.getDouble(2));
                     edit(avg);
                 }
+
+                sch.getAverageRates().add(avg);
+
             }
             if (!hasReview) {
                 sql = "DELETE FROM AverageRate WHERE SchoolId= ? ";
@@ -161,8 +166,8 @@ public class AverageRateFacadeREST extends AbstractFacade<AverageRate> {
                 q.setParameter(1, sch.getSchoolId());
                 q.executeUpdate();
             }
-            
-            System.out.println("has review: "+hasReview);
+
+            System.out.println("has review: " + hasReview);
             commitTransaction();
 
         } catch (SQLException ex) {

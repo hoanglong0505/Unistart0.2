@@ -10,6 +10,7 @@ import { RateDetailPK } from '../../../model/rateDetailPK';
 import { Users } from '../../../model/users';
 import { WaitingBoxComponent } from '../../waiting-box/waiting-box.component';
 import { HttpRequest, HttpResponse } from '../../../server/http';
+
 @Component({
   selector: 'app-review',
   templateUrl: './review.component.html',
@@ -29,6 +30,7 @@ export class ReviewComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    new HttpRequest().getSession(true).setItem('reload',false);
     WaitingBoxComponent.start();
 
     this.rCService.getRateCriterias().subscribe(
@@ -49,6 +51,7 @@ export class ReviewComponent implements OnInit {
         this.userRate.school = this.school;
         this.userRate.anonymous = false;
         this.userRate.encourage = true;
+        console.log(this.userRate);
         WaitingBoxComponent.stop();
 
       }

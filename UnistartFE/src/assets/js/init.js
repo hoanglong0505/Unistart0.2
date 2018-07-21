@@ -32,7 +32,8 @@ function getSession(create) {
   var uniSession = getCookie('UNISESSION');
   if (uniSession) {
     uniSession = JSON.parse(uniSession);
-    return uniSession;
+    if (uniSession['uniSession'])
+      return uniSession;
   }
   if (create) {
     uniSession = createSession();
@@ -42,7 +43,9 @@ function getSession(create) {
 }
 
 function invalidateSession() {
-  pushToCookie(createSession()['uniSession']);
+  var UNISESSION = new Object();
+  UNISESSION['uniSession'] = new Object();
+  setCookie('UNISESSION=' + JSON.stringify(UNISESSION));
 }
 
 function createSession() {
@@ -105,14 +108,20 @@ function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
       console.log(window.location.pathname);
-      if (getSessionItem('redirect')) {
-        var page = getSessionItem('redirect');
-        invalidateSession();
-        window.location.replace(page);
-      } else if (getSessionItem('reload') && window.location.pathname!='/') {
-        invalidateSession();
-        window.location.reload();
-      } else invalidateSession();
+      
+      var path = window.location.pathname;
+      if (path.indexOf('personal') > -1) {
+        if (getSessionItem('redirect')) {
+          var page = getSessionItem('redirect');
+          invalidateSession();
+          window.location.replace(page);
+        } else {
+          invalidateSession();
+          window.location.reload();
+        }
+      } else {
+        invalidateSession()
+      }
 
     });
     userLogout();

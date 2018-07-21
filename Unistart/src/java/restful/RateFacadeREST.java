@@ -204,7 +204,7 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
             rate.rdHandler = Constants.GENERATE;
             for (RateDetail rd : rate.getRateDetails()) {
                 rd.setRate(null);
-                RateCriteria rc =rd.getRateCriteria();
+                RateCriteria rc = rd.getRateCriteria();
                 rc.setAverageRateCollection(null);
                 rc.setRateDetailCollection(null);
             }
@@ -214,6 +214,10 @@ public class RateFacadeREST extends AbstractFacade<Rate> {
             res.setContent(null);
         }
         return res;
+    }
+
+    public void refresh(Rate r) {
+        em.refresh(r);
     }
 
     @Override

@@ -24,6 +24,7 @@ export class EditReviewComponent implements OnInit {
 
   ngOnInit() {
     this.req = new HttpRequest();    
+    this.req.getSession(true).setItem('reload',true);
     this.req.getSession(true).setItem('redirect','/');
     this.getRate();
   }
@@ -67,7 +68,7 @@ export class EditReviewComponent implements OnInit {
           res => {
             switch (res.status) {
               case 200:
-                location.replace('/user-profile/' + this.userId);
+                location.replace('/personal/user-profile/' + this.userId);
                 this.req.getSession(true).remove('rateId');
                 break;
               default:

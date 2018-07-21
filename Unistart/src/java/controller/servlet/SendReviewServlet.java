@@ -53,7 +53,7 @@ public class SendReviewServlet extends HttpServlet {
     private EntityManager em = PersistenceUtils.getEntityManger();
     private String content;
     private int status;
-    private boolean create = true;
+    private boolean create;
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
@@ -78,7 +78,7 @@ public class SendReviewServlet extends HttpServlet {
             sql = "SELECT * FROM Rate WHERE RateId = ?";
             q = em.createNativeQuery(sql);
             q.setParameter(1, r.getRateId());
-
+            System.out.println("asdasd - " + r.getRateId());
             res = q.getResultList();
             if (res.size() > 0) {
                 create = false;
@@ -139,12 +139,14 @@ public class SendReviewServlet extends HttpServlet {
         response.setCharacterEncoding("UTF-8");
 
         status = 403;
+        create = true;
 
         try {
             BufferedReader inp = request.getReader();
             String rateJson = inp.readLine();
             Gson gson = new Gson();
             Rate rate = gson.fromJson(rateJson, Rate.class);
+            System.out.println(rate.getRateId());
 
             Users u = rate.getUser();
             String idToken = u.getIdToken();
@@ -166,32 +168,35 @@ public class SendReviewServlet extends HttpServlet {
                         //------
                         RateFacadeREST rRest = new RateFacadeREST();
                         rate.rdHandler = Constants.GENERATE;
-                        Collection<RateDetail> rds = rate.getRateDetails();
-                        rate.setRateDetails(null);
+
                         if (create) {
+                            Collection<RateDetail> rds = rate.getRateDetails();
+                            rate.setRateDetails(null);
                             rRest.create(rate);
+                            rate = rRest.find(rate.getRateId());
+                            rRest.refresh(rate);
+                            int rateId = rate.getRateId();
+                            for (RateDetail rd : rds) {
+                                if (rd.getValue() > 5) {
+                                    rd.setValue(5.0);
+                                } else if (rd.getValue() < 0) {
+                                    rd.setValue(0.0);
+                                }
+                                rd.getRateDetailPK().setRateId(rateId);
+                            }
+                            rate.setRateDetails(rds);
+                            rRest.edit(rate);
+                            rRest.refresh(rate);
                         } else {
                             rRest.edit(rate);
+                            rate = rRest.find(rate.getRateId());
+                            rRest.refresh(rate);
                         }
 
-                        for (RateDetail rd : rds) {
-                            if (rd.getValue() > 5) {
-                                rd.setValue(5.0);
-                            } else if (rd.getValue() < 0) {
-                                rd.setValue(0.0);
-                            }
-                            rd.getRateDetailPK().setRateId(rate.getRateId());
-                        }
-                        rate.setRateDetails(rds);
                         School school = schRest.find(rate.getSchool().getSchoolId());
-                        school.getRates().add(rate);
-                        rate.setSchool(school);
-                        rRest.edit(rate);
-                        schRest.edit(school);
-                        schRest.refresh(school);
-                        
                         AverageRateFacadeREST avgRest = new AverageRateFacadeREST();
                         avgRest.updateAverageRate(school);
+                        schRest.edit(school);
                         schRest.refresh(school);
                         uRest.refresh(u);
 
