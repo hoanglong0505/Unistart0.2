@@ -71,4 +71,13 @@ week = [{'dateTitle': 'Thứ Hai', 'listLession': [{'no': 1, 'lessionName': '', 
 ];
 return week;
   }
+loadDay(days) {
+  const list = [];
+  days.forEach(element => {
+   list.push({'date': element.itemName, 'id': element.id, 'starTime': '', 'endTime': ''});
+});
+console.log(list);
+return list;
+}
+
 }

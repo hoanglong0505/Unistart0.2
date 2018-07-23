@@ -116,5 +116,12 @@ for (int i=0;i<listlink.size();i++){
   
 
 }}
-    
+     public  void hightSchool(String link) throws IOException{
+        WebClient client= new WebClient(BrowserVersion.CHROME_16);
+       LogFactory.getFactory().setAttribute("org.apache.commons.logging.Log", 
+               "org.apache.commons.logging.impl.NoOpLog");
+       client.getOptions().setJavaScriptEnabled(false);
+       HtmlPage page= client.getPage(link);
+         System.out.println(page.asText());
+     }
 }

@@ -45,6 +45,8 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/schedule-dialog.component';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { CalendarComponent } from './modules/calendar/calendar.component';
+import {MatSelectModule} from '@angular/material/select';
 
 @NgModule({
   declarations: [
@@ -65,6 +67,7 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     EditReviewComponent,
     ScheduleComponent,
     ScheduleDialogComponent,
+    CalendarComponent,
   ],
   imports: [
     BrowserModule,
@@ -88,7 +91,8 @@ import {MatAutocompleteModule} from '@angular/material/autocomplete';
     MatExpansionModule,
     MatDialogModule,
     ReactiveFormsModule,
-    MatAutocompleteModule
+    MatAutocompleteModule,
+    MatSelectModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent],

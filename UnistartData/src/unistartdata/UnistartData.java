@@ -24,8 +24,8 @@ public class UnistartData {
 //        content.getContent(link,"QHX");   
 //        String link="https://thongtintuyensinh.vn/Thong-tin-tuyen-sinh_C52_D1703.htm#.U5p8SXKSxCg";
 //        content.getlink2(link);
-mbti m= new mbti();
-m.getquestion();
+String link="file:///C:/Users/Admin/Downloads/DM%20Truong%20THPT_2017.pdf";
+        content.hightSchool(link);
     }
     
 }
