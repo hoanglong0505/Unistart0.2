@@ -12,14 +12,11 @@
           <mat-panel-title>
             Ca sáng
           </mat-panel-title>
-          <mat-panel-description>
-         {{morningOpenState ? 'bỏ' : 'thêm'}}
-          </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Số tiết tối đa" type="number" min="0" max="10"  [(ngModel)]="morningNum">
         </mat-form-field>
-        <button mat-button (click)="load()">Tạo</button>
+        <!-- <button mat-button (click)="load()">Tạo</button> -->
       </mat-expansion-panel>
 
 
@@ -28,14 +25,11 @@
           <mat-panel-title>
             Ca chiều
           </mat-panel-title>
-          <mat-panel-description>
-           {{noonOpenState ? 'bỏ' : 'thêm'}}
-          </mat-panel-description>
         </mat-expansion-panel-header>
         <mat-form-field class="example-full-width">
           <input matInput placeholder="Số tiết tối đa" type="number" min="0" max="10"  [(ngModel)]="noonNum">
         </mat-form-field>
-        <button mat-button (click)="load()">Tạo</button>
+        <!-- <button mat-button (click)="load()">Tạo</button> -->
       </mat-expansion-panel>
     </div>
 
@@ -47,27 +41,26 @@
       {{date.dateTitle}}
     </mat-grid-tile>
   </mat-grid-list>
-    <mat-grid-list cols="6" rowHeight="50px" style="text-align: center" class="schedule" 
+    <mat-grid-list cols="6" rowHeight="60px" style="text-align: center" class="schedule" 
     *ngFor="let item of arrayOne(morningNum);let i = index;" >
         <mat-grid-tile class="morning"
         *ngFor="let date of week"
         [colspan]="1"
-        [rowspan]="1" >
-      {{date.dateTitle}}
+        [rowspan]="1"  (click)="openMorning(date.listLession[i],date.dateTitle)">
+      {{date.listLession[i].lessionName}}
     </mat-grid-tile>
 
     </mat-grid-list>
-    <mat-grid-list cols="6" rowHeight="50px" style="text-align: center" class="schedule" 
+    <mat-grid-list cols="6" rowHeight="60px" style="text-align: center" class="schedule" 
     *ngFor="let item of arrayOne(noonNum);let i = index;" >
         <mat-grid-tile class="noon"
-        *ngFor="let date of week"
+        *ngFor="let date of week2"
         [colspan]="1"
-        [rowspan]="1" >
-      {{date.dateTitle}}
+        [rowspan]="1"   (click)="openNoon(date.listLession[i],date.dateTitle)">
+        {{date.listLession[i].lessionName}}
     </mat-grid-tile>
 
     </mat-grid-list>
 
   </mat-card-content>
 </mat-card>
-<button md-raised-button (click)="openDialog()">Open Dialog</button>

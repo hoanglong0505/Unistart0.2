@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'personal/user-profile/:id', component: UserProfileComponent },
   { path: 'mbti', component: MbtiComponent },
   { path: 'mbti-detail/:code', component: MbtiDetailComponent },
+  { path: 'schedule', component: ScheduleComponent },
   { path: 'personal/edit-review', component: EditReviewComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];

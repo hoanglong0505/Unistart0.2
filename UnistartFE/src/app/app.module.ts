@@ -44,6 +44,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/schedule-dialog.component';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/sche
     MatGridListModule,
     MatExpansionModule,
     MatDialogModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatAutocompleteModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent],

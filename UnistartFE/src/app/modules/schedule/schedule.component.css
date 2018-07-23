@@ -1,7 +1,8 @@
 
   mat-card.body {
     display: inline-block;
-   width: 95%;
+   width: 90%;
+   margin-left: 5%;
    text-align: center;
   }
   .ca{
