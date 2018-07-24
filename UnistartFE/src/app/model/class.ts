@@ -2,7 +2,7 @@ export class Class {
     classId: number;
     className: string;
     color: string;
-  listSession: any[] ;
+    sessionList: any[] ;
 
     constructor() { }
 }

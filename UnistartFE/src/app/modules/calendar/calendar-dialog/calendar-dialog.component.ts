@@ -23,7 +23,7 @@ export class CalendarDialogComponent implements OnInit {
   mon: Class = new Class;
 
   ngOnInit() {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+    this.mon.sessionList = this.scheduleService.loadDay(this.selectedItems);
     this.loadSelect();
   }
   loadSelect() {
@@ -48,16 +48,16 @@ export class CalendarDialogComponent implements OnInit {
     };
   }
   onItemSelect(item: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+    this.mon.sessionList = this.scheduleService.loadDay(this.selectedItems);
   }
   OnItemDeSelect(item: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+    this.mon.sessionList = this.scheduleService.loadDay(this.selectedItems);
   }
   onSelectAll(items: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+    this.mon.sessionList = this.scheduleService.loadDay(this.selectedItems);
   }
   onDeSelectAll(items: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+    this.mon.sessionList = this.scheduleService.loadDay(this.selectedItems);
   }
   submit() {
     this.dialogRef.close(this.mon);

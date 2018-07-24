@@ -118,7 +118,7 @@ export class ScheduleService {
   loadListClass(list) {
     list = [
       {
-        'listSession': [
+        'sessionList': [
           {
             'date': 'Thứ 2',
             'id': 1,
@@ -136,7 +136,7 @@ export class ScheduleService {
         'color': '#2196F3'
       },
       {
-        'listSession': [
+        'sessionList': [
           {
             'date': 'Thứ 3',
             'id': 2,
@@ -154,7 +154,7 @@ export class ScheduleService {
         'color': '#F44336'
       },
       {
-        'listSession': [
+        'sessionList': [
           {
             'date': 'Th? 7',
             'id': 6,
@@ -177,12 +177,12 @@ export class ScheduleService {
 loadChart(list) {
   const listChart = [];
 list.forEach(c => {
-  c.listSession.forEach(element => {
+  c.sessionList.forEach(element => {
     const s = + element.starTime.substring(3, 5);
     const top = (element.starTime.substring(0, 2) * 60 + s - 300) ;
     const h = +element.endTime.substring(3, 5);
     const height =  (element.endTime.substring(0, 2) * 60 + h - 300 - top) ;
-    console.log(top + ' ' + height);
+
     const  chart = {'color' : c.color, 'className': c.className,
     'left': (element.id ) * 12.5 + 0.25, 'time': '(' + element.starTime + '-' + element.endTime + ')',
   'top': top / 1080 * 100, 'height': height / 1080 * 100};
@@ -191,7 +191,7 @@ listChart.push(chart);
   });
 
 });
-console.log(listChart);
+
 return listChart;
 }
 }
