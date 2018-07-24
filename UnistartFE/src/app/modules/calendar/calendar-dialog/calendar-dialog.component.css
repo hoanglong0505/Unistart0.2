@@ -1,0 +1,12 @@
+
+  mat-card.body {
+    display: inline-block;
+   width: 95%;
+   text-align: center;
+  }
+  mat-card-content{
+    width: 90%;
+  }
+.time{
+    width: 50%;
+}

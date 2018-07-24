@@ -32,7 +32,7 @@ export class ReportComponent implements OnInit {
 
   send() {
     // console.log(this.userRate);
-    if (WaitingBoxComponent.time == -1)
+    if (WaitingBoxComponent.time == -1) {
       if (this.rpRate) {
         WaitingBoxComponent.start();
         var rp = new Report();
@@ -59,6 +59,7 @@ export class ReportComponent implements OnInit {
         );
 
       }
+    }
   }
 
 }

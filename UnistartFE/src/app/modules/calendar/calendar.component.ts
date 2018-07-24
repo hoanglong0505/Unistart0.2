@@ -3,6 +3,7 @@ import { FormControl } from '../../../../node_modules/@angular/forms';
 import { MatDialog } from '../../../../node_modules/@angular/material/dialog';
 import { ScheduleService } from '../../services/schedule.service';
 import { Class } from '../../model/class';
+import { CalendarDialogComponent } from './calendar-dialog/calendar-dialog.component';
 
 @Component({
   selector: 'app-calendar',
@@ -10,49 +11,33 @@ import { Class } from '../../model/class';
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
+  displayedColumns: string[] = ['className', 'session'];
   constructor(private dialog: MatDialog, private scheduleService: ScheduleService) { }
-  panelColor = new FormControl();
-  dropdownList = [];
-  selectedItems = [];
-  dropdownSettings = {};
-  mon: Class = new Class;
+  listClass:  Class[];
+  chart: any[];
   ngOnInit() {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
-    this.loadSelect();
-    console.log(this.mon);
+    this.listClass = this.scheduleService.loadListClass(this.listClass);
+    this.chart = this.scheduleService.loadChart(this.listClass);
   }
-  loadSelect() {
-    this.dropdownList = [
-      { 'id': 1, 'itemName': 'Thứ 2' },
-      { 'id': 2, 'itemName': 'Thứ 3' },
-      { 'id': 3, 'itemName': 'Thứ 4' },
-      { 'id': 4, 'itemName': 'Thứ 5' },
-      { 'id': 5, 'itemName': 'Thứ 6' },
-      { 'id': 6, 'itemName': 'Thứ 7' },
-      { 'id': 7, 'itemName': 'Chủ Nhật' }
-    ];
-    this.selectedItems = [
-    ];
-    this.dropdownSettings = {
-      singleSelection: false,
-      text: 'Chọn lịch hàng tuần',
-      selectAllText: 'Chọn hết',
-      unSelectAllText: 'Bỏ hết',
-      enableSearchFilter: false,
-      classes: 'myclass custom-class'
-    };
+  arrayOne(n: number): any[] {
+    return Array(n);
   }
-  onItemSelect(item: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
-    console.log(this.mon);
+  createClass() {
+    const dialogRef = this.dialog.open(CalendarDialogComponent, {
+      width: '95%',
+      height: '80%',
+      data: 'Tạo mới lịch học'
+    });
+    dialogRef.afterClosed().subscribe(result => {
+    if (result !== undefined) {
+      this.scheduleService.createClass(result).subscribe(
+        res => {
+        }
+      );
+    console.log(result);
   }
-  OnItemDeSelect(item: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
+
+    });
   }
-  onSelectAll(items: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
-  }
-  onDeSelectAll(items: any) {
-    this.mon.listSession = this.scheduleService.loadDay(this.selectedItems);
-  }
+
 }

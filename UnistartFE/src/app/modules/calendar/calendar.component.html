@@ -3,35 +3,72 @@
     <h2>Tạo lịch học thêm</h2>
   </mat-card-header>
   <mat-card-content style="text-align: center">
-      <mat-form-field style="width: 70%;" >
-          <input matInput placeholder="Tên môn học" >
-      </mat-form-field>
-      <mat-form-field  >
-         
-          <mat-select placeholder="Màu hiển thị" [formControl]="panelColor"
-          >
-            <mat-option value="#F44336" style="background-color: #F44336">Đỏ</mat-option>
-            <mat-option value="#4CAF50" style="background-color: #4CAF50">Lục</mat-option>
-            <mat-option value="#2196F3" style="background-color: #2196F3">Lam</mat-option>
-            <mat-option value="#2196F3" style="background-color: #FFEB3B">Vàng</mat-option>
-            <mat-option value="#2196F3" style="background-color: #795548">Nâu</mat-option>
-          </mat-select>
-        </mat-form-field>   
-  <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems" 
-    [settings]="dropdownSettings" 
-    (onSelect)="onItemSelect($event)" 
-    (onDeSelect)="OnItemDeSelect($event)"
-    (onSelectAll)="onSelectAll($event)"
-    (onDeSelectAll)="onDeSelectAll($event)">
-</angular2-multiselect>  
-<div style="display: inline-block"  *ngFor="let item of mon.listSession">
-  <div style="margin: 15px;"><p>{{item.date}} :</p> <mat-form-field >
-    <input matInput placeholder="Bắt đầu"  type="time" step="300">
-  </mat-form-field>
-  <mat-form-field >
-      <input matInput placeholder="Kết thúc" type="time" step="300" >
-  </mat-form-field></div>
-</div>
+    <div style="width: 100%; text-align: right">
+      <button mat-raised-button color="primary" (click)="createClass()">Tạo thêm lịch học</button>
+    </div>
 
+    <table mat-table [dataSource]="listClass" class="mat-elevation-z8">
+      <ng-container matColumnDef="className">
+        <th mat-header-cell *matHeaderCellDef>Tên </th>
+        <td mat-cell *matCellDef="let element" [style.background-color]="element.color"> {{element.className}} </td>
+      </ng-container>
+      <ng-container matColumnDef="session">
+        <th mat-header-cell *matHeaderCellDef>Lịch học </th>
+        <td mat-cell *matCellDef="let element">
+          <div *ngFor="let item of element.listSession" style="display: inline-block; padding: 5px;">
+            <p>{{item.date}}({{item.starTime}}-{{item.endTime}}) </p>
+          </div>
+        </td>
+      </ng-container>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+    <div id="chart">
+
+      <mat-grid-list cols="8" rowHeight="10px">
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 2
+        </mat-grid-tile>
+
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 3
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 4
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 5
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 6
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Thứ 7
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" style="background-color: lightslategrey">
+          Chủ nhật
+        </mat-grid-tile>
+      </mat-grid-list>
+      <mat-grid-list cols="8" rowHeight="10px" *ngFor="let item of arrayOne(17);let i = index;">
+        <mat-grid-tile [colspan]="1" [rowspan]="4" class="hours">
+            {{i+6}}:00
+        </mat-grid-tile>
+        <mat-grid-tile [colspan]="1" [rowspan]="4" class="hours" *ngFor="let col of arrayOne(7)">
+
+          </mat-grid-tile>
+   
+      </mat-grid-list>
+      <div *ngFor="let class of chart" >
+          <div style="background: red;
+          border-radius: 2px;
+      position: absolute;
+      width: 12.25%;" [style.background-color]="class.color" [style.height.%]="class.height"
+      [style.left.%]="class.left" [style.top.%]="class.top" > <p>{{class.className}}</p><p>{{class.time}}</p></div>
+    </div>
+      </div>
+    
   </mat-card-content>
 </mat-card>

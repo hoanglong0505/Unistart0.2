@@ -47,6 +47,8 @@ import { ScheduleDialogComponent } from './modules/schedule/schedule-dialog/sche
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { CalendarComponent } from './modules/calendar/calendar.component';
 import {MatSelectModule} from '@angular/material/select';
+import { CalendarDialogComponent } from './modules/calendar/calendar-dialog/calendar-dialog.component';
+import {MatTableModule} from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -68,6 +70,7 @@ import {MatSelectModule} from '@angular/material/select';
     ScheduleComponent,
     ScheduleDialogComponent,
     CalendarComponent,
+    CalendarDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -92,10 +95,11 @@ import {MatSelectModule} from '@angular/material/select';
     MatDialogModule,
     ReactiveFormsModule,
     MatAutocompleteModule,
-    MatSelectModule
+    MatSelectModule,
+    MatTableModule
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent],
-  entryComponents: [ScheduleDialogComponent]
+  entryComponents: [ScheduleDialogComponent, CalendarDialogComponent]
 })
 export class AppModule { }

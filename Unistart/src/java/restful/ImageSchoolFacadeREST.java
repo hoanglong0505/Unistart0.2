@@ -95,6 +95,12 @@ public class ImageSchoolFacadeREST extends AbstractFacade<ImageSchool> {
         List<ImageSchool> list = dao.getImageByCode(code);
         return list;
     }
+    @POST
+    @Path("test")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public void test(String a) {
+        System.out.println(a);   
+    }
 
     @Override
     protected EntityManager getEntityManager() {
