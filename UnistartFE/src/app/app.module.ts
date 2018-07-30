@@ -49,6 +49,9 @@ import { CalendarComponent } from './modules/calendar/calendar.component';
 import {MatSelectModule} from '@angular/material/select';
 import { CalendarDialogComponent } from './modules/calendar/calendar-dialog/calendar-dialog.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { TinhDiemComponent } from './modules/tinh-diem/tinh-diem.component';
+
 
 @NgModule({
   declarations: [
@@ -71,6 +74,7 @@ import {MatTableModule} from '@angular/material/table';
     ScheduleDialogComponent,
     CalendarComponent,
     CalendarDialogComponent,
+    TinhDiemComponent,
   ],
   imports: [
     BrowserModule,
@@ -96,7 +100,9 @@ import {MatTableModule} from '@angular/material/table';
     ReactiveFormsModule,
     MatAutocompleteModule,
     MatSelectModule,
-    MatTableModule
+    MatTableModule,
+    MatSlideToggleModule,
+
   ],
   providers: [WaitingBoxComponent, Constants],
   bootstrap: [AppComponent],

@@ -66,4 +66,10 @@ export class Constants {
   private USER = this.SERVICE_PATH + 'model.users/';
   public GET_USER_INFO = this.USER + 'get-user';
 
+  //class
+  public CLASS = this.SERVICE_PATH + 'customer.model.class';
+
+  //subject
+  public SUBJECT = this.SERVICE_PATH + 'knowledge.model.subject';
+  public SUBJECT_SELECTS = this.SUBJECT + '/select';
 }

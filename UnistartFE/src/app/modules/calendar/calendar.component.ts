@@ -11,32 +11,58 @@ import { CalendarDialogComponent } from './calendar-dialog/calendar-dialog.compo
   styleUrls: ['./calendar.component.css']
 })
 export class CalendarComponent implements OnInit {
-  displayedColumns: string[] = ['className', 'session'];
+  displayedColumns: string[] = ['className', 'session', 'control'];
   constructor(private dialog: MatDialog, private scheduleService: ScheduleService) { }
-  listClass:  Class[];
+  listClass: Class[];
   chart: any[];
   ngOnInit() {
-    this.listClass = this.scheduleService.loadListClass(this.listClass);
-    this.chart = this.scheduleService.loadChart(this.listClass);
+    this.reload();
+  }
+  reload() {
+    this.scheduleService.loadListClass()
+      .subscribe(c => {
+      this.listClass = c;
+        this.chart = this.scheduleService.loadChart(this.listClass);
+      });
   }
   arrayOne(n: number): any[] {
     return Array(n);
   }
   createClass() {
     const dialogRef = this.dialog.open(CalendarDialogComponent, {
-      width: '95%',
-      height: '80%',
-      data: 'Tạo mới lịch học'
+      width: '99%',
+      height: '90%',
+      data: '0'
     });
     dialogRef.afterClosed().subscribe(result => {
-    if (result !== undefined) {
-      this.scheduleService.createClass(result).subscribe(
-        res => {
+      if (result !== undefined) {
+        if (result.className !== undefined) {
+          this.scheduleService.createClass(result).subscribe(
+            res => {
+            }
+          );
+          this.reload();
         }
-      );
-    console.log(result);
+      } this.reload();
+      console.log('reload');
+    });
   }
-
+  update(id) {
+    const dialogRef = this.dialog.open(CalendarDialogComponent, {
+      width: '99%',
+      height: '90%',
+      data: id
+    });
+    dialogRef.afterClosed().subscribe(result => {
+      if (result !== undefined) {
+        if (result.className !== undefined) {
+          this.scheduleService.UpdateClass(result).subscribe(
+            res => {
+            }
+          );
+          this.reload();
+        }
+      } this.reload();
     });
   }
 

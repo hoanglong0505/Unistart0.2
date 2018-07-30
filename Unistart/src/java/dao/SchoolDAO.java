@@ -420,9 +420,12 @@ public void createImage(String code, String link){
 //        Query query=em.createQuery(sql);  
          em.getTransaction().begin();
         em.persist(ima);
+        em.flush();
+        System.out.println("aaaaaaa"+ima.getImageId());
            em.getTransaction().commit();   
 }
-    public void persist(Object object) {
+   
+public void persist(Object object) {
         EntityManager em = emf.createEntityManager();
         try {
             em.getTransaction().begin();

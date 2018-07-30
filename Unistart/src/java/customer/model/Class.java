@@ -7,10 +7,13 @@ package customer.model;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.annotation.Generated;
 import javax.persistence.Basic;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
@@ -39,6 +42,7 @@ public class Class implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Basic(optional = false)
     @NotNull
     @Column(name = "ClassId", nullable = false)
@@ -55,7 +59,8 @@ public class Class implements Serializable {
     @NotNull
     @Column(name = "Status", nullable = false)
     private int status;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "classId")
+    @OneToMany(cascade={CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE},
+    orphanRemoval=true, mappedBy = "classId")
     private List<Session> sessionList;
 
     public Class() {

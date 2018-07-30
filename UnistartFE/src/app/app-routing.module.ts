@@ -8,6 +8,7 @@ import { MbtiDetailComponent } from './modules/mbti-detail/mbti-detail.component
 import { ScheduleComponent } from './modules/schedule/schedule.component';
 import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component';
 import { CalendarComponent } from './modules/calendar/calendar.component';
+import { TinhDiemComponent } from './modules/tinh-diem/tinh-diem.component';
 
 const routes: Routes = [
   { path: 'schools', component: SchoolsComponent },
@@ -18,6 +19,7 @@ const routes: Routes = [
   { path: 'schedule', component: ScheduleComponent },
   { path: 'personal/edit-review', component: EditReviewComponent },
   { path: 'calendar', component: CalendarComponent },
+  { path: 'tinh-diem', component: TinhDiemComponent },
   { path: '', redirectTo: '/', pathMatch: 'full' }
 ];
 

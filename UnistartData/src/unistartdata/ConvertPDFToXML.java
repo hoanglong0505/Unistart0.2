@@ -5,6 +5,10 @@
  */
 package unistartdata;
 
+import com.gargoylesoftware.htmlunit.BrowserVersion;
+import com.gargoylesoftware.htmlunit.WebClient;
+import com.gargoylesoftware.htmlunit.html.HtmlElement;
+import com.gargoylesoftware.htmlunit.html.HtmlPage;
 import java.io.*;
 import java.util.*;
 import org.xml.sax.*;
@@ -15,71 +19,26 @@ import javax.xml.transform.sax.*;
 import javax.xml.transform.stream.*;
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.*;
+import function.mbti;
+import org.apache.commons.logging.LogFactory;
 
 public class ConvertPDFToXML {
-	static StreamResult streamResult;
-	static TransformerHandler handler;
-	static AttributesImpl atts;
+	
 
 	public static void main(String[] args) throws IOException {
-
-		try {
-			Document document = new Document();
-			document.open();
-			PdfReader reader = new PdfReader("‪D:/Wisky/Unistart0.2/UnistartFE/THPT.pdf");
-			PdfDictionary page = reader.getPageN(1);
-			PRIndirectReference objectReference = (PRIndirectReference) page
-					.get(PdfName.CONTENTS);
-			PRStream stream = (PRStream) PdfReader
-					.getPdfObject(objectReference);
-			byte[] streamBytes = PdfReader.getStreamBytes(stream);
-			PRTokeniser tokenizer = new PRTokeniser(streamBytes);
-
-			StringBuffer strbufe = new StringBuffer();
-			while (tokenizer.nextToken()) {
-				if (tokenizer.getTokenType() == PRTokeniser.TK_STRING) {
-					strbufe.append(tokenizer.getStringValue());
-				}
-			}
-			String test = strbufe.toString();
-			streamResult = new StreamResult("data.xml");
-			initXML();
-			process(test);
-			closeXML();
-			document.add(new Paragraph(".."));
-			document.close();
-		} catch (Exception e) {
-                    System.out.println(e);
-		}
-	}
-
-	public static void initXML() throws ParserConfigurationException,
-			TransformerConfigurationException, SAXException {
-		SAXTransformerFactory tf = (SAXTransformerFactory) SAXTransformerFactory
-				.newInstance();
-
-		handler = tf.newTransformerHandler();
-		Transformer serializer = handler.getTransformer();
-		serializer.setOutputProperty(OutputKeys.ENCODING, "ISO-8859-1");
-		serializer.setOutputProperty(
-				"{http://xml.apache.org/xslt}indent-amount", "4");
-		serializer.setOutputProperty(OutputKeys.INDENT, "yes");
-		handler.setResult(streamResult);
-		handler.startDocument();
-		atts = new AttributesImpl();
-		handler.startElement("", "", "Roseindia", atts);
-	}
-
-	public static void process(String s) throws SAXException {
-		String[] elements = s.split("\\|");
-		atts.clear();
-		handler.startElement("", "", "Message", atts);
-		handler.characters(elements[0].toCharArray(), 0, elements[0].length());
-		handler.endElement("", "", "Message");
-	}
-
-	public static void closeXML() throws SAXException {
-		handler.endElement("", "", "Roseindia");
-		handler.endDocument();
-	}
-}
+   WebClient client= new WebClient(BrowserVersion.CHROME_16);
+       LogFactory.getFactory().setAttribute("org.apache.commons.logging.Log", 
+               "org.apache.commons.logging.impl.NoOpLog");
+       client.getOptions().setJavaScriptEnabled(false);
+       HtmlPage page= client.getPage("https://hoc24.vn/ly-thuyet/chuong-4-bat-dang-thuc-bat-phuong-trinh.229/");
+          //  System.out.println(page.asText());
+         String xpath="//h4/a";
+        String url="D:\\Wisky\\Unistart0.2\\UnistartFE\\src\\assets\\Knowledge\\1\\1\\"
+                + "Đại số Chương 3 PHƯƠNG TRÌNH, HỆ PHƯƠNG TRÌNH";
+       java.util.List<HtmlElement> listcode=(java.util.List<HtmlElement>) page.getByXPath(xpath);
+       for (HtmlElement e: listcode){
+           mbti m= new mbti();
+           m.getknowlist(e, url);
+            System.out.println(e.getAttribute("href"));
+       }     
+        }}

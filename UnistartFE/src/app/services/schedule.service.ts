@@ -4,9 +4,10 @@ import { Constants } from '../constanst';
 import { catchError } from 'rxjs/operators';
 import { HttpRequest, HttpResponse } from '../server/http';
 import { HttpClient, HttpHeaders } from '../../../node_modules/@angular/common/http';
+import { Class } from '../model/class';
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json'
+    'Content-Type': 'application/json; charset=UTF-8'
   })
 };
 @Injectable({
@@ -95,12 +96,26 @@ export class ScheduleService {
   loadDay(days) {
     const list = [];
     days.forEach(element => {
-      list.push({ 'date': element.itemName, 'id': element.id, 'starTime': '', 'endTime': '' });
+      list.push({ 'date': element.itemName, 'dateNo': element.id, 'startTime': '', 'endTime': '' });
+    });
+    return list;
+  }
+  loadSelect(days) {
+    const list = [];
+    days.forEach(element => {
+      list.push({ 'id': element.dateNo, 'itemName': element.date});
     });
     return list;
   }
   createClass(data): Observable<HttpResponse> {
-    const url = this.constant.GET_IMAGE + '/test';
+    const url = this.constant.CLASS;
+    return this.http.post<HttpResponse>(url, data, httpOptions).pipe(
+      catchError(this.handleError<HttpResponse>('sendRate', null))
+    );
+  }
+
+  UpdateClass(data): Observable<HttpResponse> {
+    const url = this.constant.CLASS + '/' + data.classId;
     return this.http.post<HttpResponse>(url, data, httpOptions).pipe(
       catchError(this.handleError<HttpResponse>('sendRate', null))
     );
@@ -115,76 +130,27 @@ export class ScheduleService {
       return of(result as T);
     };
   }
-  loadListClass(list) {
-    list = [
-      {
-        'sessionList': [
-          {
-            'date': 'Thứ 2',
-            'id': 1,
-            'starTime': '15:00',
-            'endTime': '18:00'
-          },
-          {
-            'date': 'Thứ 4',
-            'id': 3,
-            'starTime': '15:00',
-            'endTime': '18:00'
-          }
-        ],
-        'className': 'Toán',
-        'color': '#2196F3'
-      },
-      {
-        'sessionList': [
-          {
-            'date': 'Thứ 3',
-            'id': 2,
-            'starTime': '15:00',
-            'endTime': '18:00'
-          },
-          {
-            'date': 'Thứ 5',
-            'id': 4,
-            'starTime': '15:30',
-            'endTime': '18:45'
-          }
-        ],
-        'className': 'Văn',
-        'color': '#F44336'
-      },
-      {
-        'sessionList': [
-          {
-            'date': 'Th? 7',
-            'id': 6,
-            'starTime': '08:00',
-            'endTime': '10:00'
-          },
-          {
-            'date': 'Chủ Nhật',
-            'id': 7,
-            'starTime': '07:30',
-            'endTime': '09:30'
-          }
-        ],
-        'className': 'Anh',
-        'color': '#FFEB3B'
-      }
-    ];
-    return list;
+  loadListClass(): Observable<Class[]>  {
+     return this.http.get<Class[]>(this.constant.CLASS).pipe(
+      catchError(this.handleError<Class[]>('getClasses', null))
+    );
   }
+  loadClass(id): Observable<Class>  {
+    return this.http.get<Class>(this.constant.CLASS + '/' + id).pipe(
+     catchError(this.handleError<Class>('getClass', null))
+   );
+ }
 loadChart(list) {
   const listChart = [];
 list.forEach(c => {
   c.sessionList.forEach(element => {
-    const s = + element.starTime.substring(3, 5);
-    const top = (element.starTime.substring(0, 2) * 60 + s - 300) ;
+    const s = + element.startTime.substring(3, 5);
+    const top = (element.startTime.substring(0, 2) * 60 + s - 300) ;
     const h = +element.endTime.substring(3, 5);
     const height =  (element.endTime.substring(0, 2) * 60 + h - 300 - top) ;
 
-    const  chart = {'color' : c.color, 'className': c.className,
-    'left': (element.id ) * 12.5 + 0.25, 'time': '(' + element.starTime + '-' + element.endTime + ')',
+    const  chart = {'color' : c.color, 'classId': c.classId , 'className': c.className,
+    'left': (element.dateNo ) * 12.5 + 0.25, 'time': '(' + element.startTime + '-' + element.endTime + ')',
   'top': top / 1080 * 100, 'height': height / 1080 * 100};
 
 listChart.push(chart);

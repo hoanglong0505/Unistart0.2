@@ -1,9 +1,9 @@
-<mat-card class="body">
+<!-- <mat-card class="body">
   <mat-card-header>
-    <h2>Tạo lịch học thêm</h2>
-  </mat-card-header>
-  <mat-card-content style="text-align: center">
 
+  </mat-card-header>
+  <mat-card-content style="text-align: center"> -->
+    <h2>Tạo lịch học thêm</h2>
       <mat-form-field style="width: 70%;" >
           <input matInput placeholder="Tên môn học" [(ngModel)]="mon.className" >
       </mat-form-field>
@@ -11,11 +11,14 @@
          
           <mat-select placeholder="Màu hiển thị" [(ngModel)]="mon.color" [style.background-color]="mon.color"
           >
-            <mat-option value="#F44336" style="background-color: #F44336">Đỏ</mat-option>
-            <mat-option value="#4CAF50" style="background-color: #4CAF50">Lục</mat-option>
-            <mat-option value="#2196F3" style="background-color: #2196F3">Lam</mat-option>
-            <mat-option value="#FFEB3B" style="background-color: #FFEB3B">Vàng</mat-option>
-            <mat-option value="#795548" style="background-color: #795548">Nâu</mat-option>
+            <mat-option value="#F44336" style="background-color: #F44336"></mat-option>
+            <mat-option value="#4CAF50" style="background-color: #4CAF50"></mat-option>
+            <mat-option value="#2196F3" style="background-color: #2196F3"></mat-option>
+            <mat-option value="#FFEB3B" style="background-color: #FFEB3B"></mat-option>
+            <mat-option value="#795548" style="background-color: #795548"></mat-option>
+            <mat-option value="#FF9800" style="background-color: #FF9800"></mat-option>
+            <mat-option value="#E040FB" style="background-color: #E040FB"></mat-option>
+            <mat-option value="#FF4081" style="background-color: #FF4081"></mat-option>
           </mat-select>
         </mat-form-field>   
   <angular2-multiselect [data]="dropdownList" [(ngModel)]="selectedItems" 
@@ -27,13 +30,14 @@
 </angular2-multiselect>  
 <div style="display: inline-block"  *ngFor="let item of mon.sessionList">
   <div style="margin: 15px;"><p>{{item.date}} :</p> <mat-form-field >
-    <input class="time" matInput placeholder="Bắt đầu"  type="time" step="300"  [(ngModel)]="item.starTime">
+    <input class="time" matInput placeholder="Bắt đầu"  type="time" step="300"  [(ngModel)]="item.startTime">
   </mat-form-field>
   <mat-form-field >
       <input class="time" matInput placeholder="Kết thúc" type="time" step="300" [(ngModel)]="item.endTime">
   </mat-form-field></div>
 </div>
 <div style="width: 100%; text-align: right ; margin: 15px;" >     
-    <button mat-raised-button color="primary" (click)="submit()">Lưu</button></div>
-  </mat-card-content>
-</mat-card>
+    <button mat-raised-button color="primary" (click)="submit()">Lưu</button>
+    <button mat-button color="primary" type="button" mat-dialog-close>Hủy</button></div>
+  <!-- </mat-card-content>
+</mat-card> -->

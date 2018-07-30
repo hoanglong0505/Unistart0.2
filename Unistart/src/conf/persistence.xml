@@ -26,6 +26,10 @@
     <class>model.ImageSchool</class>
     <class>customer.model.Class</class>
     <class>customer.model.Session</class>
+    <class>Knowledge.model.Subject</class>
+    <class>Knowledge.model.Unit</class>
+    <class>Knowledge.model.Grade</class>
+    <class>Knowledge.model.Chapter</class>
     <exclude-unlisted-classes>false</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:sqlserver://localhost:1433;databaseName=unistart2"/>

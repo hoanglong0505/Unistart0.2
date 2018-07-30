@@ -6,6 +6,7 @@
 package customer.service;
 
 import customer.model.Class;
+import dao.ScheduleDAO;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -43,14 +44,17 @@ public class ClassFacadeREST extends AbstractFacade<Class> {
     @Override
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void create(Class entity) {
-        super.create(entity);
+        ScheduleDAO dao= new ScheduleDAO();
+        dao.createClass(entity);
     }
 
-    @PUT
+    @POST
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
     public void edit(@PathParam("id") Integer id, Class entity) {
-        super.edit(entity);
+         ScheduleDAO dao= new ScheduleDAO();
+         System.out.println(entity.getClassId());
+        dao.updateClass(entity);
     }
 
     @DELETE
