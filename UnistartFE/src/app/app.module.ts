@@ -51,6 +51,8 @@ import { CalendarDialogComponent } from './modules/calendar/calendar-dialog/cale
 import {MatTableModule} from '@angular/material/table';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { TinhDiemComponent } from './modules/tinh-diem/tinh-diem.component';
+import { HomeComponent } from './modules/home/home.component';
+import { SubjectComponent } from './modules/subject/subject.component';
 
 
 @NgModule({
@@ -75,6 +77,8 @@ import { TinhDiemComponent } from './modules/tinh-diem/tinh-diem.component';
     CalendarComponent,
     CalendarDialogComponent,
     TinhDiemComponent,
+    HomeComponent,
+    SubjectComponent,
   ],
   imports: [
     BrowserModule,

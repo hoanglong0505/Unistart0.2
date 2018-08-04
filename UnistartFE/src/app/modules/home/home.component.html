@@ -1,0 +1,58 @@
+<div style=" background-image:url(assets/bg/e.jpg) ">
+  <div class="container">
+    <div class="row text-center text-lg-left ">
+      <div id="subject" class="col-md-4 col-xs-6  " *ngFor="let sj of subjects" >
+        <div class="text-center align-items-center rgba-black-strong py-5 px-4 card card-image " style="margin: 20px; background-image:url(assets/bg/b.jpg) "
+          data-toggle="modal" data-target="#myModal" (click)="setSelect(sj)">
+          <div>
+            <img class="text-center" src="{{sj.subjectIcon}}" alt="Lights" style="width:80%">
+          </div>
+
+          <div class="text-center d-flex ">
+
+            <div class="caption text-center">
+              <h3 class="card-title pt-2">
+                <strong>{{sj.subjectName}}</strong>
+              </h3>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+</div>
+
+<div class="modal fade" id="myModal" role="dialog">
+  <div class="modal-dialog  ">
+
+    <!-- Modal content-->
+    <div *ngIf="select" class=" modal-content center-block" style=" background-image:url(assets/bg/c.png) ">
+
+      <div class="modal-header">
+         
+        <h2  style="font-family:'Matura MT Script Capitals';">{{select.subjectName}}</h2>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+      <div class="modal-body center-block  " style="height: 400px; vertical-align: middle">
+      
+        <a  *ngFor="let g of grades" data-dismiss="modal" routerLink="/subject/{{select.subjectId}}/{{g.gradeId}}">
+
+          <h2 class=" align-middle text-center " style="vertical-align: middle; 
+          margin-top: 50px;font-family:'Matura MT Script Capitals'; color: black">
+            {{g.gradeName}}
+          </h2>
+        </a>
+      </div>
+      <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div> -->
+    </div>
+
+  </div>
+</div>

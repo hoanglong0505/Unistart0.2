@@ -18,6 +18,8 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
+import org.codehaus.jackson.annotate.JsonIgnore;
 
 /**
  *
@@ -32,6 +34,9 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Unit.findByUnitName", query = "SELECT u FROM Unit u WHERE u.unitName = :unitName")
     , @NamedQuery(name = "Unit.findByKnowledge", query = "SELECT u FROM Unit u WHERE u.knowledge = :knowledge")})
 public class Unit implements Serializable {
+
+    @Column(name = "No")
+    private Integer no;
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -86,7 +91,8 @@ public class Unit implements Serializable {
     public void setKnowledge(String knowledge) {
         this.knowledge = knowledge;
     }
-
+    @XmlTransient
+    @JsonIgnore
     public Chapter getChapterId() {
         return chapterId;
     }
@@ -118,6 +124,14 @@ public class Unit implements Serializable {
     @Override
     public String toString() {
         return "Knowledge.model.Unit[ unitId=" + unitId + " ]";
+    }
+
+    public Integer getNo() {
+        return no;
+    }
+
+    public void setNo(Integer no) {
+        this.no = no;
     }
     
 }

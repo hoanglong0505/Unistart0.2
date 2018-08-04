@@ -9,6 +9,8 @@ import { ScheduleComponent } from './modules/schedule/schedule.component';
 import { EditReviewComponent } from './modules/user-profile/edit-review/edit-review.component';
 import { CalendarComponent } from './modules/calendar/calendar.component';
 import { TinhDiemComponent } from './modules/tinh-diem/tinh-diem.component';
+import { HomeComponent } from './modules/home/home.component';
+import { SubjectComponent } from './modules/subject/subject.component';
 
 const routes: Routes = [
   { path: 'schools', component: SchoolsComponent },
@@ -20,7 +22,8 @@ const routes: Routes = [
   { path: 'personal/edit-review', component: EditReviewComponent },
   { path: 'calendar', component: CalendarComponent },
   { path: 'tinh-diem', component: TinhDiemComponent },
-  { path: '', redirectTo: '/', pathMatch: 'full' }
+  { path: 'subject/:sub/:grade', component: SubjectComponent },
+  { path: '', pathMatch: 'full', component: HomeComponent }
 ];
 
 @NgModule({

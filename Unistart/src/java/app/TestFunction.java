@@ -14,11 +14,17 @@ import java.io.File;
  */
 public class TestFunction {
     public static void main(String[] args) {
-        final File folder = new File("D:/Wisky/Unistart0.2/UnistartFE/src/assets/School/img");
-        UploadData data = new UploadData();
-         SchoolDAO dao= new SchoolDAO();
-                    dao.clearImage();
-            data.listCode(folder);
-    
+//        final File folder = new File("D:/Wisky/Unistart0.2/UnistartFE/src/assets/School/img");
+//        UploadData data = new UploadData();
+//         SchoolDAO dao= new SchoolDAO();
+//                    dao.clearImage();
+//            data.listCode(folder);
+String inputString="abcba";
+boolean re=true;
+for (int i=1; i<inputString.length()/2; i++){
+        if (inputString.charAt(i-1) != inputString.charAt(inputString.length()-i))
+        {  re=false;}
+    }
+        System.out.println(re);
     }
 }

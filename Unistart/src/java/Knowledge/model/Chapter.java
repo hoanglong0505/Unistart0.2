@@ -37,6 +37,13 @@ import org.codehaus.jackson.annotate.JsonIgnore;
     , @NamedQuery(name = "Chapter.findByChapterName", query = "SELECT c FROM Chapter c WHERE c.chapterName = :chapterName")})
 public class Chapter implements Serializable {
 
+    @Size(max = 50)
+    @Column(name = "Type", length = 50)
+    private String type;
+
+    @Column(name = "no")
+    private Integer no;
+
     private static final long serialVersionUID = 1L;
     @Id
     @Basic(optional = false)
@@ -101,8 +108,7 @@ public class Chapter implements Serializable {
         this.subjectId = subjectId;
     }
 
-    @XmlTransient
-    @JsonIgnore
+
     public List<Unit> getUnitList() {
         return unitList;
     }
@@ -134,6 +140,22 @@ public class Chapter implements Serializable {
     @Override
     public String toString() {
         return "Knowledge.model.Chapter[ chapterId=" + chapterId + " ]";
+    }
+
+    public Integer getNo() {
+        return no;
+    }
+
+    public void setNo(Integer no) {
+        this.no = no;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
     
 }

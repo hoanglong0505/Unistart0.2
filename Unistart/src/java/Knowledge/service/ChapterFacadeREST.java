@@ -6,6 +6,7 @@
 package Knowledge.service;
 
 import Knowledge.model.Chapter;
+import dao.KnowledgeDAO;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -18,6 +19,7 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
+import javax.ws.rs.QueryParam;
 import javax.ws.rs.core.MediaType;
 import restful.PersistenceUtils;
 
@@ -96,5 +98,12 @@ public class ChapterFacadeREST extends AbstractFacade<Chapter> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
+     @GET
+    @Path("get/{subjectId}/{gradeId}")
+    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    public List<Chapter> findChapter(@PathParam("subjectId") int sId,@PathParam("gradeId") int gId) {
+         KnowledgeDAO dao = new KnowledgeDAO();
+        List<Chapter> list = dao.getChapter(sId, gId, em);
+        return list;
+    }
 }

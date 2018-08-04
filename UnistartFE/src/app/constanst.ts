@@ -72,4 +72,11 @@ export class Constants {
   //subject
   public SUBJECT = this.SERVICE_PATH + 'knowledge.model.subject';
   public SUBJECT_SELECTS = this.SUBJECT + '/select';
+
+  //grade
+  public GRADE = this.SERVICE_PATH + 'knowledge.model.grade';
+
+  //chapter
+  private CHAPTER = this.SERVICE_PATH + 'knowledge.model.chapter';
+  public GET_LIST_CHAPTER = this.CHAPTER + '/get';
 }

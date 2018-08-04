@@ -27,7 +27,7 @@ export class SchoolDetailComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    new HttpRequest().getSession(true).setItem('reload',false);
+    new HttpRequest().getSession(true).setItem('reload', false);
     WaitingBoxComponent.start();
     this.getSchool();
   }

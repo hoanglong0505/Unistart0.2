@@ -1,0 +1,18 @@
+<div style=" background-image:url(assets/adventure/a.png); background-color: darkslategrey;
+background-position: bottom center;
+    background-size: 120% auto;
+    background-repeat: no-repeat;min-height: 700px;width: auto ;">
+  <div class="container " *ngFor="let c of chapters;let i = index;" style="height: 100%; 
+  padding-top:   50px;padding-bottom: 50px">
+    <div class="mx-auto card" style=" min-height: 400px; width: auto ; max-width: 700px;">
+      
+      <img  class="card-img-top" src="assets/adventure/{{i+1}}.png" style=" height: 200px;">
+      <div class="card-body mx-auto">
+        <h5 class="card-title ">{{c.chapterName}}</h5>
+       <div class=" mx-auto" *ngFor="let u of c.unitList">{{u.unitName}} </div>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
